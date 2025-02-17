@@ -2,12 +2,12 @@ export const description = `
 Execution Tests for structure member accessing expressions
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { ScalarKind, Type, Value, u32 } from '../../../../../util/conversion.js';
-import { align } from '../../../../../util/math.js';
-import { toComparator } from '../../expectation.js';
-import { InputSource, structLayout, structStride } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { ScalarKind, Type, Value, u32 } from '../../../../../util/conversion';
+import { align } from '../../../../../util/math';
+import { toComparator } from '../../expectation';
+import { InputSource, structLayout, structStride } from '../../expression';
 
 export const g = makeTestGroup(GPUTest);
 

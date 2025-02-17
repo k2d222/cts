@@ -10,9 +10,9 @@ TODO[2]: Figure out how to make these tests run in service workers (not actually
 important unless service workers gain the ability to launch other workers).
 `;
 
-import { Fixture } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
+import { Fixture } from '../../../common/framework/fixture';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert } from '../../../common/util/util';
 
 export const g = makeTestGroup(Fixture);
 

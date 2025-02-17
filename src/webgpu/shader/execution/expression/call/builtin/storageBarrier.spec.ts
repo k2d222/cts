@@ -13,8 +13,8 @@ execution scope.
 All synchronization functions must only be used in the compute shader stage.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

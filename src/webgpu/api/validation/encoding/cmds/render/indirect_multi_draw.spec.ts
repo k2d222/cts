@@ -2,15 +2,15 @@ export const description = `
 Validation tests for multiDrawIndirect/multiDrawIndexedIndirect on render pass.
 `;
 
-import { kUnitCaseParamsBuilder } from '../../../../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { kUnitCaseParamsBuilder } from '../../../../../../common/framework/params_builder';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
 import {
   GPUConst,
   kMaxUnsignedLongValue,
   kMaxUnsignedLongLongValue,
 } from '../../../../../constants.js';
-import { kResourceStates } from '../../../../../gpu_test.js';
-import { ValidationTest } from '../../../validation_test.js';
+import { kResourceStates } from '../../../../../gpu_test';
+import { ValidationTest } from '../../../validation_test';
 
 const kIndirectMultiDrawTestParams = kUnitCaseParamsBuilder
   .combine('indexed', [true, false] as const)

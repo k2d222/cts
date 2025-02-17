@@ -1,7 +1,7 @@
-import { bool, u32 } from '../../../../util/conversion.js';
-import { vectorU32Range } from '../../../../util/math.js';
-import { Case } from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+import { bool, u32 } from '../../../../util/conversion';
+import { vectorU32Range } from '../../../../util/math';
+import { Case } from '../case';
+import { makeCaseCache } from '../case_cache';
 
 /**
  * @returns a test case for the provided left hand & right hand values and

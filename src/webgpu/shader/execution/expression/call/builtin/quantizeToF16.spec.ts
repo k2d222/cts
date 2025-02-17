@@ -8,13 +8,13 @@ binary16 value, and then converted back to a IEEE 754 binary32 value.
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
+import { allInputSources, run } from '../../expression';
 
-import { builtin } from './builtin.js';
-import { d } from './quantizeToF16.cache.js';
+import { builtin } from './builtin';
+import { d } from './quantizeToF16.cache';
 
 export const g = makeTestGroup(GPUTest);
 

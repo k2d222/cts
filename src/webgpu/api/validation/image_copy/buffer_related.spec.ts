@@ -1,17 +1,17 @@
 export const description = `Validation tests for buffer related parameters for buffer <-> texture copies`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kTextureDimensions } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { kTextureDimensions } from '../../../capability_info';
+import { GPUConst } from '../../../constants';
 import {
   kSizedTextureFormats,
   kTextureFormatInfo,
   textureDimensionAndFormatCompatible,
 } from '../../../format_info.js';
-import { kResourceStates } from '../../../gpu_test.js';
-import { kImageCopyTypes } from '../../../util/texture/layout.js';
+import { kResourceStates } from '../../../gpu_test';
+import { kImageCopyTypes } from '../../../util/texture/layout';
 
-import { ImageCopyTest, formatCopyableWithMethod } from './image_copy.js';
+import { ImageCopyTest, formatCopyableWithMethod } from './image_copy';
 
 export const g = makeTestGroup(ImageCopyTest);
 

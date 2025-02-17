@@ -1,19 +1,19 @@
 export const description = `Texture related validation tests for B2T copy and T2B copy and writeTexture.`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kTextureDimensions, kTextureUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert } from '../../../../common/util/util';
+import { kTextureDimensions, kTextureUsages } from '../../../capability_info';
+import { GPUConst } from '../../../constants';
 import {
   kColorTextureFormats,
   kSizedTextureFormats,
   kTextureFormatInfo,
   textureDimensionAndFormatCompatible,
 } from '../../../format_info.js';
-import { kResourceStates } from '../../../gpu_test.js';
-import { align } from '../../../util/math.js';
-import { virtualMipSize } from '../../../util/texture/base.js';
-import { kImageCopyTypes } from '../../../util/texture/layout.js';
+import { kResourceStates } from '../../../gpu_test';
+import { align } from '../../../util/math';
+import { virtualMipSize } from '../../../util/texture/base';
+import { kImageCopyTypes } from '../../../util/texture/layout';
 
 import {
   ImageCopyTest,

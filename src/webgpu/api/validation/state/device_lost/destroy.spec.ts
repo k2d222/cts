@@ -4,8 +4,8 @@ Tests for device lost induced via destroy.
   - After device destruction, runs the same APIs. No expected observable results, so test crash or future failures are the only current failure indicators.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert } from '../../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { assert } from '../../../../../common/util/util';
 import {
   allBindingEntries,
   bindingTypeInfo,
@@ -27,7 +27,7 @@ import {
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
 } from '../../../../format_info.js';
-import { CommandBufferMaker, EncoderType } from '../../../../util/command_buffer_maker.js';
+import { CommandBufferMaker, EncoderType } from '../../../../util/command_buffer_maker';
 import {
   createCanvas,
   kAllCanvasTypes,
@@ -38,7 +38,7 @@ import {
   getVideoElement,
   getVideoFrameFromVideoElement,
 } from '../../../../web_platform/util.js';
-import { ValidationTest } from '../../validation_test.js';
+import { ValidationTest } from '../../validation_test';
 
 const kCommandValidationStages = ['finish', 'submit'];
 type CommandValidationStage = (typeof kCommandValidationStages)[number];

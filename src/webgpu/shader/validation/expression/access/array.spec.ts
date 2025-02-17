@@ -6,15 +6,15 @@ Validation tests for array access expressions
 * Early-evaluation errors
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables';
 import {
   Type,
   elementTypeOf,
   kConcreteNumericScalarsAndVectors,
   kAllBoolScalarsAndVectors,
 } from '../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../shader_validation_test.js';
+import { ShaderValidationTest } from '../../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

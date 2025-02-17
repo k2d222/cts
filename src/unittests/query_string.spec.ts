@@ -2,8 +2,8 @@ export const description = `
 Unit tests for TestQuery strings.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { compareQueries, Ordering } from '../common/internal/query/compare.js';
+import { makeTestGroup } from '../common/framework/test_group';
+import { compareQueries, Ordering } from '../common/internal/query/compare';
 import {
   TestQuery,
   TestQuerySingleCase,
@@ -13,7 +13,7 @@ import {
   relativeQueryString,
 } from '../common/internal/query/query.js';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test';
 
 class T extends UnitTest {
   expectQueryString(q: TestQuery, exp: string): void {

@@ -1,14 +1,14 @@
-import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { getGPU } from '../../../../../common/util/navigator_gpu.js';
-import { assert, range, reorder, ReorderOrder } from '../../../../../common/util/util.js';
+import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { getGPU } from '../../../../../common/util/navigator_gpu';
+import { assert, range, reorder, ReorderOrder } from '../../../../../common/util/util';
 import {
   getDefaultLimits,
   getDefaultLimitsForAdapter,
   kLimits,
 } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
-import { GPUTestBase } from '../../../../gpu_test.js';
+import { GPUConst } from '../../../../constants';
+import { GPUTestBase } from '../../../../gpu_test';
 
 type GPUSupportedLimit = keyof Omit<GPUSupportedLimits, '__brand'>;
 

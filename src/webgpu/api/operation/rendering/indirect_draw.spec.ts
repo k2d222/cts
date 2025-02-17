@@ -2,12 +2,12 @@ export const description = `
 Tests for the indirect-specific aspects of drawIndirect/drawIndexedIndirect.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
 import {
   kDrawIndirectParametersSize,
   kDrawIndexedIndirectParametersSize,
 } from '../../../capability_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
 
 const filled = new Uint8Array([0, 255, 0, 255]);
 const notFilled = new Uint8Array([0, 0, 0, 0]);

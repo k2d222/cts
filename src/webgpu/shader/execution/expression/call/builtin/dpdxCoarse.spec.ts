@@ -7,11 +7,11 @@ Returns the partial derivative of e with respect to window x coordinates using l
 This may result in fewer unique positions that dpdxFine(e).
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
 
-import { d } from './derivatives.cache.js';
-import { runDerivativeTest } from './derivatives.js';
+import { d } from './derivatives.cache';
+import { runDerivativeTest } from './derivatives';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -15,14 +15,14 @@ Returns the absolute value of e (e.g. e with a positive sign bit).
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { kBit } from '../../../../../util/constants.js';
-import { Type, i32Bits, u32Bits } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { kBit } from '../../../../../util/constants';
+import { Type, i32Bits, u32Bits } from '../../../../../util/conversion';
+import { allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { d } from './abs.cache.js';
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
+import { d } from './abs.cache';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

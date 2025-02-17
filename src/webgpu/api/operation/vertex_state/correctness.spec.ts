@@ -3,7 +3,7 @@ TODO: Test more corner case values for Float16 / Float32 (INF, NaN, ...) and red
 float tolerance.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
 import {
   assert,
   filterUniqueValueTestVariants,
@@ -11,10 +11,10 @@ import {
   memcpy,
   unreachable,
 } from '../../../../common/util/util.js';
-import { kVertexFormatInfo, kVertexFormats } from '../../../capability_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
-import { float32ToFloat16Bits, normalizedIntegerAsFloat } from '../../../util/conversion.js';
-import { align, clamp } from '../../../util/math.js';
+import { kVertexFormatInfo, kVertexFormats } from '../../../capability_info';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test';
+import { float32ToFloat16Bits, normalizedIntegerAsFloat } from '../../../util/conversion';
+import { align, clamp } from '../../../util/math';
 
 // These types mirror the structure of GPUVertexBufferLayout but allow defining the extra
 // dictionary members at the GPUVertexBufferLayout and GPUVertexAttribute level. The are used

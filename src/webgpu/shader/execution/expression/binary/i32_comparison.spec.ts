@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the i32 comparison expressions
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { Type } from '../../../../util/conversion';
+import { allInputSources, run } from '../expression';
 
-import { binary } from './binary.js';
-import { d } from './i32_comparison.cache.js';
+import { binary } from './binary';
+import { d } from './i32_comparison.cache';
 
 export const g = makeTestGroup(GPUTest);
 

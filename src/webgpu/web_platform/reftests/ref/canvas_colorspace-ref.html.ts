@@ -1,5 +1,5 @@
-import { kUnitCaseParamsBuilder } from '../../../../common/framework/params_builder.js';
-import { kCanvasAlphaModes, kCanvasColorSpaces } from '../../../capability_info.js';
+import { kUnitCaseParamsBuilder } from '../../../../common/framework/params_builder';
+import { kCanvasAlphaModes, kCanvasColorSpaces } from '../../../capability_info';
 
 // prettier-ignore
 const kRGBAData = new Uint8Array([

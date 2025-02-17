@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as process from 'process';
 
-import { crawl } from './crawl.js';
+import { crawl } from './crawl';
 
 function usage(rc: number): void {
   console.error(`Usage: tools/gen_listings [options] [OUT_DIR] [SUITE_DIRS...]

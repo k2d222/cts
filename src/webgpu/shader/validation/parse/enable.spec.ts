@@ -1,8 +1,8 @@
 export const description = `Parser validation tests for enable`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { keysOf } from '../../../../common/util/data_tables';
+import { ShaderValidationTest } from '../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

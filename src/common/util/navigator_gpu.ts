@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/no-restricted-paths
-import { TestCaseRecorder } from '../framework/fixture.js';
-import { globalTestConfig } from '../framework/test_config.js';
+import { TestCaseRecorder } from '../framework/fixture';
+import { globalTestConfig } from '../framework/test_config';
 
-import { ErrorWithExtra, assert, objectEquals } from './util.js';
+import { ErrorWithExtra, assert, objectEquals } from './util';
 
 /**
  * Finds and returns the `navigator.gpu` object (or equivalent, for non-browser implementations).

@@ -2,10 +2,10 @@ export const description = `
 Test for "parseImports" utility.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { parseImports } from '../common/util/parse_imports.js';
+import { makeTestGroup } from '../common/framework/test_group';
+import { parseImports } from '../common/util/parse_imports';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test';
 
 class F extends UnitTest {
   test(content: string, expect: string[]): void {
@@ -30,20 +30,20 @@ g.test('empty').fn(t => {
 });
 
 g.test('simple').fn(t => {
-  t.test(`import 'x/y/z.js';`, ['a/b/x/y/z.js']);
-  t.test(`import * as blah from 'x/y/z.js';`, ['a/b/x/y/z.js']);
-  t.test(`import { blah } from 'x/y/z.js';`, ['a/b/x/y/z.js']);
+  t.test(`import 'x/y/z.js';`, ['a/b/x/y/z']);
+  t.test(`import * as blah from 'x/y/z.js';`, ['a/b/x/y/z']);
+  t.test(`import { blah } from 'x/y/z.js';`, ['a/b/x/y/z']);
 });
 
 g.test('multiple').fn(t => {
   t.test(
     `
 blah blah blah
-import 'x/y/z.js';
+import 'x/y/z';
 more blah
-import * as blah from 'm/n/o.js';
+import * as blah from 'm/n/o';
 extra blah
-import { blah } from '../h.js';
+import { blah } from '../h';
 ending with blah
 `,
     ['a/b/x/y/z.js', 'a/b/m/n/o.js', 'a/h.js']
@@ -67,13 +67,13 @@ g.test('multiline').fn(t => {
 });
 
 g.test('file_characters').fn(t => {
-  t.test(`import '01234_56789.js';`, ['a/b/01234_56789.js']);
+  t.test(`import '01234_56789.js';`, ['a/b/01234_56789']);
 });
 
 g.test('relative_paths').fn(t => {
-  t.test(`import '../x.js';`, ['a/x.js']);
-  t.test(`import '../x/y.js';`, ['a/x/y.js']);
-  t.test(`import '../../x.js';`, ['x.js']);
-  t.test(`import '../../../x.js';`, ['../x.js']);
-  t.test(`import '../../../../x.js';`, ['../../x.js']);
+  t.test(`import '../x.js';`, ['a/x']);
+  t.test(`import '../x/y.js';`, ['a/x/y']);
+  t.test(`import '../../x.js';`, ['x']);
+  t.test(`import '../../../x.js';`, ['../x']);
+  t.test(`import '../../../../x.js';`, ['../../x']);
 });

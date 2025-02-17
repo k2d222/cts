@@ -2,8 +2,8 @@ export const description = `
 Destroying a query set more than once is allowed.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { ValidationTest } from '../validation_test';
 
 export const g = makeTestGroup(ValidationTest);
 

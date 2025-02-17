@@ -7,9 +7,9 @@ Functions with a return type must have a behavior of {Return}.
 Each statement in the function must be valid according to the table.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { keysOf } from '../../../../common/util/data_tables';
+import { ShaderValidationTest } from '../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

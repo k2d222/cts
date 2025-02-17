@@ -5,8 +5,8 @@ import {
   ReorderOrder,
   assert,
 } from '../../../../../common/util/util.js';
-import { kShaderStageCombinationsWithStage } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
+import { kShaderStageCombinationsWithStage } from '../../../../capability_info';
+import { GPUConst } from '../../../../constants';
 
 import {
   kMaximumLimitBaseParams,

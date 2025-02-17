@@ -4,7 +4,7 @@ Samples a texture.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
 import {
   isDepthTextureFormat,
   isFilterableAsTextureF32,

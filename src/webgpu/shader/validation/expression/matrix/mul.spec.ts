@@ -2,10 +2,10 @@ export const description = `
 Validation tests for matrix multiplication expressions.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../common/util/data_tables.js';
-import { kValue } from '../../../../util/constants.js';
-import { ShaderValidationTest } from '../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { keysOf } from '../../../../../common/util/data_tables';
+import { kValue } from '../../../../util/constants';
+import { ShaderValidationTest } from '../../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

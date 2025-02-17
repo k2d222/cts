@@ -4,12 +4,12 @@ API validation test for compute pass
 Does **not** test usage scopes (resource_usages/) or programmable pass stuff (programmable_pass).
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { makeValueTestVariant } from '../../../../../common/util/util.js';
-import { kBufferUsages } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
-import { kResourceStates, ResourceState } from '../../../../gpu_test.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { makeValueTestVariant } from '../../../../../common/util/util';
+import { kBufferUsages } from '../../../../capability_info';
+import { GPUConst } from '../../../../constants';
+import { kResourceStates, ResourceState } from '../../../../gpu_test';
+import { ValidationTest } from '../../validation_test';
 
 class F extends ValidationTest {
   createComputePipeline(state: 'valid' | 'invalid'): GPUComputePipeline {

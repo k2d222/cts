@@ -1,3 +1,3 @@
-import { Fixture } from '../common/framework/fixture.js';
+import { Fixture } from '../common/framework/fixture';
 
 export class UnitTest extends Fixture {}

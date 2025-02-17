@@ -1,7 +1,7 @@
 export const description = `Special and sample values for WGSL scalar types`;
 
-import { assert } from '../../common/util/util.js';
-import { uint32ToFloat32 } from '../util/conversion.js';
+import { assert } from '../../common/util/util';
+import { uint32ToFloat32 } from '../util/conversion';
 
 /** Returns an array of subnormal f32 numbers.
  * Subnormals are non-zero finite numbers with the minimum representable

@@ -1,5 +1,5 @@
-import { timeout } from '../../../common/util/timeout.js';
-import { takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait.js';
+import { timeout } from '../../../common/util/timeout';
+import { takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait';
 
 function assert(condition: boolean, msg?: string | (() => string)): asserts condition {
   if (!condition) {

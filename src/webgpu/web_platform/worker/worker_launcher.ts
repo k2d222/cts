@@ -1,5 +1,5 @@
-import { SkipTestCase } from '../../../common/framework/fixture.js';
-import { getDefaultRequestAdapterOptions } from '../../../common/util/navigator_gpu.js';
+import { SkipTestCase } from '../../../common/framework/fixture';
+import { getDefaultRequestAdapterOptions } from '../../../common/util/navigator_gpu';
 
 export type TestResult = {
   error: String | undefined;

@@ -1,6 +1,6 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { fullU32Range } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point';
+import { fullU32Range } from '../../../../../util/math';
+import { makeCaseCache } from '../../case_cache';
 
 export const d = makeCaseCache('unpack4x8snorm', {
   u32_const: () => {

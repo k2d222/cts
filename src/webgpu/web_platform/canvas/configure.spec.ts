@@ -6,18 +6,18 @@ TODO:
 - Test toneMapping
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
-import { kCanvasTextureFormats, kTextureUsages } from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert } from '../../../common/util/util';
+import { kCanvasTextureFormats, kTextureUsages } from '../../capability_info';
+import { GPUConst } from '../../constants';
 import {
   kAllTextureFormats,
   kFeaturesForFormats,
   filterFormatsByFeature,
   viewCompatible,
 } from '../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../gpu_test.js';
-import { kAllCanvasTypes, createCanvas } from '../../util/create_elements.js';
+import { AllFeaturesMaxLimitsGPUTest } from '../../gpu_test';
+import { kAllCanvasTypes, createCanvas } from '../../util/create_elements';
 
 export const g = makeTestGroup(AllFeaturesMaxLimitsGPUTest);
 

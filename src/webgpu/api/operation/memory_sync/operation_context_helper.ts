@@ -1,6 +1,6 @@
-import { assert, unreachable } from '../../../../common/util/util.js';
-import { EncodableTextureFormat } from '../../../format_info.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { assert, unreachable } from '../../../../common/util/util';
+import { EncodableTextureFormat } from '../../../format_info';
+import { GPUTest } from '../../../gpu_test';
 
 /**
  * Boundary between the first operation, and the second operation.

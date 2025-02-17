@@ -9,22 +9,22 @@ import {
   getResourcePath,
   getCrossOriginResourcePath,
 } from '../../../../../common/framework/resources.js';
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { raceWithRejectOnTimeout, unreachable, assert } from '../../../../../common/util/util.js';
-import { kTextureUsages } from '../../../../capability_info.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { raceWithRejectOnTimeout, unreachable, assert } from '../../../../../common/util/util';
+import { kTextureUsages } from '../../../../capability_info';
 import {
   kTextureFormatInfo,
   kAllTextureFormats,
   kValidTextureFormatsForCopyE2T,
 } from '../../../../format_info.js';
-import { kResourceStates } from '../../../../gpu_test.js';
+import { kResourceStates } from '../../../../gpu_test';
 import {
   CanvasType,
   createCanvas,
   createOnscreenCanvas,
   createOffscreenCanvas,
 } from '../../../../util/create_elements.js';
-import { ValidationTest } from '../../validation_test.js';
+import { ValidationTest } from '../../validation_test';
 
 const kDefaultBytesPerPixel = 4; // using 'bgra8unorm' or 'rgba8unorm'
 const kDefaultWidth = 32;

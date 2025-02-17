@@ -5,15 +5,15 @@ Component e[i] of the input is converted to an 8-bit twos complement integer val
 bits 8 × i through 8 × i + 7 of the result.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { kValue } from '../../../../../util/constants.js';
-import { f32, pack4x8snorm, ScalarValue, u32, vec4, Type } from '../../../../../util/conversion.js';
-import { quantizeToF32, vectorF32Range } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { kValue } from '../../../../../util/constants';
+import { f32, pack4x8snorm, ScalarValue, u32, vec4, Type } from '../../../../../util/conversion';
+import { quantizeToF32, vectorF32Range } from '../../../../../util/math';
+import { Case } from '../../case';
+import { allInputSources, run } from '../../expression';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -2,8 +2,8 @@ export const description = `
 GPUExternalTexture expiration mechanism validation tests.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert } from '../../../common/util/util';
 import {
   getVideoElement,
   startPlayingAndWaitForVideo,
@@ -12,7 +12,7 @@ import {
   waitForNextTask,
 } from '../../web_platform/util.js';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 class GPUExternalTextureExpireTest extends ValidationTest {
   submitCommandBuffer(bindGroup: GPUBindGroup, success: boolean): void {

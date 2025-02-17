@@ -2,15 +2,15 @@ export const description = `
 Validation tests for various texture types in shaders.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
 import {
   isTextureFormatUsableAsStorageFormat,
   kAllTextureFormats,
   kColorTextureFormats,
   kTextureFormatInfo,
 } from '../../../format_info.js';
-import { getPlainTypeInfo } from '../../../util/shader.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { getPlainTypeInfo } from '../../../util/shader';
+import { ShaderValidationTest } from '../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -1,8 +1,8 @@
-import { assert } from '../../../../../common/util/util.js';
-import { kValue } from '../../../../util/constants.js';
-import { FP, FPInterval } from '../../../../util/floating_point.js';
-import { sparseScalarF64Range } from '../../../../util/math.js';
-import { reinterpretU64AsF64 } from '../../../../util/reinterpret.js';
+import { assert } from '../../../../../common/util/util';
+import { kValue } from '../../../../util/constants';
+import { FP, FPInterval } from '../../../../util/floating_point';
+import { sparseScalarF64Range } from '../../../../util/math';
+import { reinterpretU64AsF64 } from '../../../../util/reinterpret';
 
 /** Simplified version of kSparseVectorF64Range that only uses values from sparseScalarF64Range() */
 export const kSparseVectorAFValues = {

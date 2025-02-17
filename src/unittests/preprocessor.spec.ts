@@ -2,10 +2,10 @@ export const description = `
 Test for "pp" preprocessor.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { pp } from '../common/util/preprocessor.js';
+import { makeTestGroup } from '../common/framework/test_group';
+import { pp } from '../common/util/preprocessor';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test';
 
 class F extends UnitTest {
   test(act: string, exp: string): void {

@@ -2,9 +2,9 @@ export const description = `
 Execution tests for textureSampleBaseClampToEdge
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { TexelView } from '../../../../../util/texture/texel_view.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { TexelView } from '../../../../../util/texture/texel_view';
 
 import {
   checkCallResults,

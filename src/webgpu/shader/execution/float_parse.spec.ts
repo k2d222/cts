@@ -2,10 +2,10 @@ export const description = `
 Execution Tests for float parsing cases
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { keysOf } from '../../../common/util/data_tables.js';
-import { iterRange } from '../../../common/util/util.js';
-import { GPUTest } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { keysOf } from '../../../common/util/data_tables';
+import { iterRange } from '../../../common/util/util';
+import { GPUTest } from '../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

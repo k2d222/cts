@@ -1,10 +1,10 @@
 export const description = `createTexture validation tests.`;
 
-import { SkipTestCase } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert, makeValueTestVariant } from '../../../common/util/util.js';
-import { kTextureDimensions, kTextureUsages } from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
+import { SkipTestCase } from '../../../common/framework/fixture';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert, makeValueTestVariant } from '../../../common/util/util';
+import { kTextureDimensions, kTextureUsages } from '../../capability_info';
+import { GPUConst } from '../../constants';
 import {
   kAllTextureFormats,
   kTextureFormatInfo,
@@ -18,9 +18,9 @@ import {
   isTextureFormatUsableAsStorageFormat,
   isMultisampledTextureFormat,
 } from '../../format_info.js';
-import { maxMipLevelCount } from '../../util/texture/base.js';
+import { maxMipLevelCount } from '../../util/texture/base';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 export const g = makeTestGroup(ValidationTest);
 

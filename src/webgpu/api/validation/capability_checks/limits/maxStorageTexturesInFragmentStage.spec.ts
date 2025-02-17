@@ -5,7 +5,7 @@ import {
   ReorderOrder,
   assert,
 } from '../../../../../common/util/util.js';
-import { kStorageTextureAccessValues } from '../../../../capability_info.js';
+import { kStorageTextureAccessValues } from '../../../../capability_info';
 
 import {
   kMaximumLimitBaseParams,

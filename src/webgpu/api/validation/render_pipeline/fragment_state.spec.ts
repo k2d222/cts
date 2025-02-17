@@ -4,15 +4,15 @@ This test dedicatedly tests validation of GPUFragmentState of createRenderPipeli
 TODO(#3363): Make this into a MaxLimitTest and increase kMaxColorAttachments.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, range } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert, range } from '../../../../common/util/util';
 import {
   getDefaultLimits,
   IsDualSourceBlendingFactor,
   kBlendFactors,
   kBlendOperations,
 } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+import { GPUConst } from '../../../constants';
 import {
   kAllTextureFormats,
   kRenderableColorTextureFormats,
@@ -26,9 +26,9 @@ import {
   kDefaultFragmentShaderCode,
   kDefaultVertexShaderCode,
 } from '../../../util/shader.js';
-import { kTexelRepresentationInfo } from '../../../util/texture/texel_data.js';
+import { kTexelRepresentationInfo } from '../../../util/texture/texel_data';
 
-import { ColorTargetState, CreateRenderPipelineValidationTest } from './common.js';
+import { ColorTargetState, CreateRenderPipelineValidationTest } from './common';
 
 // MAINTENANCE_TODO: This should be changed to kMaxColorAttachmentsToTest
 // when this is made a MaxLimitTest (see above).

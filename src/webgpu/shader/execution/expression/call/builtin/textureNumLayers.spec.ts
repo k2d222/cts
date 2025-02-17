@@ -4,12 +4,12 @@ Execution tests for the 'textureNumLayers' builtin function
 Returns the number of layers (elements) of an array texture.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { kTextureFormatInfo } from '../../../../../format_info.js';
-import { TexelFormats } from '../../../../types.js';
-import { kShaderStages } from '../../../../validation/decl/util.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { kTextureFormatInfo } from '../../../../../format_info';
+import { TexelFormats } from '../../../../types';
+import { kShaderStages } from '../../../../validation/decl/util';
 
-import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils.js';
+import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils';
 
 const kNumLayers = 36;
 

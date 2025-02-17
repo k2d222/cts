@@ -11,13 +11,13 @@ Note: The result is not mathematically meaningful when e < 1.
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
+import { allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { d } from './acosh.cache.js';
-import { abstractFloatBuiltin, builtin } from './builtin.js';
+import { d } from './acosh.cache';
+import { abstractFloatBuiltin, builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

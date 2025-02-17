@@ -7,9 +7,9 @@ TODO: (POSTV1) Test error scopes of different threads and make sure they go to t
 TODO: (POSTV1) Test that unhandled errors go the right device, and nowhere if the device was dropped.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { kErrorScopeFilters, kGeneratableErrorScopeFilters } from '../../capability_info.js';
-import { ErrorTest } from '../../error_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { kErrorScopeFilters, kGeneratableErrorScopeFilters } from '../../capability_info';
+import { ErrorTest } from '../../error_test';
 
 export const g = makeTestGroup(ErrorTest);
 

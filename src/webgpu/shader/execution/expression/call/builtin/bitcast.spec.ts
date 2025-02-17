@@ -21,10 +21,10 @@ Reinterpretation of bits.  Beware non-normal f32 values.
 T is i32, u32, f32
 `;
 
-import { TestParams } from '../../../../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { anyOf } from '../../../../../util/compare.js';
+import { TestParams } from '../../../../../../common/framework/fixture';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { anyOf } from '../../../../../util/compare';
 import {
   f32,
   u32,
@@ -34,12 +34,12 @@ import {
   u32Bits,
   Type,
 } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { scalarF32Range } from '../../../../../util/math.js';
-import { ShaderBuilder, allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { FP } from '../../../../../util/floating_point';
+import { scalarF32Range } from '../../../../../util/math';
+import { ShaderBuilder, allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { d } from './bitcast.cache.js';
-import { builtinWithPredeclaration } from './builtin.js';
+import { d } from './bitcast.cache';
+import { builtinWithPredeclaration } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

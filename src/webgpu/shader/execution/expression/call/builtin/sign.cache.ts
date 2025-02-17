@@ -1,7 +1,7 @@
-import { abstractInt, i32 } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { fullI32Range, fullI64Range } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { abstractInt, i32 } from '../../../../../util/conversion';
+import { FP } from '../../../../../util/floating_point';
+import { fullI32Range, fullI64Range } from '../../../../../util/math';
+import { makeCaseCache } from '../../case_cache';
 
 // Cases: [f32|f16|abstract]
 const fp_cases = (['f32', 'f16', 'abstract'] as const)

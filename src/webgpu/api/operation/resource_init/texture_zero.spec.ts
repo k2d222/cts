@@ -7,16 +7,16 @@ TODO:
 - test compressed texture formats [3]
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../common/util/util.js';
-import { isMultisampledTextureFormat, kTextureFormatInfo } from '../../../format_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { unreachable } from '../../../../common/util/util';
+import { isMultisampledTextureFormat, kTextureFormatInfo } from '../../../format_info';
 
-import { checkContentsByBufferCopy, checkContentsByTextureCopy } from './check_texture/by_copy.js';
+import { checkContentsByBufferCopy, checkContentsByTextureCopy } from './check_texture/by_copy';
 import {
   checkContentsByDepthTest,
   checkContentsByStencilTest,
 } from './check_texture/by_ds_test.js';
-import { checkContentsBySampling } from './check_texture/by_sampling.js';
+import { checkContentsBySampling } from './check_texture/by_sampling';
 import {
   getRequiredTextureUsage,
   ReadMethod,

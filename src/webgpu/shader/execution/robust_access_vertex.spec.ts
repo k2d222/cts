@@ -59,9 +59,9 @@ and drawIndexedIndirect it should always be 0. Once there is an extension to all
 it should be added into drawCallTestParameter list.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
-import { GPUTest, TextureTestMixin } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert } from '../../../common/util/util';
+import { GPUTest, TextureTestMixin } from '../../gpu_test';
 
 // Encapsulates a draw call (either indexed or non-indexed)
 class DrawCall {

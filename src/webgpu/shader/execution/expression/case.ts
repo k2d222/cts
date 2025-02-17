@@ -1,6 +1,6 @@
-import { crc32 } from '../../../../common/util/crc32.js';
-import { ROArrayArray } from '../../../../common/util/types.js';
-import { assert } from '../../../../common/util/util.js';
+import { crc32 } from '../../../../common/util/crc32';
+import { ROArrayArray } from '../../../../common/util/types';
+import { assert } from '../../../../common/util/util';
 import {
   abstractInt,
   i32,
@@ -17,7 +17,7 @@ import {
   quantizeToU32,
 } from '../../../util/math.js';
 
-import { Expectation } from './expectation.js';
+import { Expectation } from './expectation';
 
 function notUndefined<T>(value: T | undefined): value is T {
   return value !== undefined;

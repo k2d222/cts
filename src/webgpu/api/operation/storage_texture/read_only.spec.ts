@@ -6,17 +6,17 @@ TODO:
 - Test resource usage transitions with read-only storage textures
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable, assert } from '../../../../common/util/util.js';
-import { Float16Array } from '../../../../external/petamoriken/float16/float16.js';
-import { kTextureDimensions } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { unreachable, assert } from '../../../../common/util/util';
+import { Float16Array } from '../../../../external/petamoriken/float16/float16';
+import { kTextureDimensions } from '../../../capability_info';
 import {
   ColorTextureFormat,
   kColorTextureFormats,
   kTextureFormatInfo,
 } from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
-import { kValidShaderStages, TValidShaderStage } from '../../../util/shader.js';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test';
+import { kValidShaderStages, TValidShaderStage } from '../../../util/shader';
 
 function ComponentCount(format: ColorTextureFormat): number {
   switch (format) {

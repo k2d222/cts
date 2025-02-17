@@ -2,8 +2,8 @@ export const description = `
 Test the values of flags interfaces (e.g. GPUTextureUsage).
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { IDLTest } from '../idl_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { IDLTest } from '../idl_test';
 
 export const g = makeTestGroup(IDLTest);
 

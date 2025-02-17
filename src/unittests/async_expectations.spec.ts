@@ -3,12 +3,12 @@ export const description = `
 Tests for eventualAsyncExpectation and immediateAsyncExpectation.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { makeTestGroupForUnitTesting } from '../common/internal/test_group.js';
-import { assert, objectEquals, rejectOnTimeout, resolveOnTimeout } from '../common/util/util.js';
+import { makeTestGroup } from '../common/framework/test_group';
+import { makeTestGroupForUnitTesting } from '../common/internal/test_group';
+import { assert, objectEquals, rejectOnTimeout, resolveOnTimeout } from '../common/util/util';
 
-import { TestGroupTest } from './test_group_test.js';
-import { UnitTest } from './unit_test.js';
+import { TestGroupTest } from './test_group_test';
+import { UnitTest } from './unit_test';
 
 class FixtureToTest extends UnitTest {
   public override immediateAsyncExpectation<T>(fn: () => Promise<T>): Promise<T> {

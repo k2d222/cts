@@ -2,9 +2,9 @@ export const description = `
 Tests that, in compat mode, you can not create a bind group layout with unsupported storage texture formats.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kCompatModeUnsupportedStorageTextureFormats } from '../../../format_info.js';
-import { CompatibilityTest } from '../../compatibility_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { kCompatModeUnsupportedStorageTextureFormats } from '../../../format_info';
+import { CompatibilityTest } from '../../compatibility_test';
 
 export const g = makeTestGroup(CompatibilityTest);
 

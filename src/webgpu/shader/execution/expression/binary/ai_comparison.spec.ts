@@ -2,14 +2,14 @@ export const description = `
 Execution Tests for the abstract-int comparison expressions
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { bool, abstractInt, Type } from '../../../../util/conversion.js';
-import { vectorI64Range } from '../../../../util/math.js';
-import { Case } from '../case.js';
-import { onlyConstInputSource, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { bool, abstractInt, Type } from '../../../../util/conversion';
+import { vectorI64Range } from '../../../../util/math';
+import { Case } from '../case';
+import { onlyConstInputSource, run } from '../expression';
 
-import { binary } from './binary.js';
+import { binary } from './binary';
 
 export const g = makeTestGroup(GPUTest);
 

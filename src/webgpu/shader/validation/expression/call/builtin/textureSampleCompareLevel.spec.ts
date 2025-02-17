@@ -12,8 +12,8 @@ Validation tests for the ${builtin}() builtin.
 * test textureSampleCompareLevel doesn't work with texture types it's not supposed to
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
 import {
   Type,
   kAllScalarsAndVectors,
@@ -22,9 +22,9 @@ import {
   VectorType,
   isUnsignedType,
 } from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
-import { kTestTextureTypes } from './shader_builtin_utils.js';
+import { kTestTextureTypes } from './shader_builtin_utils';
 
 type TextureSampleCompareLevelArguments = {
   coordsArgType: ScalarType | VectorType;

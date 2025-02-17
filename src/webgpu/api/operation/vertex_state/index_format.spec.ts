@@ -2,9 +2,9 @@ export const description = `
 Test indexing, index format and primitive restart.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { getTextureCopyLayout } from '../../../util/texture/layout.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest } from '../../../gpu_test';
+import { getTextureCopyLayout } from '../../../util/texture/layout';
 
 const kHeight = 4;
 const kWidth = 8;

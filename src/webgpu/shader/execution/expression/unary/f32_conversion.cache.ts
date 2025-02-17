@@ -1,5 +1,5 @@
-import { abstractInt, bool, f16, f32, i32, u32 } from '../../../../util/conversion.js';
-import { FP, FPInterval } from '../../../../util/floating_point.js';
+import { abstractInt, bool, f16, f32, i32, u32 } from '../../../../util/conversion';
+import { FP, FPInterval } from '../../../../util/floating_point';
 import {
   fullI32Range,
   fullI64Range,
@@ -9,7 +9,7 @@ import {
   sparseMatrixF16Range,
   sparseMatrixF32Range,
 } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { makeCaseCache } from '../case_cache';
 
 const f32FiniteRangeInterval = new FPInterval(
   'f32',

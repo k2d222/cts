@@ -13,8 +13,8 @@ Tests a render pass with a resolveTarget resolves correctly for many combination
     (different z from colorAttachment)
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
 
 const kSlotsToResolve = [
   [0, 2],

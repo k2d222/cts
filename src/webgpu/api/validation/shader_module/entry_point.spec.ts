@@ -14,9 +14,9 @@ TODO:
 - Fine-tune test cases to reduce number by removing trivially similar cases
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kDefaultVertexShaderCode, getShaderWithEntryPoint } from '../../../util/shader.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { kDefaultVertexShaderCode, getShaderWithEntryPoint } from '../../../util/shader';
+import { ValidationTest } from '../validation_test';
 
 export const g = makeTestGroup(ValidationTest);
 

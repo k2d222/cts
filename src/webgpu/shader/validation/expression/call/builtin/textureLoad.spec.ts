@@ -10,10 +10,10 @@ Validation tests for the ${builtin}() builtin.
 * test textureLoad doesn't work with texture types it's not supposed to
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../../common/util/util.js';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
+import { assert } from '../../../../../../common/util/util';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info';
 import {
   Type,
   kAllScalarsAndVectors,
@@ -23,7 +23,7 @@ import {
   isUnsignedType,
   stringToType,
 } from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
 import {
   getNonStorageTextureTypeWGSL,

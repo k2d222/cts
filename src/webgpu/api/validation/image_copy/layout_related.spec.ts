@@ -2,15 +2,15 @@ export const description = `Validation tests for the linear data layout of linea
 
 TODO check if the tests need to be updated to support aspects of depth-stencil textures`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kTextureDimensions } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert } from '../../../../common/util/util';
+import { kTextureDimensions } from '../../../capability_info';
 import {
   kTextureFormatInfo,
   kSizedTextureFormats,
   textureDimensionAndFormatCompatible,
 } from '../../../format_info.js';
-import { align } from '../../../util/math.js';
+import { align } from '../../../util/math';
 import {
   bytesInACompleteRow,
   dataBytesForCopyOrOverestimate,

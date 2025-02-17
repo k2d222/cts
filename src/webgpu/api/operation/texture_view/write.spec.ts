@@ -15,16 +15,16 @@ Format reinterpretation is not tested here. It is in format_reinterpretation.spe
 TODO: Write helper for this if not already available (see resource_init, buffer_sync_test for related code).
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { unreachable } from '../../../../common/util/util';
 import {
   kRegularTextureFormats,
   kTextureFormatInfo,
   RegularTextureFormat,
 } from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { kFullscreenQuadVertexShaderCode } from '../../../util/shader.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+import { AllFeaturesMaxLimitsGPUTest, GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { kFullscreenQuadVertexShaderCode } from '../../../util/shader';
+import { TexelView } from '../../../util/texture/texel_view';
 
 export const g = makeTestGroup(TextureTestMixin(AllFeaturesMaxLimitsGPUTest));
 

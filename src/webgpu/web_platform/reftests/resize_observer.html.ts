@@ -1,5 +1,5 @@
-import createPatternDataURL from './create-pattern-data-url.js';
-import { runRefTest } from './gpu_ref_test.js';
+import createPatternDataURL from './create-pattern-data-url';
+import { runRefTest } from './gpu_ref_test';
 
 runRefTest(async t => {
   const { patternSize, imageData: patternImageData } = createPatternDataURL();

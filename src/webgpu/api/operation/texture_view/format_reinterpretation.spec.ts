@@ -2,15 +2,15 @@ export const description = `
 Test texture views can reinterpret the format of the original texture.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
 import {
   kRenderableColorTextureFormats,
   kRegularTextureFormats,
   viewCompatible,
   EncodableTextureFormat,
 } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { TexelView } from '../../../util/texture/texel_view';
 
 export const g = makeTestGroup(TextureTestMixin(GPUTest));
 

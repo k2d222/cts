@@ -15,7 +15,7 @@ Wait on another fence, then call expectContents to verify the dst buffer value.
 TODO: Tests with more than one buffer to try to stress implementations a little bit more.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
 import {
   kOperationBoundaries,
   kBoundaryInfo,

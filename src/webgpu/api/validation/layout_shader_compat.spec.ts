@@ -5,16 +5,16 @@ TODO:
     - x= {superset, subset}
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
 import {
   kShaderStageCombinations,
   kShaderStages,
   ValidBindableResource,
 } from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
-import { MaxLimitsTestMixin } from '../../gpu_test.js';
+import { GPUConst } from '../../constants';
+import { MaxLimitsTestMixin } from '../../gpu_test';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 type BindableResourceType = ValidBindableResource | 'readonlyStorageBuf';
 const kBindableResources = [

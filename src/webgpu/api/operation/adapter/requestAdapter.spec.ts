@@ -14,10 +14,10 @@ The test runs simple compute shader is run that fills a buffer with consecutive
 values and then checks the result to test the adapter for basic functionality.
 `;
 
-import { Fixture } from '../../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { getGPU } from '../../../../common/util/navigator_gpu.js';
-import { assert, objectEquals, iterRange } from '../../../../common/util/util.js';
+import { Fixture } from '../../../../common/framework/fixture';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { getGPU } from '../../../../common/util/navigator_gpu';
+import { assert, objectEquals, iterRange } from '../../../../common/util/util';
 
 export const g = makeTestGroup(Fixture);
 

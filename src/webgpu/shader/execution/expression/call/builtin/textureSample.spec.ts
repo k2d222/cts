@@ -7,7 +7,7 @@ Samples a texture.
 note: uniformity validation is covered in src/webgpu/shader/validation/uniformity/uniformity.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
 import {
   isDepthTextureFormat,
   kDepthStencilFormats,
@@ -15,7 +15,7 @@ import {
   textureDimensionAndFormatCompatible,
   isFilterableAsTextureF32,
 } from '../../../../../format_info.js';
-import { TextureTestMixin } from '../../../../../gpu_test.js';
+import { TextureTestMixin } from '../../../../../gpu_test';
 
 import {
   vec2,

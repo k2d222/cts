@@ -1,4 +1,4 @@
-import { resolveOnTimeout } from './util.js';
+import { resolveOnTimeout } from './util';
 
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 declare const Components: any;

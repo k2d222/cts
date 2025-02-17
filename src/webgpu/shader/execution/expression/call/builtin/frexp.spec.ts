@@ -13,9 +13,9 @@ Returns the result_struct for the appropriate overload.
 The magnitude of the significand is in the range of [0.5, 1.0) or 0.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
 import {
   ShaderBuilder,
   allInputSources,
@@ -26,7 +26,7 @@ import {
   onlyConstInputSource,
 } from '../../expression.js';
 
-import { d } from './frexp.cache.js';
+import { d } from './frexp.cache';
 
 export const g = makeTestGroup(GPUTest);
 

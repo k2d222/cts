@@ -6,12 +6,12 @@ Memory Synchronization Tests for Texture: read before write, read after write, a
 - TODO: Use non-solid-color texture contents [2]
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert, memcpy, unreachable } from '../../../../../common/util/util.js';
-import { EncodableTextureFormat } from '../../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../gpu_test.js';
-import { align } from '../../../../util/math.js';
-import { getTextureCopyLayout } from '../../../../util/texture/layout.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { assert, memcpy, unreachable } from '../../../../../common/util/util';
+import { EncodableTextureFormat } from '../../../../format_info';
+import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../gpu_test';
+import { align } from '../../../../util/math';
+import { getTextureCopyLayout } from '../../../../util/texture/layout';
 import {
   kTexelRepresentationInfo,
   PerTexelComponent,

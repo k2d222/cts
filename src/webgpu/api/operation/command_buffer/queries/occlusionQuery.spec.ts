@@ -18,17 +18,17 @@ API operations tests for occlusion queries.
 - test resolveQuerySet destinationOffset
 `;
 
-import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
 import {
   assert,
   TypedArrayBufferView,
   range,
   unreachable,
 } from '../../../../../common/util/util.js';
-import { kMaxQueryCount } from '../../../../capability_info.js';
-import { DepthStencilFormat } from '../../../../format_info.js';
-import { GPUTest } from '../../../../gpu_test.js';
+import { kMaxQueryCount } from '../../../../capability_info';
+import { DepthStencilFormat } from '../../../../format_info';
+import { GPUTest } from '../../../../gpu_test';
 
 const kRequiredQueryBufferOffsetAlignment = 256;
 const kBytesPerQuery = 8;

@@ -4,10 +4,10 @@ createComputePipeline and createComputePipelineAsync validation tests.
 Note: entry point matching tests are in shader_module/entry_point.spec.ts
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { keysOf } from '../../../common/util/data_tables.js';
-import { kValue } from '../../util/constants.js';
-import { TShaderStage, getShaderWithEntryPoint } from '../../util/shader.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { keysOf } from '../../../common/util/data_tables';
+import { kValue } from '../../util/constants';
+import { TShaderStage, getShaderWithEntryPoint } from '../../util/shader';
 
 import {
   kAPIResources,
@@ -15,7 +15,7 @@ import {
   getAPIBindGroupLayoutForResource,
   doResourcesMatch,
 } from './utils.js';
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 class F extends ValidationTest {
   getShaderModule(

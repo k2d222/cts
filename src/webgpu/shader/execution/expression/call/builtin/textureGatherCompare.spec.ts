@@ -16,9 +16,9 @@ A texture gather compare operation performs a depth comparison on four texels in
     w                (umin,vmin)
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { kCompareFunctions } from '../../../../../capability_info.js';
-import { isDepthTextureFormat, kDepthStencilFormats } from '../../../../../format_info.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { kCompareFunctions } from '../../../../../capability_info';
+import { isDepthTextureFormat, kDepthStencilFormats } from '../../../../../format_info';
 
 import {
   checkCallResults,

@@ -2,10 +2,10 @@ export const description = `
 Buffer Usages Validation Tests in Render Pass and Compute Pass.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert, unreachable } from '../../../../../common/util/util.js';
-import { GPUTestBase, MaxLimitsTestMixin } from '../../../../gpu_test.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { assert, unreachable } from '../../../../../common/util/util';
+import { GPUTestBase, MaxLimitsTestMixin } from '../../../../gpu_test';
+import { ValidationTest } from '../../validation_test';
 
 const kBoundBufferSize = 256;
 

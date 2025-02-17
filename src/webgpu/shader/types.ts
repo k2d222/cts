@@ -1,6 +1,6 @@
-import { keysOf } from '../../common/util/data_tables.js';
-import { assert } from '../../common/util/util.js';
-import { align } from '../util/math.js';
+import { keysOf } from '../../common/util/data_tables';
+import { assert } from '../../common/util/util';
+import { align } from '../util/math';
 
 const kDefaultArrayLength = 3;
 

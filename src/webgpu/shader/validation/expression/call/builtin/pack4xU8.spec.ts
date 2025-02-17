@@ -1,8 +1,8 @@
 export const description = `Validate pack4xU8`;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf } from '../../../../../../common/util/data_tables';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
 const kFeature = 'packed_4x8_integer_dot_product';
 const kFn = 'pack4xU8';

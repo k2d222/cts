@@ -1,4 +1,4 @@
-import { assert, unreachable } from '../../common/util/util.js';
+import { assert, unreachable } from '../../common/util/util';
 
 export const kDefaultVertexShaderCode = `
 @vertex fn main() -> @builtin(position) vec4<f32> {

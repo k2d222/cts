@@ -2,13 +2,13 @@ export const description = `
 Tests that, in compat mode, the dimension of a view is compatible with a texture's textureBindingViewDimension.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kTextureDimensions, kTextureViewDimensions } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { kTextureDimensions, kTextureViewDimensions } from '../../../capability_info';
 import {
   effectiveViewDimensionForTexture,
   getTextureDimensionFromView,
 } from '../../../util/texture/base.js';
-import { CompatibilityTest } from '../../compatibility_test.js';
+import { CompatibilityTest } from '../../compatibility_test';
 
 export const g = makeTestGroup(CompatibilityTest);
 

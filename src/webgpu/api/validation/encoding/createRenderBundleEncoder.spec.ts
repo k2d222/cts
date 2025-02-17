@@ -4,9 +4,9 @@ createRenderBundleEncoder validation tests.
 TODO(#3363): Make this into a MaxLimitTest and increase kMaxColorAttachments.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { range } from '../../../../common/util/util.js';
-import { getDefaultLimits } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { range } from '../../../../common/util/util';
+import { getDefaultLimits } from '../../../capability_info';
 import {
   computeBytesPerSampleFromFormats,
   kAllTextureFormats,
@@ -14,8 +14,8 @@ import {
   kTextureFormatInfo,
   kRenderableColorTextureFormats,
 } from '../../../format_info.js';
-import { MaxLimitsTestMixin } from '../../../gpu_test.js';
-import { ValidationTest } from '../validation_test.js';
+import { MaxLimitsTestMixin } from '../../../gpu_test';
+import { ValidationTest } from '../validation_test';
 
 // MAINTENANCE_TODO: This should be changed to kMaxColorAttachmentsToTest
 // when this is made a MaxLimitTest (see above).

@@ -1,11 +1,11 @@
-import { kValue } from '../../../../util/constants.js';
-import { sparseI32Range, vectorI32Range } from '../../../../util/math.js';
+import { kValue } from '../../../../util/constants';
+import { sparseI32Range, vectorI32Range } from '../../../../util/math';
 import {
   generateBinaryToI32Cases,
   generateI32VectorBinaryToVectorCases,
   generateVectorI32BinaryToVectorCases,
 } from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+import { makeCaseCache } from '../case_cache';
 
 function i32_add(x: number, y: number): number | undefined {
   return x + y;

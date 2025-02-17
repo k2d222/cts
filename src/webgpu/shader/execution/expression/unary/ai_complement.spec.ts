@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the Type.abstractInt bitwise complement operation
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { abstractInt, Type } from '../../../../util/conversion.js';
-import { fullI64Range } from '../../../../util/math.js';
-import { onlyConstInputSource, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { abstractInt, Type } from '../../../../util/conversion';
+import { fullI64Range } from '../../../../util/math';
+import { onlyConstInputSource, run } from '../expression';
 
-import { abstractIntUnary } from './unary.js';
+import { abstractIntUnary } from './unary';
 
 export const g = makeTestGroup(GPUTest);
 

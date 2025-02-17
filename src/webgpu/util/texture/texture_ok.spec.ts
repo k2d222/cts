@@ -1,10 +1,10 @@
 export const description = 'checkPixels helpers behave as expected against real textures';
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { GPUTest } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { GPUTest } from '../../gpu_test';
 
-import { TexelView } from './texel_view.js';
-import { textureContentIsOKByT2B } from './texture_ok.js';
+import { TexelView } from './texel_view';
+import { textureContentIsOKByT2B } from './texture_ok';
 
 export const g = makeTestGroup(GPUTest);
 

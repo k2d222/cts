@@ -1,4 +1,4 @@
-import { roundDown } from '../../../../util/math.js';
+import { roundDown } from '../../../../util/math';
 
 import {
   kMaximumLimitBaseParams,

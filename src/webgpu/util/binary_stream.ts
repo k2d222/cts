@@ -1,7 +1,7 @@
-import { assert } from '../../common/util/util.js';
+import { assert } from '../../common/util/util';
 
-import { float16ToUint16, uint16ToFloat16 } from './conversion.js';
-import { align } from './math.js';
+import { float16ToUint16, uint16ToFloat16 } from './conversion';
+import { align } from './math';
 
 /**
  * BinaryStream is a utility to efficiently encode and decode numbers to / from a Uint8Array.

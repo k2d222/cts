@@ -1,7 +1,7 @@
-import { ErrorWithExtra } from '../../util/util.js';
-import { extractImportantStackTrace } from '../stack.js';
+import { ErrorWithExtra } from '../../util/util';
+import { extractImportantStackTrace } from '../stack';
 
-import { LogMessageRawData } from './result.js';
+import { LogMessageRawData } from './result';
 
 export class LogMessageWithStack extends Error {
   readonly extra: unknown;

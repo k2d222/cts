@@ -1,13 +1,13 @@
 const kFn = 'pack2x16float';
 export const description = `Validate ${kFn}`;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { kValue } from '../../../../../../webgpu/util/constants.js';
-import { f32, vec2 } from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf } from '../../../../../../common/util/data_tables';
+import { kValue } from '../../../../../../webgpu/util/constants';
+import { f32, vec2 } from '../../../../../util/conversion';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
-import { validateConstOrOverrideBuiltinEval } from './const_override_validation.js';
+import { validateConstOrOverrideBuiltinEval } from './const_override_validation';
 
 const kArgCases = {
   good: '(vec2f())',

@@ -1,7 +1,7 @@
 export const description = `copyTextureToTexture operation tests`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, ErrorWithExtra, memcpy } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert, ErrorWithExtra, memcpy } from '../../../../common/util/util';
 import {
   kBufferSizeAlignment,
   kMinDynamicBufferOffsetAlignment,
@@ -21,14 +21,14 @@ import {
   RegularTextureFormat,
   isRegularTextureFormat,
 } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { checkElementsEqual } from '../../../util/check_contents.js';
-import { align } from '../../../util/math.js';
-import { physicalMipSize } from '../../../util/texture/base.js';
-import { DataArrayGenerator } from '../../../util/texture/data_generation.js';
-import { kBytesPerRowAlignment, dataBytesForCopyOrFail } from '../../../util/texture/layout.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
-import { findFailedPixels } from '../../../util/texture/texture_ok.js';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { checkElementsEqual } from '../../../util/check_contents';
+import { align } from '../../../util/math';
+import { physicalMipSize } from '../../../util/texture/base';
+import { DataArrayGenerator } from '../../../util/texture/data_generation';
+import { kBytesPerRowAlignment, dataBytesForCopyOrFail } from '../../../util/texture/layout';
+import { TexelView } from '../../../util/texture/texel_view';
+import { findFailedPixels } from '../../../util/texture/texture_ok';
 
 const dataGenerator = new DataArrayGenerator();
 

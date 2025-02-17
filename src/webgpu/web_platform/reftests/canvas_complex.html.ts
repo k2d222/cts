@@ -1,9 +1,9 @@
-import { assert, unreachable } from '../../../common/util/util.js';
-import { kTextureFormatInfo, ColorTextureFormat } from '../../format_info.js';
-import { gammaDecompress, float32ToFloat16Bits } from '../../util/conversion.js';
-import { align } from '../../util/math.js';
+import { assert, unreachable } from '../../../common/util/util';
+import { kTextureFormatInfo, ColorTextureFormat } from '../../format_info';
+import { gammaDecompress, float32ToFloat16Bits } from '../../util/conversion';
+import { align } from '../../util/math';
 
-import { runRefTest } from './gpu_ref_test.js';
+import { runRefTest } from './gpu_ref_test';
 
 type WriteCanvasMethod =
   | 'copyBufferToTexture'

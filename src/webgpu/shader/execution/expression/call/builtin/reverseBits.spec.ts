@@ -8,12 +8,12 @@ Reverses the bits in e: The bit at position k of the result equals the bit at po
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { u32Bits, i32Bits, Type } from '../../../../../util/conversion.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { u32Bits, i32Bits, Type } from '../../../../../util/conversion';
+import { allInputSources, Config, run } from '../../expression';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

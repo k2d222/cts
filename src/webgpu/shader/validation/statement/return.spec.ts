@@ -1,9 +1,9 @@
 export const description = `Validation tests for 'return' statements'`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { isConvertible, scalarTypeOf, Type } from '../../../util/conversion.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { keysOf } from '../../../../common/util/data_tables';
+import { isConvertible, scalarTypeOf, Type } from '../../../util/conversion';
+import { ShaderValidationTest } from '../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

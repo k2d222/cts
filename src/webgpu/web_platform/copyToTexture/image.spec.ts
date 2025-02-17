@@ -2,12 +2,12 @@ export const description = `
 copyExternalImageToTexture from HTMLImageElement source.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { raceWithRejectOnTimeout } from '../../../common/util/util.js';
-import { kTextureFormatInfo, kValidTextureFormatsForCopyE2T } from '../../format_info.js';
-import { TextureUploadingUtils, kCopySubrectInfo } from '../../util/copy_to_texture.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { raceWithRejectOnTimeout } from '../../../common/util/util';
+import { kTextureFormatInfo, kValidTextureFormatsForCopyE2T } from '../../format_info';
+import { TextureUploadingUtils, kCopySubrectInfo } from '../../util/copy_to_texture';
 
-import { kTestColorsOpaque, makeTestColorsTexelView } from './util.js';
+import { kTestColorsOpaque, makeTestColorsTexelView } from './util';
 
 async function decodeImageFromCanvas(canvas: HTMLCanvasElement): Promise<HTMLImageElement> {
   const blobFromCanvas = new Promise(resolve => {

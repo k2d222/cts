@@ -3,16 +3,16 @@ export const description = `
 Validation tests for the ${builtin}() builtin.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
 import {
   Type,
   kConcreteIntegerScalarsAndVectors,
   kConvertableToFloatScalarsAndVectors,
   scalarTypeOf,
 } from '../../../../../util/conversion.js';
-import { absBigInt } from '../../../../../util/math.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { absBigInt } from '../../../../../util/math';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
 import {
   fullRangeForType,

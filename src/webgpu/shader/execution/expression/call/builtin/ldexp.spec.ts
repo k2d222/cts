@@ -12,13 +12,13 @@ I is K or vecN<K>, where
 Returns e1 * 2^e2. Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
+import { allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './ldexp.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin';
+import { d } from './ldexp.cache';
 
 export const g = makeTestGroup(GPUTest);
 

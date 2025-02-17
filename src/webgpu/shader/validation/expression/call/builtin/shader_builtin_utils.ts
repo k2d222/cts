@@ -1,6 +1,6 @@
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../../common/util/util.js';
-import { Type, scalarTypeOf } from '../../../../../util/conversion.js';
+import { keysOf } from '../../../../../../common/util/data_tables';
+import { assert } from '../../../../../../common/util/util';
+import { Type, scalarTypeOf } from '../../../../../util/conversion';
 
 /**
  * Use to test that certain WGSL builtins are only available in the fragment stage.

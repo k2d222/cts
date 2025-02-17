@@ -1,6 +1,6 @@
-import { abstractInt, i32, u32 } from '../../../../util/conversion.js';
-import { fullI32Range, fullI64Range, fullU32Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { abstractInt, i32, u32 } from '../../../../util/conversion';
+import { fullI32Range, fullI64Range, fullU32Range } from '../../../../util/math';
+import { makeCaseCache } from '../case_cache';
 
 export const d = makeCaseCache('unary/ai_assignment', {
   abstract: () => {

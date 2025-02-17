@@ -16,19 +16,19 @@ Examples:
     - can be passed to requestAdapter as requiredFeatures
 `;
 
-import { TestCaseRecorder, TestParams } from '../../common/framework/fixture.js';
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { keysOf } from '../../common/util/data_tables.js';
-import { getGPU } from '../../common/util/navigator_gpu.js';
-import { assert, objectEquals, unreachable } from '../../common/util/util.js';
-import { getDefaultLimitsForAdapter, kLimits } from '../capability_info.js';
+import { TestCaseRecorder, TestParams } from '../../common/framework/fixture';
+import { makeTestGroup } from '../../common/framework/test_group';
+import { keysOf } from '../../common/util/data_tables';
+import { getGPU } from '../../common/util/navigator_gpu';
+import { assert, objectEquals, unreachable } from '../../common/util/util';
+import { getDefaultLimitsForAdapter, kLimits } from '../capability_info';
 import {
   DeviceSelectionDescriptor,
   GPUTest,
   GPUTestSubcaseBatchState,
   initUncanonicalizedDeviceDescriptor,
 } from '../gpu_test.js';
-import { CanonicalDeviceDescriptor, DescriptorModifier } from '../util/device_pool.js';
+import { CanonicalDeviceDescriptor, DescriptorModifier } from '../util/device_pool';
 
 // MAINTENANCE_TODO: Remove this filter when these limits are added to the spec.
 const isUnspecifiedLimit = (limit: string) =>

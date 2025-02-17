@@ -3,8 +3,8 @@ Tests for properties of the WebGPU memory model involving two memory locations.
 Specifically, the acquire/release ordering provided by WebGPU's barriers can be used to disallow
 weak behaviors in several classic memory model litmus tests.`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest } from '../../../gpu_test';
 
 import {
   MemoryModelTestParams,

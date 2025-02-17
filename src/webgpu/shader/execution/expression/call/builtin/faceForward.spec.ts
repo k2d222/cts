@@ -6,13 +6,13 @@ T is vecN<Type.abstractFloat>, vecN<f32>, or vecN<f16>
 Returns e1 if dot(e2,e3) is negative, and -e1 otherwise.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
+import { allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './faceForward.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin';
+import { d } from './faceForward.cache';
 
 export const g = makeTestGroup(GPUTest);
 

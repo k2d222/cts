@@ -1,4 +1,4 @@
-import { LimitMode, kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
+import { LimitMode, kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils';
 
 const kBufferParts = ['wholeBuffer', 'biggerBufferWithOffset'] as const;
 type BufferPart = (typeof kBufferParts)[number];

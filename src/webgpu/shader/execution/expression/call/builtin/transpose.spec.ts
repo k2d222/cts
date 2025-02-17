@@ -6,13 +6,13 @@ T is abstract-float, f32, or f16
 Returns the transpose of e.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type } from '../../../../../util/conversion';
+import { allInputSources, onlyConstInputSource, run } from '../../expression';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './transpose.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin';
+import { d } from './transpose.cache';
 
 export const g = makeTestGroup(GPUTest);
 

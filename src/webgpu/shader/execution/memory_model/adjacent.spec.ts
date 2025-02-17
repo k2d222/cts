@@ -3,9 +3,9 @@ Tests writes from different invocations to adjacent scalars do not interfere.
 This is especially interesting when the scalar type is narrower than 32-bits.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { PRNG } from '../../../util/prng.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest } from '../../../gpu_test';
+import { PRNG } from '../../../util/prng';
 
 export const g = makeTestGroup(GPUTest);
 

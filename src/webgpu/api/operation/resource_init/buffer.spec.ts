@@ -1,9 +1,9 @@
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../common/util/util.js';
-import { GPUConst } from '../../../constants.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { getTextureCopyLayout } from '../../../util/texture/layout.js';
-import { PerTexelComponent } from '../../../util/texture/texel_data.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { unreachable } from '../../../../common/util/util';
+import { GPUConst } from '../../../constants';
+import { GPUTest } from '../../../gpu_test';
+import { getTextureCopyLayout } from '../../../util/texture/layout';
+import { PerTexelComponent } from '../../../util/texture/texel_data';
 
 export const description = `
 Test uninitialized buffers are initialized to zero when read

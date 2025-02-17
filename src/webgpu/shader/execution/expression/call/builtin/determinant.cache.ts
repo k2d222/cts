@@ -1,7 +1,7 @@
-import { assert } from '../../../../../../common/util/util.js';
-import { FP, FPInterval } from '../../../../../util/floating_point.js';
-import { PRNG } from '../../../../../util/prng.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { assert } from '../../../../../../common/util/util';
+import { FP, FPInterval } from '../../../../../util/floating_point';
+import { PRNG } from '../../../../../util/prng';
+import { makeCaseCache } from '../../case_cache';
 
 // We want each case to avoid losing accuracy. We want to prevent bits from
 // falling off the bottom of the significand during intermediate

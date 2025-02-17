@@ -9,12 +9,12 @@ Also known as "population count".
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type, u32Bits, u32, i32Bits, i32 } from '../../../../../util/conversion.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { Type, u32Bits, u32, i32Bits, i32 } from '../../../../../util/conversion';
+import { allInputSources, Config, run } from '../../expression';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

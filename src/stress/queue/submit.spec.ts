@@ -2,9 +2,9 @@ export const description = `
 Stress tests for command submission to GPUQueue objects.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { iterRange } from '../../common/util/util.js';
-import { GPUTest } from '../../webgpu/gpu_test.js';
+import { makeTestGroup } from '../../common/framework/test_group';
+import { iterRange } from '../../common/util/util';
+import { GPUTest } from '../../webgpu/gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

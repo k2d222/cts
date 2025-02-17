@@ -3,10 +3,10 @@ Tests for depth clipping, depth clamping (at various points in the pipeline), an
 depth ranges as well.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert } from '../../../../common/util/util';
+import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test';
 import {
   checkElementsBetween,
   checkElementsPassPredicate,

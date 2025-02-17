@@ -3,11 +3,11 @@ export const description = `
   buffer is unmapped or destroyed.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { getGPU } from '../../../../common/util/navigator_gpu.js';
-import { assert } from '../../../../common/util/util.js';
-import { GPUConst } from '../../../constants.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { getGPU } from '../../../../common/util/navigator_gpu';
+import { assert } from '../../../../common/util/util';
+import { GPUConst } from '../../../constants';
+import { GPUTest } from '../../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

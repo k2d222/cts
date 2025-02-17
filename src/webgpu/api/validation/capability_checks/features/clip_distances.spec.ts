@@ -1,6 +1,6 @@
-import { range } from '../../../../../common/util/util.js';
-import { align } from '../../../../util/math.js';
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from '../limits/limit_utils.js';
+import { range } from '../../../../../common/util/util';
+import { align } from '../../../../util/math';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from '../limits/limit_utils';
 
 function getPipelineDescriptorWithClipDistances(
   device: GPUDevice,

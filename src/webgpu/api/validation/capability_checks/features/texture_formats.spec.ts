@@ -2,13 +2,13 @@ export const description = `
 Tests for capability checking for features enabling optional texture formats.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { getGPU } from '../../../../../common/util/navigator_gpu.js';
-import { assert } from '../../../../../common/util/util.js';
-import { kCanvasTextureFormats } from '../../../../capability_info.js';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../../../format_info.js';
-import { kAllCanvasTypes, createCanvas } from '../../../../util/create_elements.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { getGPU } from '../../../../../common/util/navigator_gpu';
+import { assert } from '../../../../../common/util/util';
+import { kCanvasTextureFormats } from '../../../../capability_info';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../../../format_info';
+import { kAllCanvasTypes, createCanvas } from '../../../../util/create_elements';
+import { ValidationTest } from '../../validation_test';
 
 export const g = makeTestGroup(ValidationTest);
 

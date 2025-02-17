@@ -7,17 +7,17 @@ Note: There is no guaranteed mapping between subgroup_invocation_id and
 local_invocation_index. Tests should avoid assuming there is.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { assert, iterRange } from '../../../../../../common/util/util.js';
-import { kValue } from '../../../../../util/constants.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
+import { assert, iterRange } from '../../../../../../common/util/util';
+import { kValue } from '../../../../../util/constants';
 import {
   kConcreteNumericScalarsAndVectors,
   Type,
   VectorType,
 } from '../../../../../util/conversion.js';
-import { FP, FPInterval } from '../../../../../util/floating_point.js';
-import { PRNG } from '../../../../../util/prng.js';
+import { FP, FPInterval } from '../../../../../util/floating_point';
+import { PRNG } from '../../../../../util/prng';
 
 import {
   kNumCases,

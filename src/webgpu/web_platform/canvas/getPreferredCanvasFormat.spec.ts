@@ -2,8 +2,8 @@ export const description = `
 Tests for navigator.gpu.getPreferredCanvasFormat.
 `;
 
-import { Fixture, SkipTestCase } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { Fixture, SkipTestCase } from '../../../common/framework/fixture';
+import { makeTestGroup } from '../../../common/framework/test_group';
 
 export const g = makeTestGroup(Fixture);
 

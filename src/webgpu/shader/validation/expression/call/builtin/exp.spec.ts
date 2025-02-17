@@ -3,16 +3,16 @@ export const description = `
 Validation tests for the ${builtin}() builtin.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { kValue } from '../../../../../util/constants.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
+import { kValue } from '../../../../../util/constants';
 import {
   Type,
   kConvertableToFloatScalarsAndVectors,
   scalarTypeOf,
 } from '../../../../../util/conversion.js';
-import { isRepresentable } from '../../../../../util/floating_point.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { isRepresentable } from '../../../../../util/floating_point';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
 import {
   kConstantAndOverrideStages,

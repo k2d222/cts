@@ -5,14 +5,14 @@ Primitive topology tested in api/operation/render_pipeline/primitive_topology.sp
 Index format tested in api/operation/command_buffer/render/state_tracking.spec.ts.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
 import {
   assert,
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../../../common/util/util.js';
-import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { PerPixelComparison } from '../../../util/texture/texture_ok.js';
+import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../gpu_test';
+import { PerPixelComparison } from '../../../util/texture/texture_ok';
 
 class DrawTest extends TextureTestMixin(AllFeaturesMaxLimitsGPUTest) {
   checkTriangleDraw(opts: {

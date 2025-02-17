@@ -1,8 +1,8 @@
-import { TestParams } from '../../framework/fixture.js';
-import { assert, objectEquals } from '../../util/util.js';
-import { paramKeyIsPublic } from '../params_utils.js';
+import { TestParams } from '../../framework/fixture';
+import { assert, objectEquals } from '../../util/util';
+import { paramKeyIsPublic } from '../params_utils';
 
-import { TestQuery } from './query.js';
+import { TestQuery } from './query';
 
 export const enum Ordering {
   Unordered,

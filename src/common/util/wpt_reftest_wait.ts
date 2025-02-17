@@ -1,4 +1,4 @@
-import { timeout } from './timeout.js';
+import { timeout } from './timeout';
 
 // Copied from https://github.com/web-platform-tests/wpt/blob/master/common/reftest-wait.js
 

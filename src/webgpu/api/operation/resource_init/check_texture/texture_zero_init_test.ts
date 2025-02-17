@@ -1,11 +1,11 @@
-import { TestCaseRecorder, TestParams } from '../../../../../common/framework/fixture.js';
+import { TestCaseRecorder, TestParams } from '../../../../../common/framework/fixture';
 import {
   kUnitCaseParamsBuilder,
   ParamTypeOf,
 } from '../../../../../common/framework/params_builder.js';
-import { assert, unreachable } from '../../../../../common/util/util.js';
-import { kTextureAspects, kTextureDimensions } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
+import { assert, unreachable } from '../../../../../common/util/util';
+import { kTextureAspects, kTextureDimensions } from '../../../../capability_info';
+import { GPUConst } from '../../../../constants';
 import {
   kTextureFormatInfo,
   kUncompressedTextureFormats,
@@ -13,10 +13,10 @@ import {
   UncompressedTextureFormat,
   EncodableTextureFormat,
 } from '../../../../format_info.js';
-import { GPUTest, GPUTestSubcaseBatchState } from '../../../../gpu_test.js';
-import { virtualMipSize } from '../../../../util/texture/base.js';
-import { createTextureUploadBuffer } from '../../../../util/texture/layout.js';
-import { BeginEndRange, SubresourceRange } from '../../../../util/texture/subresource.js';
+import { GPUTest, GPUTestSubcaseBatchState } from '../../../../gpu_test';
+import { virtualMipSize } from '../../../../util/texture/base';
+import { createTextureUploadBuffer } from '../../../../util/texture/layout';
+import { BeginEndRange, SubresourceRange } from '../../../../util/texture/subresource';
 import {
   PerTexelComponent,
   kTexelRepresentationInfo,

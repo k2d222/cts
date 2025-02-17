@@ -17,7 +17,7 @@ If an out of bounds access occurs, the built-in function returns one of:
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
 import {
   isCompressedFloatTextureFormat,
   isDepthTextureFormat,
@@ -28,9 +28,9 @@ import {
   kTextureFormatInfo,
   textureDimensionAndFormatCompatible,
 } from '../../../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../../gpu_test.js';
-import { maxMipLevelCount, virtualMipSize } from '../../../../../util/texture/base.js';
-import { TexelFormats } from '../../../../types.js';
+import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../../gpu_test';
+import { maxMipLevelCount, virtualMipSize } from '../../../../../util/texture/base';
+import { TexelFormats } from '../../../../types';
 
 import {
   TextureCall,

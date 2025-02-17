@@ -17,12 +17,12 @@ The cross-platform behavior is unknown. could be any of:
 Details could be found at: https://github.com/gpuweb/cts/issues/2201
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, range } from '../../../../common/util/util.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { checkElementsPassPredicate, checkElementsEqual } from '../../../util/check_contents.js';
-import { Type } from '../../../util/conversion.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert, range } from '../../../../common/util/util';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { checkElementsPassPredicate, checkElementsEqual } from '../../../util/check_contents';
+import { Type } from '../../../util/conversion';
+import { TexelView } from '../../../util/texture/texel_view';
 
 const kColors = [
   // Red

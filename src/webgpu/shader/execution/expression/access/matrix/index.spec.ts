@@ -2,8 +2,8 @@ export const description = `
 Execution Tests for matrix indexing expressions
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
 import {
   MatrixValue,
   ScalarValue,
@@ -13,9 +13,9 @@ import {
   vec,
   Value,
 } from '../../../../../util/conversion.js';
-import { align } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, basicExpressionBuilder, run } from '../../expression.js';
+import { align } from '../../../../../util/math';
+import { Case } from '../../case';
+import { allInputSources, basicExpressionBuilder, run } from '../../expression';
 
 export const g = makeTestGroup(GPUTest);
 

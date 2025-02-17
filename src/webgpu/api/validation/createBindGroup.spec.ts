@@ -4,8 +4,8 @@ export const description = `
   TODO: Ensure sure tests cover all createBindGroup validation rules.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert, makeValueTestVariant, unreachable } from '../../../common/util/util.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert, makeValueTestVariant, unreachable } from '../../../common/util/util';
 import {
   allBindingEntries,
   BGLEntry,
@@ -23,12 +23,12 @@ import {
   sampledAndStorageBindingEntries,
   texBindingTypeInfo,
 } from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../format_info.js';
-import { kResourceStates, MaxLimitsTestMixin } from '../../gpu_test.js';
-import { getTextureDimensionFromView } from '../../util/texture/base.js';
+import { GPUConst } from '../../constants';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../format_info';
+import { kResourceStates, MaxLimitsTestMixin } from '../../gpu_test';
+import { getTextureDimensionFromView } from '../../util/texture/base';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 const kTestFormat: GPUTextureFormat = 'r32float';
 

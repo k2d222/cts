@@ -6,13 +6,13 @@ Pack the lower 8 bits of each component of e into a u32 value and drop all the u
 Component e[i] of the input is mapped to bits (8 * i) through (8 * (i + 7)) of the result.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { u32, toVector, Type } from '../../../../../util/conversion.js';
-import { Case } from '../../case.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../../gpu_test';
+import { u32, toVector, Type } from '../../../../../util/conversion';
+import { Case } from '../../case';
+import { allInputSources, Config, run } from '../../expression';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin';
 
 export const g = makeTestGroup(GPUTest);
 

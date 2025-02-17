@@ -10,12 +10,12 @@ things. If there are no guarantees we can issue warnings instead of failures. Id
     more of the color in the correct direction).
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { checkElementsEqual } from '../../../util/check_contents.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
-import { PerPixelComparison } from '../../../util/texture/texture_ok.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { assert } from '../../../../common/util/util';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { checkElementsEqual } from '../../../util/check_contents';
+import { TexelView } from '../../../util/texture/texel_view';
+import { PerPixelComparison } from '../../../util/texture/texture_ok';
 
 const kRTSize = 16;
 const kBytesPerRow = 256;

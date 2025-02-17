@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the abstract int arithmetic binary expression operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { onlyConstInputSource, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { Type } from '../../../../util/conversion';
+import { onlyConstInputSource, run } from '../expression';
 
-import { d } from './ai_arithmetic.cache.js';
-import { abstractIntBinary } from './binary.js';
+import { d } from './ai_arithmetic.cache';
+import { abstractIntBinary } from './binary';
 
 export const g = makeTestGroup(GPUTest);
 

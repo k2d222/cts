@@ -5,8 +5,8 @@ Note there are no context creation attributes for WebGPU (as of this writing).
 Options are configured in configure() instead.
 `;
 
-import { Fixture } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { Fixture } from '../../../common/framework/fixture';
+import { makeTestGroup } from '../../../common/framework/test_group';
 
 export const g = makeTestGroup(Fixture);
 

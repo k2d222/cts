@@ -2,8 +2,8 @@ export const description = `
 Execution Tests for value constructors from components
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
 import {
   ArrayValue,
   MatrixType,
@@ -16,7 +16,7 @@ import {
   vec2,
   vec3,
 } from '../../../../util/conversion.js';
-import { FP } from '../../../../util/floating_point.js';
+import { FP } from '../../../../util/floating_point';
 import {
   ShaderBuilderParams,
   allInputSources,

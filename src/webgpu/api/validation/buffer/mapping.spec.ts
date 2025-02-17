@@ -2,12 +2,12 @@ export const description = `
 Validation tests for GPUBuffer.mapAsync, GPUBuffer.unmap and GPUBuffer.getMappedRange.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { attemptGarbageCollection } from '../../../../common/util/collect_garbage.js';
-import { assert, unreachable } from '../../../../common/util/util.js';
-import { kBufferUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { attemptGarbageCollection } from '../../../../common/util/collect_garbage';
+import { assert, unreachable } from '../../../../common/util/util';
+import { kBufferUsages } from '../../../capability_info';
+import { GPUConst } from '../../../constants';
+import { ValidationTest } from '../validation_test';
 
 class F extends ValidationTest {
   async testMapAsyncCall(

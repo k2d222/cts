@@ -16,9 +16,9 @@ TODO:
 - ?
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { objectEquals } from '../../../../common/util/util.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { objectEquals } from '../../../../common/util/util';
+import { ValidationTest } from '../validation_test';
 
 class F extends ValidationTest {
   beginRenderPass(commandEncoder: GPUCommandEncoder, view: GPUTextureView): GPURenderPassEncoder {

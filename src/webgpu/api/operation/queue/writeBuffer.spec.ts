@@ -1,9 +1,9 @@
 export const description = 'Operation tests for GPUQueue.writeBuffer()';
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { memcpy, range } from '../../../../common/util/util.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { align } from '../../../util/math.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { memcpy, range } from '../../../../common/util/util';
+import { GPUTest } from '../../../gpu_test';
+import { align } from '../../../util/math';
 
 const kTypedArrays = [
   'Uint8Array',

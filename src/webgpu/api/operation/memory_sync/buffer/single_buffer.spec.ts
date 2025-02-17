@@ -13,7 +13,7 @@ Wait on another fence, then call expectContents to verify the dst buffer value.
   - If two writes are in the same passes, render result has loose guarantees.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
 import {
   kOperationBoundaries,
   kBoundaryInfo,

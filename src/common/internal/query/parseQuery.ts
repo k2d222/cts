@@ -1,4 +1,4 @@
-import { assert } from '../../util/util.js';
+import { assert } from '../../util/util';
 import {
   TestParamsRW,
   JSONWithUndefined,
@@ -6,7 +6,7 @@ import {
   paramKeyIsPublic,
 } from '../params_utils.js';
 
-import { parseParamValue } from './json_param_value.js';
+import { parseParamValue } from './json_param_value';
 import {
   TestQuery,
   TestQueryMultiFile,
@@ -14,8 +14,8 @@ import {
   TestQueryMultiCase,
   TestQuerySingleCase,
 } from './query.js';
-import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './separators.js';
-import { validQueryPart } from './validQueryPart.js';
+import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './separators';
+import { validQueryPart } from './validQueryPart';
 
 /**
  * converts foo/bar/src/webgpu/this/that/file.spec.ts to webgpu:this,that,file,*

@@ -1,4 +1,4 @@
-import { skipUndefined } from '../../../../../util/compare.js';
+import { skipUndefined } from '../../../../../util/compare';
 import {
   ScalarValue,
   VectorValue,
@@ -6,10 +6,10 @@ import {
   toVector,
   abstractInt,
 } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { frexp } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point';
+import { frexp } from '../../../../../util/math';
+import { Case } from '../../case';
+import { makeCaseCache } from '../../case_cache';
 
 /* @returns a fract Case for a given scalar or vector input */
 function makeCaseFract(v: number | readonly number[], trait: 'f32' | 'f16' | 'abstract'): Case {

@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for matrix-vector and vector-matrix f16 multiplication expression
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { Type } from '../../../../util/conversion';
+import { allInputSources, run } from '../expression';
 
-import { binary, compoundBinary } from './binary.js';
-import { d } from './f16_matrix_vector_multiplication.cache.js';
+import { binary, compoundBinary } from './binary';
+import { d } from './f16_matrix_vector_multiplication.cache';
 
 export const g = makeTestGroup(GPUTest);
 

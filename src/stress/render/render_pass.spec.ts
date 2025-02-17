@@ -2,9 +2,9 @@ export const description = `
 Stress tests covering GPURenderPassEncoder usage.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { range } from '../../common/util/util.js';
-import { GPUTest } from '../../webgpu/gpu_test.js';
+import { makeTestGroup } from '../../common/framework/test_group';
+import { range } from '../../common/util/util';
+import { GPUTest } from '../../webgpu/gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

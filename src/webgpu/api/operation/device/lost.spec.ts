@@ -2,10 +2,10 @@ export const description = `
 Tests for GPUDevice.lost.
 `;
 
-import { Fixture } from '../../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { attemptGarbageCollection } from '../../../../common/util/collect_garbage.js';
-import { getGPU } from '../../../../common/util/navigator_gpu.js';
+import { Fixture } from '../../../../common/framework/fixture';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { attemptGarbageCollection } from '../../../../common/util/collect_garbage';
+import { getGPU } from '../../../../common/util/navigator_gpu';
 import {
   assert,
   assertNotSettledWithinTime,

@@ -1,15 +1,15 @@
-import { assert, memcpy } from '../../../common/util/util.js';
+import { assert, memcpy } from '../../../common/util/util';
 import {
   kTextureFormatInfo,
   resolvePerAspectFormat,
   SizedTextureFormat,
   EncodableTextureFormat,
 } from '../../format_info.js';
-import { GPUTest } from '../../gpu_test.js';
-import { align } from '../math.js';
-import { reifyExtent3D } from '../unions.js';
+import { GPUTest } from '../../gpu_test';
+import { align } from '../math';
+import { reifyExtent3D } from '../unions';
 
-import { physicalMipSize, virtualMipSize } from './base.js';
+import { physicalMipSize, virtualMipSize } from './base';
 
 /** The minimum `bytesPerRow` alignment, per spec. */
 export const kBytesPerRowAlignment = 256;

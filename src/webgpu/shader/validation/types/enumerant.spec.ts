@@ -5,8 +5,8 @@ Validation tests for enumerant types.
 * Enumerant values cannot be used as values
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { ShaderValidationTest } from '../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -2,9 +2,9 @@ export const description = `
 Tests that object attributes which reflect the object's creation properties are properly set.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { GPUConst } from '../../constants.js';
-import { GPUTest } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { GPUConst } from '../../constants';
+import { GPUTest } from '../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for matrix-scalar and scalar-matrix AbstractFloat multiplication expression
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { onlyConstInputSource, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { Type } from '../../../../util/conversion';
+import { onlyConstInputSource, run } from '../expression';
 
-import { d } from './af_matrix_scalar_multiplication.cache.js';
-import { abstractFloatBinary } from './binary.js';
+import { d } from './af_matrix_scalar_multiplication.cache';
+import { abstractFloatBinary } from './binary';
 
 export const g = makeTestGroup(GPUTest);
 

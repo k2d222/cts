@@ -2,10 +2,10 @@ export const description = `
 Flow control tests for loops.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest } from '../../../gpu_test';
 
-import { runFlowControlTest } from './harness.js';
+import { runFlowControlTest } from './harness';
 
 export const g = makeTestGroup(GPUTest);
 

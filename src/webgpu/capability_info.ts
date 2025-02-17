@@ -10,10 +10,10 @@ import {
   numericKeysOf,
   valueof,
 } from '../common/util/data_tables.js';
-import { assertTypeTrue, TypeEqual } from '../common/util/types.js';
-import { unreachable } from '../common/util/util.js';
+import { assertTypeTrue, TypeEqual } from '../common/util/types';
+import { unreachable } from '../common/util/util';
 
-import { GPUConst, kMaxUnsignedLongValue, kMaxUnsignedLongLongValue } from './constants.js';
+import { GPUConst, kMaxUnsignedLongValue, kMaxUnsignedLongLongValue } from './constants';
 
 // Base device limits can be found in constants.ts.
 

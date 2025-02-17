@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the i32 conversion operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { ShaderBuilder, allInputSources, run, onlyConstInputSource } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { GPUTest } from '../../../../gpu_test';
+import { Type } from '../../../../util/conversion';
+import { ShaderBuilder, allInputSources, run, onlyConstInputSource } from '../expression';
 
-import { d } from './i32_conversion.cache.js';
-import { unary } from './unary.js';
+import { d } from './i32_conversion.cache';
+import { unary } from './unary';
 
 export const g = makeTestGroup(GPUTest);
 

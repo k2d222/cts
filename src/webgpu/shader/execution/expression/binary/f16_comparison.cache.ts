@@ -1,8 +1,8 @@
-import { anyOf } from '../../../../util/compare.js';
-import { bool, f16, ScalarValue } from '../../../../util/conversion.js';
-import { flushSubnormalNumberF16, vectorF16Range } from '../../../../util/math.js';
-import { Case } from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+import { anyOf } from '../../../../util/compare';
+import { bool, f16, ScalarValue } from '../../../../util/conversion';
+import { flushSubnormalNumberF16, vectorF16Range } from '../../../../util/math';
+import { Case } from '../case';
+import { makeCaseCache } from '../case_cache';
 
 /**
  * @returns a test case for the provided left hand & right hand values and truth function.

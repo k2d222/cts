@@ -12,8 +12,8 @@ States to test:
 TODO: Look for more things to test.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { GPUTest } from '../../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -2,8 +2,8 @@ export const description = `
 Validation tests for arrayLength builtins.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { ShaderValidationTest } from '../../../shader_validation_test';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

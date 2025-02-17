@@ -2,10 +2,10 @@ export const description = `
   getBindGroupLayout validation tests.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
+import { makeTestGroup } from '../../../common/framework/test_group';
+import { assert } from '../../../common/util/util';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test';
 
 export const g = makeTestGroup(ValidationTest);
 

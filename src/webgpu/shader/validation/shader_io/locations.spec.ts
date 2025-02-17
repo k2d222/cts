@@ -1,10 +1,10 @@
 export const description = `Validation tests for entry point user-defined IO`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group';
+import { keysOf } from '../../../../common/util/data_tables';
+import { ShaderValidationTest } from '../shader_validation_test';
 
-import { generateShader } from './util.js';
+import { generateShader } from './util';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

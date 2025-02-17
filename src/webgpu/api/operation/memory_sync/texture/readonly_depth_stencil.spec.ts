@@ -2,9 +2,9 @@ export const description = `
 Memory synchronization tests for depth-stencil attachments in a single pass, with checks for readonlyness.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { kDepthStencilFormats, kTextureFormatInfo } from '../../../../format_info.js';
-import { GPUTest } from '../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group';
+import { kDepthStencilFormats, kTextureFormatInfo } from '../../../../format_info';
+import { GPUTest } from '../../../../gpu_test';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -2,9 +2,9 @@ export const description = `
 Util math unit tests.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { objectEquals } from '../common/util/util.js';
-import { kBit, kValue } from '../webgpu/util/constants.js';
+import { makeTestGroup } from '../common/framework/test_group';
+import { objectEquals } from '../common/util/util';
+import { kBit, kValue } from '../webgpu/util/constants';
 import {
   f16,
   f32,
@@ -44,7 +44,7 @@ import {
   reinterpretU64AsF64,
 } from '../webgpu/util/reinterpret.js';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test';
 
 export const g = makeTestGroup(UnitTest);
 
