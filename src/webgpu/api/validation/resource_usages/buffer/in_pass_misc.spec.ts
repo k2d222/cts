@@ -2,9 +2,9 @@ export const description = `
 Test other buffer usage validation rules that are not tests in ./in_pass_encoder.spec.js.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { unreachable } from '../../../../../common/util/util';
-import { MaxLimitsTestMixin } from '../../../../gpu_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { unreachable } from '../../../../../common/util/util.js';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
 
 import {
   BufferUsage,

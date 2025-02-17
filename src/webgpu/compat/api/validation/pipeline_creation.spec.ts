@@ -9,13 +9,13 @@ TODO:
   texture+sampler combinations generates a validation error.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { keysOf } from '../../../../common/util/data_tables';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../common/util/data_tables.js';
 import {
   kShortShaderStages,
   kShortShaderStageToShaderStage,
 } from '../../../shader/execution/expression/call/builtin/texture_utils.js';
-import { CompatibilityTest } from '../../compatibility_test';
+import { CompatibilityTest } from '../../compatibility_test.js';
 
 export const g = makeTestGroup(CompatibilityTest);
 

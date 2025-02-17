@@ -1,4 +1,4 @@
-import { range } from '../../common/util/util';
+import { range } from '../../common/util/util.js';
 
 /**
  * @returns a function that converts numerics to strings, depending on if they

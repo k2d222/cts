@@ -2,10 +2,10 @@ export const description = `
 Tests limitations of createShaderModule in compat mode.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../common/util/data_tables';
-import { kCompatModeUnsupportedStorageTextureFormats } from '../../../../format_info';
-import { CompatibilityTest } from '../../../compatibility_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../common/util/data_tables.js';
+import { kCompatModeUnsupportedStorageTextureFormats } from '../../../../format_info.js';
+import { CompatibilityTest } from '../../../compatibility_test.js';
 
 export const g = makeTestGroup(CompatibilityTest);
 

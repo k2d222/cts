@@ -1,9 +1,9 @@
-import { GPUTest } from '../../../../../gpu_test';
-import { Type, Value } from '../../../../../util/conversion';
-import { align } from '../../../../../util/math';
-import { Case } from '../../case';
-import { toComparator } from '../../expectation';
-import { packScalarsToVector } from '../../expression';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { Type, Value } from '../../../../../util/conversion.js';
+import { align } from '../../../../../util/math.js';
+import { Case } from '../../case.js';
+import { toComparator } from '../../expectation.js';
+import { packScalarsToVector } from '../../expression.js';
 
 /**
  * Run a test for a derivative builtin function.

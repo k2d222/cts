@@ -1,7 +1,7 @@
-import { GPUTest } from '../../../gpu_test';
-import { checkElementsPassPredicate } from '../../../util/check_contents';
-import { align } from '../../../util/math';
-import { PRNG } from '../../../util/prng';
+import { GPUTest } from '../../../gpu_test.js';
+import { checkElementsPassPredicate } from '../../../util/check_contents.js';
+import { align } from '../../../util/math.js';
+import { PRNG } from '../../../util/prng.js';
 
 /* All buffer sizes are counted in units of 4-byte words. */
 

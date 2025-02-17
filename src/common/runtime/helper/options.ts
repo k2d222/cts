@@ -1,4 +1,4 @@
-import { unreachable } from '../../util/util';
+import { unreachable } from '../../util/util.js';
 
 let windowURL: URL | undefined = undefined;
 function getWindowURL() {

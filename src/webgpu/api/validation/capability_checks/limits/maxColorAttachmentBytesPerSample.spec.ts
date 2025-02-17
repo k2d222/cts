@@ -1,7 +1,7 @@
-import { assert } from '../../../../../common/util/util';
-import { kTextureSampleCounts } from '../../../../capability_info';
-import { kTextureFormatInfo } from '../../../../format_info';
-import { align } from '../../../../util/math';
+import { assert } from '../../../../../common/util/util.js';
+import { kTextureSampleCounts } from '../../../../capability_info.js';
+import { kTextureFormatInfo } from '../../../../format_info.js';
+import { align } from '../../../../util/math.js';
 
 import {
   kMaximumLimitBaseParams,

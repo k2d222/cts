@@ -2,10 +2,10 @@ export const description = `
 Validation for encoding begin/endable queries.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { ValidationTest } from '../../validation_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { ValidationTest } from '../../validation_test.js';
 
-import { beginRenderPassWithQuerySet, createQuerySetWithType } from './common';
+import { beginRenderPassWithQuerySet, createQuerySetWithType } from './common.js';
 
 export const g = makeTestGroup(ValidationTest);
 

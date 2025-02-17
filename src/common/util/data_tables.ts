@@ -1,4 +1,4 @@
-import { ResolveType, ZipKeysWithValues } from './types';
+import { ResolveType, ZipKeysWithValues } from './types.js';
 
 export type valueof<K> = K[keyof K];
 

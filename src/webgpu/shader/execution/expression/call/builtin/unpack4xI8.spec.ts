@@ -6,13 +6,13 @@ e is interpreted as a vector with four 8-bit signed integer components. Unpack e
 with sign extension.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { u32, toVector, i32, Type } from '../../../../../util/conversion';
-import { Case } from '../../case';
-import { allInputSources, Config, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { u32, toVector, i32, Type } from '../../../../../util/conversion.js';
+import { Case } from '../../case.js';
+import { allInputSources, Config, run } from '../../expression.js';
 
-import { builtin } from './builtin';
+import { builtin } from './builtin.js';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -13,10 +13,10 @@ Conditions that still occur:
   * Writes to non-external memory
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { iterRange } from '../../../../common/util/util';
-import { AllFeaturesMaxLimitsGPUTest, GPUTestBase } from '../../../gpu_test';
-import { checkElementsPassPredicate } from '../../../util/check_contents';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { iterRange } from '../../../../common/util/util.js';
+import { AllFeaturesMaxLimitsGPUTest, GPUTestBase } from '../../../gpu_test.js';
+import { checkElementsPassPredicate } from '../../../util/check_contents.js';
 
 export const g = makeTestGroup(AllFeaturesMaxLimitsGPUTest);
 

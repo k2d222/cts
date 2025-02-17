@@ -1,5 +1,5 @@
-import { assert, unreachable } from '../../../../../../common/util/util';
-import { kValue } from '../../../../../util/constants';
+import { assert, unreachable } from '../../../../../../common/util/util.js';
+import { kValue } from '../../../../../util/constants.js';
 import {
   ScalarType,
   Type,
@@ -19,7 +19,7 @@ import {
   quantizeToF16,
   QuantizeFunc,
 } from '../../../../../util/math.js';
-import { ShaderValidationTest } from '../../../shader_validation_test';
+import { ShaderValidationTest } from '../../../shader_validation_test.js';
 
 /** @returns a function that can select between ranges depending on type */
 export function rangeForType(

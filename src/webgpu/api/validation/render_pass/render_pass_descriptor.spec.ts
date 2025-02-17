@@ -5,17 +5,17 @@ TODO(#3363): Make this into a MaxLimitTest and increase kMaxColorAttachments.
 TODO: review for completeness
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { range } from '../../../../common/util/util';
-import { getDefaultLimits, kQueryTypes } from '../../../capability_info';
-import { GPUConst } from '../../../constants';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { range } from '../../../../common/util/util.js';
+import { getDefaultLimits, kQueryTypes } from '../../../capability_info.js';
+import { GPUConst } from '../../../constants.js';
 import {
   computeBytesPerSampleFromFormats,
   kDepthStencilFormats,
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
 } from '../../../format_info.js';
-import { ValidationTest } from '../validation_test';
+import { ValidationTest } from '../validation_test.js';
 
 // MAINTENANCE_TODO: This should be changed to kMaxColorAttachmentsToTest
 // when this is made a MaxLimitTest (see above).

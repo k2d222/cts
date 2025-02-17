@@ -1,4 +1,4 @@
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
 
 const limit = 'maxTextureDimension1D';
 export const { g, description } = makeLimitTestGroup(limit);

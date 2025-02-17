@@ -1,4 +1,4 @@
-import { GPUTest } from '../gpu_test';
+import { GPUTest } from '../gpu_test.js';
 
 /**
  * Helper to exhaust VRAM until there is less than 64 MB of capacity. Returns

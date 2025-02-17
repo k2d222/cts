@@ -2,10 +2,10 @@ export const description = `
 Increment and decrement statement tests.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { TypedArrayBufferView } from '../../../../common/util/util';
-import { GPUTest } from '../../../gpu_test';
-import { kValue } from '../../../util/constants';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { TypedArrayBufferView } from '../../../../common/util/util.js';
+import { GPUTest } from '../../../gpu_test.js';
+import { kValue } from '../../../util/constants.js';
 
 export const g = makeTestGroup(GPUTest);
 

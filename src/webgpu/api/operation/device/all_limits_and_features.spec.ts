@@ -1,14 +1,14 @@
 export const description = `Test you can request an device with all features and limits`;
 
-import { TestCaseRecorder, TestParams } from '../../../../common/framework/fixture';
-import { makeTestGroup } from '../../../../common/framework/test_group';
+import { TestCaseRecorder, TestParams } from '../../../../common/framework/fixture.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
 import {
   DeviceSelectionDescriptor,
   GPUTest,
   GPUTestSubcaseBatchState,
   initUncanonicalizedDeviceDescriptor,
 } from '../../../gpu_test.js';
-import { CanonicalDeviceDescriptor, DescriptorModifier } from '../../../util/device_pool';
+import { CanonicalDeviceDescriptor, DescriptorModifier } from '../../../util/device_pool.js';
 
 /**
  * Gets the adapter limits as a standard JavaScript object.

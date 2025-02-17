@@ -1,6 +1,6 @@
-import { Fixture } from '../../common/framework/fixture';
-import { getGPU } from '../../common/util/navigator_gpu';
-import { assert } from '../../common/util/util';
+import { Fixture } from '../../common/framework/fixture.js';
+import { getGPU } from '../../common/util/navigator_gpu.js';
+import { assert } from '../../common/util/util.js';
 
 interface UnknownObject {
   [k: string]: unknown;

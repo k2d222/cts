@@ -1,7 +1,7 @@
 export const description = `Validation tests for group and binding`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { ShaderValidationTest } from '../shader_validation_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { ShaderValidationTest } from '../shader_validation_test.js';
 
 import {
   declareEntrypoint,

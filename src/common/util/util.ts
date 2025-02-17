@@ -1,9 +1,9 @@
-import { Float16Array } from '../../external/petamoriken/float16/float16';
-import { SkipTestCase } from '../framework/fixture';
-import { globalTestConfig } from '../framework/test_config';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
+import { SkipTestCase } from '../framework/fixture.js';
+import { globalTestConfig } from '../framework/test_config.js';
 
-import { keysOf } from './data_tables';
-import { timeout } from './timeout';
+import { keysOf } from './data_tables.js';
+import { timeout } from './timeout.js';
 
 /**
  * Error with arbitrary `extra` data attached, for debugging.

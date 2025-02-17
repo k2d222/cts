@@ -10,19 +10,19 @@ TODO: merge these notes and implement.
 >     - setBindGroup in different orders (e.g. 0,1,2 vs 2,0,1)
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { makeValueTestVariant, range, unreachable } from '../../../../../common/util/util';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { makeValueTestVariant, range, unreachable } from '../../../../../common/util/util.js';
 import {
   kBufferBindingTypes,
   kMinDynamicBufferOffsetAlignment,
 } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants';
-import { kResourceStates, MaxLimitsTestMixin, ResourceState } from '../../../../gpu_test';
+import { GPUConst } from '../../../../constants.js';
+import { kResourceStates, MaxLimitsTestMixin, ResourceState } from '../../../../gpu_test.js';
 import {
   kProgrammableEncoderTypes,
   ProgrammableEncoderType,
 } from '../../../../util/command_buffer_maker.js';
-import { ValidationTest } from '../../validation_test';
+import { ValidationTest } from '../../validation_test.js';
 
 class F extends ValidationTest {
   encoderTypeToStageFlag(encoderType: ProgrammableEncoderType): GPUShaderStageFlags {

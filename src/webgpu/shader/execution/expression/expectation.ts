@@ -1,5 +1,5 @@
-import { ROArrayArray } from '../../../../common/util/types';
-import { Comparator, compare } from '../../../util/compare';
+import { ROArrayArray } from '../../../../common/util/types.js';
+import { Comparator, compare } from '../../../util/compare.js';
 import {
   ArrayValue,
   MatrixValue,
@@ -7,7 +7,7 @@ import {
   VectorValue,
   isScalarValue,
 } from '../../../util/conversion.js';
-import { FPInterval } from '../../../util/floating_point';
+import { FPInterval } from '../../../util/floating_point.js';
 
 export type Expectation =
   | Value

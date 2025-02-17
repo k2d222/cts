@@ -2,8 +2,8 @@ export const description = `
 renderPass store op test that drawn quad is either stored or cleared based on storeop
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { GPUTest } from '../../../gpu_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

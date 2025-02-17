@@ -2,12 +2,12 @@ export const description = `
 Atomically stores the value v in the atomic object pointed to atomic_ptr and returns the original value stored in the atomic object.
 `;
 
-import { makeTestGroup } from '../../../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../../../common/util/data_tables';
-import { GPUTest } from '../../../../../../gpu_test';
-import { checkElementsEqual } from '../../../../../../util/check_contents';
+import { makeTestGroup } from '../../../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../../../common/util/data_tables.js';
+import { GPUTest } from '../../../../../../gpu_test.js';
+import { checkElementsEqual } from '../../../../../../util/check_contents.js';
 
-import { dispatchSizes, workgroupSizes, typedArrayCtor, kMapId } from './harness';
+import { dispatchSizes, workgroupSizes, typedArrayCtor, kMapId } from './harness.js';
 
 export const g = makeTestGroup(GPUTest);
 

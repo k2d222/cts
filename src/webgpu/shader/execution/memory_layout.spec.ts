@@ -1,9 +1,9 @@
 export const description = `Test memory layout requirements`;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
-import { keysOf } from '../../../common/util/data_tables';
-import { iterRange } from '../../../common/util/util';
-import { GPUTest } from '../../gpu_test';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { keysOf } from '../../../common/util/data_tables.js';
+import { iterRange } from '../../../common/util/util.js';
+import { GPUTest } from '../../gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

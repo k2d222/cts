@@ -3,10 +3,10 @@ Tests that, in compat mode, you can not create a pipeline layout with with
 more than the max in stage limit even if the per stage limit is higher.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { range } from '../../../../common/util/util';
-import { RequiredLimitsTestMixin } from '../../../gpu_test';
-import { CompatibilityTest } from '../../compatibility_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { range } from '../../../../common/util/util.js';
+import { RequiredLimitsTestMixin } from '../../../gpu_test.js';
+import { CompatibilityTest } from '../../compatibility_test.js';
 
 export const g = makeTestGroup(
   RequiredLimitsTestMixin(CompatibilityTest, {

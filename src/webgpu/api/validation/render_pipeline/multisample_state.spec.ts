@@ -2,10 +2,10 @@ export const description = `
 This test dedicatedly tests validation of GPUMultisampleState of createRenderPipeline.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kDefaultFragmentShaderCode } from '../../../util/shader';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kDefaultFragmentShaderCode } from '../../../util/shader.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

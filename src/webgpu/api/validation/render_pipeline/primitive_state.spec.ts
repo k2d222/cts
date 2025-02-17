@@ -2,10 +2,10 @@ export const description = `
 This test dedicatedly tests validation of GPUPrimitiveState of createRenderPipeline.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kPrimitiveTopology, kIndexFormat } from '../../../capability_info';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kPrimitiveTopology, kIndexFormat } from '../../../capability_info.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

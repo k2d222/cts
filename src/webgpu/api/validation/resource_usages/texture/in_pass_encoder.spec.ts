@@ -2,18 +2,18 @@ export const description = `
 Texture Usages Validation Tests in Render Pass and Compute Pass.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { pp } from '../../../../../common/util/preprocessor';
-import { assert } from '../../../../../common/util/util';
-import { GPUConst } from '../../../../constants';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { pp } from '../../../../../common/util/preprocessor.js';
+import { assert } from '../../../../../common/util/util.js';
+import { GPUConst } from '../../../../constants.js';
 import {
   kDepthStencilFormats,
   kDepthStencilFormatResolvedAspect,
   kTextureFormatInfo,
   isMultisampledTextureFormat,
 } from '../../../../format_info.js';
-import { MaxLimitsTestMixin } from '../../../../gpu_test';
-import { ValidationTest } from '../../validation_test';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
+import { ValidationTest } from '../../validation_test.js';
 
 type TextureBindingType =
   | 'sampled-texture'

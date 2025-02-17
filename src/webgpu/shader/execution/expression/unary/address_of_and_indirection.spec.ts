@@ -2,11 +2,11 @@ export const description = `
 Execution Tests for unary address-of and indirection (dereference)
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../common/util/data_tables';
-import { GPUTest } from '../../../../gpu_test';
-import { ScalarKind, scalarType } from '../../../../util/conversion';
-import { sparseScalarF32Range } from '../../../../util/math';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../common/util/data_tables.js';
+import { GPUTest } from '../../../../gpu_test.js';
+import { ScalarKind, scalarType } from '../../../../util/conversion.js';
+import { sparseScalarF32Range } from '../../../../util/math.js';
 import {
   allButConstInputSource,
   basicExpressionWithPredeclarationBuilder,

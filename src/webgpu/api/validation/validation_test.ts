@@ -4,7 +4,7 @@ import {
   kMaxQueryCount,
   ShaderStageKey,
 } from '../../capability_info.js';
-import { GPUTest, ResourceState } from '../../gpu_test';
+import { GPUTest, ResourceState } from '../../gpu_test.js';
 
 /**
  * Base fixture for WebGPU validation tests.

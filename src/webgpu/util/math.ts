@@ -1,5 +1,5 @@
-import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types';
-import { assert } from '../../common/util/util';
+import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types.js';
+import { assert } from '../../common/util/util.js';
 import {
   Float16Array,
   getFloat16,
@@ -7,7 +7,7 @@ import {
   setFloat16,
 } from '../../external/petamoriken/float16/float16.js';
 
-import { kBit, kValue } from './constants';
+import { kBit, kValue } from './constants.js';
 import {
   reinterpretF64AsU64,
   reinterpretU64AsF64,

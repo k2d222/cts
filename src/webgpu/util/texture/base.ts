@@ -1,7 +1,7 @@
-import { assert, unreachable } from '../../../common/util/util';
-import { kTextureFormatInfo } from '../../format_info';
-import { align } from '../../util/math';
-import { reifyExtent3D } from '../../util/unions';
+import { assert, unreachable } from '../../../common/util/util.js';
+import { kTextureFormatInfo } from '../../format_info.js';
+import { align } from '../../util/math.js';
+import { reifyExtent3D } from '../../util/unions.js';
 
 export type SampleCoord = Required<GPUOrigin3DDict> & { sampleIndex?: number };
 

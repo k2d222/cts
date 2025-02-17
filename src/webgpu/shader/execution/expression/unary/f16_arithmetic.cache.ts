@@ -1,6 +1,6 @@
-import { FP } from '../../../../util/floating_point';
-import { scalarF16Range } from '../../../../util/math';
-import { makeCaseCache } from '../case_cache';
+import { FP } from '../../../../util/floating_point.js';
+import { scalarF16Range } from '../../../../util/math.js';
+import { makeCaseCache } from '../case_cache.js';
 
 export const d = makeCaseCache('unary/f16_arithmetic', {
   negation: () => {

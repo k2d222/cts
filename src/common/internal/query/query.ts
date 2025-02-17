@@ -1,13 +1,13 @@
-import { TestParams } from '../../framework/fixture';
-import { optionWorkerMode } from '../../runtime/helper/options';
-import { assert, unreachable } from '../../util/util';
-import { Expectation } from '../logging/result';
+import { TestParams } from '../../framework/fixture.js';
+import { optionWorkerMode } from '../../runtime/helper/options.js';
+import { assert, unreachable } from '../../util/util.js';
+import { Expectation } from '../logging/result.js';
 
-import { compareQueries, Ordering } from './compare';
-import { encodeURIComponentSelectively } from './encode_selectively';
-import { parseQuery } from './parseQuery';
-import { kBigSeparator, kPathSeparator, kWildcard } from './separators';
-import { stringifyPublicParams } from './stringify_params';
+import { compareQueries, Ordering } from './compare.js';
+import { encodeURIComponentSelectively } from './encode_selectively.js';
+import { parseQuery } from './parseQuery.js';
+import { kBigSeparator, kPathSeparator, kWildcard } from './separators.js';
+import { stringifyPublicParams } from './stringify_params.js';
 
 /**
  * Represents a test query of some level.

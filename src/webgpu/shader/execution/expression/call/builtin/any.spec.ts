@@ -8,12 +8,12 @@ Returns e if e is scalar.
 Returns true if any component of e is true if e is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { False, True, Type, vec2, vec3, vec4 } from '../../../../../util/conversion';
-import { allInputSources, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { False, True, Type, vec2, vec3, vec4 } from '../../../../../util/conversion.js';
+import { allInputSources, run } from '../../expression.js';
 
-import { builtin } from './builtin';
+import { builtin } from './builtin.js';
 
 export const g = makeTestGroup(GPUTest);
 

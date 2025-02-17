@@ -1,7 +1,7 @@
-import { Cacheable, dataCache } from '../../../../common/framework/data_cache';
-import { unreachable } from '../../../../common/util/util';
-import BinaryStream from '../../../util/binary_stream';
-import { deserializeComparator, serializeComparator } from '../../../util/compare';
+import { Cacheable, dataCache } from '../../../../common/framework/data_cache.js';
+import { unreachable } from '../../../../common/util/util.js';
+import BinaryStream from '../../../util/binary_stream.js';
+import { deserializeComparator, serializeComparator } from '../../../util/compare.js';
 import {
   MatrixValue,
   Value,
@@ -15,10 +15,10 @@ import {
   deserializeFPInterval,
   serializeFPInterval,
 } from '../../../util/floating_point.js';
-import { flatten2DArray, unflatten2DArray } from '../../../util/math';
+import { flatten2DArray, unflatten2DArray } from '../../../util/math.js';
 
-import { Case } from './case';
-import { Expectation, isComparator } from './expectation';
+import { Case } from './case.js';
+import { Expectation, isComparator } from './expectation.js';
 
 enum SerializedExpectationKind {
   Value,

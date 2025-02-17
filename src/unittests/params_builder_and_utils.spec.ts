@@ -2,22 +2,22 @@ export const description = `
 Unit tests for parameterization helpers.
 `;
 
-import { TestParams } from '../common/framework/fixture';
+import { TestParams } from '../common/framework/fixture.js';
 import {
   kUnitCaseParamsBuilder,
   CaseSubcaseIterable,
   ParamsBuilderBase,
   builderIterateCasesWithSubcases,
 } from '../common/framework/params_builder.js';
-import { makeTestGroup } from '../common/framework/test_group';
+import { makeTestGroup } from '../common/framework/test_group.js';
 import {
   mergeParams,
   mergeParamsChecked,
   publicParamsEquals,
 } from '../common/internal/params_utils.js';
-import { assert, objectEquals } from '../common/util/util';
+import { assert, objectEquals } from '../common/util/util.js';
 
-import { UnitTest } from './unit_test';
+import { UnitTest } from './unit_test.js';
 
 class ParamsTest extends UnitTest {
   expectParams<CaseP extends {}, SubcaseP extends {}>(

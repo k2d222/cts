@@ -7,13 +7,13 @@ integer dot product of these two vectors. Each component is sign-extended to i32
 the multiply, and then the add operations are done in WGSL i32 with wrapping behaviour.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { Type, i32, u32 } from '../../../../../util/conversion';
-import { Case } from '../../case';
-import { allInputSources, Config, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { Type, i32, u32 } from '../../../../../util/conversion.js';
+import { Case } from '../../case.js';
+import { allInputSources, Config, run } from '../../expression.js';
 
-import { builtin } from './builtin';
+import { builtin } from './builtin.js';
 
 export const g = makeTestGroup(GPUTest);
 

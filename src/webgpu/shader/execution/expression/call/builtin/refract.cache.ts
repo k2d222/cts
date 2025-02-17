@@ -1,9 +1,9 @@
-import { ROArrayArray } from '../../../../../../common/util/types';
-import { toVector } from '../../../../../util/conversion';
-import { FP, FPKind } from '../../../../../util/floating_point';
-import { Case, selectNCases } from '../../case';
-import { makeCaseCache } from '../../case_cache';
-import { IntervalFilter } from '../../interval_filter';
+import { ROArrayArray } from '../../../../../../common/util/types.js';
+import { toVector } from '../../../../../util/conversion.js';
+import { FP, FPKind } from '../../../../../util/floating_point.js';
+import { Case, selectNCases } from '../../case.js';
+import { makeCaseCache } from '../../case_cache.js';
+import { IntervalFilter } from '../../interval_filter.js';
 
 // Using a bespoke implementation of make*Case and generate*Cases here
 // since refract is the only builtin with the API signature

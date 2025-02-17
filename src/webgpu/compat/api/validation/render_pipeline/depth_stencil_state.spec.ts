@@ -2,8 +2,8 @@ export const description = `
 Tests that depthBiasClamp must be zero in compat mode.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { CompatibilityTest } from '../../../compatibility_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { CompatibilityTest } from '../../../compatibility_test.js';
 
 export const g = makeTestGroup(CompatibilityTest);
 

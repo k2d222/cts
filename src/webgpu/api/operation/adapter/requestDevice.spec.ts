@@ -5,17 +5,17 @@ Note tests explicitly destroy created devices so that tests don't have to wait f
 potentially limited native resources.
 `;
 
-import { Fixture } from '../../../../common/framework/fixture';
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { getGPU } from '../../../../common/util/navigator_gpu';
-import { assert, assertReject, raceWithRejectOnTimeout } from '../../../../common/util/util';
+import { Fixture } from '../../../../common/framework/fixture.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { getGPU } from '../../../../common/util/navigator_gpu.js';
+import { assert, assertReject, raceWithRejectOnTimeout } from '../../../../common/util/util.js';
 import {
   getDefaultLimitsForAdapter,
   kFeatureNames,
   kLimits,
   kLimitClasses,
 } from '../../../capability_info.js';
-import { clamp, isPowerOfTwo } from '../../../util/math';
+import { clamp, isPowerOfTwo } from '../../../util/math.js';
 
 export const g = makeTestGroup(Fixture);
 

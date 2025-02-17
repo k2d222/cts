@@ -16,15 +16,15 @@ Component-wise when T is a vector.
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { Type, i32, u32, abstractInt } from '../../../../../util/conversion';
-import { maxBigInt } from '../../../../../util/math';
-import { Case } from '../../case';
-import { allInputSources, onlyConstInputSource, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { Type, i32, u32, abstractInt } from '../../../../../util/conversion.js';
+import { maxBigInt } from '../../../../../util/math.js';
+import { Case } from '../../case.js';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
 
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin';
-import { d } from './max.cache';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
+import { d } from './max.cache.js';
 
 /** Generate set of max test cases from list of interesting values */
 function generateTestCases<Type>(values: Type[], makeCase: (x: Type, y: Type) => Case): Case[] {

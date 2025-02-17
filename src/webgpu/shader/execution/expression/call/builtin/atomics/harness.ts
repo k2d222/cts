@@ -3,7 +3,7 @@ import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../../../../../../common/util/util.js';
-import { GPUTest } from '../../../../../../gpu_test';
+import { GPUTest } from '../../../../../../gpu_test.js';
 
 // Use these in combination.
 export const workgroupSizes = [1, 2, 32, 64];

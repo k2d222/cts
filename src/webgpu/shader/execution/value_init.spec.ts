@@ -1,8 +1,8 @@
 export const description = `Test that variables in the shader are value initialized`;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
-import { GPUTest } from '../../gpu_test';
-import { Type } from '../../util/conversion';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { GPUTest } from '../../gpu_test.js';
+import { Type } from '../../util/conversion.js';
 
 export const g = makeTestGroup(GPUTest);
 

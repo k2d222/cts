@@ -2,16 +2,16 @@ export const description = `
 Tests for validation in createBuffer.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { assert } from '../../../../common/util/util';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { assert } from '../../../../common/util/util.js';
 import {
   kAllBufferUsageBits,
   kBufferSizeAlignment,
   kBufferUsages,
 } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants';
-import { kMaxSafeMultipleOf8 } from '../../../util/math';
-import { ValidationTest } from '../validation_test';
+import { GPUConst } from '../../../constants.js';
+import { kMaxSafeMultipleOf8 } from '../../../util/math.js';
+import { ValidationTest } from '../validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);
 

@@ -1,5 +1,5 @@
-import { assert } from '../../../common/util/util';
-import { takeScreenshot, takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait';
+import { assert } from '../../../common/util/util.js';
+import { takeScreenshot, takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait.js';
 
 interface GPURefTest {
   readonly device: GPUDevice;

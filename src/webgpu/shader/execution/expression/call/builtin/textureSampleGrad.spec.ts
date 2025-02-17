@@ -5,8 +5,8 @@ Samples a texture using explicit gradients.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.js';
 
 import {
   appendComponentTypeForFormatToTextureType,

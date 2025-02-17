@@ -12,9 +12,9 @@ import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../common/util/util.js';
-import { Float16Array } from '../../external/petamoriken/float16/float16';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 
-import { generatePrettyTable } from './pretty_diff_tables';
+import { generatePrettyTable } from './pretty_diff_tables.js';
 
 /** Generate an expected value at `index`, to test for equality with the actual value. */
 export type CheckElementsGenerator = (index: number) => number;

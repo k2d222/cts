@@ -1,10 +1,10 @@
-import { assert, memcpy } from '../../../common/util/util';
-import { kTextureFormatInfo, EncodableTextureFormat } from '../../format_info';
-import { generatePrettyTable, numericToStringBuilder } from '../pretty_diff_tables';
-import { reifyExtent3D, reifyOrigin3D } from '../unions';
+import { assert, memcpy } from '../../../common/util/util.js';
+import { kTextureFormatInfo, EncodableTextureFormat } from '../../format_info.js';
+import { generatePrettyTable, numericToStringBuilder } from '../pretty_diff_tables.js';
+import { reifyExtent3D, reifyOrigin3D } from '../unions.js';
 
-import { fullSubrectCoordinates, SampleCoord } from './base';
-import { kTexelRepresentationInfo, makeClampToRange, PerTexelComponent } from './texel_data';
+import { fullSubrectCoordinates, SampleCoord } from './base.js';
+import { kTexelRepresentationInfo, makeClampToRange, PerTexelComponent } from './texel_data.js';
 
 /** Function taking some x,y,z coordinates and returning `Readonly<T>`. */
 export type PerPixelAtLevel<T> = (coords: SampleCoord) => Readonly<T>;

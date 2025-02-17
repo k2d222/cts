@@ -1,8 +1,8 @@
 export const description = 'Test pointer type validation';
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { keysOf } from '../../../../common/util/data_tables';
-import { AddressSpace, kAccessModeInfo, kAddressSpaceInfo } from '../../types';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../common/util/data_tables.js';
+import { AddressSpace, kAccessModeInfo, kAddressSpaceInfo } from '../../types.js';
 import {
   pointerType,
   explicitSpaceExpander,
@@ -11,7 +11,7 @@ import {
   supportsWrite,
   ShaderStage,
 } from '../decl/util.js';
-import { ShaderValidationTest } from '../shader_validation_test';
+import { ShaderValidationTest } from '../shader_validation_test.js';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -1,4 +1,4 @@
-import { assert } from '../util/util';
+import { assert } from '../util/util.js';
 
 /** Metadata about tests (that can't be derived at runtime). */
 export type TestMetadata = {

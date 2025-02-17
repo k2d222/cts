@@ -2,8 +2,8 @@ export const description = `
 Tests for TestQuery
 `;
 
-import { makeTestGroup } from '../common/framework/test_group';
-import { parseQuery } from '../common/internal/query/parseQuery';
+import { makeTestGroup } from '../common/framework/test_group.js';
+import { parseQuery } from '../common/internal/query/parseQuery.js';
 import {
   TestQueryMultiFile,
   TestQueryMultiTest,
@@ -12,7 +12,7 @@ import {
   TestQuery,
 } from '../common/internal/query/query.js';
 
-import { UnitTest } from './unit_test';
+import { UnitTest } from './unit_test.js';
 
 class F extends UnitTest {
   expectToString(q: TestQuery, exp: string) {

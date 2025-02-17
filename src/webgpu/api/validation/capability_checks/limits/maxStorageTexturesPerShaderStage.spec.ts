@@ -1,4 +1,4 @@
-import { getGPU } from '../../../../../common/util/navigator_gpu';
+import { getGPU } from '../../../../../common/util/navigator_gpu.js';
 import {
   range,
   reorder,
@@ -11,7 +11,7 @@ import {
   kStorageTextureAccessValues,
   storageTextureBindingTypeInfo,
 } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants';
+import { GPUConst } from '../../../../constants.js';
 
 import {
   kMaximumLimitBaseParams,

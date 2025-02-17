@@ -1,6 +1,6 @@
-import { assert, unreachable } from '../../../common/util/util';
+import { assert, unreachable } from '../../../common/util/util.js';
 
-import { runRefTest } from './gpu_ref_test';
+import { runRefTest } from './gpu_ref_test.js';
 
 type WriteCanvasMethod = 'draw' | 'copy';
 

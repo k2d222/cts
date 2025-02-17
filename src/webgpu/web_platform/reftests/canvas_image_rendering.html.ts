@@ -1,4 +1,4 @@
-import { runRefTest } from './gpu_ref_test';
+import { runRefTest } from './gpu_ref_test.js';
 
 runRefTest(t => {
   const device = t.device;

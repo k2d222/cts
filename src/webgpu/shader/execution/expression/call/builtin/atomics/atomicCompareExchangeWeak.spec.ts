@@ -13,10 +13,10 @@ That is, the second component of the result vector may be false even if the firs
 component of the result vector equals cmp.
 `;
 
-import { makeTestGroup } from '../../../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../../../common/util/data_tables';
-import { assert } from '../../../../../../../common/util/util';
-import { GPUTest } from '../../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../../../common/util/data_tables.js';
+import { assert } from '../../../../../../../common/util/util.js';
+import { GPUTest } from '../../../../../../gpu_test.js';
 
 import {
   dispatchSizes,

@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the boolean conversion operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../gpu_test';
-import { Type } from '../../../../util/conversion';
-import { ShaderBuilder, allInputSources, run } from '../expression';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../gpu_test.js';
+import { Type } from '../../../../util/conversion.js';
+import { ShaderBuilder, allInputSources, run } from '../expression.js';
 
-import { d } from './bool_conversion.cache';
-import { unary } from './unary';
+import { d } from './bool_conversion.cache.js';
+import { unary } from './unary.js';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -1,9 +1,9 @@
 const kFn = 'pack2x16unorm';
 export const description = `Validate ${kFn}`;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../../common/util/data_tables';
-import { ShaderValidationTest } from '../../../shader_validation_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../../common/util/data_tables.js';
+import { ShaderValidationTest } from '../../../shader_validation_test.js';
 
 const kArgCases = {
   good: '(vec2f())',

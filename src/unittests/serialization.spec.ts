@@ -1,20 +1,20 @@
 export const description = `Unit tests for data cache serialization`;
 
-import { getIsBuildingDataCache, setIsBuildingDataCache } from '../common/framework/data_cache';
-import { makeTestGroup } from '../common/internal/test_group';
-import { objectEquals } from '../common/util/util';
+import { getIsBuildingDataCache, setIsBuildingDataCache } from '../common/framework/data_cache.js';
+import { makeTestGroup } from '../common/internal/test_group.js';
+import { objectEquals } from '../common/util/util.js';
 import {
   deserializeExpectation,
   serializeExpectation,
 } from '../webgpu/shader/execution/expression/case_cache.js';
-import BinaryStream from '../webgpu/util/binary_stream';
+import BinaryStream from '../webgpu/util/binary_stream.js';
 import {
   anyOf,
   deserializeComparator,
   serializeComparator,
   skipUndefined,
 } from '../webgpu/util/compare.js';
-import { kValue } from '../webgpu/util/constants';
+import { kValue } from '../webgpu/util/constants.js';
 import {
   abstractFloat,
   abstractInt,
@@ -34,9 +34,9 @@ import {
   vec3,
   vec4,
 } from '../webgpu/util/conversion.js';
-import { deserializeFPInterval, FP, serializeFPInterval } from '../webgpu/util/floating_point';
+import { deserializeFPInterval, FP, serializeFPInterval } from '../webgpu/util/floating_point.js';
 
-import { UnitTest } from './unit_test';
+import { UnitTest } from './unit_test.js';
 
 export const g = makeTestGroup(UnitTest);
 

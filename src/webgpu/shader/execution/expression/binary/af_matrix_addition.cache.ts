@@ -1,10 +1,10 @@
-import { ROArrayArray } from '../../../../../common/util/types';
-import { assert } from '../../../../../common/util/util';
-import { FP, FPInterval, FPMatrix } from '../../../../util/floating_point';
-import { selectNCases } from '../case';
-import { makeCaseCache } from '../case_cache';
+import { ROArrayArray } from '../../../../../common/util/types.js';
+import { assert } from '../../../../../common/util/util.js';
+import { FP, FPInterval, FPMatrix } from '../../../../util/floating_point.js';
+import { selectNCases } from '../case.js';
+import { makeCaseCache } from '../case_cache.js';
 
-import { getAdditionAFInterval, kSparseMatrixAFValues } from './af_data';
+import { getAdditionAFInterval, kSparseMatrixAFValues } from './af_data.js';
 
 const additionMatrixMatrixInterval = (
   lhs: ROArrayArray<number>,

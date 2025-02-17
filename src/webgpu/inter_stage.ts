@@ -1,6 +1,6 @@
-import { assert } from '../common/util/util';
+import { assert } from '../common/util/util.js';
 
-import { GPUTest } from './gpu_test';
+import { GPUTest } from './gpu_test.js';
 
 export type FlatSampling = 'first' | 'last';
 

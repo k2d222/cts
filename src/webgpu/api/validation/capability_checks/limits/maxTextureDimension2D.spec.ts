@@ -1,7 +1,7 @@
-import { getGPU } from '../../../../../common/util/navigator_gpu';
-import { kAllCanvasTypes, createCanvas } from '../../../../util/create_elements';
+import { getGPU } from '../../../../../common/util/navigator_gpu.js';
+import { kAllCanvasTypes, createCanvas } from '../../../../util/create_elements.js';
 
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
 
 const limit = 'maxTextureDimension2D';
 export const { g, description } = makeLimitTestGroup(limit);

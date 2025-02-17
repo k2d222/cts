@@ -1,10 +1,10 @@
-import { ColorTextureFormat, kTextureFormatInfo } from '../../../format_info';
+import { ColorTextureFormat, kTextureFormatInfo } from '../../../format_info.js';
 import {
   getFragmentShaderCodeWithOutput,
   getPlainTypeInfo,
   kDefaultVertexShaderCode,
 } from '../../../util/shader.js';
-import { ValidationTest } from '../validation_test';
+import { ValidationTest } from '../validation_test.js';
 
 export type ColorTargetState = GPUColorTargetState & { format: ColorTextureFormat };
 

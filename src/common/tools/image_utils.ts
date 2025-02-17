@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 import { Page } from 'playwright-core';
-import { PNG } from 'pn';
+import { PNG } from 'pngjs';
 import { screenshot, WindowInfo } from 'screenshot-ftw';
 
 // eslint-disable-next-line ban/ban

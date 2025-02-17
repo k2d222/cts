@@ -3,7 +3,7 @@ import * as path from 'path';
 
 import { chromium, firefox, webkit, Page, Browser } from 'playwright-core';
 
-import { ScreenshotManager, readPng, writePng } from './image_utils';
+import { ScreenshotManager, readPng, writePng } from './image_utils.js';
 
 declare function wptRefTestPageReady(): boolean;
 declare function wptRefTestGetTimeout(): boolean;

@@ -4,9 +4,9 @@ Test coverage:
 Test all culling combinations of GPUFrontFace and GPUCullMode show the correct output.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kTextureFormatInfo, SizedTextureFormat } from '../../../format_info';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kTextureFormatInfo, SizedTextureFormat } from '../../../format_info.js';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
 
 function faceIsCulled(face: 'cw' | 'ccw', frontFace: GPUFrontFace, cullMode: GPUCullMode): boolean {
   return cullMode !== 'none' && (frontFace === face) === (cullMode === 'front');

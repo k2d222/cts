@@ -7,9 +7,9 @@ Validation tests for the ${builtin}() builtin.
 * test textureDimension doesn't work with texture types it's not supposed to
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info.js';
 import {
   Type,
   kAllScalarsAndVectors,
@@ -17,7 +17,7 @@ import {
   isUnsignedType,
   stringToType,
 } from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test';
+import { ShaderValidationTest } from '../../../shader_validation_test.js';
 
 import {
   getNonStorageTextureTypeWGSL,

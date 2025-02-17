@@ -3,14 +3,14 @@ export const description = `
 Validation tests for the ${builtin}() builtin.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
 import {
   Type,
   kConcreteIntegerScalarsAndVectors,
   kFloatScalarsAndVectors,
 } from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test';
+import { ShaderValidationTest } from '../../../shader_validation_test.js';
 
 import {
   fullRangeForType,

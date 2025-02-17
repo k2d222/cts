@@ -13,9 +13,9 @@ Test Coverage:
     - Test non-ASCII strings.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { kEncoderTypes } from '../../../../util/command_buffer_maker';
-import { ValidationTest } from '../../validation_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { kEncoderTypes } from '../../../../util/command_buffer_maker.js';
+import { ValidationTest } from '../../validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);
 

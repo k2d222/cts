@@ -1,7 +1,7 @@
-import { FP } from '../../../../util/floating_point';
-import { sparseMatrixF64Range, sparseVectorF64Range } from '../../../../util/math';
-import { selectNCases } from '../case';
-import { makeCaseCache } from '../case_cache';
+import { FP } from '../../../../util/floating_point.js';
+import { sparseMatrixF64Range, sparseVectorF64Range } from '../../../../util/math.js';
+import { selectNCases } from '../case.js';
+import { makeCaseCache } from '../case_cache.js';
 
 // Cases: matCxR_vecC
 const mat_vec_cases = ([2, 3, 4] as const)

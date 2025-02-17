@@ -1,6 +1,6 @@
-import { FP, FPVector } from '../../../../util/floating_point';
-import { sparseScalarF64Range, sparseVectorF64Range } from '../../../../util/math';
-import { makeCaseCache } from '../case_cache';
+import { FP, FPVector } from '../../../../util/floating_point.js';
+import { sparseScalarF64Range, sparseVectorF64Range } from '../../../../util/math.js';
+import { makeCaseCache } from '../case_cache.js';
 
 const divisionVectorScalarInterval = (v: readonly number[], s: number): FPVector => {
   // division has an ulp accuracy, so abstract is only expected to be as accurate as f32

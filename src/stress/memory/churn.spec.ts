@@ -3,8 +3,8 @@ Stress tests covering robustness in the presence of heavy buffer and texture
 memory churn.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group';
-import { GPUTest } from '../../webgpu/gpu_test';
+import { makeTestGroup } from '../../common/framework/test_group.js';
+import { GPUTest } from '../../webgpu/gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

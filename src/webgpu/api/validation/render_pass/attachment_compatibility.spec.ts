@@ -4,9 +4,9 @@ Validation for attachment compatibility between render passes, bundles, and pipe
 TODO(#3363): Make this into a MaxLimitTest and increase kMaxColorAttachments.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { range } from '../../../../common/util/util';
-import { getDefaultLimits, kTextureSampleCounts } from '../../../capability_info';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { range } from '../../../../common/util/util.js';
+import { getDefaultLimits, kTextureSampleCounts } from '../../../capability_info.js';
 import {
   kRegularTextureFormats,
   kSizedDepthStencilFormats,
@@ -15,7 +15,7 @@ import {
   filterFormatsByFeature,
   getFeaturesForFormats,
 } from '../../../format_info.js';
-import { ValidationTest } from '../validation_test';
+import { ValidationTest } from '../validation_test.js';
 
 // MAINTENANCE_TODO: This should be changed to kMaxColorAttachmentsToTest
 // when this is made a MaxLimitTest (see above).

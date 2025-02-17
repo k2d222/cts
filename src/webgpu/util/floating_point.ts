@@ -1,12 +1,12 @@
-import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types';
-import { assert, unreachable } from '../../common/util/util';
-import { Float16Array } from '../../external/petamoriken/float16/float16';
-import { Case } from '../shader/execution/expression/case';
-import { IntervalFilter } from '../shader/execution/expression/interval_filter';
+import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types.js';
+import { assert, unreachable } from '../../common/util/util.js';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
+import { Case } from '../shader/execution/expression/case.js';
+import { IntervalFilter } from '../shader/execution/expression/interval_filter.js';
 
-import BinaryStream from './binary_stream';
-import { anyOf } from './compare';
-import { kValue } from './constants';
+import BinaryStream from './binary_stream.js';
+import { anyOf } from './compare.js';
+import { kValue } from './constants.js';
 import {
   abstractFloat,
   f16,

@@ -7,9 +7,9 @@ passthrough:
   * Output from fragment shader as uint
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { range } from '../../../../common/util/util';
-import { GPUTest } from '../../../gpu_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { range } from '../../../../common/util/util.js';
+import { GPUTest } from '../../../gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

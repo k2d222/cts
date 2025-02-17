@@ -2,11 +2,11 @@ export const description = `
 Texture Usages Validation Tests on All Kinds of WebGPU Subresource Usage Scopes.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { unreachable } from '../../../../../common/util/util';
-import { kTextureUsages } from '../../../../capability_info';
-import { MaxLimitsTestMixin } from '../../../../gpu_test';
-import { ValidationTest } from '../../validation_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { unreachable } from '../../../../../common/util/util.js';
+import { kTextureUsages } from '../../../../capability_info.js';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
+import { ValidationTest } from '../../validation_test.js';
 import {
   TextureBindingType,
   kTextureBindingTypes,

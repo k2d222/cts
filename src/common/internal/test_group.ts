@@ -14,28 +14,28 @@ import {
   ParamsBuilderBase,
   SubcaseParamsBuilder,
 } from '../framework/params_builder.js';
-import { globalTestConfig } from '../framework/test_config';
-import { Expectation } from '../internal/logging/result';
-import { TestCaseRecorder } from '../internal/logging/test_case_recorder';
-import { extractPublicParams, Merged, mergeParams } from '../internal/params_utils';
-import { compareQueries, Ordering } from '../internal/query/compare';
+import { globalTestConfig } from '../framework/test_config.js';
+import { Expectation } from '../internal/logging/result.js';
+import { TestCaseRecorder } from '../internal/logging/test_case_recorder.js';
+import { extractPublicParams, Merged, mergeParams } from '../internal/params_utils.js';
+import { compareQueries, Ordering } from '../internal/query/compare.js';
 import {
   TestQueryMultiFile,
   TestQueryMultiTest,
   TestQuerySingleCase,
   TestQueryWithExpectation,
 } from '../internal/query/query.js';
-import { kPathSeparator } from '../internal/query/separators';
+import { kPathSeparator } from '../internal/query/separators.js';
 import {
   stringifyPublicParams,
   stringifyPublicParamsUniquely,
 } from '../internal/query/stringify_params.js';
-import { validQueryPart } from '../internal/query/validQueryPart';
-import { attemptGarbageCollection } from '../util/collect_garbage';
-import { DeepReadonly } from '../util/types';
-import { assert, unreachable } from '../util/util';
+import { validQueryPart } from '../internal/query/validQueryPart.js';
+import { attemptGarbageCollection } from '../util/collect_garbage.js';
+import { DeepReadonly } from '../util/types.js';
+import { assert, unreachable } from '../util/util.js';
 
-import { logToWebSocket } from './websocket_logger';
+import { logToWebSocket } from './websocket_logger.js';
 
 export type RunFn = (
   rec: TestCaseRecorder,

@@ -2,8 +2,8 @@ export const description = `
 Stress tests covering robustness in the presence of slow shaders.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group';
-import { GPUTest, TextureTestMixin } from '../../webgpu/gpu_test';
+import { makeTestGroup } from '../../common/framework/test_group.js';
+import { GPUTest, TextureTestMixin } from '../../webgpu/gpu_test.js';
 
 export const g = makeTestGroup(TextureTestMixin(GPUTest));
 

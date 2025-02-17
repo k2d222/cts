@@ -7,9 +7,9 @@ Samples a texture with a bias to the mip level.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info';
-import { TextureTestMixin } from '../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.js';
+import { TextureTestMixin } from '../../../../../gpu_test.js';
 
 import {
   vec2,

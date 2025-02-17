@@ -1,11 +1,11 @@
 export const description = `Validation tests for 'switch' statements'`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { keysOf } from '../../../../common/util/data_tables';
-import { Type } from '../../../util/conversion';
-import { ShaderValidationTest } from '../shader_validation_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../common/util/data_tables.js';
+import { Type } from '../../../util/conversion.js';
+import { ShaderValidationTest } from '../shader_validation_test.js';
 
-import { kTestTypes } from './test_types';
+import { kTestTypes } from './test_types.js';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

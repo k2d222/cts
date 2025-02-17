@@ -1,6 +1,6 @@
-import { FP, FPVector } from '../../../../util/floating_point';
-import { sparseScalarF32Range, sparseVectorF32Range } from '../../../../util/math';
-import { makeCaseCache } from '../case_cache';
+import { FP, FPVector } from '../../../../util/floating_point.js';
+import { sparseScalarF32Range, sparseVectorF32Range } from '../../../../util/math.js';
+import { makeCaseCache } from '../case_cache.js';
 
 const additionVectorScalarInterval = (v: readonly number[], s: number): FPVector => {
   return FP.f32.toVector(v.map(e => FP.f32.additionInterval(e, s)));

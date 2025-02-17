@@ -6,11 +6,11 @@ fn fwidth(e:T) ->T
 Returns abs(dpdx(e)) + abs(dpdy(e)).
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
 
-import { d } from './fwidth.cache';
-import { runFWidthTest } from './fwidth';
+import { d } from './fwidth.cache.js';
+import { runFWidthTest } from './fwidth.js';
 
 export const g = makeTestGroup(GPUTest);
 

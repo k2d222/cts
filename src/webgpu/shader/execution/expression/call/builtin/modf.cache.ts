@@ -1,7 +1,7 @@
-import { toVector } from '../../../../../util/conversion';
-import { FP, FPKind } from '../../../../../util/floating_point';
-import { Case } from '../../case';
-import { makeCaseCache } from '../../case_cache';
+import { toVector } from '../../../../../util/conversion.js';
+import { FP, FPKind } from '../../../../../util/floating_point.js';
+import { Case } from '../../case.js';
+import { makeCaseCache } from '../../case_cache.js';
 
 /** @returns a fract Case for a scalar vector input */
 function makeScalarCaseFract(kind: FPKind, n: number): Case {

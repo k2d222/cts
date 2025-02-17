@@ -2,8 +2,8 @@ export const description = `
 Stress tests for allocation of GPUBuffer objects through GPUDevice.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group';
-import { GPUTest } from '../../webgpu/gpu_test';
+import { makeTestGroup } from '../../common/framework/test_group.js';
+import { GPUTest } from '../../webgpu/gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

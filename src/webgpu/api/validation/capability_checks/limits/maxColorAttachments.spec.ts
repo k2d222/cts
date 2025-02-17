@@ -1,7 +1,7 @@
-import { range } from '../../../../../common/util/util';
-import { kMaxColorAttachmentsToTest } from '../../../../capability_info';
+import { range } from '../../../../../common/util/util.js';
+import { kMaxColorAttachmentsToTest } from '../../../../capability_info.js';
 
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
 
 function getPipelineDescriptor(device: GPUDevice, testValue: number): GPURenderPipelineDescriptor {
   const code = `

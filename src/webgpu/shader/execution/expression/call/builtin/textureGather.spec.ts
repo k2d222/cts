@@ -24,7 +24,7 @@ A texture gather operation reads from a 2D, 2D array, cube, or cube array textur
       w (umin,vmin)
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
 import {
   isDepthTextureFormat,
   isFilterableAsTextureF32,

@@ -2,8 +2,8 @@ export const description = `
 This test dedicatedly tests validation of GPUDepthStencilState of createRenderPipeline.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { unreachable } from '../../../../common/util/util';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { unreachable } from '../../../../common/util/util.js';
 import {
   kCompareFunctions,
   kPrimitiveTopology,
@@ -14,9 +14,9 @@ import {
   kTextureFormatInfo,
   kDepthStencilFormats,
 } from '../../../format_info.js';
-import { getFragmentShaderCodeWithOutput } from '../../../util/shader';
+import { getFragmentShaderCodeWithOutput } from '../../../util/shader.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

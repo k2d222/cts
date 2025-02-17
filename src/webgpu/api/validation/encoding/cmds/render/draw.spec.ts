@@ -4,10 +4,10 @@ of draw calls are tested, and test that validation errors do / don't occur for c
 and parameters as expect.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { kVertexFormatInfo } from '../../../../../capability_info';
-import { GPUTest } from '../../../../../gpu_test';
-import { ValidationTest } from '../../../validation_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { kVertexFormatInfo } from '../../../../../capability_info.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { ValidationTest } from '../../../validation_test.js';
 
 type VertexAttrib<A> = A & { shaderLocation: number };
 type VertexBuffer<V, A> = V & {

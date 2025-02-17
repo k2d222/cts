@@ -2,9 +2,9 @@ export const description = `
 Tests for resource compatibility between pipeline layout and shader modules
   `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { keysOf } from '../../../../common/util/data_tables';
-import { MaxLimitsTestMixin } from '../../../gpu_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../common/util/data_tables.js';
+import { MaxLimitsTestMixin } from '../../../gpu_test.js';
 import {
   kAPIResources,
   getWGSLShaderForResource,
@@ -12,7 +12,7 @@ import {
   doResourcesMatch,
 } from '../utils.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(MaxLimitsTestMixin(CreateRenderPipelineValidationTest));
 

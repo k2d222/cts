@@ -2,14 +2,14 @@ export const description = `
 Execution Tests for the bitwise shift binary expression operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { assert } from '../../../../../common/util/util';
-import { GPUTest } from '../../../../gpu_test';
-import { ScalarBuilder, ScalarValue, Type, abstractInt, u32 } from '../../../../util/conversion';
-import { Case } from '../case';
-import { allInputSources, onlyConstInputSource, run } from '../expression';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { assert } from '../../../../../common/util/util.js';
+import { GPUTest } from '../../../../gpu_test.js';
+import { ScalarBuilder, ScalarValue, Type, abstractInt, u32 } from '../../../../util/conversion.js';
+import { Case } from '../case.js';
+import { allInputSources, onlyConstInputSource, run } from '../expression.js';
 
-import { abstractIntBinary, binary, compoundBinary } from './binary';
+import { abstractIntBinary, binary, compoundBinary } from './binary.js';
 
 export const g = makeTestGroup(GPUTest);
 

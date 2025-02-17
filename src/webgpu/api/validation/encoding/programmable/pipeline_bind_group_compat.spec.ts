@@ -11,22 +11,22 @@ TODO: subsume existing test, rewrite fixture as needed.
 TODO: Add externalTexture to kResourceTypes [1]
 `;
 
-import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder';
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { memcpy, unreachable } from '../../../../../common/util/util';
+import { kUnitCaseParamsBuilder } from '../../../../../common/framework/params_builder.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { memcpy, unreachable } from '../../../../../common/util/util.js';
 import {
   kSamplerBindingTypes,
   kShaderStageCombinations,
   kBufferBindingTypes,
   ValidBindableResource,
 } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants';
-import { MaxLimitsTestMixin } from '../../../../gpu_test';
+import { GPUConst } from '../../../../constants.js';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
 import {
   ProgrammableEncoderType,
   kProgrammableEncoderTypes,
 } from '../../../../util/command_buffer_maker.js';
-import { ValidationTest } from '../../validation_test';
+import { ValidationTest } from '../../validation_test.js';
 
 const kComputeCmds = ['dispatch', 'dispatchIndirect'] as const;
 type ComputeCmd = (typeof kComputeCmds)[number];

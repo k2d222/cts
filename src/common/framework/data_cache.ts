@@ -3,7 +3,7 @@
  * expensive to build using a two-level cache (in-memory, pre-computed file).
  */
 
-import { assert } from '../util/util';
+import { assert } from '../util/util.js';
 
 interface DataStore {
   load(path: string): Promise<Uint8Array>;

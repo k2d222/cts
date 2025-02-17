@@ -1,8 +1,8 @@
-import { f32 } from '../../../../../util/conversion';
-import { FP, FPInterval } from '../../../../../util/floating_point';
-import { cartesianProduct, sparseScalarF32Range } from '../../../../../util/math';
-import { Case } from '../../case';
-import { makeCaseCache } from '../../case_cache';
+import { f32 } from '../../../../../util/conversion.js';
+import { FP, FPInterval } from '../../../../../util/floating_point.js';
+import { cartesianProduct, sparseScalarF32Range } from '../../../../../util/math.js';
+import { Case } from '../../case.js';
+import { makeCaseCache } from '../../case_cache.js';
 
 function makeCase(v0: number, v1: number, v2: number, v3: number): Case {
   const expected: FPInterval[] = [

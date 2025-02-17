@@ -14,12 +14,12 @@ Otherwise the position of the most significant bit in e that is different from e
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { i32, i32Bits, Type, u32, u32Bits } from '../../../../../util/conversion';
-import { allInputSources, Config, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { i32, i32Bits, Type, u32, u32Bits } from '../../../../../util/conversion.js';
+import { allInputSources, Config, run } from '../../expression.js';
 
-import { builtin } from './builtin';
+import { builtin } from './builtin.js';
 
 export const g = makeTestGroup(GPUTest);
 

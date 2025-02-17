@@ -8,7 +8,7 @@ TODO:
   (valid), then try to map on that thread (invalid)
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { ValidationTest } from '../validation_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { ValidationTest } from '../validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);

@@ -1,4 +1,4 @@
-import { Float16Array } from '../../external/petamoriken/float16/float16';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 
 /**
  * Once-allocated ArrayBuffer/views to avoid overhead of allocation when converting between numeric formats

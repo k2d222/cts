@@ -1,4 +1,4 @@
-import { ResourceState, GPUTestBase } from '../gpu_test';
+import { ResourceState, GPUTestBase } from '../gpu_test.js';
 
 export const kRenderEncodeTypes = ['render pass', 'render bundle'] as const;
 export type RenderEncodeType = (typeof kRenderEncodeTypes)[number];

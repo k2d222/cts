@@ -1,9 +1,9 @@
 export const description = `Validation tests for uniformity analysis`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { keysOf } from '../../../../common/util/data_tables';
-import { unreachable } from '../../../../common/util/util';
-import { ShaderValidationTest } from '../shader_validation_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../common/util/data_tables.js';
+import { unreachable } from '../../../../common/util/util.js';
+import { ShaderValidationTest } from '../shader_validation_test.js';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

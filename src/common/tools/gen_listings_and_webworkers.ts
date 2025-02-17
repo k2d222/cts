@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as process from 'process';
 
-import { crawl } from './crawl';
+import { crawl } from './crawl.js';
 
 function usage(rc: number): void {
   console.error(`Usage: tools/gen_listings_and_webworkers [options] [OUT_DIR] [SUITE_DIRS...]
@@ -79,8 +79,8 @@ export const listing = ${JSON.stringify(listing, undefined, 2)};
         `\
 // AUTO-GENERATED - DO NOT EDIT. See ${myself}.
 
-import { g } from '${relPathToSuiteRoot}/${entry.file.join('/')}.spec';
-import { wrapTestGroupForWorker } from '${relPathToSuiteRoot}/../common/runtime/helper/wrap_for_worker';
+import { g } from '${relPathToSuiteRoot}/${entry.file.join('/')}.spec.js';
+import { wrapTestGroupForWorker } from '${relPathToSuiteRoot}/../common/runtime/helper/wrap_for_worker.js';
 
 wrapTestGroupForWorker(g);
 `

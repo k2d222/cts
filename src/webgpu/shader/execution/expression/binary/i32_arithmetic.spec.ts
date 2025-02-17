@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the i32 arithmetic binary expression operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../gpu_test';
-import { Type } from '../../../../util/conversion';
-import { allInputSources, run } from '../expression';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../gpu_test.js';
+import { Type } from '../../../../util/conversion.js';
+import { allInputSources, run } from '../expression.js';
 
-import { binary, compoundBinary } from './binary';
-import { d } from './i32_arithmetic.cache';
+import { binary, compoundBinary } from './binary.js';
+import { d } from './i32_arithmetic.cache.js';
 
 export const g = makeTestGroup(GPUTest);
 

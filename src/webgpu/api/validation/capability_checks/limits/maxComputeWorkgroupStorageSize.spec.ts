@@ -1,6 +1,6 @@
-import { keysOf } from '../../../../../common/util/data_tables';
-import { assert } from '../../../../../common/util/util';
-import { align, roundDown } from '../../../../util/math';
+import { keysOf } from '../../../../../common/util/data_tables.js';
+import { assert } from '../../../../../common/util/util.js';
+import { align, roundDown } from '../../../../util/math.js';
 
 import {
   MaximumLimitValueTest,

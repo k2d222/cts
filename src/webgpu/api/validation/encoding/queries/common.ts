@@ -1,4 +1,4 @@
-import { GPUTest } from '../../../../gpu_test';
+import { GPUTest } from '../../../../gpu_test.js';
 
 export function createQuerySetWithType(
   t: GPUTest,

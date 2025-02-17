@@ -2,10 +2,10 @@ export const description = `
 This test dedicatedly tests validation of pipeline overridable constants of createRenderPipeline.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kValue } from '../../../util/constants';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kValue } from '../../../util/constants.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

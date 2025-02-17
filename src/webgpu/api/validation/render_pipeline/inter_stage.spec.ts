@@ -2,11 +2,11 @@ export const description = `
 Interface matching between vertex and fragment shader validation for createRenderPipeline.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { range } from '../../../../common/util/util';
-import { GPUTestSubcaseBatchState } from '../../../gpu_test';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { range } from '../../../../common/util/util.js';
+import { GPUTestSubcaseBatchState } from '../../../gpu_test.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 function getVarName(i: number) {
   return `v${i}`;

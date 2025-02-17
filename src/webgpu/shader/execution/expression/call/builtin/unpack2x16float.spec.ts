@@ -5,13 +5,13 @@ Component i of the result is the f32 representation of v, where v is the
 interpretation of bits 16×i through 16×i+15 of e as an IEEE-754 binary16 value.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { Type } from '../../../../../util/conversion';
-import { allInputSources, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { Type } from '../../../../../util/conversion.js';
+import { allInputSources, run } from '../../expression.js';
 
-import { builtin } from './builtin';
-import { d } from './unpack2x16float.cache';
+import { builtin } from './builtin.js';
+import { d } from './unpack2x16float.cache.js';
 
 export const g = makeTestGroup(GPUTest);
 

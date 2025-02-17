@@ -2,10 +2,10 @@ export const description = `
 misc createRenderPipeline and createRenderPipelineAsync validation tests.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kDefaultVertexShaderCode, kDefaultFragmentShaderCode } from '../../../util/shader';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kDefaultVertexShaderCode, kDefaultFragmentShaderCode } from '../../../util/shader.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

@@ -1,10 +1,10 @@
-import { ROArrayArray } from '../../../../../common/util/types';
-import { FP, FPMatrix } from '../../../../util/floating_point';
-import { flatten2DArray, sparseScalarF64Range, unflatten2DArray } from '../../../../util/math';
-import { selectNCases } from '../case';
-import { makeCaseCache } from '../case_cache';
+import { ROArrayArray } from '../../../../../common/util/types.js';
+import { FP, FPMatrix } from '../../../../util/floating_point.js';
+import { flatten2DArray, sparseScalarF64Range, unflatten2DArray } from '../../../../util/math.js';
+import { selectNCases } from '../case.js';
+import { makeCaseCache } from '../case_cache.js';
 
-import { getMultiplicationAFInterval, kSparseMatrixAFValues } from './af_data';
+import { getMultiplicationAFInterval, kSparseMatrixAFValues } from './af_data.js';
 
 const multiplicationMatrixScalarInterval = (mat: ROArrayArray<number>, s: number): FPMatrix => {
   const cols = mat.length;

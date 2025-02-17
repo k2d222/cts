@@ -5,9 +5,9 @@ import {
   kTextureFormatInfo,
   isCompressedTextureFormat,
 } from '../../../format_info.js';
-import { align } from '../../../util/math';
-import { ImageCopyType } from '../../../util/texture/layout';
-import { ValidationTest } from '../validation_test';
+import { align } from '../../../util/math.js';
+import { ImageCopyType } from '../../../util/texture/layout.js';
+import { ValidationTest } from '../validation_test.js';
 
 export class ImageCopyTest extends ValidationTest {
   testRun(

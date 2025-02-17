@@ -4,10 +4,10 @@ Test rendering to 3d texture slices.
 - Render to different slices at mip levels on same texture in render pass
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kTextureFormatInfo } from '../../../format_info';
-import { GPUTest } from '../../../gpu_test';
-import { kBytesPerRowAlignment } from '../../../util/texture/layout';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kTextureFormatInfo } from '../../../format_info.js';
+import { GPUTest } from '../../../gpu_test.js';
+import { kBytesPerRowAlignment } from '../../../util/texture/layout.js';
 
 const kSize = 4;
 const kFormat = 'rgba8unorm' as const;

@@ -1,5 +1,5 @@
-import { GPUConst } from '../../../../constants';
-import { isPowerOfTwo } from '../../../../util/math';
+import { GPUConst } from '../../../../constants.js';
+import { isPowerOfTwo } from '../../../../util/math.js';
 
 import {
   kMinimumLimitBaseParams,

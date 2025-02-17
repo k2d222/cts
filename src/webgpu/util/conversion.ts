@@ -1,11 +1,11 @@
-import { Colors } from '../../common/util/colors';
-import { objectsToRecord } from '../../common/util/data_tables';
-import { ROArrayArray } from '../../common/util/types';
-import { assert, objectEquals, TypedArrayBufferView, unreachable } from '../../common/util/util';
-import { Float16Array } from '../../external/petamoriken/float16/float16';
+import { Colors } from '../../common/util/colors.js';
+import { objectsToRecord } from '../../common/util/data_tables.js';
+import { ROArrayArray } from '../../common/util/types.js';
+import { assert, objectEquals, TypedArrayBufferView, unreachable } from '../../common/util/util.js';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 
-import BinaryStream from './binary_stream';
-import { kBit } from './constants';
+import BinaryStream from './binary_stream.js';
+import { kBit } from './constants.js';
 import {
   align,
   cartesianProduct,

@@ -3,11 +3,11 @@ Ensure state is set correctly. Tries to stress state caching (setting different 
 times in different orders) for setBindGroup and setPipeline.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { GPUConst } from '../../../../constants';
-import { kProgrammableEncoderTypes } from '../../../../util/command_buffer_maker';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { GPUConst } from '../../../../constants.js';
+import { kProgrammableEncoderTypes } from '../../../../util/command_buffer_maker.js';
 
-import { ProgrammableStateTest } from './programmable_state_test';
+import { ProgrammableStateTest } from './programmable_state_test.js';
 
 export const g = makeTestGroup(ProgrammableStateTest);
 

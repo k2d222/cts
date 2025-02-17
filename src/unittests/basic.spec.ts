@@ -2,9 +2,9 @@ export const description = `
 Basic unit tests for test framework.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group';
+import { makeTestGroup } from '../common/framework/test_group.js';
 
-import { UnitTest } from './unit_test';
+import { UnitTest } from './unit_test.js';
 
 export const g = makeTestGroup(UnitTest);
 

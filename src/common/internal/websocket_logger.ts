@@ -1,4 +1,4 @@
-import { globalTestConfig } from '../framework/test_config';
+import { globalTestConfig } from '../framework/test_config.js';
 
 /**
  * - 'uninitialized' means we haven't tried to connect yet

@@ -2,16 +2,16 @@ export const description = `
 Tests the behavior of different filtering modes in minFilter/magFilter/mipmapFilter.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { kAddressModes, kMipmapFilterModes } from '../../../capability_info';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { kAddressModes, kMipmapFilterModes } from '../../../capability_info.js';
 import {
   EncodableTextureFormat,
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
 } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test';
-import { getTextureCopyLayout } from '../../../util/texture/layout';
-import { TexelView } from '../../../util/texture/texel_view';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
+import { getTextureCopyLayout } from '../../../util/texture/layout.js';
+import { TexelView } from '../../../util/texture/texel_view.js';
 
 // Simple checkerboard 2x2 texture used as a base for the sampling.
 const kCheckerTextureSize = 2;

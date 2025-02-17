@@ -13,7 +13,7 @@ The contents of A and B should match.
 TODO: implement all canvas types, see TODO on kCanvasTypes.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
 import {
   ErrorWithExtra,
   assert,
@@ -25,8 +25,8 @@ import {
   kCanvasColorSpaces,
   kCanvasTextureFormats,
 } from '../../capability_info.js';
-import { GPUTest } from '../../gpu_test';
-import { checkElementsEqual } from '../../util/check_contents';
+import { GPUTest } from '../../gpu_test.js';
+import { checkElementsEqual } from '../../util/check_contents.js';
 import {
   kAllCanvasTypes,
   CanvasType,
@@ -34,8 +34,8 @@ import {
   createOnscreenCanvas,
   createOffscreenCanvas,
 } from '../../util/create_elements.js';
-import { TexelView } from '../../util/texture/texel_view';
-import { findFailedPixels } from '../../util/texture/texture_ok';
+import { TexelView } from '../../util/texture/texel_view.js';
+import { findFailedPixels } from '../../util/texture/texture_ok.js';
 
 export const g = makeTestGroup(GPUTest);
 

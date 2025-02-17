@@ -2,9 +2,9 @@ export const description = `
 Test validation of pushDebugGroup, popDebugGroup, and insertDebugMarker.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
 
-import { ValidationTest } from './validation_test';
+import { ValidationTest } from './validation_test.js';
 
 class F extends ValidationTest {
   beginRenderPass(commandEncoder: GPUCommandEncoder): GPURenderPassEncoder {

@@ -2,9 +2,9 @@ export const description = `
 Execution Tests for the bitwise binary expression operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { assert } from '../../../../../common/util/util';
-import { GPUTest } from '../../../../gpu_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { assert } from '../../../../../common/util/util.js';
+import { GPUTest } from '../../../../gpu_test.js';
 import {
   abstractIntBits,
   i32Bits,
@@ -12,9 +12,9 @@ import {
   scalarType,
   u32Bits,
 } from '../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../expression';
+import { allInputSources, onlyConstInputSource, run } from '../expression.js';
 
-import { abstractIntBinary, binary, compoundBinary } from './binary';
+import { abstractIntBinary, binary, compoundBinary } from './binary.js';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -1,13 +1,13 @@
-import { getIsBuildingDataCache } from '../../common/framework/data_cache';
-import { Colors } from '../../common/util/colors';
-import { assert, unreachable } from '../../common/util/util';
+import { getIsBuildingDataCache } from '../../common/framework/data_cache.js';
+import { Colors } from '../../common/util/colors.js';
+import { assert, unreachable } from '../../common/util/util.js';
 import {
   deserializeExpectation,
   serializeExpectation,
 } from '../shader/execution/expression/case_cache.js';
-import { Expectation, toComparator } from '../shader/execution/expression/expectation';
+import { Expectation, toComparator } from '../shader/execution/expression/expectation.js';
 
-import BinaryStream from './binary_stream';
+import BinaryStream from './binary_stream.js';
 import {
   ArrayValue,
   isFloatValue,
@@ -17,7 +17,7 @@ import {
   Value,
   VectorValue,
 } from './conversion.js';
-import { FPInterval } from './floating_point';
+import { FPInterval } from './floating_point.js';
 
 /** Comparison describes the result of a Comparator function. */
 export interface Comparison {

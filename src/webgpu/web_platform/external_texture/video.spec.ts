@@ -8,10 +8,10 @@ TODO: consider whether external_texture and copyToTexture video tests should be 
 TODO(#3193): Test video in BT.2020 color space
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
-import { GPUTest } from '../../gpu_test';
-import { TextureUploadingUtils } from '../../util/copy_to_texture';
-import { createCanvas } from '../../util/create_elements';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { GPUTest } from '../../gpu_test.js';
+import { TextureUploadingUtils } from '../../util/copy_to_texture.js';
+import { createCanvas } from '../../util/create_elements.js';
 import {
   startPlayingAndWaitForVideo,
   getVideoFrameFromVideoElement,

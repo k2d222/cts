@@ -11,10 +11,10 @@ Note: An out-of-bounds access occurs if:
 If an out-of-bounds access occurs, the built-in function should not be executed.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { unreachable, iterRange, range } from '../../../../../../common/util/util';
-import { kTextureFormatInfo } from '../../../../../format_info';
-import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { unreachable, iterRange, range } from '../../../../../../common/util/util.js';
+import { kTextureFormatInfo } from '../../../../../format_info.js';
+import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../../../gpu_test.js';
 import {
   kFloat32Format,
   kFloat16Format,
@@ -22,9 +22,9 @@ import {
   pack4x8unorm,
   pack4x8snorm,
 } from '../../../../../util/conversion.js';
-import { align, clamp } from '../../../../../util/math';
-import { getTextureDimensionFromView, virtualMipSize } from '../../../../../util/texture/base';
-import { TexelFormats } from '../../../../types';
+import { align, clamp } from '../../../../../util/math.js';
+import { getTextureDimensionFromView, virtualMipSize } from '../../../../../util/texture/base.js';
+import { TexelFormats } from '../../../../types.js';
 
 const kDims = ['1d', '2d', '3d'] as const;
 const kViewDimensions = ['1d', '2d', '2d-array', '3d'] as const;

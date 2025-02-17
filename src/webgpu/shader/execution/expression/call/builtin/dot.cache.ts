@@ -1,7 +1,7 @@
-import { ROArrayArray } from '../../../../../../common/util/types';
-import { assert } from '../../../../../../common/util/util';
-import { kValue } from '../../../../../util/constants';
-import { FP } from '../../../../../util/floating_point';
+import { ROArrayArray } from '../../../../../../common/util/types.js';
+import { assert } from '../../../../../../common/util/util.js';
+import { kValue } from '../../../../../util/constants.js';
+import { FP } from '../../../../../util/floating_point.js';
 import {
   calculatePermutations,
   sparseVectorI32Range,
@@ -16,7 +16,7 @@ import {
   generateVectorVectorToI64Cases,
   generateVectorVectorToU32Cases,
 } from '../../case.js';
-import { makeCaseCache } from '../../case_cache';
+import { makeCaseCache } from '../../case_cache.js';
 
 function ai_dot(x: bigint[], y: bigint[]): bigint | undefined {
   assert(x.length === y.length, 'Cannot calculate dot for vectors of different lengths');

@@ -1,6 +1,6 @@
-import { assert } from '../../../../../../common/util/util';
-import { Comparator, alwaysPass, anyOf } from '../../../../../util/compare';
-import { kBit, kValue } from '../../../../../util/constants';
+import { assert } from '../../../../../../common/util/util.js';
+import { Comparator, alwaysPass, anyOf } from '../../../../../util/compare.js';
+import { kBit, kValue } from '../../../../../util/constants.js';
 import {
   ScalarValue,
   VectorValue,
@@ -12,7 +12,7 @@ import {
   abstractFloat,
   abstractInt,
 } from '../../../../../util/conversion.js';
-import { FP, FPInterval } from '../../../../../util/floating_point';
+import { FP, FPInterval } from '../../../../../util/floating_point.js';
 import {
   cartesianProduct,
   fullI32Range,
@@ -35,7 +35,7 @@ import {
   reinterpretU32AsF32,
   reinterpretU32AsI32,
 } from '../../../../../util/reinterpret.js';
-import { makeCaseCache } from '../../case_cache';
+import { makeCaseCache } from '../../case_cache.js';
 
 const numNaNs = 11;
 const f32InfAndNaNInU32: number[] = [

@@ -1,6 +1,6 @@
-import { keysOf } from '../../../../../../common/util/data_tables';
-import { assert, range, unreachable } from '../../../../../../common/util/util';
-import { Float16Array } from '../../../../../../external/petamoriken/float16/float16';
+import { keysOf } from '../../../../../../common/util/data_tables.js';
+import { assert, range, unreachable } from '../../../../../../common/util/util.js';
+import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.js';
 import {
   EncodableTextureFormat,
   is32Float,
@@ -44,10 +44,10 @@ import {
   TexelComponent,
   TexelRepresentationInfo,
 } from '../../../../../util/texture/texel_data.js';
-import { PerPixelAtLevel, TexelView } from '../../../../../util/texture/texel_view';
-import { createTextureFromTexelViews } from '../../../../../util/texture';
-import { reifyExtent3D } from '../../../../../util/unions';
-import { ShaderStage } from '../../../../validation/decl/util';
+import { PerPixelAtLevel, TexelView } from '../../../../../util/texture/texel_view.js';
+import { createTextureFromTexelViews } from '../../../../../util/texture.js';
+import { reifyExtent3D } from '../../../../../util/unions.js';
+import { ShaderStage } from '../../../../validation/decl/util.js';
 
 // These are needed because the list of parameters was too long when converted to a filename.
 export const kShortShaderStageToShaderStage = {

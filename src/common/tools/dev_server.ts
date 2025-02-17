@@ -9,7 +9,7 @@ import * as morgan from 'morgan';
 import * as portfinder from 'portfinder';
 import * as serveIndex from 'serve-index';
 
-import { makeListing } from './crawl';
+import { makeListing } from './crawl.js';
 
 // Make sure that makeListing doesn't cache imported spec files. See crawl().
 process.env.STANDALONE_DEV_SERVER = '1';
@@ -144,8 +144,8 @@ app.get('/out/:suite([a-zA-Z0-9_-]+)/listing.js', async (req, res, next) => {
 app.get('/out/:suite([a-zA-Z0-9_-]+)/webworker/:filepath(*).as_worker.js', (req, res, next) => {
   const { suite, filepath } = req.params;
   const result = `\
-import { g } from '/out/${suite}/${filepath}.spec';
-import { wrapTestGroupForWorker } from '/out/common/runtime/helper/wrap_for_worker';
+import { g } from '/out/${suite}/${filepath}.spec.js';
+import { wrapTestGroupForWorker } from '/out/common/runtime/helper/wrap_for_worker.js';
 
 wrapTestGroupForWorker(g);
 `;

@@ -4,16 +4,16 @@ Tests writeBuffer validation.
 Note: buffer map state is tested in ./buffer_mapped.spec.ts.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
 import {
   kTypedArrayBufferViewConstructors,
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../../../common/util/util.js';
-import { Float16Array } from '../../../../external/petamoriken/float16/float16';
-import { GPUConst } from '../../../constants';
-import { kResourceStates } from '../../../gpu_test';
-import { ValidationTest } from '../validation_test';
+import { Float16Array } from '../../../../external/petamoriken/float16/float16.js';
+import { GPUConst } from '../../../constants.js';
+import { kResourceStates } from '../../../gpu_test.js';
+import { ValidationTest } from '../validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);
 

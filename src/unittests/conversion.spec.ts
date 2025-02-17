@@ -1,10 +1,10 @@
 export const description = `Unit tests for conversion`;
 
-import { mergeParams } from '../common/internal/params_utils';
-import { makeTestGroup } from '../common/internal/test_group';
-import { keysOf } from '../common/util/data_tables';
-import { assert, objectEquals } from '../common/util/util';
-import { kValue } from '../webgpu/util/constants';
+import { mergeParams } from '../common/internal/params_utils.js';
+import { makeTestGroup } from '../common/internal/test_group.js';
+import { keysOf } from '../common/util/data_tables.js';
+import { assert, objectEquals } from '../common/util/util.js';
+import { kValue } from '../webgpu/util/constants.js';
 import {
   bool,
   concreteTypeOf,
@@ -39,7 +39,7 @@ import {
   VectorValue,
 } from '../webgpu/util/conversion.js';
 
-import { UnitTest } from './unit_test';
+import { UnitTest } from './unit_test.js';
 
 export const g = makeTestGroup(UnitTest);
 

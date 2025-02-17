@@ -1,9 +1,9 @@
-import { SkipTestCase, UnexpectedPassError } from '../../framework/fixture';
-import { globalTestConfig } from '../../framework/test_config';
-import { now, assert } from '../../util/util';
+import { SkipTestCase, UnexpectedPassError } from '../../framework/fixture.js';
+import { globalTestConfig } from '../../framework/test_config.js';
+import { now, assert } from '../../util/util.js';
 
-import { LogMessageWithStack } from './log_message';
-import { Expectation, LiveTestCaseResult, Status } from './result';
+import { LogMessageWithStack } from './log_message.js';
+import { Expectation, LiveTestCaseResult, Status } from './result.js';
 
 enum LogSeverity {
   NotRun = 0,

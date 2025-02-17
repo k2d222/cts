@@ -1,4 +1,4 @@
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
 
 function getPipelineDescriptor(device: GPUDevice, lastIndex: number): GPURenderPipelineDescriptor {
   const code = `

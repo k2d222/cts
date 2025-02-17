@@ -1,4 +1,4 @@
-import { runRefTest } from './gpu_ref_test';
+import { runRefTest } from './gpu_ref_test.js';
 
 runRefTest(t => {
   function draw(canvasId: string, format: GPUTextureFormat) {

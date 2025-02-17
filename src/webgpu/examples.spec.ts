@@ -4,9 +4,9 @@ Examples of writing CTS tests with various features.
 Start here when looking for examples of basic framework usage.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group';
+import { makeTestGroup } from '../common/framework/test_group.js';
 
-import { GPUTest } from './gpu_test';
+import { GPUTest } from './gpu_test.js';
 
 // To run these tests in the standalone runner, run `npm start` then open:
 // - http://localhost:XXXX/standalone/?runnow=1&q=webgpu:examples:*

@@ -4,14 +4,14 @@ This test dedicatedly tests createRenderPipeline validation issues related to th
 Note: entry point matching tests are in ../shader_module/entry_point.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
 import {
   getFragmentShaderCodeWithOutput,
   kDefaultVertexShaderCode,
   kDefaultFragmentShaderCode,
 } from '../../../util/shader.js';
 
-import { CreateRenderPipelineValidationTest } from './common';
+import { CreateRenderPipelineValidationTest } from './common.js';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

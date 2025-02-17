@@ -2,9 +2,9 @@ export const description = `
 createSampler validation tests.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
 
-import { ValidationTest } from './validation_test';
+import { ValidationTest } from './validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);
 

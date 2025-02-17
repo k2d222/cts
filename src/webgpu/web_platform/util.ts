@@ -1,10 +1,10 @@
-import { Fixture, SkipTestCase } from '../../common/framework/fixture';
-import { getResourcePath } from '../../common/framework/resources';
-import { keysOf } from '../../common/util/data_tables';
-import { timeout } from '../../common/util/timeout';
-import { ErrorWithExtra, raceWithRejectOnTimeout } from '../../common/util/util';
-import { GPUTest } from '../gpu_test';
-import { RGBA, srgbToDisplayP3 } from '../util/color_space_conversion';
+import { Fixture, SkipTestCase } from '../../common/framework/fixture.js';
+import { getResourcePath } from '../../common/framework/resources.js';
+import { keysOf } from '../../common/util/data_tables.js';
+import { timeout } from '../../common/util/timeout.js';
+import { ErrorWithExtra, raceWithRejectOnTimeout } from '../../common/util/util.js';
+import { GPUTest } from '../gpu_test.js';
+import { RGBA, srgbToDisplayP3 } from '../util/color_space_conversion.js';
 
 declare global {
   interface HTMLMediaElement {

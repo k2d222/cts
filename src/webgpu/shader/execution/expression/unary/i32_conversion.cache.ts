@@ -1,4 +1,4 @@
-import { kValue } from '../../../../util/constants';
+import { kValue } from '../../../../util/constants.js';
 import {
   abstractFloat,
   abstractInt,
@@ -17,8 +17,8 @@ import {
   scalarF32Range,
   scalarF64Range,
 } from '../../../../util/math.js';
-import { reinterpretU32AsI32 } from '../../../../util/reinterpret';
-import { makeCaseCache } from '../case_cache';
+import { reinterpretU32AsI32 } from '../../../../util/reinterpret.js';
+import { makeCaseCache } from '../case_cache.js';
 
 export const d = makeCaseCache('unary/i32_conversion', {
   bool: () => {

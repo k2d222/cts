@@ -1,13 +1,13 @@
-import { SkipTestCase, TestCaseRecorder } from '../../common/framework/fixture';
-import { attemptGarbageCollection } from '../../common/util/collect_garbage';
-import { getGPU, getDefaultRequestAdapterOptions } from '../../common/util/navigator_gpu';
+import { SkipTestCase, TestCaseRecorder } from '../../common/framework/fixture.js';
+import { attemptGarbageCollection } from '../../common/util/collect_garbage.js';
+import { getGPU, getDefaultRequestAdapterOptions } from '../../common/util/navigator_gpu.js';
 import {
   assert,
   raceWithRejectOnTimeout,
   assertReject,
   unreachable,
 } from '../../common/util/util.js';
-import { getDefaultLimits, kLimits } from '../capability_info';
+import { getDefaultLimits, kLimits } from '../capability_info.js';
 
 // MUST_NOT_BE_IMPORTED_BY_DATA_CACHE
 // This file should not be transitively imported by .cache.ts files

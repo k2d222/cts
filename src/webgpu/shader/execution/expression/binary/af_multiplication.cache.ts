@@ -1,8 +1,8 @@
-import { FP, FPVector } from '../../../../util/floating_point';
-import { sparseScalarF64Range } from '../../../../util/math';
-import { makeCaseCache } from '../case_cache';
+import { FP, FPVector } from '../../../../util/floating_point.js';
+import { sparseScalarF64Range } from '../../../../util/math.js';
+import { makeCaseCache } from '../case_cache.js';
 
-import { getMultiplicationAFInterval, kSparseVectorAFValues } from './af_data';
+import { getMultiplicationAFInterval, kSparseVectorAFValues } from './af_data.js';
 
 const multiplicationVectorScalarInterval = (v: readonly number[], s: number): FPVector => {
   return FP.abstract.toVector(v.map(e => getMultiplicationAFInterval(e, s)));

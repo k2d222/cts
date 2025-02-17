@@ -7,10 +7,10 @@ Note: There is no guaranteed mapping between subgroup_invocation_id and
 local_invocation_index. Tests should avoid assuming there is.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../../common/util/data_tables';
-import { iterRange } from '../../../../../../common/util/util';
-import { PRNG } from '../../../../../util/prng';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../../common/util/data_tables.js';
+import { iterRange } from '../../../../../../common/util/util.js';
+import { PRNG } from '../../../../../util/prng.js';
 
 import {
   kWGSizes,

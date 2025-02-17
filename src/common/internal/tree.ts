@@ -1,11 +1,11 @@
-import { loadMetadataForSuite, TestMetadataListing } from '../framework/metadata';
-import { globalTestConfig } from '../framework/test_config';
-import { RunCase, RunFn } from '../internal/test_group';
-import { assert, now } from '../util/util';
+import { loadMetadataForSuite, TestMetadataListing } from '../framework/metadata.js';
+import { globalTestConfig } from '../framework/test_config.js';
+import { RunCase, RunFn } from '../internal/test_group.js';
+import { assert, now } from '../util/util.js';
 
-import { TestFileLoader } from './file_loader';
-import { TestParamsRW } from './params_utils';
-import { comparePublicParamsPaths, compareQueries, Ordering } from './query/compare';
+import { TestFileLoader } from './file_loader.js';
+import { TestParamsRW } from './params_utils.js';
+import { comparePublicParamsPaths, compareQueries, Ordering } from './query/compare.js';
 import {
   TestQuery,
   TestQueryMultiCase,
@@ -13,9 +13,9 @@ import {
   TestQueryMultiFile,
   TestQueryMultiTest,
 } from './query/query.js';
-import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './query/separators';
-import { stringifySingleParam } from './query/stringify_params';
-import { StacklessError } from './util';
+import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './query/separators.js';
+import { stringifySingleParam } from './query/stringify_params.js';
+import { StacklessError } from './util.js';
 
 // `loadTreeForQuery()` loads a TestTree for a given queryToLoad.
 // The resulting tree is a linked-list all the way from `suite:*` to queryToLoad,

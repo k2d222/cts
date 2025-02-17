@@ -2,9 +2,9 @@ export const description = `
 Atomically stores the value v in the atomic object pointed to by atomic_ptr.
 `;
 
-import { makeTestGroup } from '../../../../../../../common/framework/test_group';
-import { keysOf } from '../../../../../../../common/util/data_tables';
-import { GPUTest } from '../../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../../common/framework/test_group.js';
+import { keysOf } from '../../../../../../../common/util/data_tables.js';
+import { GPUTest } from '../../../../../../gpu_test.js';
 
 import {
   dispatchSizes,

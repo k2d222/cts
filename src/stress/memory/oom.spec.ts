@@ -2,11 +2,11 @@ export const description = `
 Stress tests covering robustness when available VRAM is exhausted.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group';
-import { unreachable } from '../../common/util/util';
-import { GPUConst } from '../../webgpu/constants';
-import { GPUTest } from '../../webgpu/gpu_test';
-import { exhaustVramUntilUnder64MB } from '../../webgpu/util/memory';
+import { makeTestGroup } from '../../common/framework/test_group.js';
+import { unreachable } from '../../common/util/util.js';
+import { GPUConst } from '../../webgpu/constants.js';
+import { GPUTest } from '../../webgpu/gpu_test.js';
+import { exhaustVramUntilUnder64MB } from '../../webgpu/util/memory.js';
 
 export const g = makeTestGroup(GPUTest);
 

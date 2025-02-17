@@ -2,14 +2,14 @@ export const description = `
 Tests for render pass clear values.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { assert } from '../../../../common/util/util';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { assert } from '../../../../common/util/util.js';
 import {
   kTextureFormatInfo,
   kDepthStencilFormats,
   depthStencilFormatAspectSize,
 } from '../../../format_info.js';
-import { GPUTest } from '../../../gpu_test';
+import { GPUTest } from '../../../gpu_test.js';
 
 export const g = makeTestGroup(GPUTest);
 

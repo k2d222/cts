@@ -1,8 +1,8 @@
-import { globalTestConfig } from '../../framework/test_config';
-import { version } from '../version';
+import { globalTestConfig } from '../../framework/test_config.js';
+import { version } from '../version.js';
 
-import { LiveTestCaseResult } from './result';
-import { TestCaseRecorder } from './test_case_recorder';
+import { LiveTestCaseResult } from './result.js';
+import { TestCaseRecorder } from './test_case_recorder.js';
 
 export type LogResults = Map<string, LiveTestCaseResult>;
 

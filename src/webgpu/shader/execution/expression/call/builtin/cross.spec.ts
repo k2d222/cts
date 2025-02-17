@@ -6,13 +6,13 @@ T is abstract-float, f32, or f16
 Returns the cross product of e1 and e2.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { Type } from '../../../../../util/conversion';
-import { allInputSources, onlyConstInputSource, run } from '../../expression';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { Type } from '../../../../../util/conversion.js';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
 
-import { abstractFloatBuiltin, builtin } from './builtin';
-import { d } from './cross.cache';
+import { abstractFloatBuiltin, builtin } from './builtin.js';
+import { d } from './cross.cache.js';
 
 export const g = makeTestGroup(GPUTest);
 

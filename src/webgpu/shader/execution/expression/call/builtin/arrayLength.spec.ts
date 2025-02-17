@@ -5,9 +5,9 @@ fn arrayLength(e: ptr<storage,array<T>> ) -> u32
 Returns the number of elements in the runtime-sized array.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
-import { align } from '../../../../../util/math';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
+import { align } from '../../../../../util/math.js';
 
 export const g = makeTestGroup(GPUTest);
 

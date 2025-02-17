@@ -2,8 +2,8 @@ export const description = `
 Tests for capability checking for features enabling optional query types.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group';
-import { ValidationTest } from '../../validation_test';
+import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { ValidationTest } from '../../validation_test.js';
 
 export const g = makeTestGroup(ValidationTest);
 

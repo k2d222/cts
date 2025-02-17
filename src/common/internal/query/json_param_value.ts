@@ -1,5 +1,5 @@
-import { assert, sortObjectByKey, isPlainObject } from '../../util/util';
-import { JSONWithUndefined } from '../params_utils';
+import { assert, sortObjectByKey, isPlainObject } from '../../util/util.js';
+import { JSONWithUndefined } from '../params_utils.js';
 
 // JSON can't represent various values and by default stores them as `null`.
 // Instead, storing them as a magic string values in JSON.

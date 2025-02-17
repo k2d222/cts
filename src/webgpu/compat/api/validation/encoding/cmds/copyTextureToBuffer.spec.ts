@@ -2,10 +2,10 @@ export const description = `
 Tests limitations of copyTextureToBuffer in compat mode.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { kCompressedTextureFormats, kTextureFormatInfo } from '../../../../../format_info';
-import { align } from '../../../../../util/math';
-import { CompatibilityTest } from '../../../../compatibility_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { kCompressedTextureFormats, kTextureFormatInfo } from '../../../../../format_info.js';
+import { align } from '../../../../../util/math.js';
+import { CompatibilityTest } from '../../../../compatibility_test.js';
 
 export const g = makeTestGroup(CompatibilityTest);
 

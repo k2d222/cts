@@ -2,10 +2,10 @@ export const description = `
 Tests that non-filterable textures used with filtering samplers generate a validation error.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group';
-import { keysOf } from '../../../common/util/data_tables';
+import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { keysOf } from '../../../common/util/data_tables.js';
 
-import { ValidationTest } from './validation_test';
+import { ValidationTest } from './validation_test.js';
 
 const kNonFilterableCaseInfo: Record<GPUTextureSampleType, { type: string; component: string }> = {
   sint: { type: 'i32', component: '0,' },

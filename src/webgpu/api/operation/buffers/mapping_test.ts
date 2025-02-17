@@ -1,5 +1,5 @@
-import { assert } from '../../../../common/util/util';
-import { GPUTest } from '../../../gpu_test';
+import { assert } from '../../../../common/util/util.js';
+import { GPUTest } from '../../../gpu_test.js';
 
 export class MappingTest extends GPUTest {
   checkMapWrite(

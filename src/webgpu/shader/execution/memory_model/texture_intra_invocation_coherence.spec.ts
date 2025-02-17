@@ -11,10 +11,10 @@ Some platform (e.g. Metal) require a fence call to make writes visible
 to reads performed by the same invocation. These tests attempt to ensure
 WebGPU implementations emit correct fence calls.`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group';
-import { unreachable, iterRange } from '../../../../common/util/util';
-import { GPUTest } from '../../../gpu_test';
-import { PRNG } from '../../../util/prng';
+import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { unreachable, iterRange } from '../../../../common/util/util.js';
+import { GPUTest } from '../../../gpu_test.js';
+import { PRNG } from '../../../util/prng.js';
 
 const kRWStorageFormats: GPUTextureFormat[] = ['r32uint', 'r32sint', 'r32float'];
 const kDimensions: GPUTextureViewDimension[] = ['1d', '2d', '2d-array', '3d'];

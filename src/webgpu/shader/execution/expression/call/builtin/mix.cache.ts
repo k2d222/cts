@@ -1,6 +1,6 @@
-import { FP } from '../../../../../util/floating_point';
-import { selectNCases } from '../../case';
-import { makeCaseCache } from '../../case_cache';
+import { FP } from '../../../../../util/floating_point.js';
+import { selectNCases } from '../../case.js';
+import { makeCaseCache } from '../../case_cache.js';
 
 // Cases: [f32|f16|abstract]_[non_]const
 // abstract_non_const is empty and unused

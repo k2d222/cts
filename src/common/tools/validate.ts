@@ -1,6 +1,6 @@
 import * as process from 'process';
 
-import { crawl } from './crawl';
+import { crawl } from './crawl.js';
 
 function usage(rc: number): never {
   console.error(`Usage: tools/validate [options] [SUITE_DIRS...]

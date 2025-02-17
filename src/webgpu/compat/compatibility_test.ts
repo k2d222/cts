@@ -1,4 +1,4 @@
-import { ValidationTest } from '../api/validation/validation_test';
+import { ValidationTest } from '../api/validation/validation_test.js';
 
 export class CompatibilityTest extends ValidationTest {
   override async init() {

@@ -10,8 +10,8 @@ T is scalar or abstract numeric type
 Component-wise selection. Result component i is evaluated as select(f[i],t[i],cond[i]).
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group';
-import { GPUTest } from '../../../../../gpu_test';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { GPUTest } from '../../../../../gpu_test.js';
 import {
   VectorType,
   f32,
@@ -29,10 +29,10 @@ import {
   ScalarValue,
   Type,
 } from '../../../../../util/conversion.js';
-import { Case } from '../../case';
-import { run, allInputSources } from '../../expression';
+import { Case } from '../../case.js';
+import { run, allInputSources } from '../../expression.js';
 
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
 
 export const g = makeTestGroup(GPUTest);
 
