@@ -55,6 +55,8 @@ export interface TestFileLoader extends EventTarget {
   ): void;
 }
 
+const specFileSuffix = import.meta.filename.endsWith('.ts') ? '.spec.ts' : '.spec.js';
+
 // Base class for DefaultTestFileLoader and FakeTestFileLoader.
 /* eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging */
 export abstract class TestFileLoader extends EventTarget {
@@ -62,7 +64,7 @@ export abstract class TestFileLoader extends EventTarget {
   protected abstract import(path: string): Promise<SpecFile>;
 
   async importSpecFile(suite: string, path: string[]): Promise<SpecFile> {
-    const url = `${suite}/${path.join('/')}.spec.ts`;
+    const url = `${suite}/${path.join('/')}${specFileSuffix}`;
     this.dispatchEvent(new MessageEvent<ImportInfo>('import', { data: { url } }));
     const ret = await this.import(url);
     this.dispatchEvent(new MessageEvent<ImportInfo>('imported', { data: { url } }));
@@ -98,7 +100,7 @@ export abstract class TestFileLoader extends EventTarget {
 
 export class DefaultTestFileLoader extends TestFileLoader {
   async listing(suite: string): Promise<TestSuiteListing> {
-    return ((await import(`../../${suite}/listing.ts`)) as ListingFile).listing;
+    return ((await import(`../../${suite}/listing.js`)) as ListingFile).listing;
   }
 
   import(path: string): Promise<SpecFile> {
