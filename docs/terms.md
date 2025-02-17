@@ -111,11 +111,11 @@ Each Suite has one Listing File (`suite/listing.[tj]s`), containing a list of th
 in the suite.
 
 In `src/suite/listing.ts`, this is computed dynamically.
-In `out/suite/listing.js`, the listing has been pre-baked (by `tools/gen_listings_and_webworkers`).
+In `out/suite/listing.ts`, the listing has been pre-baked (by `tools/gen_listings_and_webworkers`).
 
 **Type:** Once `import`ed, `ListingFile`
 
-**Example:** `out/webgpu/listing.js`
+**Example:** `out/webgpu/listing.ts`
 
 ## Test Spec File
 

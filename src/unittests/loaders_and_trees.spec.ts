@@ -37,52 +37,52 @@ const listingData: { [k: string]: TestSuiteListingEntry[] } = {
 };
 
 const specsData: { [k: string]: SpecFile } = {
-  'suite1/foo.spec.js': {
+  'suite1/foo.spec.ts': {
     description: 'desc 1b',
     g: (() => {
       const g = makeTestGroupForUnitTesting(UnitTest);
-      g.test('hello').fn(() => {});
-      g.test('bonjour').fn(() => {});
+      g.test('hello').fn(() => { });
+      g.test('bonjour').fn(() => { });
       g.test('hola')
         .desc('TODO TODO')
-        .fn(() => {});
+        .fn(() => { });
       return g;
     })(),
   },
-  'suite1/bar/biz.spec.js': {
+  'suite1/bar/biz.spec.ts': {
     description: 'desc 1f TODO TODO',
     g: makeTestGroupForUnitTesting(UnitTest), // file with no tests
   },
-  'suite1/bar/buzz/buzz.spec.js': {
+  'suite1/bar/buzz/buzz.spec.ts': {
     description: 'desc 1d TODO',
     g: (() => {
       const g = makeTestGroupForUnitTesting(UnitTest);
-      g.test('zap').fn(() => {});
+      g.test('zap').fn(() => { });
       return g;
     })(),
   },
-  'suite1/baz.spec.js': {
+  'suite1/baz.spec.ts': {
     description: 'desc 1e',
     g: (() => {
       const g = makeTestGroupForUnitTesting(UnitTest);
       g.test('wye')
         .paramsSimple([{}, { x: 1 }])
-        .fn(() => {});
+        .fn(() => { });
       g.test('zed')
         .paramsSimple([
           { a: 1, b: 2, _c: 0 },
           { b: 3, a: 1, _c: 0 },
         ])
-        .fn(() => {});
+        .fn(() => { });
       g.test('batched')
         // creates two cases: one for subcases 1,2 and one for subcase 3
         .paramsSubcasesOnly(u => u.combine('x', [1, 2, 3]))
         .batch(2)
-        .fn(() => {});
+        .fn(() => { });
       return g;
     })(),
   },
-  'suite2/foof.spec.js': {
+  'suite2/foof.spec.ts': {
     description: 'desc 2b',
     g: (() => {
       const g = makeTestGroupForUnitTesting(UnitTest);
@@ -149,27 +149,27 @@ g.test('group').fn(async t => {
   t.expect((await t.load('suite1:*')).length === 10);
   t.expect(
     objectEquals(t.events, [
-      'suite1/foo.spec.js',
-      'suite1/bar/biz.spec.js',
-      'suite1/bar/buzz/buzz.spec.js',
-      'suite1/baz.spec.js',
+      'suite1/foo.spec.ts',
+      'suite1/bar/biz.spec.ts',
+      'suite1/bar/buzz/buzz.spec.ts',
+      'suite1/baz.spec.ts',
       null,
     ])
   );
 
   t.collectEvents();
   t.expect((await t.load('suite1:foo,*')).length === 3); // x:foo,* matches x:foo:
-  t.expect(objectEquals(t.events, ['suite1/foo.spec.js', null]));
+  t.expect(objectEquals(t.events, ['suite1/foo.spec.ts', null]));
 
   t.collectEvents();
   t.expect((await t.load('suite1:bar,*')).length === 1);
   t.expect(
-    objectEquals(t.events, ['suite1/bar/biz.spec.js', 'suite1/bar/buzz/buzz.spec.js', null])
+    objectEquals(t.events, ['suite1/bar/biz.spec.ts', 'suite1/bar/buzz/buzz.spec.ts', null])
   );
 
   t.collectEvents();
   t.expect((await t.load('suite1:bar,buzz,buzz,*')).length === 1);
-  t.expect(objectEquals(t.events, ['suite1/bar/buzz/buzz.spec.js', null]));
+  t.expect(objectEquals(t.events, ['suite1/bar/buzz/buzz.spec.ts', null]));
 
   t.shouldReject('Error', t.load('suite1:f*'));
 
@@ -177,7 +177,7 @@ g.test('group').fn(async t => {
     const s = new TestQueryMultiFile('suite1', ['bar', 'buzz']).toString();
     t.collectEvents();
     t.expect((await t.load(s)).length === 1);
-    t.expect(objectEquals(t.events, ['suite1/bar/buzz/buzz.spec.js', null]));
+    t.expect(objectEquals(t.events, ['suite1/bar/buzz/buzz.spec.ts', null]));
   }
 });
 

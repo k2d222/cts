@@ -1,6 +1,6 @@
 import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types.ts';
 import { assert, unreachable } from '../../common/util/util.ts';
-import { Float16Array } from '../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 import { Case } from '../shader/execution/expression/case.ts';
 import { IntervalFilter } from '../shader/execution/expression/interval_filter.ts';
 
@@ -260,46 +260,46 @@ type Array2D<T> = ROArrayArray<T>;
 export type FPMatrix =
   | readonly [readonly [FPInterval, FPInterval], readonly [FPInterval, FPInterval]]
   | readonly [
-      readonly [FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-    ]
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+  ]
   | readonly [
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-      readonly [FPInterval, FPInterval, FPInterval, FPInterval],
-    ];
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+    readonly [FPInterval, FPInterval, FPInterval, FPInterval],
+  ];
 
 // Utilities
 

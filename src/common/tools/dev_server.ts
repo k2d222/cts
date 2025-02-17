@@ -29,9 +29,9 @@ By default, serves on localhost only. If the argument 0.0.0.0 is passed, serves 
 
 const srcDir = path.resolve(__dirname, '../../');
 
-// Import the project's babel.config.js. We'll use the same config for the runtime compiler.
+// Import the project's babel.config.cjs. We'll use the same config for the runtime compiler.
 const babelConfig = {
-  ...require(path.resolve(srcDir, '../babel.config.js'))({
+  ...(await import(path.resolve(srcDir, '../babel.config.cjs')))({
     cache: () => {
       /* not used */
     },
@@ -118,7 +118,7 @@ app.use('/standalone', express.static(path.resolve(srcDir, '../standalone')));
 app.use('/out-wpt', express.static(path.resolve(srcDir, '../out-wpt')));
 app.use('/docs/tsdoc', express.static(path.resolve(srcDir, '../docs/tsdoc')));
 
-// Serve a suite's listing.js file by crawling the filesystem for all tests.
+// Serve a suite's listing.ts file by crawling the filesystem for all tests.
 app.get('/out/:suite([a-zA-Z0-9_-]+)/listing.js', async (req, res, next) => {
   const suite = req.params['suite'];
 

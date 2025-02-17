@@ -105,7 +105,7 @@ for (let i = 0; i < sys.args.length; ++i) {
       globalTestConfig.logToWebSocket = true;
     } else if (a === '--gpu-provider') {
       const modulePath = sys.args[++i];
-      gpuProviderModule = require(modulePath);
+      gpuProviderModule = await import(modulePath);
     } else if (a === '--gpu-provider-flag') {
       gpuProviderFlags.push(sys.args[++i]);
     } else if (a === '--debug') {

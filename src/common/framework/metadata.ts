@@ -1,4 +1,4 @@
-import { assert } from '../util/util.ts';
+import { existsSync, readFileSync } from 'node:fs';
 
 /** Metadata about tests (that can't be derived at runtime). */
 export type TestMetadata = {
@@ -15,15 +15,11 @@ export type TestMetadataListing = {
 };
 
 export function loadMetadataForSuite(suiteDir: string): TestMetadataListing | null {
-  assert(typeof require !== 'undefined', 'loadMetadataForSuite is only implemented on Node');
-  /* eslint-disable-next-line n/no-restricted-require */
-  const fs = require('fs');
-
   const metadataFile = `${suiteDir}/listing_meta.json`;
-  if (!fs.existsSync(metadataFile)) {
+  if (!existsSync(metadataFile)) {
     return null;
   }
 
-  const metadata: TestMetadataListing = JSON.parse(fs.readFileSync(metadataFile, 'utf8'));
+  const metadata: TestMetadataListing = JSON.parse(readFileSync(metadataFile, 'utf8'));
   return metadata;
 }

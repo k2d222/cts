@@ -1,4 +1,4 @@
-import { Float16Array } from '../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 import { SkipTestCase } from '../framework/fixture.ts';
 import { globalTestConfig } from '../framework/test_config.ts';
 
@@ -91,7 +91,7 @@ export function skipTestCase(msg: string): never {
  * It is available in all browsers, but it is not in scope by default in Node.
  */
 /* eslint-disable-next-line n/no-restricted-require */
-const perf = typeof performance !== 'undefined' ? performance : require('perf_hooks').performance;
+const perf = typeof performance !== 'undefined' ? performance : require('node:perf_hooks').performance;
 
 /**
  * Calls the appropriate `performance.now()` depending on whether running in a browser or Node.
@@ -111,7 +111,7 @@ export function resolveOnTimeout(ms: number): Promise<void> {
   });
 }
 
-export class PromiseTimeoutError extends Error {}
+export class PromiseTimeoutError extends Error { }
 
 /**
  * Returns a promise which rejects after the specified time.
@@ -172,7 +172,7 @@ export function assertNotSettledWithinTime(
 export function rejectWithoutUncaught<T>(err: unknown): Promise<T> {
   const p = Promise.reject(err);
   // Suppress uncaught promise rejection.
-  p.catch(() => {});
+  p.catch(() => { });
   return p;
 }
 
@@ -325,11 +325,11 @@ export type TypedArrayBufferViewConstructor<A extends TypedArrayBufferView = Typ
     readonly prototype: A;
     readonly BYTES_PER_ELEMENT: number;
 
-    new (): A;
-    new (elements: Iterable<number>): A;
-    new (array: ArrayLike<number> | ArrayBufferLike): A;
-    new (buffer: ArrayBufferLike, byteOffset?: number, length?: number): A;
-    new (length: number): A;
+    new(): A;
+    new(elements: Iterable<number>): A;
+    new(array: ArrayLike<number> | ArrayBufferLike): A;
+    new(buffer: ArrayBufferLike, byteOffset?: number, length?: number): A;
+    new(length: number): A;
 
     from(arrayLike: ArrayLike<number>): A;
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */

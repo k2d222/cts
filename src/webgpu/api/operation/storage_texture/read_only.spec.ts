@@ -8,7 +8,7 @@ TODO:
 
 import { makeTestGroup } from '../../../../common/framework/test_group.ts';
 import { unreachable, assert } from '../../../../common/util/util.ts';
-import { Float16Array } from '../../../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../../../external/petamoriken/float16/float16.js';
 import { kTextureDimensions } from '../../../capability_info.ts';
 import {
   ColorTextureFormat,
@@ -264,13 +264,13 @@ class F extends AllFeaturesMaxLimitsGPUTest {
       },
       ...(shaderStage === 'compute'
         ? [
-            {
-              binding: 1,
-              resource: {
-                buffer: outputBuffer,
-              },
+          {
+            binding: 1,
+            resource: {
+              buffer: outputBuffer,
             },
-          ]
+          },
+        ]
         : []),
     ];
 

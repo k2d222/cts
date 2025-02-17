@@ -7,7 +7,7 @@ TODO: add tests to check that textureLoad operations stay in-bounds.
 
 import { makeTestGroup } from '../../../common/framework/test_group.ts';
 import { assert } from '../../../common/util/util.ts';
-import { Float16Array } from '../../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../../external/petamoriken/float16/float16.js';
 import { GPUTest } from '../../gpu_test.ts';
 import { align } from '../../util/math.ts';
 import { generateTypes, supportedScalarTypes, supportsAtomics } from '../types.ts';
@@ -239,8 +239,8 @@ struct TestData {
                 addressSpace === 'uniform'
                   ? 'uniform'
                   : storageMode === 'read'
-                  ? 'read-only-storage'
-                  : 'storage',
+                    ? 'read-only-storage'
+                    : 'storage',
               hasDynamicOffset: dynamicOffset,
             },
           });
@@ -285,29 +285,29 @@ struct TestData {
     for (const indexSigned of [false, true]) {
       const indicesToTest = indexSigned
         ? [
-            // Exactly in bounds (should be OK)
-            '0',
-            `${_kTypeInfo.arrayLength} - 1`,
-            // Exactly out of bounds
-            '-1',
-            `${_kTypeInfo.arrayLength}`,
-            // Far out of bounds
-            '-1000000',
-            '1000000',
-            `${kMinI32}`,
-            `${kMaxI32}`,
-          ]
+          // Exactly in bounds (should be OK)
+          '0',
+          `${_kTypeInfo.arrayLength} - 1`,
+          // Exactly out of bounds
+          '-1',
+          `${_kTypeInfo.arrayLength}`,
+          // Far out of bounds
+          '-1000000',
+          '1000000',
+          `${kMinI32}`,
+          `${kMaxI32}`,
+        ]
         : [
-            // Exactly in bounds (should be OK)
-            '0u',
-            `${_kTypeInfo.arrayLength}u - 1u`,
-            // Exactly out of bounds
-            `${_kTypeInfo.arrayLength}u`,
-            // Far out of bounds
-            '1000000u',
-            `${kMaxU32}u`,
-            `${kMaxI32}u`,
-          ];
+          // Exactly in bounds (should be OK)
+          '0u',
+          `${_kTypeInfo.arrayLength}u - 1u`,
+          // Exactly out of bounds
+          `${_kTypeInfo.arrayLength}u`,
+          // Far out of bounds
+          '1000000u',
+          `${kMaxU32}u`,
+          `${kMaxI32}u`,
+        ];
 
       const indexTypeLiteral = indexSigned ? '0' : '0u';
       const indexTypeCast = indexSigned ? 'i32' : 'u32';
@@ -456,9 +456,9 @@ fn runTest() -> u32 {
       const testBuffer = t.makeBufferWithContents(
         new Uint8Array(expectedData),
         GPUBufferUsage.COPY_SRC |
-          GPUBufferUsage.UNIFORM |
-          GPUBufferUsage.STORAGE |
-          GPUBufferUsage.COPY_DST
+        GPUBufferUsage.UNIFORM |
+        GPUBufferUsage.STORAGE |
+        GPUBufferUsage.COPY_DST
       );
 
       // Run the shader, accessing the buffer.

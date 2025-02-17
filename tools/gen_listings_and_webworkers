@@ -1,7 +1,7 @@
 #!/usr/bin/env deno --allow-read --allow-write --allow-env
 
-// Crawl a suite directory (e.g. src/webgpu/) to generate a listing.js containing
+// Crawl a suite directory (e.g. src/webgpu/) to generate a listing.ts containing
 // the listing of test files in the suite, and some generated test files
-// (like suite/serviceworker/**/*.spec.js).
+// (like suite/serviceworker/**/*.spec.ts).
 
 import '../src/common/tools/gen_listings_and_webworkers.ts';

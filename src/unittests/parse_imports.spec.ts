@@ -9,7 +9,7 @@ import { UnitTest } from './unit_test.ts';
 
 class F extends UnitTest {
   test(content: string, expect: string[]): void {
-    const got = parseImports('a/b/c.js', content);
+    const got = parseImports('a/b/c.ts', content);
     const expectJoined = expect.join('\n');
     const gotJoined = got.join('\n');
     this.expect(
@@ -30,7 +30,7 @@ g.test('empty').fn(t => {
 });
 
 g.test('simple').fn(t => {
-  t.test(`import 'x/y/z.js';`, ['a/b/x/y/z.ts']);
+  t.test(`import 'x/y/z.ts';`, ['a/b/x/y/z.ts']);
   t.test(`import * as blah from 'x/y/z.ts';`, ['a/b/x/y/z.ts']);
   t.test(`import { blah } from 'x/y/z.ts';`, ['a/b/x/y/z.ts']);
 });
@@ -46,7 +46,7 @@ extra blah
 import { blah } from '../h.ts';
 ending with blah
 `,
-    ['a/b/x/y/z.js', 'a/b/m/n/o.js', 'a/h.js']
+    ['a/b/x/y/z.ts', 'a/b/m/n/o.ts', 'a/h.ts']
   );
 });
 
@@ -55,25 +55,25 @@ g.test('multiline').fn(t => {
     `import {
   blah
 } from 'x/y/z.ts';`,
-    ['a/b/x/y/z.js']
+    ['a/b/x/y/z.ts']
   );
   t.test(
     `import {
   blahA,
   blahB,
 } from 'x/y/z.ts';`,
-    ['a/b/x/y/z.js']
+    ['a/b/x/y/z.ts']
   );
 });
 
 g.test('file_characters').fn(t => {
-  t.test(`import '01234_56789.js';`, ['a/b/01234_56789.ts']);
+  t.test(`import '01234_56789.ts';`, ['a/b/01234_56789.ts']);
 });
 
 g.test('relative_paths').fn(t => {
-  t.test(`import '../x.js';`, ['a/x.ts']);
-  t.test(`import '../x/y.js';`, ['a/x/y.ts']);
-  t.test(`import '../../x.js';`, ['x.ts']);
-  t.test(`import '../../../x.js';`, ['../x.ts']);
-  t.test(`import '../../../../x.js';`, ['../../x.ts']);
+  t.test(`import '../x.ts';`, ['a/x.ts']);
+  t.test(`import '../x/y.ts';`, ['a/x/y.ts']);
+  t.test(`import '../../x.ts';`, ['x.ts']);
+  t.test(`import '../../../x.ts';`, ['../x.ts']);
+  t.test(`import '../../../../x.ts';`, ['../../x.ts']);
 });

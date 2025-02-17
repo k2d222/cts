@@ -1,5 +1,5 @@
 import { assert, iterRange, unreachable } from '../../../../../../common/util/util.ts';
-import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.js';
 import { kTextureFormatInfo } from '../../../../../format_info.ts';
 import { GPUTest, TextureTestMixin } from '../../../../../gpu_test.ts';
 import { kBit } from '../../../../../util/constants.ts';
@@ -8,7 +8,7 @@ import { FPInterval } from '../../../../../util/floating_point.ts';
 import { sparseScalarF16Range, sparseScalarF32Range, align } from '../../../../../util/math.ts';
 import { PRNG } from '../../../../../util/prng.ts';
 
-export class SubgroupTest extends TextureTestMixin(GPUTest) {}
+export class SubgroupTest extends TextureTestMixin(GPUTest) { }
 
 export const kNumCases = 1000;
 export const kStride = 128;
@@ -145,9 +145,9 @@ export async function runAccuracyTest(
   } = t.device.limits;
   t.skipIf(
     maxComputeInvocationsPerWorkgroup < wgThreads ||
-      maxComputeWorkgroupSizeX < wgSize[0] ||
-      maxComputeWorkgroupSizeY < wgSize[1] ||
-      maxComputeWorkgroupSizeZ < wgSize[2],
+    maxComputeWorkgroupSizeX < wgSize[0] ||
+    maxComputeWorkgroupSizeY < wgSize[1] ||
+    maxComputeWorkgroupSizeZ < wgSize[2],
     'Workgroup size too large'
   );
 
@@ -202,19 +202,19 @@ fn main(
   const inputData =
     type === 'f16'
       ? new Float16Array([
-          ...iterRange(kStride, x => {
-            if (x === idx1) return val1;
-            if (x === idx2) return val2;
-            return identity;
-          }),
-        ])
+        ...iterRange(kStride, x => {
+          if (x === idx1) return val1;
+          if (x === idx2) return val2;
+          return identity;
+        }),
+      ])
       : new Float32Array([
-          ...iterRange(kStride, x => {
-            if (x === idx1) return val1;
-            if (x === idx2) return val2;
-            return identity;
-          }),
-        ]);
+        ...iterRange(kStride, x => {
+          if (x === idx1) return val1;
+          if (x === idx2) return val2;
+          return identity;
+        }),
+      ]);
 
   const inputBuffer = t.makeBufferWithContents(
     inputData,
@@ -340,9 +340,9 @@ export async function runComputeTest(
   } = t.device.limits;
   t.skipIf(
     maxComputeInvocationsPerWorkgroup < wgThreads ||
-      maxComputeWorkgroupSizeX < wgSize[0] ||
-      maxComputeWorkgroupSizeY < wgSize[1] ||
-      maxComputeWorkgroupSizeZ < wgSize[2],
+    maxComputeWorkgroupSizeX < wgSize[0] ||
+    maxComputeWorkgroupSizeY < wgSize[1] ||
+    maxComputeWorkgroupSizeZ < wgSize[2],
     'Workgroup size too large'
   );
 
@@ -525,8 +525,8 @@ fn vsMain(@builtin(vertex_index) index : u32) -> @builtin(position) vec4f {
     inputData instanceof Uint32Array
       ? Uint32Array
       : inputData instanceof Float32Array
-      ? Float32Array
-      : Float16Array
+        ? Float32Array
+        : Float16Array
   )(inputData.length * 4);
   for (let i = 0; i < inputData.length; ++i) {
     expandedInputData[i * 4] = inputData[i];

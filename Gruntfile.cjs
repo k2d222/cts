@@ -17,7 +17,7 @@ const kFilesForEslint = [
 ];
 
 const cmd = 'deno'
-const denoArgs = ['--allow-read', '--allow-write', '--allow-env', '--allow-net=deno.land']
+const denoArgs = ['--allow-read', '--allow-write', '--allow-env', '--allow-sys', '--allow-net=deno.land']
 
 module.exports = function (grunt) {
   timer.init(grunt);

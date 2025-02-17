@@ -5,12 +5,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
     "incremental": false,
     "noEmit": false,
-    "declaration": false,
+    "declaration": false
   },
-
   "exclude": [
     "src/common/runtime/wpt.ts",
     "src/common/runtime/standalone.ts",

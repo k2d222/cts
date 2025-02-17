@@ -1,6 +1,6 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import * as process from 'process';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import * as process from 'node:process';
 
 import { Cacheable, dataCache, setIsBuildingDataCache } from '../framework/data_cache.ts';
 import { crc32, toHexString } from '../util/crc32.ts';
@@ -89,7 +89,7 @@ dataCache.setStore({
 });
 setIsBuildingDataCache();
 
-const cacheFileSuffix = __filename.endsWith('.ts') ? '.cache.ts' : '.cache.js';
+const cacheFileSuffix = import.meta.filename.endsWith('.ts') ? '.cache.ts' : '.cache.js';
 
 /**
  * @returns a list of all the files under 'dir' that has the given extension
@@ -214,8 +214,8 @@ async function build(suiteDir: string) {
   const errors: Array<string> = [];
 
   for (const file of filesToEnumerate) {
-    const pathWithoutExtension = file.substring(0, file.length - 3);
-    const mod = await import(`../../../${pathWithoutExtension}.js`);
+    // const pathWithoutExtension = file.substring(0, file.length - 3);
+    const mod = await import(`../../../${file}`);
     if (mod.d?.serialize !== undefined) {
       const cacheable = mod.d as Cacheable<unknown>;
 

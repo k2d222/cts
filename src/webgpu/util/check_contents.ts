@@ -12,7 +12,7 @@ import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../common/util/util.ts';
-import { Float16Array } from '../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 
 import { generatePrettyTable } from './pretty_diff_tables.ts';
 
@@ -238,7 +238,7 @@ function failCheckElements({
   if (predicatePrinter) {
     for (const { leftHeader, getValueForCell: cell } of predicatePrinter) {
       printExpected.push(
-        (function* () {
+        (function*() {
           yield* [leftHeader, ''];
           yield* iterRange(printElementsCount, i => cell(printElementsStart + i));
         })()
@@ -246,7 +246,7 @@ function failCheckElements({
     }
   }
 
-  const printFailedValueMarkers = (function* () {
+  const printFailedValueMarkers = (function*() {
     yield* ['failed ->', ''];
     yield* range(printElementsCount, i => (failedElements[printElementsStart + i] ? 'xx' : ''));
   })();
@@ -258,10 +258,10 @@ function failCheckElements({
   const msg = `Array had unexpected contents at indices ${failedElementsFirst} through ${failedElementsLast}.
  Starting at index ${printElementsStart}:
 ${generatePrettyTable(opts, [
-  ['actual ==', numberPrefix, ...printActual],
-  printFailedValueMarkers,
-  ...printExpected,
-])}`;
+    ['actual ==', numberPrefix, ...printActual],
+    printFailedValueMarkers,
+    ...printExpected,
+  ])}`;
   return new ErrorWithExtra(msg, () => ({
     actual: actual.slice(),
   }));

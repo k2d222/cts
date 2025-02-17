@@ -2,7 +2,7 @@ import { Colors } from '../../common/util/colors.ts';
 import { objectsToRecord } from '../../common/util/data_tables.ts';
 import { ROArrayArray } from '../../common/util/types.ts';
 import { assert, objectEquals, TypedArrayBufferView, unreachable } from '../../common/util/util.ts';
-import { Float16Array } from '../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../external/petamoriken/float16/float16.js';
 
 import BinaryStream from './binary_stream.ts';
 import { kBit } from './constants.ts';
@@ -239,8 +239,8 @@ export function floatBitsToNumber(bits: number, fmt: FloatFormat): number {
     return bits & mantissaMask
       ? Number.NaN
       : isNegative
-      ? Number.NEGATIVE_INFINITY
-      : Number.POSITIVE_INFINITY;
+        ? Number.NEGATIVE_INFINITY
+        : Number.POSITIVE_INFINITY;
   }
   let f32BitsWithWrongBias =
     exponentAndMantissaBits << (kFloat32Format.mantissaBits - fmt.mantissaBits);
@@ -791,8 +791,8 @@ export class MatrixType {
     this.rows = rows;
     assert(
       elementType.kind === 'f32' ||
-        elementType.kind === 'f16' ||
-        elementType.kind === 'abstract-float',
+      elementType.kind === 'f16' ||
+      elementType.kind === 'abstract-float',
       "MatrixType can only have elementType of 'f32' or 'f16' or 'abstract-float'"
     );
     this.elementType = elementType;

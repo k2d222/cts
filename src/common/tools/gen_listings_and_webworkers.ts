@@ -1,6 +1,6 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import * as process from 'process';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import * as process from 'node:process';
 
 import { crawl } from './crawl.ts';
 
@@ -79,8 +79,8 @@ export const listing = ${JSON.stringify(listing, undefined, 2)};
         `\
 // AUTO-GENERATED - DO NOT EDIT. See ${myself}.
 
-import { g } from '${relPathToSuiteRoot}/${entry.file.join('/')}.spec.ts';
-import { wrapTestGroupForWorker } from '${relPathToSuiteRoot}/../common/runtime/helper/wrap_for_worker.ts';
+import { g } from '${relPathToSuiteRoot}/${entry.file.join('/')}.spec';
+import { wrapTestGroupForWorker } from '${relPathToSuiteRoot}/../common/runtime/helper/wrap_for_worker';
 
 wrapTestGroupForWorker(g);
 `

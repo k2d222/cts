@@ -1,6 +1,6 @@
 /* eslint-disable no-console, n/no-restricted-import */
 
-import * as fs from 'fs';
+import * as fs from 'node:fs';
 
 import { dataCache } from '../framework/data_cache.ts';
 import { getResourcePath, setBaseResourcePath } from '../framework/resources.ts';
@@ -100,7 +100,7 @@ for (let i = 0; i < sys.args.length; ++i) {
       loadWebGPUExpectations = import(expectationsFile).then(m => m.expectations);
     } else if (a === '--gpu-provider') {
       const modulePath = sys.args[++i];
-      gpuProviderModule = require(modulePath);
+      gpuProviderModule = await import(modulePath);
     } else if (a === '--gpu-provider-flag') {
       gpuProviderFlags.push(sys.args[++i]);
     } else if (a === '--quiet') {

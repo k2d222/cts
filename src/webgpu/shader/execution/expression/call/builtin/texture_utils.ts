@@ -1,6 +1,6 @@
 import { keysOf } from '../../../../../../common/util/data_tables.ts';
 import { assert, range, unreachable } from '../../../../../../common/util/util.ts';
-import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.js';
 import {
   EncodableTextureFormat,
   is32Float,
@@ -285,8 +285,7 @@ ${graphWeights(32, weights)}
   );
   assert(
     weights[kMipLevelWeightSteps] === 1,
-    `stage: ${stage}, top weight expected 1 but was ${
-      weights[kMipLevelWeightSteps]
+    `stage: ${stage}, top weight expected 1 but was ${weights[kMipLevelWeightSteps]
     }\n${showWeights()}`
   );
 
@@ -623,7 +622,7 @@ function getIndexAndWeight(values: readonly number[], v: number) {
   assert(v >= values[0] && v <= values[values.length - 1]);
   let lo = 0;
   let hi = values.length - 1;
-  for (;;) {
+  for (; ;) {
     const i = (lo + (hi - lo) / 2) | 0;
     const w0 = values[i];
     const w1 = values[i + 1];
@@ -833,7 +832,7 @@ export class WGSLTextureQueryTest extends AllFeaturesMaxLimitsGPUTest {
 }
 `
         : stage === 'fragment'
-        ? `
+          ? `
 // --------------------------- fragment stage shaders --------------------------------
 @vertex fn vsFragment(
     @builtin(vertex_index) vertex_index : u32,
@@ -846,7 +845,7 @@ export class WGSLTextureQueryTest extends AllFeaturesMaxLimitsGPUTest {
   return bitcast<vec4u>(${castWGSL});
 }
 `
-        : `
+          : `
 // --------------------------- compute stage shaders --------------------------------
 @group(1) @binding(0) var<storage, read_write> results: array<${returnType}>;
 
@@ -871,8 +870,8 @@ struct VOut {
       stage === 'compute'
         ? GPUShaderStage.COMPUTE
         : stage === 'fragment'
-        ? GPUShaderStage.FRAGMENT
-        : GPUShaderStage.VERTEX;
+          ? GPUShaderStage.FRAGMENT
+          : GPUShaderStage.VERTEX;
 
     const entries: GPUBindGroupLayoutEntry[] = [];
     if (texture instanceof GPUExternalTexture) {
@@ -889,8 +888,8 @@ struct VOut {
           access: code.includes(', read>')
             ? 'read-only'
             : code.includes(', write>')
-            ? 'write-only'
-            : 'read-write',
+              ? 'write-only'
+              : 'read-write',
           viewDimension: viewDescriptor?.dimension ?? '2d',
           format: texture.format,
         },
@@ -900,14 +899,14 @@ struct VOut {
         viewDescriptor?.aspect === 'stencil-only'
           ? 'uint'
           : code.includes('texture_depth')
-          ? 'depth'
-          : isDepthTextureFormat(texture.format)
-          ? 'unfilterable-float'
-          : isStencilTextureFormat(texture.format)
-          ? 'uint'
-          : texture.sampleCount > 1 && kTextureFormatInfo[texture.format].color?.type === 'float'
-          ? 'unfilterable-float'
-          : kTextureFormatInfo[texture.format].color?.type ?? 'unfilterable-float';
+            ? 'depth'
+            : isDepthTextureFormat(texture.format)
+              ? 'unfilterable-float'
+              : isStencilTextureFormat(texture.format)
+                ? 'uint'
+                : texture.sampleCount > 1 && kTextureFormatInfo[texture.format].color?.type === 'float'
+                  ? 'unfilterable-float'
+                  : kTextureFormatInfo[texture.format].color?.type ?? 'unfilterable-float';
       entries.push({
         binding: 0,
         visibility,
@@ -1564,8 +1563,8 @@ function convertToTexelViewFormat(src: PerTexelComponent<number>, format: GPUTex
   const componentOrder = isDepthTextureFormat(format)
     ? [TexelComponent.Depth]
     : isStencilTextureFormat(format)
-    ? [TexelComponent.Stencil]
-    : [TexelComponent.R, TexelComponent.G, TexelComponent.B, TexelComponent.A];
+      ? [TexelComponent.Stencil]
+      : [TexelComponent.R, TexelComponent.G, TexelComponent.B, TexelComponent.A];
   const out: PerTexelComponent<number> = {};
   for (const component of componentOrder) {
     let v = src[component];
@@ -1661,10 +1660,10 @@ function softwareTextureReadMipLevel<T extends Dimensionality>(
     call.builtin === 'textureSampleBaseClampToEdge'
       ? ['clamp-to-edge', 'clamp-to-edge', 'clamp-to-edge']
       : [
-          sampler?.addressModeU ?? 'clamp-to-edge',
-          sampler?.addressModeV ?? 'clamp-to-edge',
-          sampler?.addressModeW ?? 'clamp-to-edge',
-        ];
+        sampler?.addressModeU ?? 'clamp-to-edge',
+        sampler?.addressModeV ?? 'clamp-to-edge',
+        sampler?.addressModeW ?? 'clamp-to-edge',
+      ];
 
   const isCube = isCubeViewDimension(texture.viewDescriptor);
   const arrayIndexMult = isCube ? 6 : 1;
@@ -2328,8 +2327,8 @@ export async function checkCallResults<T extends Dimensionality>(
   const size = reifyExtent3D(texture.descriptor.size);
   const maxFractionalDiff =
     sampler?.minFilter === 'linear' ||
-    sampler?.magFilter === 'linear' ||
-    sampler?.mipmapFilter === 'linear'
+      sampler?.magFilter === 'linear' ||
+      sampler?.mipmapFilter === 'linear'
       ? getMaxFractionalDiffForTextureFormat(texture.descriptor.format)
       : 0;
 
@@ -3015,10 +3014,10 @@ export async function readTextureToTexelViews(
     const sampleType = info.depth
       ? 'unfilterable-float' // depth only supports unfilterable-float if not a comparison.
       : info.stencil
-      ? 'uint'
-      : info.color.type === 'float'
-      ? 'unfilterable-float'
-      : info.color.type;
+        ? 'uint'
+        : info.color.type === 'float'
+          ? 'unfilterable-float'
+          : info.color.type;
     const bindGroupLayout = device.createBindGroupLayout({
       entries: [
         {
@@ -3376,8 +3375,8 @@ async function identifySamplePoints<T extends Dimensionality>(
     kEncodableTextureFormats.includes(info.format as EncodableTextureFormat)
       ? info.format
       : isDepthTextureFormat(info.format)
-      ? 'depth16unorm'
-      : 'rgba8unorm'
+        ? 'depth16unorm'
+        : 'rgba8unorm'
   ) as EncodableTextureFormat;
   const rep = kTexelRepresentationInfo[format];
 
@@ -3469,19 +3468,19 @@ async function identifySamplePoints<T extends Dimensionality>(
 
   /* prettier-ignore */
   const blockParts = {
-    top:      { left: '╔', fill: '═══', right: '╗', block: '╦', texel: '╤' },
-    mid:      { left: '╠', fill: '═══', right: '╣', block: '╬', texel: '╪' },
-    bot:      { left: '╚', fill: '═══', right: '╝', block: '╩', texel: '╧' },
+    top: { left: '╔', fill: '═══', right: '╗', block: '╦', texel: '╤' },
+    mid: { left: '╠', fill: '═══', right: '╣', block: '╬', texel: '╪' },
+    bot: { left: '╚', fill: '═══', right: '╝', block: '╩', texel: '╧' },
     texelMid: { left: '╟', fill: '───', right: '╢', block: '╫', texel: '┼' },
-    value:    { left: '║', fill: '   ', right: '║', block: '║', texel: '│' },
+    value: { left: '║', fill: '   ', right: '║', block: '║', texel: '│' },
   } as const;
   /* prettier-ignore */
   const nonBlockParts = {
-    top:      { left: '┌', fill: '───', right: '┐', block: '┬', texel: '┬' },
-    mid:      { left: '├', fill: '───', right: '┤', block: '┼', texel: '┼' },
-    bot:      { left: '└', fill: '───', right: '┘', block: '┴', texel: '┴' },
+    top: { left: '┌', fill: '───', right: '┐', block: '┬', texel: '┬' },
+    mid: { left: '├', fill: '───', right: '┤', block: '┼', texel: '┼' },
+    bot: { left: '└', fill: '───', right: '┘', block: '┴', texel: '┴' },
     texelMid: { left: '├', fill: '───', right: '┤', block: '┼', texel: '┼' },
-    value:    { left: '│', fill: '   ', right: '│', block: '│', texel: '│' },
+    value: { left: '│', fill: '   ', right: '│', block: '│', texel: '│' },
   } as const;
 
   const lines: string[] = [];
@@ -3596,8 +3595,8 @@ async function identifySamplePoints<T extends Dimensionality>(
       const formatTexel = (texel: PerTexelComponent<number> | undefined) =>
         texel
           ? Object.entries(texel)
-              .map(([k, v]) => `${k}: ${formatValue(v)}`)
-              .join(', ')
+            .map(([k, v]) => `${k}: ${formatValue(v)}`)
+            .join(', ')
           : '*texel values unavailable*';
 
       const colorLines: string[] = [];
@@ -3740,13 +3739,13 @@ function generateTextureBuiltinInputsImpl<T extends Dimensionality>(
   n: number,
   args:
     | (TextureBuiltinInputArgs & {
-        method: 'texel-centre';
-      })
+      method: 'texel-centre';
+    })
     | (TextureBuiltinInputArgs & {
-        method: 'spiral';
-        radius?: number;
-        loops?: number;
-      })
+      method: 'spiral';
+      radius?: number;
+      loops?: number;
+    })
 ): {
   coords: T;
   derivativeMult?: T;
@@ -3879,10 +3878,10 @@ function generateTextureBuiltinInputsImpl<T extends Dimensionality>(
     args.textureBuiltin === 'textureSampleBaseClampToEdge'
       ? ['clamp-to-edge', 'clamp-to-edge', 'clamp-to-edge']
       : [
-          args.sampler?.addressModeU ?? 'clamp-to-edge',
-          args.sampler?.addressModeV ?? 'clamp-to-edge',
-          args.sampler?.addressModeW ?? 'clamp-to-edge',
-        ];
+        args.sampler?.addressModeU ?? 'clamp-to-edge',
+        args.sampler?.addressModeV ?? 'clamp-to-edge',
+        args.sampler?.addressModeW ?? 'clamp-to-edge',
+      ];
   const avoidTextureEdge = (axis: number, textureDimensionUnits: number, v: number) => {
     assert(isBuiltinGather(args.textureBuiltin));
     if (addressMode[axis] === 'repeat') {
@@ -3945,8 +3944,8 @@ function generateTextureBuiltinInputsImpl<T extends Dimensionality>(
         args?.sampler?.mipmapFilter === 'linear'
           ? innerLevelR + 1
           : innerLevelR < 5
-          ? innerLevelR
-          : innerLevelR + 1;
+            ? innerLevelR
+            : innerLevelR + 1;
       const outerLevel = makeRangeValue({ num: mipLevelCount - 1, type: 'i32' }, i, 11);
       return outerLevel + innerLevel / 10;
     };
@@ -3975,8 +3974,8 @@ function generateTextureBuiltinInputsImpl<T extends Dimensionality>(
     const [bias, derivativeMult] = args.bias
       ? makeBiasAndDerivativeMult(coords)
       : args.derivatives
-      ? [undefined, makeDerivativeMultForTextureSample(coords)]
-      : [];
+        ? [undefined, makeDerivativeMultForTextureSample(coords)]
+        : [];
 
     return {
       coords,
@@ -4049,21 +4048,21 @@ export function generateTextureBuiltinInputs3D(...args: GenerateTextureBuiltinIn
 }
 
 type mat3 =
-  /* prettier-ignore */ [
-  number, number, number,
-  number, number, number,
-  number, number, number,
-];
+  /* prettier-ignore */[
+    number, number, number,
+    number, number, number,
+    number, number, number,
+  ];
 
 const kFaceUVMatrices: mat3[] =
-  /* prettier-ignore */ [
-  [ 0,  0,  -2,  0, -2,   0,  1,  1,   1],   // pos-x
-  [ 0,  0,   2,  0, -2,   0, -1,  1,  -1],   // neg-x
-  [ 2,  0,   0,  0,  0,   2, -1,  1,  -1],   // pos-y
-  [ 2,  0,   0,  0,  0,  -2, -1, -1,   1],   // neg-y
-  [ 2,  0,   0,  0, -2,   0, -1,  1,   1],   // pos-z
-  [-2,  0,   0,  0, -2,   0,  1,  1,  -1],   // neg-z
-];
+  /* prettier-ignore */[
+    [0, 0, -2, 0, -2, 0, 1, 1, 1],   // pos-x
+    [0, 0, 2, 0, -2, 0, -1, 1, -1],   // neg-x
+    [2, 0, 0, 0, 0, 2, -1, 1, -1],   // pos-y
+    [2, 0, 0, 0, 0, -2, -1, -1, 1],   // neg-y
+    [2, 0, 0, 0, -2, 0, -1, 1, 1],   // pos-z
+    [-2, 0, 0, 0, -2, 0, 1, 1, -1],   // neg-z
+  ];
 
 /** multiply a vec3 by mat3 */
 function transformMat3(v: vec3, m: mat3): vec3 {
@@ -4183,16 +4182,16 @@ export function generateSamplePointsCube(
   n: number,
   args:
     | (TextureBuiltinInputArgs & {
-        method: 'texel-centre';
-      })
+      method: 'texel-centre';
+    })
     | (TextureBuiltinInputArgs & {
-        method: 'spiral';
-        radius?: number;
-        loops?: number;
-      })
+      method: 'spiral';
+      radius?: number;
+      loops?: number;
+    })
     | (TextureBuiltinInputArgs & {
-        method: 'cube-edges';
-      })
+      method: 'cube-edges';
+    })
 ): {
   coords: vec3;
   derivativeMult?: vec3;
@@ -4245,37 +4244,37 @@ export function generateSamplePointsCube(
       coords.push(
         // between edges
         // +x
-        [  1   , -1.01,  0    ],  // wrap -y
-        [  1   , +1.01,  0    ],  // wrap +y
-        [  1   ,  0   , -1.01 ],  // wrap -z
-        [  1   ,  0   , +1.01 ],  // wrap +z
+        [1, -1.01, 0],  // wrap -y
+        [1, +1.01, 0],  // wrap +y
+        [1, 0, -1.01],  // wrap -z
+        [1, 0, +1.01],  // wrap +z
         // -x
-        [ -1   , -1.01,  0    ],  // wrap -y
-        [ -1   , +1.01,  0    ],  // wrap +y
-        [ -1   ,  0   , -1.01 ],  // wrap -z
-        [ -1   ,  0   , +1.01 ],  // wrap +z
+        [-1, -1.01, 0],  // wrap -y
+        [-1, +1.01, 0],  // wrap +y
+        [-1, 0, -1.01],  // wrap -z
+        [-1, 0, +1.01],  // wrap +z
 
         // +y
-        [ -1.01,  1   ,  0    ],  // wrap -x
-        [ +1.01,  1   ,  0    ],  // wrap +x
-        [  0   ,  1   , -1.01 ],  // wrap -z
-        [  0   ,  1   , +1.01 ],  // wrap +z
+        [-1.01, 1, 0],  // wrap -x
+        [+1.01, 1, 0],  // wrap +x
+        [0, 1, -1.01],  // wrap -z
+        [0, 1, +1.01],  // wrap +z
         // -y
-        [ -1.01, -1   ,  0    ],  // wrap -x
-        [ +1.01, -1   ,  0    ],  // wrap +x
-        [  0   , -1   , -1.01 ],  // wrap -z
-        [  0   , -1   , +1.01 ],  // wrap +z
+        [-1.01, -1, 0],  // wrap -x
+        [+1.01, -1, 0],  // wrap +x
+        [0, -1, -1.01],  // wrap -z
+        [0, -1, +1.01],  // wrap +z
 
         // +z
-        [ -1.01,  0   ,  1    ],  // wrap -x
-        [ +1.01,  0   ,  1    ],  // wrap +x
-        [  0   , -1.01,  1    ],  // wrap -y
-        [  0   , +1.01,  1    ],  // wrap +y
+        [-1.01, 0, 1],  // wrap -x
+        [+1.01, 0, 1],  // wrap +x
+        [0, -1.01, 1],  // wrap -y
+        [0, +1.01, 1],  // wrap +y
         // -z
-        [ -1.01,  0   , -1    ],  // wrap -x
-        [ +1.01,  0   , -1    ],  // wrap +x
-        [  0   , -1.01, -1    ],  // wrap -y
-        [  0   , +1.01, -1    ],  // wrap +y
+        [-1.01, 0, -1],  // wrap -x
+        [+1.01, 0, -1],  // wrap +x
+        [0, -1.01, -1],  // wrap -y
+        [0, +1.01, -1],  // wrap +y
 
         // corners (see comment "Issues with corners of cubemaps")
         // for why these are commented out.
@@ -4478,8 +4477,8 @@ export function generateSamplePointsCube(
         args?.sampler?.mipmapFilter === 'linear'
           ? innerLevelR + 1
           : innerLevelR < 4
-          ? innerLevelR
-          : innerLevelR + 1;
+            ? innerLevelR
+            : innerLevelR + 1;
       const outerLevel = makeRangeValue({ num: mipLevelCount - 1, type: 'i32' }, i, 11);
       return outerLevel + innerLevel / 10;
     };
@@ -4508,8 +4507,8 @@ export function generateSamplePointsCube(
     const [bias, derivativeMult] = args.bias
       ? makeBiasAndDerivativeMult(coords)
       : args.derivatives
-      ? [undefined, makeDerivativeMultForTextureSample(coords)]
-      : [];
+        ? [undefined, makeDerivativeMultForTextureSample(coords)]
+        : [];
 
     return {
       coords,
@@ -4626,18 +4625,17 @@ function buildBinnedCalls<T extends Dimensionality>(calls: TextureCall<T>[]) {
           name === 'mipLevel'
             ? prototype.levelType!
             : name === 'arrayIndex'
-            ? prototype.arrayIndexType!
-            : name === 'sampleIndex'
-            ? prototype.sampleIndexType!
-            : name === 'bias' || name === 'depthRef' || name === 'ddx' || name === 'ddy'
-            ? 'f'
-            : prototype.coordType;
+              ? prototype.arrayIndexType!
+              : name === 'sampleIndex'
+                ? prototype.sampleIndexType!
+                : name === 'bias' || name === 'depthRef' || name === 'ddx' || name === 'ddy'
+                  ? 'f'
+                  : prototype.coordType;
         if (name !== 'derivativeMult') {
           args.push(
-            `args.${name}${
-              name === 'coords' && builtinNeedsDerivatives(prototype.builtin)
-                ? ' + derivativeBase * args.derivativeMult'
-                : ''
+            `args.${name}${name === 'coords' && builtinNeedsDerivatives(prototype.builtin)
+              ? ' + derivativeBase * args.derivativeMult'
+              : ''
             }`
           );
         }
@@ -4706,9 +4704,8 @@ function describeTextureCall<T extends Dimensionality>(call: TextureCall<T>): st
     if (value !== undefined && name !== 'component') {
       if (name === 'coords') {
         const derivativeWGSL = builtinNeedsDerivatives(call.builtin)
-          ? ` + derivativeBase * derivativeMult(${
-              call.derivativeMult ? wgslExprFor(call.derivativeMult, call.coordType) : '1'
-            })`
+          ? ` + derivativeBase * derivativeMult(${call.derivativeMult ? wgslExprFor(call.derivativeMult, call.coordType) : '1'
+          })`
           : '';
         args.push(`${name}: ${wgslExprFor(value, call.coordType)}${derivativeWGSL}`);
       } else if (name === 'derivativeMult') {
@@ -4737,10 +4734,10 @@ const getAspectForTexture = (texture: GPUTexture | GPUExternalTexture): GPUTextu
   texture instanceof GPUExternalTexture
     ? 'all'
     : isDepthTextureFormat(texture.format)
-    ? 'depth-only'
-    : isStencilTextureFormat(texture.format)
-    ? 'stencil-only'
-    : 'all';
+      ? 'depth-only'
+      : isStencilTextureFormat(texture.format)
+        ? 'stencil-only'
+        : 'all';
 
 const s_deviceToPipelines = new WeakMap<
   GPUDevice,
@@ -4870,10 +4867,10 @@ function createTextureCallsRunner<T extends Dimensionality>(
   const { resultType, resultFormat, componentType } = isBuiltinGather(builtin)
     ? getTextureFormatTypeInfo(format)
     : textureType === 'texture_external'
-    ? ({ resultType: 'vec4f', resultFormat: 'rgba32float', componentType: 'f32' } as const)
-    : textureType.includes('depth')
-    ? ({ resultType: 'f32', resultFormat: 'rgba32float', componentType: 'f32' } as const)
-    : getTextureFormatTypeInfo(format);
+      ? ({ resultType: 'vec4f', resultFormat: 'rgba32float', componentType: 'f32' } as const)
+      : textureType.includes('depth')
+        ? ({ resultType: 'f32', resultFormat: 'rgba32float', componentType: 'f32' } as const)
+        : getTextureFormatTypeInfo(format);
   const returnType = `vec4<${componentType}>`;
 
   const samplerType = isCompare ? 'sampler_comparison' : 'sampler';
@@ -4890,21 +4887,20 @@ function createTextureCallsRunner<T extends Dimensionality>(
   // Since it's moving by 1 texel unit we can multiply it to get any specific lod value we want.
   // Because it starts at (0, 0, 0) it will not affect our texture coordinate.
   const derivativeBaseWGSL = `
-  let derivativeBase = ${
-    isCubeViewDimension(viewDescriptor)
+  let derivativeBase = ${isCubeViewDimension(viewDescriptor)
       ? '(v.pos.xyx - 0.5 - vec3f(f32(v.ndx), 0, f32(v.ndx))) / vec3f(vec2f(textureDimensions(T)), 1.0)'
       : dimension === '1d'
-      ? 'f32(v.pos.x - 0.5 - f32(v.ndx)) / f32(textureDimensions(T))'
-      : dimension === '3d'
-      ? 'vec3f(v.pos.xy - 0.5 - vec2f(f32(v.ndx), 0), 0) / vec3f(textureDimensions(T))'
-      : '(v.pos.xy - 0.5 - vec2f(f32(v.ndx), 0)) / vec2f(textureDimensions(T))'
-  };`;
+        ? 'f32(v.pos.x - 0.5 - f32(v.ndx)) / f32(textureDimensions(T))'
+        : dimension === '3d'
+          ? 'vec3f(v.pos.xy - 0.5 - vec2f(f32(v.ndx), 0), 0) / vec3f(textureDimensions(T))'
+          : '(v.pos.xy - 0.5 - vec2f(f32(v.ndx), 0)) / vec2f(textureDimensions(T))'
+    };`;
   const derivativeType =
     isCubeViewDimension(viewDescriptor) || dimension === '3d'
       ? 'vec3f'
       : dimension === '1d'
-      ? 'f32'
-      : 'vec2f';
+        ? 'f32'
+        : 'vec2f';
 
   const stageWGSL =
     stage === 'vertex'
@@ -4924,7 +4920,7 @@ function createTextureCallsRunner<T extends Dimensionality>(
 }
 `
       : stage === 'fragment'
-      ? `
+        ? `
 // --------------------------- fragment stage shaders --------------------------------
 @vertex fn vsFragment(
     @builtin(vertex_index) vertex_index : u32,
@@ -4938,7 +4934,7 @@ function createTextureCallsRunner<T extends Dimensionality>(
   return bitcast<vec4u>(getResult(v.ndx, derivativeBase));
 }
 `
-      : `
+        : `
 // --------------------------- compute stage shaders --------------------------------
 @group(1) @binding(0) var<storage, read_write> results: array<${returnType}>;
 
@@ -4991,10 +4987,10 @@ ${stageWGSL}
   let sampleType: GPUTextureSampleType = textureType.startsWith('texture_depth')
     ? 'depth'
     : isDepthTextureFormat(format)
-    ? 'unfilterable-float'
-    : isStencilTextureFormat(format)
-    ? 'uint'
-    : info.color?.type ?? 'float';
+      ? 'unfilterable-float'
+      : isStencilTextureFormat(format)
+        ? 'uint'
+        : info.color?.type ?? 'float';
   if (isFiltering && sampleType === 'unfilterable-float') {
     assert(is32Float(format));
     assert(t.device.features.has('float32-filterable'));
@@ -5008,8 +5004,8 @@ ${stageWGSL}
     stage === 'compute'
       ? GPUShaderStage.COMPUTE
       : stage === 'fragment'
-      ? GPUShaderStage.FRAGMENT
-      : GPUShaderStage.VERTEX;
+        ? GPUShaderStage.FRAGMENT
+        : GPUShaderStage.VERTEX;
 
   const entries: GPUBindGroupLayoutEntry[] = [
     {

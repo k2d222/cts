@@ -10,7 +10,7 @@ import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
 } from '../../../../common/util/util.ts';
-import { Float16Array } from '../../../../external/petamoriken/float16/float16.ts';
+import { Float16Array } from '../../../../external/petamoriken/float16/float16.js';
 import { GPUConst } from '../../../constants.ts';
 import { kResourceStates } from '../../../gpu_test.ts';
 import { ValidationTest } from '../validation_test.ts';

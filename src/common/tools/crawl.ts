@@ -2,8 +2,8 @@
 // This crawls the file tree under src/suites/${suite} to generate a (non-hierarchical) static
 // listing file that can then be used in the browser to load the modules containing the tests.
 
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 
 import { loadMetadataForSuite } from '../framework/metadata.ts';
 import { SpecFile } from '../internal/file_loader.ts';
@@ -12,7 +12,7 @@ import { validQueryPart } from '../internal/query/validQueryPart.ts';
 import { TestSuiteListingEntry, TestSuiteListing } from '../internal/test_suite_listing.ts';
 import { assert, unreachable } from '../util/util.ts';
 
-const specFileSuffix = __filename.endsWith('.ts') ? '.spec.ts' : '.spec.js';
+const specFileSuffix = import.meta.filename.endsWith('.ts') ? '.spec.ts' : '.spec.js';
 
 async function crawlFilesRecursively(dir: string): Promise<string[]> {
   const subpathInfo = await Promise.all(
@@ -79,7 +79,7 @@ export async function crawl(
       const suite = path.basename(suiteDir);
 
       if (opts?.validate) {
-        const filename = `../../${suite}/${filepathWithoutExtension}.spec.js`;
+        const filename = `../../${suite}/${filepathWithoutExtension}.spec.ts`;
 
         assert(!process.env.STANDALONE_DEV_SERVER);
         const mod = (await import(filename)) as SpecFile;

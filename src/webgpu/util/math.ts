@@ -5,7 +5,7 @@ import {
   getFloat16,
   hfround,
   setFloat16,
-} from '../../external/petamoriken/float16/float16.ts';
+} from '../../external/petamoriken/float16/float16.js';
 
 import { kBit, kValue } from './constants.ts';
 import {
