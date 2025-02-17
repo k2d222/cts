@@ -5,7 +5,7 @@
 
 /* eslint-disable no-console */
 
-import { existsSync, mkdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 
 const myself = 'tools/gen_version';
 if (!existsSync(myself)) {

@@ -16,6 +16,9 @@ const kFilesForEslint = [
   'tools/**/*.js',
 ];
 
+const cmd = 'deno'
+const denoArgs = ['--allow-read', '--allow-write', '--allow-env', '--allow-net=deno.land']
+
 module.exports = function (grunt) {
   timer.init(grunt);
 
@@ -32,47 +35,47 @@ module.exports = function (grunt) {
 
     run: {
       'generate-version': {
-        cmd: 'node',
-        args: ['tools/gen_version'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_version'],
       },
       'generate-listings-and-webworkers': {
-        cmd: 'node',
-        args: ['tools/gen_listings_and_webworkers', 'gen/', ...kAllSuites.map(s => 'src/' + s)],
+        cmd,
+        args: [...denoArgs, 'tools/gen_listings_and_webworkers', 'gen/', ...kAllSuites.map(s => 'src/' + s)],
       },
       validate: {
-        cmd: 'node',
-        args: ['tools/validate', ...kAllSuites.map(s => 'src/' + s)],
+        cmd,
+        args: [...denoArgs, 'tools/validate', ...kAllSuites.map(s => 'src/' + s)],
       },
       'generate-cache': {
         // Note this generates files into the src/ directory (not the gen/ directory).
-        cmd: 'node',
-        args: ['tools/gen_cache', 'src/webgpu'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_cache', 'src/webgpu'],
       },
       'validate-cache': {
-        cmd: 'node',
-        args: ['tools/gen_cache', 'src/webgpu', '--validate'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_cache', 'src/webgpu', '--validate'],
       },
       // Note these generate `cts*.https.html` directly into the out-wpt/ directory rather than
       // the gen/ directory (as well as generating a `webgpu_variant_list*.json` file in gen/).
       'write-out-wpt-cts-html': {
-        cmd: 'node',
-        args: ['tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_unchunked.json'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_unchunked.json'],
       },
       'write-out-wpt-cts-html-chunked2sec': {
-        cmd: 'node',
-        args: ['tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_chunked2sec.json'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_chunked2sec.json'],
       },
       'write-out-wpt-cts-html-withsomeworkers': {
-        cmd: 'node',
-        args: ['tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_withsomeworkers.json'],
+        cmd,
+        args: [...denoArgs, 'tools/gen_wpt_cts_html', 'tools/gen_wpt_cfg_withsomeworkers.json'],
       },
       unittest: {
-        cmd: 'node',
-        args: ['tools/run_node', 'unittests:*'],
+        cmd,
+        args: [...denoArgs, 'tools/run_node', 'unittests:*'],
       },
       'build-out': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/@babel/cli/bin/babel',
           '--extensions=.ts,.js',
           '--source-maps=true',
@@ -84,8 +87,8 @@ module.exports = function (grunt) {
         ],
       },
       'build-out-wpt': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/@babel/cli/bin/babel',
           '--extensions=.ts,.js',
           '--source-maps=false',
@@ -107,8 +110,8 @@ module.exports = function (grunt) {
         ],
       },
       'build-out-node': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/typescript/lib/tsc.js',
           '--project',
           'node.tsconfig.json',
@@ -117,8 +120,8 @@ module.exports = function (grunt) {
         ],
       },
       'copy-assets': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/@babel/cli/bin/babel',
           'src/resources/',
           '--out-dir=out/resources/',
@@ -126,8 +129,8 @@ module.exports = function (grunt) {
         ],
       },
       'copy-assets-wpt': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/@babel/cli/bin/babel',
           'src/resources/',
           '--out-dir=out-wpt/resources/',
@@ -135,8 +138,8 @@ module.exports = function (grunt) {
         ],
       },
       'copy-assets-node': {
-        cmd: 'node',
-        args: [
+        cmd,
+        args: [...denoArgs, 
           'node_modules/@babel/cli/bin/babel',
           'src/resources/',
           '--out-dir=out-node/resources/',
@@ -144,15 +147,15 @@ module.exports = function (grunt) {
         ],
       },
       lint: {
-        cmd: 'node',
-        args: ['node_modules/eslint/bin/eslint', ...kFilesForEslint, '--max-warnings=0'],
+        cmd,
+        args: [...denoArgs, 'node_modules/eslint/bin/eslint', ...kFilesForEslint, '--max-warnings=0'],
       },
       fix: {
-        cmd: 'node',
-        args: ['node_modules/eslint/bin/eslint', ...kFilesForEslint, '--fix'],
+        cmd,
+        args: [...denoArgs, 'node_modules/eslint/bin/eslint', ...kFilesForEslint, '--fix'],
       },
       'autoformat-out-wpt': {
-        cmd: 'node',
+        cmd,
         // MAINTENANCE_TODO(gpuweb/cts#3128): This autoformat step is broken after a dependencies upgrade.
         args: [
           'node_modules/prettier/bin/prettier.cjs',
@@ -162,17 +165,17 @@ module.exports = function (grunt) {
         ],
       },
       tsdoc: {
-        cmd: 'node',
-        args: ['node_modules/typedoc/bin/typedoc'],
+        cmd,
+        args: [...denoArgs, 'node_modules/typedoc/bin/typedoc'],
       },
       'tsdoc-treatWarningsAsErrors': {
-        cmd: 'node',
-        args: ['node_modules/typedoc/bin/typedoc', '--treatWarningsAsErrors'],
+        cmd,
+        args: [...denoArgs, 'node_modules/typedoc/bin/typedoc', '--treatWarningsAsErrors'],
       },
 
       serve: {
-        cmd: 'node',
-        args: ['node_modules/http-server/bin/http-server', '-p8080', '-a127.0.0.1', '-c-1'],
+        cmd,
+        args: [...denoArgs, 'node_modules/http-server/bin/http-server', '-p8080', '-a127.0.0.1', '-c-1'],
       },
     },
 
