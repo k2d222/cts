@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env deno --allow-read --allow-write --allow-env
 
 // Takes a list of queries and checks that:
 //   - Every query matches something in the repository
@@ -7,5 +7,4 @@
 // and every query in it is valid (e.g. renames have been applied, and new tests added
 // to the spreadsheet have also been added to the CTS).
 
-require('../src/common/tools/setup-ts-in-node.js');
-require('../src/common/tools/checklist.ts');
+import '../src/common/tools/checklist.ts';

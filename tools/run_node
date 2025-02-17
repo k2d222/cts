@@ -1,6 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env deno --allow-read --allow-write --allow-env
 
 // Run test suites under node.
 
-require('../src/common/tools/setup-ts-in-node.js');
-require('../src/common/runtime/cmdline.ts');
+import '../src/common/runtime/cmdline.ts';

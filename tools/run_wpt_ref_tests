@@ -1,4 +1,3 @@
-#!/usr/bin/env node
+#!/usr/bin/env deno --allow-read --allow-write --allow-env
 
-require('../src/common/tools/setup-ts-in-node.js');
-require('../src/common/tools/run_wpt_ref_tests.ts');
+import '../src/common/tools/run_wpt_ref_tests.ts';
