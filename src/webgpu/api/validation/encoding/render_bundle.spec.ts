@@ -2,9 +2,9 @@ export const description = `
 Tests execution of render bundles.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kDepthStencilFormats } from '../../../format_info.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kDepthStencilFormats } from '../../../format_info.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

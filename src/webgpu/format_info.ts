@@ -1,8 +1,8 @@
-import { keysOf } from '../common/util/data_tables.js';
-import { assert, unreachable } from '../common/util/util.js';
+import { keysOf } from '../common/util/data_tables.ts';
+import { assert, unreachable } from '../common/util/util.ts';
 
-import { align } from './util/math.js';
-import { ImageCopyType } from './util/texture/layout.js';
+import { align } from './util/math.ts';
+import { ImageCopyType } from './util/texture/layout.ts';
 
 //
 // Texture format tables

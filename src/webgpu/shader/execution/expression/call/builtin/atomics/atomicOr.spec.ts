@@ -8,9 +8,9 @@ Atomically read, or and store value.
 Returns the original value stored in the atomic object.
 `;
 
-import { makeTestGroup } from '../../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../../common/util/data_tables.js';
-import { GPUTest } from '../../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../../common/util/data_tables.ts';
+import { GPUTest } from '../../../../../../gpu_test.ts';
 
 import {
   dispatchSizes,
@@ -19,7 +19,7 @@ import {
   runWorkgroupVariableTest,
   kMapId,
   typedArrayCtor,
-} from './harness.js';
+} from './harness.ts';
 
 export const g = makeTestGroup(GPUTest);
 

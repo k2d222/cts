@@ -1,14 +1,14 @@
-import { assert, ErrorWithExtra, unreachable } from '../../../common/util/util.js';
-import { kTextureFormatInfo, EncodableTextureFormat } from '../../format_info.js';
-import { GPUTestBase } from '../../gpu_test.js';
-import { numbersApproximatelyEqual } from '../conversion.js';
-import { generatePrettyTable, numericToStringBuilder } from '../pretty_diff_tables.js';
-import { reifyExtent3D, reifyOrigin3D } from '../unions.js';
+import { assert, ErrorWithExtra, unreachable } from '../../../common/util/util.ts';
+import { kTextureFormatInfo, EncodableTextureFormat } from '../../format_info.ts';
+import { GPUTestBase } from '../../gpu_test.ts';
+import { numbersApproximatelyEqual } from '../conversion.ts';
+import { generatePrettyTable, numericToStringBuilder } from '../pretty_diff_tables.ts';
+import { reifyExtent3D, reifyOrigin3D } from '../unions.ts';
 
-import { fullSubrectCoordinates } from './base.js';
-import { getTextureSubCopyLayout } from './layout.js';
-import { kTexelRepresentationInfo, PerTexelComponent, TexelComponent } from './texel_data.js';
-import { TexelView } from './texel_view.js';
+import { fullSubrectCoordinates } from './base.ts';
+import { getTextureSubCopyLayout } from './layout.ts';
+import { kTexelRepresentationInfo, PerTexelComponent, TexelComponent } from './texel_data.ts';
+import { TexelView } from './texel_view.ts';
 
 type PerPixelAtLevel<T> = (coords: Required<GPUOrigin3DDict>) => T;
 

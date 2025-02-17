@@ -1,15 +1,15 @@
-import { skipUndefined } from '../../../../../util/compare.js';
+import { skipUndefined } from '../../../../../util/compare.ts';
 import {
   ScalarValue,
   VectorValue,
   i32,
   toVector,
   abstractInt,
-} from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { frexp } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+} from '../../../../../util/conversion.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { frexp } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 /* @returns a fract Case for a given scalar or vector input */
 function makeCaseFract(v: number | readonly number[], trait: 'f32' | 'f16' | 'abstract'): Case {

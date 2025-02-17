@@ -2,9 +2,9 @@ export const description = `
 Tests for validation in createQuerySet.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kQueryTypes, kMaxQueryCount } from '../../../capability_info.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kQueryTypes, kMaxQueryCount } from '../../../capability_info.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

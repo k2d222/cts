@@ -1,13 +1,13 @@
-import { keysOf } from '../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../common/util/util.js';
-import { align, roundDown } from '../../../../util/math.js';
+import { keysOf } from '../../../../../common/util/data_tables.ts';
+import { assert } from '../../../../../common/util/util.ts';
+import { align, roundDown } from '../../../../util/math.ts';
 
 import {
   MaximumLimitValueTest,
   MaximumTestValue,
   kMaximumLimitBaseParams,
   makeLimitTestGroup,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const limit = 'maxComputeWorkgroupStorageSize';
 export const { g, description } = makeLimitTestGroup(limit);

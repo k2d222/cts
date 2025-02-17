@@ -5,13 +5,13 @@ Component i of the result is v ÷ 65535, where v is the interpretation of bits
 16×i through 16×i+15 of e as an unsigned integer.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
-import { d } from './unpack2x16unorm.cache.js';
+import { builtin } from './builtin.ts';
+import { d } from './unpack2x16unorm.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -4,7 +4,7 @@ import {
   basicExpressionBuilder,
   basicExpressionWithPredeclarationBuilder,
   ShaderBuilder,
-} from '../../expression.js';
+} from '../../expression.ts';
 
 /* @returns a ShaderBuilder that calls the builtin with the given name */
 export function builtin(name: string): ShaderBuilder {

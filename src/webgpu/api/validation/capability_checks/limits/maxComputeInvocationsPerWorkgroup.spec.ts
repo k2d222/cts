@@ -4,7 +4,7 @@ import {
   MaximumTestValue,
   makeLimitTestGroup,
   LimitTestsImpl,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 /**
  * Given a 3 dimensional size, and a limit, compute

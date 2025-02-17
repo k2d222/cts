@@ -1,11 +1,11 @@
-import { ROArrayArray } from '../../../../../../common/util/types.js';
-import { anyOf } from '../../../../../util/compare.js';
-import { toVector } from '../../../../../util/conversion.js';
-import { FP, FPKind, FPVector } from '../../../../../util/floating_point.js';
-import { cartesianProduct } from '../../../../../util/math.js';
-import { Case, selectNCases } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
-import { IntervalFilter } from '../../interval_filter.js';
+import { ROArrayArray } from '../../../../../../common/util/types.ts';
+import { anyOf } from '../../../../../util/compare.ts';
+import { toVector } from '../../../../../util/conversion.ts';
+import { FP, FPKind, FPVector } from '../../../../../util/floating_point.ts';
+import { cartesianProduct } from '../../../../../util/math.ts';
+import { Case, selectNCases } from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
+import { IntervalFilter } from '../../interval_filter.ts';
 
 // Using a bespoke implementation of make*Case and generate*Cases here
 // since faceForwardIntervals is the only builtin with the API signature

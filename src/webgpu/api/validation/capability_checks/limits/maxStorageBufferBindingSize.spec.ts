@@ -1,4 +1,4 @@
-import { align, roundDown } from '../../../../util/math.js';
+import { align, roundDown } from '../../../../util/math.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -6,7 +6,7 @@ import {
   LimitMode,
   MaximumLimitValueTest,
   MaximumTestValue,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kBufferParts = ['wholeBuffer', 'biggerBufferWithOffset'] as const;
 type BufferPart = (typeof kBufferParts)[number];

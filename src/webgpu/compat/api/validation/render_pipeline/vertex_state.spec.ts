@@ -2,9 +2,9 @@ export const description = `
 Tests limitations of createRenderPipeline related to vertex state in compat mode.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { range } from '../../../../../common/util/util.js';
-import { CompatibilityTest } from '../../../compatibility_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { range } from '../../../../../common/util/util.ts';
+import { CompatibilityTest } from '../../../compatibility_test.ts';
 
 export const g = makeTestGroup(CompatibilityTest);
 

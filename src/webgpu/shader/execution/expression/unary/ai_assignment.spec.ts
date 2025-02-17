@@ -2,18 +2,18 @@ export const description = `
 Execution Tests for assignment of AbstractInts
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { Type } from '../../../../util/conversion.ts';
 import {
   ShaderBuilder,
   abstractIntShaderBuilder,
   basicExpressionBuilder,
   onlyConstInputSource,
   run,
-} from '../expression.js';
+} from '../expression.ts';
 
-import { d } from './ai_assignment.cache.js';
+import { d } from './ai_assignment.cache.ts';
 
 function concrete_assignment(): ShaderBuilder {
   return basicExpressionBuilder(value => `${value}`);

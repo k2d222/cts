@@ -2,11 +2,11 @@ export const description = `
 copyExternalImageToTexture from ImageData source.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { kTextureFormatInfo, kValidTextureFormatsForCopyE2T } from '../../format_info.js';
-import { TextureUploadingUtils, kCopySubrectInfo } from '../../util/copy_to_texture.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { kTextureFormatInfo, kValidTextureFormatsForCopyE2T } from '../../format_info.ts';
+import { TextureUploadingUtils, kCopySubrectInfo } from '../../util/copy_to_texture.ts';
 
-import { kTestColorsAll, makeTestColorsTexelView } from './util.js';
+import { kTestColorsAll, makeTestColorsTexelView } from './util.ts';
 
 export const g = makeTestGroup(TextureUploadingUtils);
 

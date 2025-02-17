@@ -2,17 +2,17 @@ export const description = `
 Tests for TestQuery comparison
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { compareQueries, Ordering } from '../common/internal/query/compare.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { compareQueries, Ordering } from '../common/internal/query/compare.ts';
 import {
   TestQuery,
   TestQuerySingleCase,
   TestQueryMultiFile,
   TestQueryMultiTest,
   TestQueryMultiCase,
-} from '../common/internal/query/query.js';
+} from '../common/internal/query/query.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 class F extends UnitTest {
   expectQ(a: TestQuery, exp: '<' | '=' | '>' | '!', b: TestQuery) {

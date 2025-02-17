@@ -1,8 +1,8 @@
-import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.js';
-import { Float16Array } from '../../../external/petamoriken/float16/float16.js';
-import { kCanvasAlphaModes, kCanvasColorSpaces } from '../../capability_info.js';
+import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.ts';
+import { Float16Array } from '../../../external/petamoriken/float16/float16.ts';
+import { kCanvasAlphaModes, kCanvasColorSpaces } from '../../capability_info.ts';
 
-import { runRefTest } from './gpu_ref_test.js';
+import { runRefTest } from './gpu_ref_test.ts';
 
 function bgra8UnormFromRgba8Unorm(rgba8Unorm: Uint8Array) {
   // This is used only once. May need to optimize if reused.

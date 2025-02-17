@@ -1,9 +1,9 @@
-import { Logger, LogResults } from '../common/internal/logging/logger.js';
-import { TestQuerySingleCase } from '../common/internal/query/query.js';
-import { IterableTestGroup, TestCaseID } from '../common/internal/test_group.js';
-import { objectEquals } from '../common/util/util.js';
+import { Logger, LogResults } from '../common/internal/logging/logger.ts';
+import { TestQuerySingleCase } from '../common/internal/query/query.ts';
+import { IterableTestGroup, TestCaseID } from '../common/internal/test_group.ts';
+import { objectEquals } from '../common/util/util.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export class TestGroupTest extends UnitTest {
   async run(g: IterableTestGroup): Promise<LogResults> {

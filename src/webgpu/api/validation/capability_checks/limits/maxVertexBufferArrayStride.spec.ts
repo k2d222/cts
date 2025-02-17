@@ -1,11 +1,11 @@
-import { roundDown } from '../../../../util/math.js';
+import { roundDown } from '../../../../util/math.ts';
 
 import {
   kMaximumLimitBaseParams,
   makeLimitTestGroup,
   MaximumLimitValueTest,
   MaximumTestValue,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 function getPipelineDescriptor(device: GPUDevice, testValue: number): GPURenderPipelineDescriptor {
   const code = `

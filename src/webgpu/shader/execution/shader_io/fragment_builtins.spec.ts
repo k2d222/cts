@@ -17,16 +17,16 @@ is evaluated per-fragment or per-sample. With @interpolate(, sample) or usage of
   src/webgpu/api/operation/rendering/depth_clip_clamp.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ErrorWithExtra, assert, range, unreachable } from '../../../../common/util/util.js';
-import { InterpolationSampling, InterpolationType } from '../../../constants.js';
-import { kTextureFormatInfo } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { getProvokingVertexForFlatInterpolationEitherSampling } from '../../../inter_stage.js';
-import { getMultisampleFragmentOffsets } from '../../../multisample_info.js';
-import { dotProduct, subtractVectors, align } from '../../../util/math.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
-import { findFailedPixels } from '../../../util/texture/texture_ok.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { ErrorWithExtra, assert, range, unreachable } from '../../../../common/util/util.ts';
+import { InterpolationSampling, InterpolationType } from '../../../constants.ts';
+import { kTextureFormatInfo } from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { getProvokingVertexForFlatInterpolationEitherSampling } from '../../../inter_stage.ts';
+import { getMultisampleFragmentOffsets } from '../../../multisample_info.ts';
+import { dotProduct, subtractVectors, align } from '../../../util/math.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
+import { findFailedPixels } from '../../../util/texture/texture_ok.ts';
 
 class FragmentBuiltinTest extends TextureTestMixin(GPUTest) {}
 

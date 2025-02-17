@@ -1,7 +1,7 @@
-import { assert, unreachable } from '../../../../../common/util/util.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../../gpu_test.js';
-import { checkElementsEqualEither } from '../../../../util/check_contents.js';
-import { OperationContext, OperationContextHelper } from '../operation_context_helper.js';
+import { assert, unreachable } from '../../../../../common/util/util.ts';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../../gpu_test.ts';
+import { checkElementsEqualEither } from '../../../../util/check_contents.ts';
+import { OperationContext, OperationContextHelper } from '../operation_context_helper.ts';
 
 export const kAllWriteOps = ['storage', 'b2b-copy', 't2b-copy', 'write-buffer'] as const;
 

@@ -7,13 +7,13 @@ For the incident vector e1 and surface orientation e2, returns the reflection
 direction e1-2*dot(e2,e1)*e2.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './reflect.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
+import { d } from './reflect.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

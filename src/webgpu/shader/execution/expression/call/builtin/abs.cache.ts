@@ -1,7 +1,7 @@
-import { abstractInt } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { absBigInt, fullI64Range } from '../../../../../util/math.js';
-import { CaseListBuilder, makeCaseCache } from '../../case_cache.js';
+import { abstractInt } from '../../../../../util/conversion.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { absBigInt, fullI64Range } from '../../../../../util/math.ts';
+import { CaseListBuilder, makeCaseCache } from '../../case_cache.ts';
 
 // Cases: [f32|f16|abstract_float|abstract_int]
 const cases: Record<string, CaseListBuilder> = {

@@ -1,7 +1,7 @@
-import { kValue } from '../../../../../util/constants.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { biasedRange, linearRange } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { kValue } from '../../../../../util/constants.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { biasedRange, linearRange } from '../../../../../util/math.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // floor(ln(max f32 value)) = 88, so exp(88) will be within range of a f32, but exp(89) will not
 // floor(ln(max f64 value)) = 709, so exp(709) can be handled by the testing framework, but exp(710) will misbehave

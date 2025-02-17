@@ -2,12 +2,12 @@ export const description = `
 Tests for GPUAdapterInfo.
 `;
 
-import { Fixture } from '../../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { getGPU } from '../../../../common/util/navigator_gpu.js';
-import { assert, objectEquals } from '../../../../common/util/util.js';
-import { isPowerOfTwo } from '../../../util/math.js';
+import { Fixture } from '../../../../common/framework/fixture.ts';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../common/util/data_tables.ts';
+import { getGPU } from '../../../../common/util/navigator_gpu.ts';
+import { assert, objectEquals } from '../../../../common/util/util.ts';
+import { isPowerOfTwo } from '../../../util/math.ts';
 
 export const g = makeTestGroup(Fixture);
 

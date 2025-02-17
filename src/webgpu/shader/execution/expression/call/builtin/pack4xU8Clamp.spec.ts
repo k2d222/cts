@@ -7,14 +7,14 @@ into a u32 value. Component e[i] of the input is mapped to bits (8 * i) through 
 result.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { u32, toVector, Type } from '../../../../../util/conversion.js';
-import { clamp } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { u32, toVector, Type } from '../../../../../util/conversion.ts';
+import { clamp } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, Config, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

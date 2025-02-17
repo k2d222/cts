@@ -2,9 +2,9 @@ export const description = `
 Validation tests for render pass resolve.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUConst } from '../../../constants.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUConst } from '../../../constants.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 const kNumColorAttachments = 4;
 

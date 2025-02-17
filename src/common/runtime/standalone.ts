@@ -2,17 +2,17 @@
 
 /* eslint no-console: "off" */
 
-import { dataCache } from '../framework/data_cache.js';
-import { getResourcePath, setBaseResourcePath } from '../framework/resources.js';
-import { globalTestConfig } from '../framework/test_config.js';
-import { DefaultTestFileLoader } from '../internal/file_loader.js';
-import { Logger } from '../internal/logging/logger.js';
-import { LiveTestCaseResult } from '../internal/logging/result.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
-import { TestQueryLevel } from '../internal/query/query.js';
-import { TestTreeNode, TestSubtree, TestTreeLeaf, TestTree } from '../internal/tree.js';
-import { setDefaultRequestAdapterOptions } from '../util/navigator_gpu.js';
-import { ErrorWithExtra, unreachable } from '../util/util.js';
+import { dataCache } from '../framework/data_cache.ts';
+import { getResourcePath, setBaseResourcePath } from '../framework/resources.ts';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { DefaultTestFileLoader } from '../internal/file_loader.ts';
+import { Logger } from '../internal/logging/logger.ts';
+import { LiveTestCaseResult } from '../internal/logging/result.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
+import { TestQueryLevel } from '../internal/query/query.ts';
+import { TestTreeNode, TestSubtree, TestTreeLeaf, TestTree } from '../internal/tree.ts';
+import { setDefaultRequestAdapterOptions } from '../util/navigator_gpu.ts';
+import { ErrorWithExtra, unreachable } from '../util/util.ts';
 
 import {
   kCTSOptionsInfo,
@@ -21,8 +21,8 @@ import {
   OptionInfo,
   OptionsInfos,
   camelCaseToSnakeCase,
-} from './helper/options.js';
-import { TestDedicatedWorker, TestSharedWorker, TestServiceWorker } from './helper/test_worker.js';
+} from './helper/options.ts';
+import { TestDedicatedWorker, TestSharedWorker, TestServiceWorker } from './helper/test_worker.ts';
 
 const rootQuerySpec = 'webgpu:*';
 let promptBeforeReload = false;

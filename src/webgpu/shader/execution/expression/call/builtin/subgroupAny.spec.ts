@@ -7,10 +7,10 @@ Note: There is no guaranteed mapping between subgroup_invocation_id and
 local_invocation_index. Tests should avoid assuming there is.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { iterRange } from '../../../../../../common/util/util.js';
-import { PRNG } from '../../../../../util/prng.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { iterRange } from '../../../../../../common/util/util.ts';
+import { PRNG } from '../../../../../util/prng.ts';
 
 import {
   kWGSizes,
@@ -21,7 +21,7 @@ import {
   runFragmentTest,
   kFramebufferSizes,
   getUintsPerFramebuffer,
-} from './subgroup_util.js';
+} from './subgroup_util.ts';
 
 export const g = makeTestGroup(SubgroupTest);
 

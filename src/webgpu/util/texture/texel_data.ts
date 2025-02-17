@@ -1,6 +1,6 @@
-import { assert, unreachable } from '../../../common/util/util.js';
-import { UncompressedTextureFormat, EncodableTextureFormat } from '../../format_info.js';
-import { kValue } from '../constants.js';
+import { assert, unreachable } from '../../../common/util/util.ts';
+import { UncompressedTextureFormat, EncodableTextureFormat } from '../../format_info.ts';
+import { kValue } from '../constants.ts';
 import {
   assertInIntegerRange,
   float32ToFloatBits,
@@ -20,8 +20,8 @@ import {
   float32BitsToNumber,
   numberToFloatBits,
   ufloatM9E5BitsToNumber,
-} from '../conversion.js';
-import { clamp, signExtend } from '../math.js';
+} from '../conversion.ts';
+import { clamp, signExtend } from '../math.ts';
 
 /** A component of a texture format: R, G, B, A, Depth, or Stencil. */
 export const enum TexelComponent {

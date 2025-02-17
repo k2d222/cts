@@ -6,13 +6,13 @@ T is Type.abstractInt, Type.abstractFloat, i32, u32, f32, or f16
 Returns the dot product of e1 and e2.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
-import { d } from './dot.cache.js';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.ts';
+import { d } from './dot.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

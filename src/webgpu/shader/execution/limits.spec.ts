@@ -1,10 +1,10 @@
 export const description = `Execution tests for WGSL limits.`;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { keysOf } from '../../../common/util/data_tables.js';
-import { iterRange } from '../../../common/util/util.js';
-import { GPUTest } from '../../gpu_test.js';
-import { CheckElementsGenerator, checkElementsEqualGenerated } from '../../util/check_contents.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { keysOf } from '../../../common/util/data_tables.ts';
+import { iterRange } from '../../../common/util/util.ts';
+import { GPUTest } from '../../gpu_test.ts';
+import { CheckElementsGenerator, checkElementsEqualGenerated } from '../../util/check_contents.ts';
 
 export const g = makeTestGroup(GPUTest);
 

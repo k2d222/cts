@@ -1,5 +1,5 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 const known_values = [-Math.sqrt(3), -1, -1 / Math.sqrt(3), 0, 1, 1 / Math.sqrt(3), Math.sqrt(3)];
 

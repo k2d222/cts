@@ -3,16 +3,16 @@ export const description = `
 Validation tests for the ${builtin}() builtin.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
 import {
   Type,
   kConcreteIntegerScalarsAndVectors,
   kConvertableToFloatScalarsAndVectors,
   scalarTypeOf,
-} from '../../../../../util/conversion.js';
-import { fpTraitsFor } from '../../../../../util/floating_point.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { fpTraitsFor } from '../../../../../util/floating_point.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 import {
   fullRangeForType,
@@ -20,7 +20,7 @@ import {
   stageSupportsType,
   unique,
   validateConstOrOverrideBuiltinEval,
-} from './const_override_validation.js';
+} from './const_override_validation.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -1,7 +1,7 @@
-import { FP } from '../../../../util/floating_point.js';
-import { sparseMatrixF64Range } from '../../../../util/math.js';
-import { selectNCases } from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+import { FP } from '../../../../util/floating_point.ts';
+import { sparseMatrixF64Range } from '../../../../util/math.ts';
+import { selectNCases } from '../case.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 // Cases: matKxR_matCxK
 const mat_mat_cases = ([2, 3, 4] as const)

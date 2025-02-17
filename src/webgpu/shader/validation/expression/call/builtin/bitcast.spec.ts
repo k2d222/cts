@@ -2,12 +2,12 @@ export const description = `
 Validation negative tests for bitcast builtins.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../../common/util/util.js';
-import { kBit } from '../../../../../util/constants.js';
-import { linearRange } from '../../../../../util/math.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { assert } from '../../../../../../common/util/util.ts';
+import { kBit } from '../../../../../util/constants.ts';
+import { linearRange } from '../../../../../util/math.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -1,6 +1,6 @@
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { assert, range, unreachable } from '../../../../../../common/util/util.js';
-import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.js';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { assert, range, unreachable } from '../../../../../../common/util/util.ts';
+import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.ts';
 import {
   EncodableTextureFormat,
   is32Float,
@@ -13,12 +13,12 @@ import {
   isStencilTextureFormat,
   kEncodableTextureFormats,
   kTextureFormatInfo,
-} from '../../../../../format_info.js';
+} from '../../../../../format_info.ts';
 import {
   AllFeaturesMaxLimitsGPUTest,
   GPUTest,
   GPUTestSubcaseBatchState,
-} from '../../../../../gpu_test.js';
+} from '../../../../../gpu_test.ts';
 import {
   align,
   clamp,
@@ -27,7 +27,7 @@ import {
   lcm,
   lerp,
   quantizeToF32,
-} from '../../../../../util/math.js';
+} from '../../../../../util/math.ts';
 import {
   effectiveViewDimensionForDimension,
   physicalMipSize,
@@ -35,7 +35,7 @@ import {
   reifyTextureDescriptor,
   SampleCoord,
   virtualMipSize,
-} from '../../../../../util/texture/base.js';
+} from '../../../../../util/texture/base.ts';
 import {
   kTexelRepresentationInfo,
   NumericRange,
@@ -43,11 +43,11 @@ import {
   PerTexelComponent,
   TexelComponent,
   TexelRepresentationInfo,
-} from '../../../../../util/texture/texel_data.js';
-import { PerPixelAtLevel, TexelView } from '../../../../../util/texture/texel_view.js';
-import { createTextureFromTexelViews } from '../../../../../util/texture.js';
-import { reifyExtent3D } from '../../../../../util/unions.js';
-import { ShaderStage } from '../../../../validation/decl/util.js';
+} from '../../../../../util/texture/texel_data.ts';
+import { PerPixelAtLevel, TexelView } from '../../../../../util/texture/texel_view.ts';
+import { createTextureFromTexelViews } from '../../../../../util/texture.ts';
+import { reifyExtent3D } from '../../../../../util/unions.ts';
+import { ShaderStage } from '../../../../validation/decl/util.ts';
 
 // These are needed because the list of parameters was too long when converted to a filename.
 export const kShortShaderStageToShaderStage = {

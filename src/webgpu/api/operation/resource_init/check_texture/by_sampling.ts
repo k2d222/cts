@@ -1,13 +1,13 @@
-import { assert, unreachable } from '../../../../../common/util/util.js';
-import { kTextureFormatInfo, EncodableTextureFormat } from '../../../../format_info.js';
-import { virtualMipSize } from '../../../../util/texture/base.js';
+import { assert, unreachable } from '../../../../../common/util/util.ts';
+import { kTextureFormatInfo, EncodableTextureFormat } from '../../../../format_info.ts';
+import { virtualMipSize } from '../../../../util/texture/base.ts';
 import {
   kTexelRepresentationInfo,
   getSingleDataType,
   getComponentReadbackTraits,
-} from '../../../../util/texture/texel_data.js';
+} from '../../../../util/texture/texel_data.ts';
 
-import { CheckContents } from './texture_zero_init_test.js';
+import { CheckContents } from './texture_zero_init_test.ts';
 
 export const checkContentsBySampling: CheckContents = (
   t,

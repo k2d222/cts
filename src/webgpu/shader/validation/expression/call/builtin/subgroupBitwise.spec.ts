@@ -2,15 +2,15 @@ export const description = `
 Validation tests for subgroupAnd, subgroupOr, and subgroupXor.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
 import {
   Type,
   elementTypeOf,
   kAllScalarsAndVectors,
   isConvertible,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

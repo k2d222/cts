@@ -1,6 +1,6 @@
-import { assert, unreachable } from '../../common/util/util.js';
+import { assert, unreachable } from '../../common/util/util.ts';
 
-import { multiplyMatrices } from './math.js';
+import { multiplyMatrices } from './math.ts';
 
 // These color space conversion function definitions are copied directly from
 // CSS Color Module Level 4 Sample Code: https://drafts.csswg.org/css-color/#color-conversion-code

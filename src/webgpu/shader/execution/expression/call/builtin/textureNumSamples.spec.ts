@@ -4,10 +4,10 @@ Execution tests for the 'textureNumSamples' builtin function
 Returns the number samples per texel in a multisampled texture.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { kShaderStages } from '../../../../validation/decl/util.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { kShaderStages } from '../../../../validation/decl/util.ts';
 
-import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils.js';
+import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils.ts';
 
 export const g = makeTestGroup(WGSLTextureQueryTest);
 

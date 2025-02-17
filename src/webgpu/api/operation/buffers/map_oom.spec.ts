@@ -1,11 +1,11 @@
 export const description =
   'Test out-of-memory conditions creating large mappable/mappedAtCreation buffers.';
 
-import { kUnitCaseParamsBuilder } from '../../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kBufferUsages } from '../../../capability_info.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { kMaxSafeMultipleOf8 } from '../../../util/math.js';
+import { kUnitCaseParamsBuilder } from '../../../../common/framework/params_builder.ts';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kBufferUsages } from '../../../capability_info.ts';
+import { GPUTest } from '../../../gpu_test.ts';
+import { kMaxSafeMultipleOf8 } from '../../../util/math.ts';
 
 const oomAndSizeParams = kUnitCaseParamsBuilder
   .combine('oom', [false, true])

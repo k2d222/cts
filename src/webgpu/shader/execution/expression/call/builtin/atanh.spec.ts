@@ -10,13 +10,13 @@ Component-wise when T is a vector.
 Note: The result is not mathematically meaningful when abs(e) >= 1.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { d } from './atanh.cache.js';
-import { abstractFloatBuiltin, builtin } from './builtin.js';
+import { d } from './atanh.cache.ts';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

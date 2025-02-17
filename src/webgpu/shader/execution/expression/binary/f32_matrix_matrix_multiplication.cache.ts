@@ -1,6 +1,6 @@
-import { FP } from '../../../../util/floating_point.js';
-import { sparseMatrixF32Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { FP } from '../../../../util/floating_point.ts';
+import { sparseMatrixF32Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 // Cases: matKxR_matCxK_[non_]const
 const mat_mat_cases = ([2, 3, 4] as const)

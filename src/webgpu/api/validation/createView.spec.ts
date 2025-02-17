@@ -1,31 +1,31 @@
 export const description = `createView validation tests.`;
 
-import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { unreachable } from '../../../common/util/util.js';
+import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.ts';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { unreachable } from '../../../common/util/util.ts';
 import {
   kTextureAspects,
   kTextureDimensions,
   kTextureUsages,
   kTextureViewDimensions,
-} from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
+} from '../../capability_info.ts';
+import { GPUConst } from '../../constants.ts';
 import {
   kTextureFormatInfo,
   kAllTextureFormats,
   kFeaturesForFormats,
   filterFormatsByFeature,
   viewCompatible,
-} from '../../format_info.js';
-import { kResourceStates } from '../../gpu_test.js';
+} from '../../format_info.ts';
+import { kResourceStates } from '../../gpu_test.ts';
 import {
   getTextureDimensionFromView,
   reifyTextureViewDescriptor,
   viewDimensionsForTextureDimension,
-} from '../../util/texture/base.js';
-import { reifyExtent3D } from '../../util/unions.js';
+} from '../../util/texture/base.ts';
+import { reifyExtent3D } from '../../util/unions.ts';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

@@ -5,12 +5,12 @@ TODO:
 - Test resource usage transitions with read-write storage textures
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, unreachable } from '../../../../common/util/util.js';
-import { kTextureDimensions } from '../../../capability_info.js';
-import { kColorTextureFormats, kTextureFormatInfo } from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
-import { align } from '../../../util/math.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, unreachable } from '../../../../common/util/util.ts';
+import { kTextureDimensions } from '../../../capability_info.ts';
+import { kColorTextureFormats, kTextureFormatInfo } from '../../../format_info.ts';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.ts';
+import { align } from '../../../util/math.ts';
 
 const kShaderStagesForReadWriteStorageTexture = ['fragment', 'compute'] as const;
 type ShaderStageForReadWriteStorageTexture =

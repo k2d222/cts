@@ -1,20 +1,20 @@
 export const description = `Unit tests for data cache serialization`;
 
-import { getIsBuildingDataCache, setIsBuildingDataCache } from '../common/framework/data_cache.js';
-import { makeTestGroup } from '../common/internal/test_group.js';
-import { objectEquals } from '../common/util/util.js';
+import { getIsBuildingDataCache, setIsBuildingDataCache } from '../common/framework/data_cache.ts';
+import { makeTestGroup } from '../common/internal/test_group.ts';
+import { objectEquals } from '../common/util/util.ts';
 import {
   deserializeExpectation,
   serializeExpectation,
-} from '../webgpu/shader/execution/expression/case_cache.js';
-import BinaryStream from '../webgpu/util/binary_stream.js';
+} from '../webgpu/shader/execution/expression/case_cache.ts';
+import BinaryStream from '../webgpu/util/binary_stream.ts';
 import {
   anyOf,
   deserializeComparator,
   serializeComparator,
   skipUndefined,
-} from '../webgpu/util/compare.js';
-import { kValue } from '../webgpu/util/constants.js';
+} from '../webgpu/util/compare.ts';
+import { kValue } from '../webgpu/util/constants.ts';
 import {
   abstractFloat,
   abstractInt,
@@ -33,10 +33,10 @@ import {
   vec2,
   vec3,
   vec4,
-} from '../webgpu/util/conversion.js';
-import { deserializeFPInterval, FP, serializeFPInterval } from '../webgpu/util/floating_point.js';
+} from '../webgpu/util/conversion.ts';
+import { deserializeFPInterval, FP, serializeFPInterval } from '../webgpu/util/floating_point.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(UnitTest);
 

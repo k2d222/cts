@@ -3,12 +3,12 @@ Validation tests to all commands of GPUCommandEncoder, GPUComputePassEncoder, an
 GPURenderPassEncoder when the encoder is not finished.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { unreachable } from '../../../../common/util/util.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../common/util/data_tables.ts';
+import { unreachable } from '../../../../common/util/util.ts';
+import { ValidationTest } from '../validation_test.ts';
 
-import { beginRenderPassWithQuerySet } from './queries/common.js';
+import { beginRenderPassWithQuerySet } from './queries/common.ts';
 
 class F extends ValidationTest {
   createRenderPipelineForTest(): GPURenderPipeline {

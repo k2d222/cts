@@ -5,8 +5,8 @@ Samples a texture using explicit gradients.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.ts';
 
 import {
   appendComponentTypeForFormatToTextureType,
@@ -32,7 +32,7 @@ import {
   vec2,
   vec3,
   WGSLTextureSampleTest,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(WGSLTextureSampleTest);
 

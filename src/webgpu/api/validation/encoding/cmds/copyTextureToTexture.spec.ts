@@ -2,8 +2,8 @@ export const description = `
 copyTextureToTexture tests.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { kTextureUsages, kTextureDimensions } from '../../../../capability_info.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { kTextureUsages, kTextureDimensions } from '../../../../capability_info.ts';
 import {
   kTextureFormatInfo,
   kAllTextureFormats,
@@ -12,10 +12,10 @@ import {
   kFeaturesForFormats,
   filterFormatsByFeature,
   textureDimensionAndFormatCompatible,
-} from '../../../../format_info.js';
-import { kResourceStates } from '../../../../gpu_test.js';
-import { align, lcm } from '../../../../util/math.js';
-import { ValidationTest } from '../../validation_test.js';
+} from '../../../../format_info.ts';
+import { kResourceStates } from '../../../../gpu_test.ts';
+import { align, lcm } from '../../../../util/math.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 class F extends ValidationTest {
   TestCopyTextureToTexture(

@@ -1,11 +1,11 @@
-import { assert } from '../../../../../common/util/util.js';
+import { assert } from '../../../../../common/util/util.ts';
 
 import {
   kCreatePipelineTypes,
   kEncoderTypes,
   kMaximumLimitBaseParams,
   makeLimitTestGroup,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const limit = 'maxBindGroups';
 export const { g, description } = makeLimitTestGroup(limit);

@@ -2,12 +2,12 @@ export const description = `
 Tests for capabilities added by bgra8unorm-storage flag.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kTextureUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
-import { kAllCanvasTypes, createCanvas } from '../../../util/create_elements.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert } from '../../../../common/util/util.ts';
+import { kTextureUsages } from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
+import { kAllCanvasTypes, createCanvas } from '../../../util/create_elements.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 class BGRA8UnormStorageValidationTests extends ValidationTest {
   testCreateShaderModuleWithBGRA8UnormStorage(

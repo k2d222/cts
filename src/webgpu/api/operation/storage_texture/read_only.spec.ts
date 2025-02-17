@@ -6,17 +6,17 @@ TODO:
 - Test resource usage transitions with read-only storage textures
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable, assert } from '../../../../common/util/util.js';
-import { Float16Array } from '../../../../external/petamoriken/float16/float16.js';
-import { kTextureDimensions } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { unreachable, assert } from '../../../../common/util/util.ts';
+import { Float16Array } from '../../../../external/petamoriken/float16/float16.ts';
+import { kTextureDimensions } from '../../../capability_info.ts';
 import {
   ColorTextureFormat,
   kColorTextureFormats,
   kTextureFormatInfo,
-} from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
-import { kValidShaderStages, TValidShaderStage } from '../../../util/shader.js';
+} from '../../../format_info.ts';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.ts';
+import { kValidShaderStages, TValidShaderStage } from '../../../util/shader.ts';
 
 function ComponentCount(format: ColorTextureFormat): number {
   switch (format) {

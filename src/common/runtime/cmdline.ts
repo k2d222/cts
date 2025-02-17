@@ -2,20 +2,20 @@
 
 import * as fs from 'fs';
 
-import { dataCache } from '../framework/data_cache.js';
-import { getResourcePath, setBaseResourcePath } from '../framework/resources.js';
-import { globalTestConfig } from '../framework/test_config.js';
-import { DefaultTestFileLoader } from '../internal/file_loader.js';
-import { prettyPrintLog } from '../internal/logging/log_message.js';
-import { Logger } from '../internal/logging/logger.js';
-import { LiveTestCaseResult } from '../internal/logging/result.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
-import { parseExpectationsForTestQuery } from '../internal/query/query.js';
-import { Colors } from '../util/colors.js';
-import { setDefaultRequestAdapterOptions, setGPUProvider } from '../util/navigator_gpu.js';
-import { assert, unreachable } from '../util/util.js';
+import { dataCache } from '../framework/data_cache.ts';
+import { getResourcePath, setBaseResourcePath } from '../framework/resources.ts';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { DefaultTestFileLoader } from '../internal/file_loader.ts';
+import { prettyPrintLog } from '../internal/logging/log_message.ts';
+import { Logger } from '../internal/logging/logger.ts';
+import { LiveTestCaseResult } from '../internal/logging/result.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
+import { parseExpectationsForTestQuery } from '../internal/query/query.ts';
+import { Colors } from '../util/colors.ts';
+import { setDefaultRequestAdapterOptions, setGPUProvider } from '../util/navigator_gpu.ts';
+import { assert, unreachable } from '../util/util.ts';
 
-import sys from './helper/sys.js';
+import sys from './helper/sys.ts';
 
 function usage(rc: number): never {
   console.log(`Usage:

@@ -6,13 +6,13 @@ e1 and e2 are interpreted as vectors with four 8-bit unsigned integer components
 unsigned integer dot product of these two vectors.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type, u32 } from '../../../../../util/conversion.js';
-import { Case } from '../../case.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type, u32 } from '../../../../../util/conversion.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, Config, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

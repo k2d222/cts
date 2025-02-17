@@ -1,1 +1,1 @@
-export { makeTestGroup } from '../internal/test_group.js';
+export { makeTestGroup } from '../internal/test_group.ts';

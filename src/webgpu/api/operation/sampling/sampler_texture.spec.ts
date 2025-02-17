@@ -5,10 +5,10 @@ Tests samplers with textures.
   with the maximum number of samplers.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, range } from '../../../../common/util/util.js';
-import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, range } from '../../../../common/util/util.ts';
+import { AllFeaturesMaxLimitsGPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
 
 export const g = makeTestGroup(TextureTestMixin(AllFeaturesMaxLimitsGPUTest));
 

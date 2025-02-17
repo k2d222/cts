@@ -1,11 +1,11 @@
-import { TestCaseRecorder } from '../internal/logging/test_case_recorder.js';
-import { JSONWithUndefined } from '../internal/params_utils.js';
-import { assert, ExceptionCheckOptions, unreachable } from '../util/util.js';
+import { TestCaseRecorder } from '../internal/logging/test_case_recorder.ts';
+import { JSONWithUndefined } from '../internal/params_utils.ts';
+import { assert, ExceptionCheckOptions, unreachable } from '../util/util.ts';
 
 export class SkipTestCase extends Error {}
 export class UnexpectedPassError extends Error {}
 
-export { TestCaseRecorder } from '../internal/logging/test_case_recorder.js';
+export { TestCaseRecorder } from '../internal/logging/test_case_recorder.ts';
 
 /** The fully-general type for params passed to a test function invocation. */
 export type TestParams = {

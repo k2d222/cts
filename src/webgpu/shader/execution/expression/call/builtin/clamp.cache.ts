@@ -1,9 +1,9 @@
-import { kValue } from '../../../../../util/constants.js';
-import { ScalarType, Type } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { maxBigInt, minBigInt } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { kValue } from '../../../../../util/constants.ts';
+import { ScalarType, Type } from '../../../../../util/conversion.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { maxBigInt, minBigInt } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 const u32Values = [0, 1, 2, 3, 0x70000000, 0x80000000, kValue.u32.max];
 

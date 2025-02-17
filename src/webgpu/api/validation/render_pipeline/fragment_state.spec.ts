@@ -4,31 +4,31 @@ This test dedicatedly tests validation of GPUFragmentState of createRenderPipeli
 TODO(#3363): Make this into a MaxLimitTest and increase kMaxColorAttachments.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, range } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, range } from '../../../../common/util/util.ts';
 import {
   getDefaultLimits,
   IsDualSourceBlendingFactor,
   kBlendFactors,
   kBlendOperations,
-} from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+} from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
 import {
   kAllTextureFormats,
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
   computeBytesPerSampleFromFormats,
   kColorTextureFormats,
-} from '../../../format_info.js';
+} from '../../../format_info.ts';
 import {
   getFragmentShaderCodeWithOutput,
   getPlainTypeInfo,
   kDefaultFragmentShaderCode,
   kDefaultVertexShaderCode,
-} from '../../../util/shader.js';
-import { kTexelRepresentationInfo } from '../../../util/texture/texel_data.js';
+} from '../../../util/shader.ts';
+import { kTexelRepresentationInfo } from '../../../util/texture/texel_data.ts';
 
-import { ColorTargetState, CreateRenderPipelineValidationTest } from './common.js';
+import { ColorTargetState, CreateRenderPipelineValidationTest } from './common.ts';
 
 // MAINTENANCE_TODO: This should be changed to kMaxColorAttachmentsToTest
 // when this is made a MaxLimitTest (see above).

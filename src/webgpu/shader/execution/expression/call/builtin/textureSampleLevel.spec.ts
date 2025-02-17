@@ -4,13 +4,13 @@ Samples a texture.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
 import {
   isDepthTextureFormat,
   isFilterableAsTextureF32,
   kAllTextureFormats,
   kDepthStencilFormats,
-} from '../../../../../format_info.js';
+} from '../../../../../format_info.ts';
 
 import {
   appendComponentTypeForFormatToTextureType,
@@ -37,7 +37,7 @@ import {
   vec2,
   vec3,
   WGSLTextureSampleTest,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(WGSLTextureSampleTest);
 

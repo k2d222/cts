@@ -4,7 +4,7 @@ import {
   compoundAssignmentBuilder,
   abstractFloatShaderBuilder,
   abstractIntShaderBuilder,
-} from '../expression.js';
+} from '../expression.ts';
 
 /* @returns a ShaderBuilder that evaluates a binary operation */
 export function binary(op: string): ShaderBuilder {

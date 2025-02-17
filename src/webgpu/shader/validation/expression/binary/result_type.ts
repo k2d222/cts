@@ -4,7 +4,7 @@ import {
   Type,
   ScalarType,
   VectorType,
-} from '../../../../util/conversion.js';
+} from '../../../../util/conversion.ts';
 
 /**
  * @returns the resulting type of a binary arithmetic operation with the operands `lhs` and `rhs`

@@ -1,7 +1,7 @@
-import { ROArrayArray } from '../../../../../../common/util/types.js';
-import { assert } from '../../../../../../common/util/util.js';
-import { kValue } from '../../../../../util/constants.js';
-import { FP } from '../../../../../util/floating_point.js';
+import { ROArrayArray } from '../../../../../../common/util/types.ts';
+import { assert } from '../../../../../../common/util/util.ts';
+import { kValue } from '../../../../../util/constants.ts';
+import { FP } from '../../../../../util/floating_point.ts';
 import {
   calculatePermutations,
   sparseVectorI32Range,
@@ -10,13 +10,13 @@ import {
   vectorI32Range,
   vectorI64Range,
   vectorU32Range,
-} from '../../../../../util/math.js';
+} from '../../../../../util/math.ts';
 import {
   generateVectorVectorToI32Cases,
   generateVectorVectorToI64Cases,
   generateVectorVectorToU32Cases,
-} from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+} from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 function ai_dot(x: bigint[], y: bigint[]): bigint | undefined {
   assert(x.length === y.length, 'Cannot calculate dot for vectors of different lengths');

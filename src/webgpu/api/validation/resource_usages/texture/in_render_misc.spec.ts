@@ -2,16 +2,16 @@ export const description = `
 Texture Usages Validation Tests on All Kinds of WebGPU Subresource Usage Scopes.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../../common/util/util.js';
-import { kTextureUsages } from '../../../../capability_info.js';
-import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { unreachable } from '../../../../../common/util/util.ts';
+import { kTextureUsages } from '../../../../capability_info.ts';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.ts';
+import { ValidationTest } from '../../validation_test.ts';
 import {
   TextureBindingType,
   kTextureBindingTypes,
   IsReadOnlyTextureBindingType,
-} from '../texture/in_render_common.spec.js';
+} from '../texture/in_render_common.spec.ts';
 
 function skipIfStorageTexturesUsedAndNotAvailableInFragmentStage(
   t: ValidationTest,

@@ -1,10 +1,10 @@
-import { sparseU32Range, vectorU32Range } from '../../../../util/math.js';
+import { sparseU32Range, vectorU32Range } from '../../../../util/math.ts';
 import {
   generateBinaryToU32Cases,
   generateU32VectorBinaryToVectorCases,
   generateVectorU32BinaryToVectorCases,
-} from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+} from '../case.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 function u32_add(x: number, y: number): number | undefined {
   return x + y;

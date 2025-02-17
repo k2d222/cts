@@ -1,5 +1,5 @@
-import { getGPU, setDefaultRequestAdapterOptions } from '../../../common/util/navigator_gpu.js';
-import { assert, objectEquals, iterRange } from '../../../common/util/util.js';
+import { getGPU, setDefaultRequestAdapterOptions } from '../../../common/util/navigator_gpu.ts';
+import { assert, objectEquals, iterRange } from '../../../common/util/util.ts';
 
 // Should be WorkerGlobalScope, but importing lib "webworker" conflicts with lib "dom".
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */

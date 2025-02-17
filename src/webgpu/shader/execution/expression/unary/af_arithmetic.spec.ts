@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for Type.abstractFloat arithmetic unary expression operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { onlyConstInputSource, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { Type } from '../../../../util/conversion.ts';
+import { onlyConstInputSource, run } from '../expression.ts';
 
-import { d } from './af_arithmetic.cache.js';
-import { abstractFloatUnary } from './unary.js';
+import { d } from './af_arithmetic.cache.ts';
+import { abstractFloatUnary } from './unary.ts';
 
 export const g = makeTestGroup(GPUTest);
 

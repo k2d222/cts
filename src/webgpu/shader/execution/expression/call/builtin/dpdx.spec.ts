@@ -8,11 +8,11 @@ The result is the same as either dpdxFine(e) or dpdxCoarse(e).
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
 
-import { d } from './derivatives.cache.js';
-import { runDerivativeTest } from './derivatives.js';
+import { d } from './derivatives.cache.ts';
+import { runDerivativeTest } from './derivatives.ts';
 
 export const g = makeTestGroup(GPUTest);
 

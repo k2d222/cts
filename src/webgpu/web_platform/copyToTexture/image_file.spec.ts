@@ -2,8 +2,8 @@ export const description = `
 copyExternalImageToTexture from ImageFiles like *.png, *.jpg source.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { TextureUploadingUtils } from '../../util/copy_to_texture.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { TextureUploadingUtils } from '../../util/copy_to_texture.ts';
 import {
   convertToUnorm8,
   getSourceFromEXIFImageFile,
@@ -14,7 +14,7 @@ import {
   kEXIFImageNames,
   kEXIFImageInfo,
   loadImageFileAndRun,
-} from '../util.js';
+} from '../util.ts';
 
 export const g = makeTestGroup(TextureUploadingUtils);
 

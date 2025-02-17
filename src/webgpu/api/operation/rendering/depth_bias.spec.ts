@@ -3,15 +3,15 @@ Tests render results with different depth bias values like 'positive', 'negative
 'slope', 'clamp', etc.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { unreachable } from '../../../../common/util/util.ts';
 import {
   kTextureFormatInfo,
   DepthStencilFormat,
   EncodableTextureFormat,
-} from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+} from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
 
 enum QuadAngle {
   Flat,

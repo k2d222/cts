@@ -1,5 +1,5 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // Cases: [f32|f16|abstract]_matCxR_[non_]const
 // abstract_matCxR_non_const is empty and not used

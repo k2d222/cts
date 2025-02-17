@@ -1,6 +1,6 @@
-import { range } from '../../../../../common/util/util.js';
+import { range } from '../../../../../common/util/util.ts';
 
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.ts';
 
 function getPipelineDescriptor(
   device: GPUDevice,

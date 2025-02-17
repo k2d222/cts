@@ -1,5 +1,5 @@
-import { Colors } from '../../../../common/util/colors.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { Colors } from '../../../../common/util/colors.ts';
+import { GPUTest } from '../../../gpu_test.ts';
 
 /**
  * Options for runFlowControlTest()

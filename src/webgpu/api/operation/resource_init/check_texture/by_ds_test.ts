@@ -1,9 +1,9 @@
-import { assert } from '../../../../../common/util/util.js';
-import { kTextureFormatInfo } from '../../../../format_info.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { virtualMipSize } from '../../../../util/texture/base.js';
+import { assert } from '../../../../../common/util/util.ts';
+import { kTextureFormatInfo } from '../../../../format_info.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { virtualMipSize } from '../../../../util/texture/base.ts';
 
-import { CheckContents } from './texture_zero_init_test.js';
+import { CheckContents } from './texture_zero_init_test.ts';
 
 function makeFullscreenVertexModule(device: GPUDevice) {
   return device.createShaderModule({

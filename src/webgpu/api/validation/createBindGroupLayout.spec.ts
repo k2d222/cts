@@ -4,8 +4,8 @@ createBindGroupLayout validation tests.
 TODO: make sure tests are complete.
 `;
 
-import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { kUnitCaseParamsBuilder } from '../../../common/framework/params_builder.ts';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
 import {
   kShaderStages,
   kShaderStageCombinations,
@@ -18,11 +18,11 @@ import {
   kBufferBindingTypes,
   BGLEntry,
   getBindingLimitForBindingType,
-} from '../../capability_info.js';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../format_info.js';
-import { MaxLimitsTestMixin } from '../../gpu_test.js';
+} from '../../capability_info.ts';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../format_info.ts';
+import { MaxLimitsTestMixin } from '../../gpu_test.ts';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test.ts';
 
 function clone<T extends GPUBindGroupLayoutDescriptor>(descriptor: T): T {
   return JSON.parse(JSON.stringify(descriptor));

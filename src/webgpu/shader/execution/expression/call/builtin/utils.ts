@@ -1,4 +1,4 @@
-import { assert } from '../../../../../../common/util/util.js';
+import { assert } from '../../../../../../common/util/util.ts';
 
 /* Valid types of Boundaries */
 export type Boundary =

@@ -27,14 +27,14 @@ export const description = `API Operation Tests for RenderPass StoreOp.
       TODO: depth slice set to {'0', slice > '0'} for 3D textures
       TODO: test with more interesting loadOp values`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
 import {
   kTextureFormatInfo,
   kEncodableTextureFormats,
   kSizedDepthStencilFormats,
-} from '../../../format_info.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { PerTexelComponent } from '../../../util/texture/texel_data.js';
+} from '../../../format_info.ts';
+import { GPUTest } from '../../../gpu_test.ts';
+import { PerTexelComponent } from '../../../util/texture/texel_data.ts';
 
 // Test with a zero and non-zero mip.
 const kMipLevel: number[] = [0, 1];

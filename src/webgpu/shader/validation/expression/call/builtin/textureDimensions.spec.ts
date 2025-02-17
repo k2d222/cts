@@ -7,24 +7,24 @@ Validation tests for the ${builtin}() builtin.
 * test textureDimension doesn't work with texture types it's not supposed to
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
+import { kAllTextureFormats, kTextureFormatInfo } from '../../../../../format_info.ts';
 import {
   Type,
   kAllScalarsAndVectors,
   isConvertible,
   isUnsignedType,
   stringToType,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 import {
   getNonStorageTextureTypeWGSL,
   getSampleAndBaseTextureTypeForTextureType,
   kNonStorageTextureTypeInfo,
   kTestTextureTypes,
-} from './shader_builtin_utils.js';
+} from './shader_builtin_utils.ts';
 
 type TextureDimensionArguments = {
   returnType: Type;

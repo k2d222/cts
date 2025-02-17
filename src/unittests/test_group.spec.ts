@@ -3,14 +3,14 @@ export const description = `
 Unit tests for TestGroup.
 `;
 
-import { Fixture } from '../common/framework/fixture.js';
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { TestQueryMultiFile } from '../common/internal/query/query.js';
-import { kQueryMaxLength, makeTestGroupForUnitTesting } from '../common/internal/test_group.js';
-import { assert } from '../common/util/util.js';
+import { Fixture } from '../common/framework/fixture.ts';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { TestQueryMultiFile } from '../common/internal/query/query.ts';
+import { kQueryMaxLength, makeTestGroupForUnitTesting } from '../common/internal/test_group.ts';
+import { assert } from '../common/util/util.ts';
 
-import { TestGroupTest } from './test_group_test.js';
-import { UnitTest } from './unit_test.js';
+import { TestGroupTest } from './test_group_test.ts';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(TestGroupTest);
 

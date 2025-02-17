@@ -1,6 +1,6 @@
-import { assert } from '../../common/util/util.js';
+import { assert } from '../../common/util/util.ts';
 
-import { kValue } from './constants.js';
+import { kValue } from './constants.ts';
 
 /**
  * Seed-able deterministic pseudo random generator for the WebGPU CTS

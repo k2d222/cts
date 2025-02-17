@@ -2,10 +2,10 @@ export const description = `
 Tests for getStackTrace.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { extractImportantStackTrace } from '../common/internal/stack.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { extractImportantStackTrace } from '../common/internal/stack.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(UnitTest);
 

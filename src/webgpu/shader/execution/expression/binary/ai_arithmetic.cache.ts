@@ -1,11 +1,11 @@
-import { kValue } from '../../../../util/constants.js';
-import { sparseI64Range, vectorI64Range } from '../../../../util/math.js';
+import { kValue } from '../../../../util/constants.ts';
+import { sparseI64Range, vectorI64Range } from '../../../../util/math.ts';
 import {
   generateBinaryToI64Cases,
   generateI64VectorBinaryToVectorCases,
   generateVectorI64BinaryToVectorCases,
-} from '../case.js';
-import { makeCaseCache } from '../case_cache.js';
+} from '../case.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 function ai_add(x: bigint, y: bigint): bigint | undefined {
   const result = x + y;

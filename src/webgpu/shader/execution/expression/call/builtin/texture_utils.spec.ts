@@ -2,17 +2,17 @@ export const description = `
 Tests for texture_utils.ts
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { assert } from '../../../../../../common/util/util.js';
-import { isMultisampledTextureFormat, kDepthStencilFormats } from '../../../../../format_info.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { getTextureDimensionFromView, virtualMipSize } from '../../../../../util/texture/base.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { assert } from '../../../../../../common/util/util.ts';
+import { isMultisampledTextureFormat, kDepthStencilFormats } from '../../../../../format_info.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { getTextureDimensionFromView, virtualMipSize } from '../../../../../util/texture/base.ts';
 import {
   kTexelRepresentationInfo,
   PerTexelComponent,
   TexelRepresentationInfo,
-} from '../../../../../util/texture/texel_data.js';
-import { kShaderStages } from '../../../../validation/decl/util.js';
+} from '../../../../../util/texture/texel_data.ts';
+import { kShaderStages } from '../../../../validation/decl/util.ts';
 
 import {
   chooseTextureSize,
@@ -24,7 +24,7 @@ import {
   queryMipLevelMixWeightsForDevice,
   readTextureToTexelViews,
   texelsApproximatelyEqual,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(GPUTest);
 

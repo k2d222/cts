@@ -1,8 +1,8 @@
 export const description = `Test that workgroup size is set correctly`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { iterRange } from '../../../../common/util/util.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { iterRange } from '../../../../common/util/util.ts';
+import { GPUTest } from '../../../gpu_test.ts';
 
 export const g = makeTestGroup(GPUTest);
 

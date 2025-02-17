@@ -1,14 +1,14 @@
-import { assert } from '../../../../../common/util/util.js';
-import { kTextureSampleCounts } from '../../../../capability_info.js';
-import { kTextureFormatInfo } from '../../../../format_info.js';
-import { align } from '../../../../util/math.js';
+import { assert } from '../../../../../common/util/util.ts';
+import { kTextureSampleCounts } from '../../../../capability_info.ts';
+import { kTextureFormatInfo } from '../../../../format_info.ts';
+import { align } from '../../../../util/math.ts';
 
 import {
   kMaximumLimitBaseParams,
   LimitsRequest,
   LimitTestsImpl,
   makeLimitTestGroup,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kFormatsToUseBySize: GPUTextureFormat[] = [
   'rgba32uint',

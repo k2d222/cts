@@ -8,13 +8,13 @@ Returns the distance between e1 and e2 (e.g. length(e1-e2)).
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './distance.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
+import { d } from './distance.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

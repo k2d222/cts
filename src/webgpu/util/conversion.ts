@@ -1,11 +1,11 @@
-import { Colors } from '../../common/util/colors.js';
-import { objectsToRecord } from '../../common/util/data_tables.js';
-import { ROArrayArray } from '../../common/util/types.js';
-import { assert, objectEquals, TypedArrayBufferView, unreachable } from '../../common/util/util.js';
-import { Float16Array } from '../../external/petamoriken/float16/float16.js';
+import { Colors } from '../../common/util/colors.ts';
+import { objectsToRecord } from '../../common/util/data_tables.ts';
+import { ROArrayArray } from '../../common/util/types.ts';
+import { assert, objectEquals, TypedArrayBufferView, unreachable } from '../../common/util/util.ts';
+import { Float16Array } from '../../external/petamoriken/float16/float16.ts';
 
-import BinaryStream from './binary_stream.js';
-import { kBit } from './constants.js';
+import BinaryStream from './binary_stream.ts';
+import { kBit } from './constants.ts';
 import {
   align,
   cartesianProduct,
@@ -15,7 +15,7 @@ import {
   isSubnormalNumberF16,
   isSubnormalNumberF32,
   isSubnormalNumberF64,
-} from './math.js';
+} from './math.ts';
 
 /**
  * Encode a JS `number` into the "normalized" (unorm/snorm) integer scale with `bits` bits but

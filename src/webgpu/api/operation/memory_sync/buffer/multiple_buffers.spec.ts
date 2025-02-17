@@ -15,19 +15,19 @@ Wait on another fence, then call expectContents to verify the dst buffer value.
 TODO: Tests with more than one buffer to try to stress implementations a little bit more.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
 import {
   kOperationBoundaries,
   kBoundaryInfo,
   OperationContextHelper,
-} from '../operation_context_helper.js';
+} from '../operation_context_helper.ts';
 
 import {
   kAllReadOps,
   kAllWriteOps,
   BufferSyncTest,
   checkOpsValidForContext,
-} from './buffer_sync_test.js';
+} from './buffer_sync_test.ts';
 
 // The src value is what stores in the src buffer before any operation.
 const kSrcValue = 0;

@@ -4,8 +4,8 @@ Tests for device lost induced via destroy.
   - After device destruction, runs the same APIs. No expected observable results, so test crash or future failures are the only current failure indicators.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert } from '../../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { assert } from '../../../../../common/util/util.ts';
 import {
   allBindingEntries,
   bindingTypeInfo,
@@ -20,25 +20,25 @@ import {
   kTextureUsageCopy,
   kTextureUsageCopyInfo,
   kShaderStageKeys,
-} from '../../../../capability_info.js';
+} from '../../../../capability_info.ts';
 import {
   kCompressedTextureFormats,
   kRegularTextureFormats,
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
-} from '../../../../format_info.js';
-import { CommandBufferMaker, EncoderType } from '../../../../util/command_buffer_maker.js';
+} from '../../../../format_info.ts';
+import { CommandBufferMaker, EncoderType } from '../../../../util/command_buffer_maker.ts';
 import {
   createCanvas,
   kAllCanvasTypes,
   kValidCanvasContextIds,
-} from '../../../../util/create_elements.js';
+} from '../../../../util/create_elements.ts';
 import {
   startPlayingAndWaitForVideo,
   getVideoElement,
   getVideoFrameFromVideoElement,
-} from '../../../../web_platform/util.js';
-import { ValidationTest } from '../../validation_test.js';
+} from '../../../../web_platform/util.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 const kCommandValidationStages = ['finish', 'submit'];
 type CommandValidationStage = (typeof kCommandValidationStages)[number];

@@ -12,11 +12,11 @@ mapRegionBoundModes is used to get mapRegion from range:
  - minimal: make mapRegion to be the same as range which is the minimal range to make getMappedRange input valid
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, memcpy } from '../../../../common/util/util.js';
-import { checkElementsEqual } from '../../../util/check_contents.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, memcpy } from '../../../../common/util/util.ts';
+import { checkElementsEqual } from '../../../util/check_contents.ts';
 
-import { MappingTest } from './mapping_test.js';
+import { MappingTest } from './mapping_test.ts';
 
 export const g = makeTestGroup(MappingTest);
 

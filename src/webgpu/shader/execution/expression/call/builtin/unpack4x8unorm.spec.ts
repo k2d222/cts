@@ -5,13 +5,13 @@ Component i of the result is v ÷ 255, where v is the interpretation of bits 8×
 through 8×i+7 of e as an unsigned integer.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
-import { d } from './unpack4x8unorm.cache.js';
+import { builtin } from './builtin.ts';
+import { d } from './unpack4x8unorm.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

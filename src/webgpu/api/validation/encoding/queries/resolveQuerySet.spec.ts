@@ -1,10 +1,10 @@
 export const description = `
 Validation tests for resolveQuerySet.
 `;
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUConst } from '../../../../constants.js';
-import { kResourceStates } from '../../../../gpu_test.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUConst } from '../../../../constants.ts';
+import { kResourceStates } from '../../../../gpu_test.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

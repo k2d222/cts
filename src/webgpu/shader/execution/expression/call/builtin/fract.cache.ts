@@ -1,7 +1,7 @@
-import { assert } from '../../../../../../common/util/util.js';
-import { FP, FPInterval } from '../../../../../util/floating_point.js';
-import { kFractTable } from '../../binary/af_data.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { assert } from '../../../../../../common/util/util.ts';
+import { FP, FPInterval } from '../../../../../util/floating_point.ts';
+import { kFractTable } from '../../binary/af_data.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 const kCommonValues = [
   0.5, // 0.5 -> 0.5

@@ -2,9 +2,9 @@ export const description = `
 Tests using a destroyed texture on a queue.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../../common/util/util.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { unreachable } from '../../../../../common/util/util.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

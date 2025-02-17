@@ -2,8 +2,8 @@ export const description = `
 Validation tests for constructor built-in functions.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
 import {
   isAbstractType,
   isConvertible,
@@ -13,8 +13,8 @@ import {
   scalarTypeOf,
   Type,
   VectorType,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

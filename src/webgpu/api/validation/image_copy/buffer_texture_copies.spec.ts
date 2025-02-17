@@ -3,18 +3,18 @@ copyTextureToBuffer and copyBufferToTexture validation tests not covered by
 the general image_copy tests, or by destroyed,*.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, unreachable } from '../../../../common/util/util.js';
-import { kBufferUsages, kTextureUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, unreachable } from '../../../../common/util/util.ts';
+import { kBufferUsages, kTextureUsages } from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
 import {
   kDepthStencilFormats,
   depthStencilBufferTextureCopySupported,
   depthStencilFormatAspectSize,
-} from '../../../format_info.js';
-import { align } from '../../../util/math.js';
-import { kBufferCopyAlignment, kBytesPerRowAlignment } from '../../../util/texture/layout.js';
-import { ValidationTest } from '../validation_test.js';
+} from '../../../format_info.ts';
+import { align } from '../../../util/math.ts';
+import { kBufferCopyAlignment, kBytesPerRowAlignment } from '../../../util/texture/layout.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 class ImageCopyTest extends ValidationTest {
   testCopyBufferToTexture(

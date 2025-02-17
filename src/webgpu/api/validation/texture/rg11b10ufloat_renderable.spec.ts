@@ -2,9 +2,9 @@ export const description = `
 Tests for capabilities added by rg11b10ufloat-renderable flag.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUConst } from '../../../constants.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUConst } from '../../../constants.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

@@ -2,10 +2,10 @@ export const description = `
 Texture Usages Validation Tests in Same or Different Render Pass Encoders.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert, unreachable } from '../../../../../common/util/util.js';
-import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { assert, unreachable } from '../../../../../common/util/util.ts';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 export type TextureBindingType =
   | 'sampled-texture'

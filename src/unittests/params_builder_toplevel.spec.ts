@@ -2,13 +2,13 @@ export const description = `
 Unit tests for parameterization.
 `;
 
-import { TestParams } from '../common/framework/fixture.js';
-import { kUnitCaseParamsBuilder } from '../common/framework/params_builder.js';
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { makeTestGroupForUnitTesting } from '../common/internal/test_group.js';
+import { TestParams } from '../common/framework/fixture.ts';
+import { kUnitCaseParamsBuilder } from '../common/framework/params_builder.ts';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { makeTestGroupForUnitTesting } from '../common/internal/test_group.ts';
 
-import { TestGroupTest } from './test_group_test.js';
-import { UnitTest } from './unit_test.js';
+import { TestGroupTest } from './test_group_test.ts';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(TestGroupTest);
 

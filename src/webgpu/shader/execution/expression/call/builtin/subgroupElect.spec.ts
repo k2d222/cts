@@ -2,9 +2,9 @@ export const description = `
 Execution tests for subgroupElect
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { iterRange } from '../../../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { iterRange } from '../../../../../../common/util/util.ts';
 
 import {
   SubgroupTest,
@@ -15,7 +15,7 @@ import {
   runComputeTest,
   runFragmentTest,
   kPredicateCases,
-} from './subgroup_util.js';
+} from './subgroup_util.ts';
 
 export const g = makeTestGroup(SubgroupTest);
 

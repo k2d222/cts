@@ -5,15 +5,15 @@ Component e[i] of the input is converted to a 16-bit unsigned integer value
 bits 16 × i through 16 × i + 15 of the result.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { kValue } from '../../../../../util/constants.js';
-import { f32, pack2x16unorm, u32, vec2, Type } from '../../../../../util/conversion.js';
-import { quantizeToF32, vectorF32Range } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { kValue } from '../../../../../util/constants.ts';
+import { f32, pack2x16unorm, u32, vec2, Type } from '../../../../../util/conversion.ts';
+import { quantizeToF32, vectorF32Range } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

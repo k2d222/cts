@@ -4,8 +4,8 @@ import {
   kReorderOrderKeys,
   ReorderOrder,
   assert,
-} from '../../../../../common/util/util.js';
-import { kShaderStageCombinationsWithStage } from '../../../../capability_info.js';
+} from '../../../../../common/util/util.ts';
+import { kShaderStageCombinationsWithStage } from '../../../../capability_info.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -15,7 +15,7 @@ import {
   getPipelineTypeForBindingCombination,
   getPerStageWGSLForBindingCombination,
   LimitsRequest,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kExtraLimits: LimitsRequest = {
   maxBindingsPerBindGroup: 'adapterLimit',

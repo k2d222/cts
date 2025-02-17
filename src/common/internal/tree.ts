@@ -1,21 +1,21 @@
-import { loadMetadataForSuite, TestMetadataListing } from '../framework/metadata.js';
-import { globalTestConfig } from '../framework/test_config.js';
-import { RunCase, RunFn } from '../internal/test_group.js';
-import { assert, now } from '../util/util.js';
+import { loadMetadataForSuite, TestMetadataListing } from '../framework/metadata.ts';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { RunCase, RunFn } from '../internal/test_group.ts';
+import { assert, now } from '../util/util.ts';
 
-import { TestFileLoader } from './file_loader.js';
-import { TestParamsRW } from './params_utils.js';
-import { comparePublicParamsPaths, compareQueries, Ordering } from './query/compare.js';
+import { TestFileLoader } from './file_loader.ts';
+import { TestParamsRW } from './params_utils.ts';
+import { comparePublicParamsPaths, compareQueries, Ordering } from './query/compare.ts';
 import {
   TestQuery,
   TestQueryMultiCase,
   TestQuerySingleCase,
   TestQueryMultiFile,
   TestQueryMultiTest,
-} from './query/query.js';
-import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './query/separators.js';
-import { stringifySingleParam } from './query/stringify_params.js';
-import { StacklessError } from './util.js';
+} from './query/query.ts';
+import { kBigSeparator, kWildcard, kPathSeparator, kParamSeparator } from './query/separators.ts';
+import { stringifySingleParam } from './query/stringify_params.ts';
+import { StacklessError } from './util.ts';
 
 // `loadTreeForQuery()` loads a TestTree for a given queryToLoad.
 // The resulting tree is a linked-list all the way from `suite:*` to queryToLoad,

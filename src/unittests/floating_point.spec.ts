@@ -2,23 +2,23 @@ export const description = `
 Floating Point unit tests.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { objectEquals, unreachable } from '../common/util/util.js';
-import { kValue } from '../webgpu/util/constants.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { objectEquals, unreachable } from '../common/util/util.ts';
+import { kValue } from '../webgpu/util/constants.ts';
 import {
   FP,
   FPInterval,
   FPIntervalParam,
   IntervalEndpoints,
-} from '../webgpu/util/floating_point.js';
-import { map2DArray, oneULPF32, oneULPF16, oneULPF64 } from '../webgpu/util/math.js';
+} from '../webgpu/util/floating_point.ts';
+import { map2DArray, oneULPF32, oneULPF16, oneULPF64 } from '../webgpu/util/math.ts';
 import {
   reinterpretU16AsF16,
   reinterpretU32AsF32,
   reinterpretU64AsF64,
-} from '../webgpu/util/reinterpret.js';
+} from '../webgpu/util/reinterpret.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(UnitTest);
 

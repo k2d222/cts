@@ -3,7 +3,7 @@ import {
   reinterpretF64AsU64,
   reinterpretU32AsF32,
   reinterpretU16AsF16,
-} from './reinterpret.js';
+} from './reinterpret.ts';
 
 export const kBit = {
   // Limits of int32

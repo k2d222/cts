@@ -1,6 +1,6 @@
-import { i32 } from '../../../../util/conversion.js';
-import { fullI32Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { i32 } from '../../../../util/conversion.ts';
+import { fullI32Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 export const d = makeCaseCache('unary/i32_arithmetic', {
   negation: () => {

@@ -2,10 +2,10 @@ export const description = `
 Tests for object labels.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { keysOf } from '../../../common/util/data_tables.js';
-import { getGPU } from '../../../common/util/navigator_gpu.js';
-import { GPUTest } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { keysOf } from '../../../common/util/data_tables.ts';
+import { getGPU } from '../../../common/util/navigator_gpu.ts';
+import { GPUTest } from '../../gpu_test.ts';
 
 export const g = makeTestGroup(GPUTest);
 

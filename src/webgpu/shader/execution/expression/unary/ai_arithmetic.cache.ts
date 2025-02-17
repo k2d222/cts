@@ -1,6 +1,6 @@
-import { abstractInt } from '../../../../util/conversion.js';
-import { fullI64Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { abstractInt } from '../../../../util/conversion.ts';
+import { fullI64Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 export const d = makeCaseCache('unary/ai_arithmetic', {
   negation: () => {

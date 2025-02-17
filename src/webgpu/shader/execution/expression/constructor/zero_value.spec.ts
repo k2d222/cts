@@ -2,10 +2,10 @@ export const description = `
 Execution Tests for zero value constructors
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { ScalarKind, Type } from '../../../../util/conversion.js';
-import { ShaderBuilderParams, basicExpressionBuilder, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { ScalarKind, Type } from '../../../../util/conversion.ts';
+import { ShaderBuilderParams, basicExpressionBuilder, run } from '../expression.ts';
 
 export const g = makeTestGroup(GPUTest);
 

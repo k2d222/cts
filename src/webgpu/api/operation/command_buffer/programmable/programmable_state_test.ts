@@ -1,6 +1,6 @@
-import { unreachable } from '../../../../../common/util/util.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTestBase } from '../../../../gpu_test.js';
-import { EncoderType } from '../../../../util/command_buffer_maker.js';
+import { unreachable } from '../../../../../common/util/util.ts';
+import { AllFeaturesMaxLimitsGPUTest, GPUTestBase } from '../../../../gpu_test.ts';
+import { EncoderType } from '../../../../util/command_buffer_maker.ts';
 
 interface BindGroupIndices {
   a: number;

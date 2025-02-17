@@ -7,16 +7,16 @@ TODO:
 - test compressed texture formats [3]
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../common/util/util.js';
-import { isMultisampledTextureFormat, kTextureFormatInfo } from '../../../format_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { unreachable } from '../../../../common/util/util.ts';
+import { isMultisampledTextureFormat, kTextureFormatInfo } from '../../../format_info.ts';
 
-import { checkContentsByBufferCopy, checkContentsByTextureCopy } from './check_texture/by_copy.js';
+import { checkContentsByBufferCopy, checkContentsByTextureCopy } from './check_texture/by_copy.ts';
 import {
   checkContentsByDepthTest,
   checkContentsByStencilTest,
-} from './check_texture/by_ds_test.js';
-import { checkContentsBySampling } from './check_texture/by_sampling.js';
+} from './check_texture/by_ds_test.ts';
+import { checkContentsBySampling } from './check_texture/by_sampling.ts';
 import {
   getRequiredTextureUsage,
   ReadMethod,
@@ -25,7 +25,7 @@ import {
   kTestParams,
   UninitializeMethod,
   InitializedState,
-} from './check_texture/texture_zero_init_test.js';
+} from './check_texture/texture_zero_init_test.ts';
 
 const checkContentsImpl: { [k in ReadMethod]: CheckContents } = {
   Sample: checkContentsBySampling,

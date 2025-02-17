@@ -55,9 +55,9 @@ Test locations are framebuffer coordinates:
                                                                 and {v3, v4, v5}.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { PerPixelComparison } from '../../../util/texture/texture_ok.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { PerPixelComparison } from '../../../util/texture/texture_ok.ts';
 
 const kRTSize: number = 56;
 const kColorFormat = 'rgba8unorm';

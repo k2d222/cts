@@ -6,9 +6,9 @@ import {
   SubcaseBatchState,
   TestCaseRecorder,
   TestParams,
-} from '../common/framework/fixture.js';
-import { globalTestConfig } from '../common/framework/test_config.js';
-import { getGPU } from '../common/util/navigator_gpu.js';
+} from '../common/framework/fixture.ts';
+import { globalTestConfig } from '../common/framework/test_config.ts';
+import { getGPU } from '../common/util/navigator_gpu.ts';
 import {
   assert,
   makeValueTestVariant,
@@ -18,10 +18,10 @@ import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
   unreachable,
-} from '../common/util/util.js';
+} from '../common/util/util.ts';
 
-import { kLimits, kQueryTypeInfo, WGSLLanguageFeature } from './capability_info.js';
-import { InterpolationType, InterpolationSampling } from './constants.js';
+import { kLimits, kQueryTypeInfo, WGSLLanguageFeature } from './capability_info.ts';
+import { InterpolationType, InterpolationSampling } from './constants.ts';
 import {
   kTextureFormatInfo,
   kEncodableTextureFormats,
@@ -32,35 +32,35 @@ import {
   ColorTextureFormat,
   isTextureFormatUsableAsStorageFormat,
   isMultisampledTextureFormat,
-} from './format_info.js';
-import { checkElementsEqual, checkElementsBetween } from './util/check_contents.js';
-import { CommandBufferMaker, EncoderType } from './util/command_buffer_maker.js';
-import { ScalarType } from './util/conversion.js';
+} from './format_info.ts';
+import { checkElementsEqual, checkElementsBetween } from './util/check_contents.ts';
+import { CommandBufferMaker, EncoderType } from './util/command_buffer_maker.ts';
+import { ScalarType } from './util/conversion.ts';
 import {
   CanonicalDeviceDescriptor,
   DescriptorModifier,
   DevicePool,
   DeviceProvider,
   UncanonicalizedDeviceDescriptor,
-} from './util/device_pool.js';
-import { align, roundDown } from './util/math.js';
-import { physicalMipSizeFromTexture, virtualMipSize } from './util/texture/base.js';
+} from './util/device_pool.ts';
+import { align, roundDown } from './util/math.ts';
+import { physicalMipSizeFromTexture, virtualMipSize } from './util/texture/base.ts';
 import {
   bytesInACompleteRow,
   getTextureCopyLayout,
   getTextureSubCopyLayout,
   LayoutOptions as TextureLayoutOptions,
-} from './util/texture/layout.js';
-import { PerTexelComponent, kTexelRepresentationInfo } from './util/texture/texel_data.js';
-import { TexelView } from './util/texture/texel_view.js';
+} from './util/texture/layout.ts';
+import { PerTexelComponent, kTexelRepresentationInfo } from './util/texture/texel_data.ts';
+import { TexelView } from './util/texture/texel_view.ts';
 import {
   PerPixelComparison,
   PixelExpectation,
   TexelCompareOptions,
   textureContentIsOKByT2B,
-} from './util/texture/texture_ok.js';
-import { createTextureFromTexelViews } from './util/texture.js';
-import { reifyExtent3D, reifyOrigin3D } from './util/unions.js';
+} from './util/texture/texture_ok.ts';
+import { createTextureFromTexelViews } from './util/texture.ts';
+import { reifyExtent3D, reifyOrigin3D } from './util/unions.ts';
 
 // Declarations for WebGPU items we want tests for that are not yet officially part of the spec.
 declare global {

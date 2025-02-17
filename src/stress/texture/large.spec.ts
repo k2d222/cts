@@ -2,8 +2,8 @@ export const description = `
 Stress tests covering usage of very large textures.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { GPUTest } from '../../webgpu/gpu_test.js';
+import { makeTestGroup } from '../../common/framework/test_group.ts';
+import { GPUTest } from '../../webgpu/gpu_test.ts';
 
 export const g = makeTestGroup(GPUTest);
 

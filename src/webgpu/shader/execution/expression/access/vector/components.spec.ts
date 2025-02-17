@@ -2,10 +2,10 @@ export const description = `
 Execution Tests for vector component selection expressions
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { ScalarValue, Type, VectorValue, f32 } from '../../../../../util/conversion.js';
-import { allInputSources, basicExpressionBuilder, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { ScalarValue, Type, VectorValue, f32 } from '../../../../../util/conversion.ts';
+import { allInputSources, basicExpressionBuilder, run } from '../../expression.ts';
 
 export const g = makeTestGroup(GPUTest);
 

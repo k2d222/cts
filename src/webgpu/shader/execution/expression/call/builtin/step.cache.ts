@@ -1,7 +1,7 @@
-import { anyOf } from '../../../../../util/compare.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { Case } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { anyOf } from '../../../../../util/compare.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { Case } from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // stepInterval's return value can't always be interpreted as a single acceptance
 // interval, valid result may be 0.0 or 1.0 or both of them, but will never be a

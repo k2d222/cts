@@ -1,11 +1,11 @@
-import { assert, memcpy } from '../../common/util/util.js';
-import { RegularTextureFormat } from '../format_info.js';
-import { GPUTest, TextureTestMixin } from '../gpu_test.js';
-import { reifyExtent3D, reifyOrigin3D } from '../util/unions.js';
+import { assert, memcpy } from '../../common/util/util.ts';
+import { RegularTextureFormat } from '../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../gpu_test.ts';
+import { reifyExtent3D, reifyOrigin3D } from '../util/unions.ts';
 
-import { makeInPlaceColorConversion } from './color_space_conversion.js';
-import { TexelView } from './texture/texel_view.js';
-import { TexelCompareOptions } from './texture/texture_ok.js';
+import { makeInPlaceColorConversion } from './color_space_conversion.ts';
+import { TexelView } from './texture/texel_view.ts';
+import { TexelCompareOptions } from './texture/texture_ok.ts';
 
 /**
  * Predefined copy sub rect meta infos.

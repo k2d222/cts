@@ -2,15 +2,15 @@ export const description = `
 Test related to stencil states, stencil op, compare func, etc.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { TypedArrayBufferView } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { TypedArrayBufferView } from '../../../../common/util/util.ts';
 import {
   kDepthStencilFormats,
   kTextureFormatInfo,
   DepthStencilFormat,
-} from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+} from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
 
 const kStencilFormats = kDepthStencilFormats.filter(format => kTextureFormatInfo[format].stencil);
 

@@ -7,9 +7,9 @@ Samples a texture with a bias to the mip level.
 - TODO: Test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.js';
-import { TextureTestMixin } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { isFilterableAsTextureF32, kAllTextureFormats } from '../../../../../format_info.ts';
+import { TextureTestMixin } from '../../../../../gpu_test.ts';
 
 import {
   vec2,
@@ -33,7 +33,7 @@ import {
   WGSLTextureSampleTest,
   isSupportedViewFormatCombo,
   skipIfNeedsFilteringAndIsUnfilterable,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(TextureTestMixin(WGSLTextureSampleTest));
 

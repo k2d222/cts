@@ -6,10 +6,10 @@ Validation tests for matrix access expressions
 * Early-evaluation errors
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../common/util/data_tables.js';
-import { Type } from '../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../common/util/data_tables.ts';
+import { Type } from '../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

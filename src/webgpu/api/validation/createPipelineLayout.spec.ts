@@ -4,17 +4,17 @@ createPipelineLayout validation tests.
 TODO: review existing tests, write descriptions, and make sure tests are complete.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { count } from '../../../common/util/util.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { count } from '../../../common/util/util.ts';
 import {
   bufferBindingTypeInfo,
   getBindingLimitForBindingType,
   kBufferBindingTypes,
-} from '../../capability_info.js';
-import { GPUConst } from '../../constants.js';
-import { MaxLimitsTestMixin } from '../../gpu_test.js';
+} from '../../capability_info.ts';
+import { GPUConst } from '../../constants.ts';
+import { MaxLimitsTestMixin } from '../../gpu_test.ts';
 
-import { ValidationTest } from './validation_test.js';
+import { ValidationTest } from './validation_test.ts';
 
 function clone<T extends GPUBindGroupLayoutDescriptor>(descriptor: T): T {
   return JSON.parse(JSON.stringify(descriptor));

@@ -3,8 +3,8 @@ Tests that all threads see a sequentially consistent view of the order of memory
 accesses to a single memory location. Uses a parallel testing strategy along with stressing
 threads to increase coverage of possible bugs.`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../gpu_test.ts';
 
 import {
   MemoryModelTestParams,
@@ -14,7 +14,7 @@ import {
   TestType,
   buildResultShader,
   ResultType,
-} from './memory_model_setup.js';
+} from './memory_model_setup.ts';
 
 export const g = makeTestGroup(GPUTest);
 

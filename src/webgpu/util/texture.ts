@@ -1,15 +1,15 @@
-import { assert, unreachable } from '../../common/util/util.js';
+import { assert, unreachable } from '../../common/util/util.ts';
 import {
   isDepthOrStencilTextureFormat,
   isDepthTextureFormat,
   isStencilTextureFormat,
   kTextureFormatInfo,
-} from '../format_info.js';
-import { GPUTestBase } from '../gpu_test.js';
+} from '../format_info.ts';
+import { GPUTestBase } from '../gpu_test.ts';
 
-import { getTextureCopyLayout } from './texture/layout.js';
-import { TexelView } from './texture/texel_view.js';
-import { reifyExtent3D, reifyOrigin3D } from './unions.js';
+import { getTextureCopyLayout } from './texture/layout.ts';
+import { TexelView } from './texture/texel_view.ts';
+import { reifyExtent3D, reifyOrigin3D } from './unions.ts';
 
 // Note: For values that are supposedly unused we use 0.123 as a sentinel for
 // float formats and 123 for integer formats. For example, rendering to r8unorm

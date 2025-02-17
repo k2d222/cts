@@ -7,15 +7,15 @@ Samples a texture.
 note: uniformity validation is covered in src/webgpu/shader/validation/uniformity/uniformity.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
 import {
   isDepthTextureFormat,
   kDepthStencilFormats,
   kAllTextureFormats,
   textureDimensionAndFormatCompatible,
   isFilterableAsTextureF32,
-} from '../../../../../format_info.js';
-import { TextureTestMixin } from '../../../../../gpu_test.js';
+} from '../../../../../format_info.ts';
+import { TextureTestMixin } from '../../../../../gpu_test.ts';
 
 import {
   vec2,
@@ -41,7 +41,7 @@ import {
   vec1,
   generateTextureBuiltinInputs1D,
   skipIfNeedsFilteringAndIsUnfilterable,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(TextureTestMixin(WGSLTextureSampleTest));
 

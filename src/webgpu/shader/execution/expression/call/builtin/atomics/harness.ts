@@ -2,8 +2,8 @@ import {
   assert,
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
-} from '../../../../../../../common/util/util.js';
-import { GPUTest } from '../../../../../../gpu_test.js';
+} from '../../../../../../../common/util/util.ts';
+import { GPUTest } from '../../../../../../gpu_test.ts';
 
 // Use these in combination.
 export const workgroupSizes = [1, 2, 32, 64];

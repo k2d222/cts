@@ -2,9 +2,9 @@ export const description = `
 Util math unit tests.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { objectEquals } from '../common/util/util.js';
-import { kBit, kValue } from '../webgpu/util/constants.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { objectEquals } from '../common/util/util.ts';
+import { kBit, kValue } from '../webgpu/util/constants.ts';
 import {
   f16,
   f32,
@@ -13,7 +13,7 @@ import {
   float32ToUint32,
   uint16ToFloat16,
   uint32ToFloat32,
-} from '../webgpu/util/conversion.js';
+} from '../webgpu/util/conversion.ts';
 import {
   biasedRange,
   calculatePermutations,
@@ -37,14 +37,14 @@ import {
   lerpBigInt,
   linearRangeBigInt,
   biasedRangeBigInt,
-} from '../webgpu/util/math.js';
+} from '../webgpu/util/math.ts';
 import {
   reinterpretU16AsF16,
   reinterpretU32AsF32,
   reinterpretU64AsF64,
-} from '../webgpu/util/reinterpret.js';
+} from '../webgpu/util/reinterpret.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(UnitTest);
 

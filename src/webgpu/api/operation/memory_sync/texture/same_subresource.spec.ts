@@ -6,22 +6,22 @@ Memory Synchronization Tests for Texture: read before write, read after write, a
 - TODO: Use non-solid-color texture contents [2]
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { assert, memcpy, unreachable } from '../../../../../common/util/util.js';
-import { EncodableTextureFormat } from '../../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../gpu_test.js';
-import { align } from '../../../../util/math.js';
-import { getTextureCopyLayout } from '../../../../util/texture/layout.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { assert, memcpy, unreachable } from '../../../../../common/util/util.ts';
+import { EncodableTextureFormat } from '../../../../format_info.ts';
+import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../gpu_test.ts';
+import { align } from '../../../../util/math.ts';
+import { getTextureCopyLayout } from '../../../../util/texture/layout.ts';
 import {
   kTexelRepresentationInfo,
   PerTexelComponent,
-} from '../../../../util/texture/texel_data.js';
+} from '../../../../util/texture/texel_data.ts';
 import {
   kOperationBoundaries,
   OperationContext,
   kBoundaryInfo,
   OperationContextHelper,
-} from '../operation_context_helper.js';
+} from '../operation_context_helper.ts';
 
 import {
   kAllReadOps,
@@ -29,7 +29,7 @@ import {
   checkOpsValidForContext,
   Op,
   kOpInfo,
-} from './texture_sync_test.js';
+} from './texture_sync_test.ts';
 
 export const g = makeTestGroup(AllFeaturesMaxLimitsGPUTest);
 

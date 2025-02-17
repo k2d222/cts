@@ -2,9 +2,9 @@ export const description = `
 Stress tests covering behavior around shader entry points.
 `;
 
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { range } from '../../common/util/util.js';
-import { GPUTest } from '../../webgpu/gpu_test.js';
+import { makeTestGroup } from '../../common/framework/test_group.ts';
+import { range } from '../../common/util/util.ts';
+import { GPUTest } from '../../webgpu/gpu_test.ts';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -13,29 +13,29 @@ The contents of A and B should match.
 TODO: implement all canvas types, see TODO on kCanvasTypes.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
 import {
   ErrorWithExtra,
   assert,
   raceWithRejectOnTimeout,
   unreachable,
-} from '../../../common/util/util.js';
+} from '../../../common/util/util.ts';
 import {
   kCanvasAlphaModes,
   kCanvasColorSpaces,
   kCanvasTextureFormats,
-} from '../../capability_info.js';
-import { GPUTest } from '../../gpu_test.js';
-import { checkElementsEqual } from '../../util/check_contents.js';
+} from '../../capability_info.ts';
+import { GPUTest } from '../../gpu_test.ts';
+import { checkElementsEqual } from '../../util/check_contents.ts';
 import {
   kAllCanvasTypes,
   CanvasType,
   createCanvas,
   createOnscreenCanvas,
   createOffscreenCanvas,
-} from '../../util/create_elements.js';
-import { TexelView } from '../../util/texture/texel_view.js';
-import { findFailedPixels } from '../../util/texture/texture_ok.js';
+} from '../../util/create_elements.ts';
+import { TexelView } from '../../util/texture/texel_view.ts';
+import { findFailedPixels } from '../../util/texture/texture_ok.ts';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -1,12 +1,12 @@
-import { assert, iterRange, unreachable } from '../../../../../../common/util/util.js';
-import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.js';
-import { kTextureFormatInfo } from '../../../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../../../gpu_test.js';
-import { kBit } from '../../../../../util/constants.js';
-import { Type, VectorType, scalarTypeOf } from '../../../../../util/conversion.js';
-import { FPInterval } from '../../../../../util/floating_point.js';
-import { sparseScalarF16Range, sparseScalarF32Range, align } from '../../../../../util/math.js';
-import { PRNG } from '../../../../../util/prng.js';
+import { assert, iterRange, unreachable } from '../../../../../../common/util/util.ts';
+import { Float16Array } from '../../../../../../external/petamoriken/float16/float16.ts';
+import { kTextureFormatInfo } from '../../../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../../../gpu_test.ts';
+import { kBit } from '../../../../../util/constants.ts';
+import { Type, VectorType, scalarTypeOf } from '../../../../../util/conversion.ts';
+import { FPInterval } from '../../../../../util/floating_point.ts';
+import { sparseScalarF16Range, sparseScalarF32Range, align } from '../../../../../util/math.ts';
+import { PRNG } from '../../../../../util/prng.ts';
 
 export class SubgroupTest extends TextureTestMixin(GPUTest) {}
 

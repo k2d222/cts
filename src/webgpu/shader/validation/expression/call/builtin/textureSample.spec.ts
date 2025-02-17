@@ -15,8 +15,8 @@ Validation tests for the ${builtin}() builtin.
 note: uniformity validation is covered in src/webgpu/shader/validation/uniformity/uniformity.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
 import {
   Type,
   kAllScalarsAndVectors,
@@ -24,13 +24,13 @@ import {
   ScalarType,
   VectorType,
   isUnsignedType,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 import {
   kEntryPointsToValidateFragmentOnlyBuiltins,
   kTestTextureTypes,
-} from './shader_builtin_utils.js';
+} from './shader_builtin_utils.ts';
 
 type TextureSampleArguments = {
   returnType: ScalarType | VectorType;

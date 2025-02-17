@@ -1,7 +1,7 @@
 export const description = `Validation tests for attributes and entry point requirements`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

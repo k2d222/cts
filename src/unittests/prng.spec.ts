@@ -2,11 +2,11 @@ export const description = `
 Unittests for the pseudo random number generator
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { fullU32Range } from '../webgpu/util/math.js';
-import { PRNG } from '../webgpu/util/prng.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { fullU32Range } from '../webgpu/util/math.ts';
+import { PRNG } from '../webgpu/util/prng.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 export const g = makeTestGroup(UnitTest);
 

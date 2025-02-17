@@ -1,6 +1,6 @@
-import { FP, FPVector } from '../../../../util/floating_point.js';
-import { sparseScalarF64Range, sparseVectorF64Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { FP, FPVector } from '../../../../util/floating_point.ts';
+import { sparseScalarF64Range, sparseVectorF64Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 const remainderVectorScalarInterval = (v: readonly number[], s: number): FPVector => {
   // remainder has an inherited accuracy, so abstract is only expected to be as accurate as f32

@@ -2,11 +2,11 @@ export const description = `
 Validation tests for setPipeline on render pass and render bundle.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { kRenderEncodeTypes } from '../../../../../util/command_buffer_maker.js';
-import { ValidationTest } from '../../../validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { kRenderEncodeTypes } from '../../../../../util/command_buffer_maker.ts';
+import { ValidationTest } from '../../../validation_test.ts';
 
-import { kRenderEncodeTypeParams } from './render.js';
+import { kRenderEncodeTypeParams } from './render.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

@@ -1,7 +1,7 @@
 export const description = `Validation tests for group and binding`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
 import {
   declareEntrypoint,
@@ -10,7 +10,7 @@ import {
   kResourceKindsAll,
   kResourceKindsB,
   ResourceDeclarationEmitter,
-} from './util.js';
+} from './util.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

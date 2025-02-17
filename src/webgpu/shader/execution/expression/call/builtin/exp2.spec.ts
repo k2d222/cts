@@ -7,13 +7,13 @@ T is S or vecN<S>
 Returns 2 raised to the power e (e.g. 2^e). Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './exp2.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
+import { d } from './exp2.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

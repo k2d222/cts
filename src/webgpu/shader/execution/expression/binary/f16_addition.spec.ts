@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for non-matrix f16 addition expression
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { Type } from '../../../../util/conversion.ts';
+import { allInputSources, run } from '../expression.ts';
 
-import { binary, compoundBinary } from './binary.js';
-import { d } from './f16_addition.cache.js';
+import { binary, compoundBinary } from './binary.ts';
+import { d } from './f16_addition.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

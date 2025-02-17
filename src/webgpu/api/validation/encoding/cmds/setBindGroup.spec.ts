@@ -10,19 +10,19 @@ TODO: merge these notes and implement.
 >     - setBindGroup in different orders (e.g. 0,1,2 vs 2,0,1)
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { makeValueTestVariant, range, unreachable } from '../../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { makeValueTestVariant, range, unreachable } from '../../../../../common/util/util.ts';
 import {
   kBufferBindingTypes,
   kMinDynamicBufferOffsetAlignment,
-} from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
-import { kResourceStates, MaxLimitsTestMixin, ResourceState } from '../../../../gpu_test.js';
+} from '../../../../capability_info.ts';
+import { GPUConst } from '../../../../constants.ts';
+import { kResourceStates, MaxLimitsTestMixin, ResourceState } from '../../../../gpu_test.ts';
 import {
   kProgrammableEncoderTypes,
   ProgrammableEncoderType,
-} from '../../../../util/command_buffer_maker.js';
-import { ValidationTest } from '../../validation_test.js';
+} from '../../../../util/command_buffer_maker.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 class F extends ValidationTest {
   encoderTypeToStageFlag(encoderType: ProgrammableEncoderType): GPUShaderStageFlags {

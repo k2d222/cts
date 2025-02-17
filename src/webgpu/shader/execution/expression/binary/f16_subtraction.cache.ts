@@ -1,6 +1,6 @@
-import { FP, FPVector } from '../../../../util/floating_point.js';
-import { sparseScalarF16Range, sparseVectorF16Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { FP, FPVector } from '../../../../util/floating_point.ts';
+import { sparseScalarF16Range, sparseVectorF16Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 const subtractionVectorScalarInterval = (v: readonly number[], s: number): FPVector => {
   return FP.f16.toVector(v.map(e => FP.f16.subtractionInterval(e, s)));

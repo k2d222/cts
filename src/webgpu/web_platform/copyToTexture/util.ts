@@ -1,6 +1,6 @@
-import { EncodableTextureFormat } from '../../format_info.js';
-import { PerTexelComponent } from '../../util/texture/texel_data.js';
-import { TexelView } from '../../util/texture/texel_view.js';
+import { EncodableTextureFormat } from '../../format_info.ts';
+import { PerTexelComponent } from '../../util/texture/texel_data.ts';
+import { TexelView } from '../../util/texture/texel_view.ts';
 
 type TestColor = PerTexelComponent<number>;
 

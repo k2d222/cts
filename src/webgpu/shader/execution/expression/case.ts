@@ -1,6 +1,6 @@
-import { crc32 } from '../../../../common/util/crc32.js';
-import { ROArrayArray } from '../../../../common/util/types.js';
-import { assert } from '../../../../common/util/util.js';
+import { crc32 } from '../../../../common/util/crc32.ts';
+import { ROArrayArray } from '../../../../common/util/types.ts';
+import { assert } from '../../../../common/util/util.ts';
 import {
   abstractInt,
   i32,
@@ -8,16 +8,16 @@ import {
   u32,
   Value,
   VectorValue,
-} from '../../../util/conversion.js';
+} from '../../../util/conversion.ts';
 import {
   cartesianProduct,
   QuantizeFunc,
   quantizeToI32,
   quantizeToI64,
   quantizeToU32,
-} from '../../../util/math.js';
+} from '../../../util/math.ts';
 
-import { Expectation } from './expectation.js';
+import { Expectation } from './expectation.ts';
 
 function notUndefined<T>(value: T | undefined): value is T {
   return value !== undefined;

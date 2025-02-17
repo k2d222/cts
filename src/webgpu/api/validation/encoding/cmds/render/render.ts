@@ -1,5 +1,5 @@
-import { kUnitCaseParamsBuilder } from '../../../../../../common/framework/params_builder.js';
-import { kRenderEncodeTypes } from '../../../../../util/command_buffer_maker.js';
+import { kUnitCaseParamsBuilder } from '../../../../../../common/framework/params_builder.ts';
+import { kRenderEncodeTypes } from '../../../../../util/command_buffer_maker.ts';
 
 export const kRenderEncodeTypeParams = kUnitCaseParamsBuilder.combine(
   'encoderType',

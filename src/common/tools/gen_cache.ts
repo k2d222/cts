@@ -2,9 +2,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as process from 'process';
 
-import { Cacheable, dataCache, setIsBuildingDataCache } from '../framework/data_cache.js';
-import { crc32, toHexString } from '../util/crc32.js';
-import { parseImports } from '../util/parse_imports.js';
+import { Cacheable, dataCache, setIsBuildingDataCache } from '../framework/data_cache.ts';
+import { crc32, toHexString } from '../util/crc32.ts';
+import { parseImports } from '../util/parse_imports.ts';
 
 function usage(rc: number): void {
   console.error(`Usage: tools/gen_cache [options] [SUITE_DIRS...]

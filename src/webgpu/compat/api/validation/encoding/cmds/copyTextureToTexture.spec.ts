@@ -2,13 +2,13 @@ export const description = `
 Tests limitations of copyTextureToTextures in compat mode.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
 import {
   kAllTextureFormats,
   kCompressedTextureFormats,
   kTextureFormatInfo,
-} from '../../../../../format_info.js';
-import { CompatibilityTest } from '../../../../compatibility_test.js';
+} from '../../../../../format_info.ts';
+import { CompatibilityTest } from '../../../../compatibility_test.ts';
 
 export const g = makeTestGroup(CompatibilityTest);
 

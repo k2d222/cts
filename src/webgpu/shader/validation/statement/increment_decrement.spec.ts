@@ -1,9 +1,9 @@
 export const description = `Validation for phony assignment statements`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { scalarTypeOf, Type } from '../../../util/conversion.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../common/util/data_tables.ts';
+import { scalarTypeOf, Type } from '../../../util/conversion.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -3,9 +3,9 @@ export const description = `
 Validation tests for the ${builtin} builtin.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { kValue } from '../../../../../util/constants.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
+import { kValue } from '../../../../../util/constants.ts';
 import {
   kAllScalarsAndVectors,
   u32,
@@ -17,15 +17,15 @@ import {
   vec3,
   vec4,
   array,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 import {
   fullRangeForType,
   kConstantAndOverrideStages,
   stageSupportsType,
   validateConstOrOverrideBuiltinEval,
-} from './const_override_validation.js';
+} from './const_override_validation.ts';
 
 const kFeature = 'packed_4x8_integer_dot_product';
 const kAllValueTypes = objectsToRecord(kAllScalarsAndVectors);

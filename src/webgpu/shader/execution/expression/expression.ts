@@ -1,8 +1,8 @@
-import { globalTestConfig } from '../../../../common/framework/test_config.js';
-import { assert, objectEquals, unreachable } from '../../../../common/util/util.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { Comparator, ComparatorImpl } from '../../../util/compare.js';
-import { kValue } from '../../../util/constants.js';
+import { globalTestConfig } from '../../../../common/framework/test_config.ts';
+import { assert, objectEquals, unreachable } from '../../../../common/util/util.ts';
+import { GPUTest } from '../../../gpu_test.ts';
+import { Comparator, ComparatorImpl } from '../../../util/compare.ts';
+import { kValue } from '../../../util/constants.ts';
 import {
   MatrixType,
   ScalarValue,
@@ -15,11 +15,11 @@ import {
   scalarTypeOf,
   ArrayType,
   elementTypeOf,
-} from '../../../util/conversion.js';
-import { align } from '../../../util/math.js';
+} from '../../../util/conversion.ts';
+import { align } from '../../../util/math.ts';
 
-import { Case } from './case.js';
-import { toComparator } from './expectation.js';
+import { Case } from './case.ts';
+import { toComparator } from './expectation.ts';
 
 /** The input value source */
 export type InputSource =

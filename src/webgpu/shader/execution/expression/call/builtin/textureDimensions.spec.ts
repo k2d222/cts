@@ -7,18 +7,18 @@ Cube faces are square, so the x and y components of the result are equal.
 If level is outside the range [0, textureNumLevels(t)) then any valid value for the return type may be returned.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
 import {
   kAllTextureFormats,
   kColorTextureFormats,
   kTextureFormatInfo,
   sampleTypeForFormatAndAspect,
   textureDimensionAndFormatCompatible,
-} from '../../../../../format_info.js';
-import { align } from '../../../../../util/math.js';
-import { kShaderStages, ShaderStage } from '../../../../validation/decl/util.js';
+} from '../../../../../format_info.ts';
+import { align } from '../../../../../util/math.ts';
+import { kShaderStages, ShaderStage } from '../../../../validation/decl/util.ts';
 
-import { WGSLTextureQueryTest } from './texture_utils.js';
+import { WGSLTextureQueryTest } from './texture_utils.ts';
 
 export const g = makeTestGroup(WGSLTextureQueryTest);
 

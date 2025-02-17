@@ -1,9 +1,9 @@
-import { TestParams } from '../../framework/fixture.js';
-import { assert } from '../../util/util.js';
-import { JSONWithUndefined, badParamValueChars, paramKeyIsPublic } from '../params_utils.js';
+import { TestParams } from '../../framework/fixture.ts';
+import { assert } from '../../util/util.ts';
+import { JSONWithUndefined, badParamValueChars, paramKeyIsPublic } from '../params_utils.ts';
 
-import { stringifyParamValue, stringifyParamValueUniquely } from './json_param_value.js';
-import { kParamKVSeparator, kParamSeparator, kWildcard } from './separators.js';
+import { stringifyParamValue, stringifyParamValueUniquely } from './json_param_value.ts';
+import { kParamKVSeparator, kParamSeparator, kWildcard } from './separators.ts';
 
 export function stringifyPublicParams(p: TestParams, addWildcard = false): string {
   const parts = Object.keys(p)

@@ -1,7 +1,7 @@
-import { kValue } from '../../../../../util/constants.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { scalarF16Range, scalarF32Range } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { kValue } from '../../../../../util/constants.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { scalarF16Range, scalarF32Range } from '../../../../../util/math.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 export const d = makeCaseCache('quantizeToF16', {
   f32_const: () => {

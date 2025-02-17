@@ -1,4 +1,4 @@
-import { kRenderEncoderTypes, kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
+import { kRenderEncoderTypes, kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.ts';
 
 function getPipelineDescriptor(device: GPUDevice, testValue: number): GPURenderPipelineDescriptor {
   const module = device.createShaderModule({

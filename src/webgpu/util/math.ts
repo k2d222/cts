@@ -1,19 +1,19 @@
-import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types.js';
-import { assert } from '../../common/util/util.js';
+import { ROArrayArray, ROArrayArrayArray } from '../../common/util/types.ts';
+import { assert } from '../../common/util/util.ts';
 import {
   Float16Array,
   getFloat16,
   hfround,
   setFloat16,
-} from '../../external/petamoriken/float16/float16.js';
+} from '../../external/petamoriken/float16/float16.ts';
 
-import { kBit, kValue } from './constants.js';
+import { kBit, kValue } from './constants.ts';
 import {
   reinterpretF64AsU64,
   reinterpretU64AsF64,
   reinterpretU32AsF32,
   reinterpretU16AsF16,
-} from './reinterpret.js';
+} from './reinterpret.ts';
 
 /**
  * A multiple of 8 guaranteed to be way too large to allocate (just under 8 pebibytes).

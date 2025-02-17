@@ -1,6 +1,6 @@
 // WPT-specific test checking that WebGPU is available iff isSecureContext.
 
-import { assert } from '../../common/util/util.js';
+import { assert } from '../../common/util/util.ts';
 
 const items = [
   globalThis.navigator.gpu,

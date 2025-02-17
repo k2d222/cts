@@ -4,9 +4,9 @@ import {
   kReorderOrderKeys,
   ReorderOrder,
   assert,
-} from '../../../../../common/util/util.js';
-import { kShaderStageCombinationsWithStage } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
+} from '../../../../../common/util/util.ts';
+import { kShaderStageCombinationsWithStage } from '../../../../capability_info.ts';
+import { GPUConst } from '../../../../constants.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -19,7 +19,7 @@ import {
   getStageVisibilityForBinidngCombination,
   addMaximumLimitUpToDependentLimit,
   MaximumLimitValueTest,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kExtraLimits: LimitsRequest = {
   maxBindingsPerBindGroup: 'adapterLimit',

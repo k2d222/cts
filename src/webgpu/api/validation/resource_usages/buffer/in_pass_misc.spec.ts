@@ -2,16 +2,16 @@ export const description = `
 Test other buffer usage validation rules that are not tests in ./in_pass_encoder.spec.js.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { unreachable } from '../../../../../common/util/util.js';
-import { MaxLimitsTestMixin } from '../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { unreachable } from '../../../../../common/util/util.ts';
+import { MaxLimitsTestMixin } from '../../../../gpu_test.ts';
 
 import {
   BufferUsage,
   BufferResourceUsageTest,
   kAllBufferUsages,
   skipIfStorageBuffersUsedAndNotAvailableInStages,
-} from './in_pass_encoder.spec.js';
+} from './in_pass_encoder.spec.ts';
 
 export const g = makeTestGroup(MaxLimitsTestMixin(BufferResourceUsageTest));
 

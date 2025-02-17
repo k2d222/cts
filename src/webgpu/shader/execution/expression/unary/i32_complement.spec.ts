@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the i32 bitwise complement operation
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { i32, Type } from '../../../../util/conversion.js';
-import { fullI32Range } from '../../../../util/math.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { i32, Type } from '../../../../util/conversion.ts';
+import { fullI32Range } from '../../../../util/math.ts';
+import { allInputSources, run } from '../expression.ts';
 
-import { unary } from './unary.js';
+import { unary } from './unary.ts';
 
 export const g = makeTestGroup(GPUTest);
 

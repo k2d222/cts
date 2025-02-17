@@ -2,16 +2,16 @@ export const description = `
 - Test pipeline outputs with different color attachment number, formats, component counts, etc.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { range } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { range } from '../../../../common/util/util.ts';
 import {
   computeBytesPerSampleFromFormats,
   kRenderableColorTextureFormats,
   kTextureFormatInfo,
-} from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { getFragmentShaderCodeWithOutput, getPlainTypeInfo } from '../../../util/shader.js';
-import { kTexelRepresentationInfo } from '../../../util/texture/texel_data.js';
+} from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { getFragmentShaderCodeWithOutput, getPlainTypeInfo } from '../../../util/shader.ts';
+import { kTexelRepresentationInfo } from '../../../util/texture/texel_data.ts';
 
 const kVertexShader = `
 @vertex fn main(

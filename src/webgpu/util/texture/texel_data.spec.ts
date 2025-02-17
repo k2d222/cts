@@ -1,20 +1,20 @@
 export const description = 'Test helpers for texel data produce the expected data in the shader';
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { assert } from '../../../common/util/util.ts';
 import {
   kEncodableTextureFormats,
   kTextureFormatInfo,
   EncodableTextureFormat,
-} from '../../format_info.js';
-import { GPUTest } from '../../gpu_test.js';
-import { gammaCompress, floatAsNormalizedIntegerUnquantized } from '../conversion.js';
+} from '../../format_info.ts';
+import { GPUTest } from '../../gpu_test.ts';
+import { gammaCompress, floatAsNormalizedIntegerUnquantized } from '../conversion.ts';
 
 import {
   kTexelRepresentationInfo,
   getSingleDataType,
   getComponentReadbackTraits,
-} from './texel_data.js';
+} from './texel_data.ts';
 
 export const g = makeTestGroup(GPUTest);
 

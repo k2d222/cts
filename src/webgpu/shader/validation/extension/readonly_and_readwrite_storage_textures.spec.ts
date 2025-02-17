@@ -2,9 +2,9 @@ export const description = `
 Validation tests for the readonly_and_readwrite_storage_textures language feature
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { TexelFormats } from '../../types.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { TexelFormats } from '../../types.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -2,10 +2,10 @@ export const description = `
 Tests for capabilities added by float32-blendable flag.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { ColorTextureFormat } from '../../../format_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { ColorTextureFormat } from '../../../format_info.ts';
 
-import { CreateRenderPipelineValidationTest } from './common.js';
+import { CreateRenderPipelineValidationTest } from './common.ts';
 
 export const g = makeTestGroup(CreateRenderPipelineValidationTest);
 

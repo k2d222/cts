@@ -1,6 +1,6 @@
-import { keysOf } from '../../../common/util/data_tables.js';
-import { ErrorWithExtra } from '../../../common/util/util.js';
-import { GPUTest } from '../../gpu_test.js';
+import { keysOf } from '../../../common/util/data_tables.ts';
+import { ErrorWithExtra } from '../../../common/util/util.ts';
+import { GPUTest } from '../../gpu_test.ts';
 
 /**
  * Base fixture for WGSL shader validation tests.

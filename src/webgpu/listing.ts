@@ -1,5 +1,5 @@
 /* eslint-disable import/no-restricted-paths */
-import { TestSuiteListing } from '../common/internal/test_suite_listing.js';
-import { makeListing } from '../common/tools/crawl.js';
+import { TestSuiteListing } from '../common/internal/test_suite_listing.ts';
+import { makeListing } from '../common/tools/crawl.ts';
 
 export const listing: Promise<TestSuiteListing> = makeListing(__filename);

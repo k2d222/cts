@@ -1,10 +1,10 @@
 export const description = `Validation tests for the interpolate attribute`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../common/util/data_tables.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
-import { generateShader } from './util.js';
+import { generateShader } from './util.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

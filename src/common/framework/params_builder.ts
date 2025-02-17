@@ -1,10 +1,10 @@
-import { Merged, mergeParams, mergeParamsChecked } from '../internal/params_utils.js';
-import { comparePublicParamsPaths, Ordering } from '../internal/query/compare.js';
-import { stringifyPublicParams } from '../internal/query/stringify_params.js';
-import { DeepReadonly } from '../util/types.js';
-import { assert, mapLazy, objectEquals } from '../util/util.js';
+import { Merged, mergeParams, mergeParamsChecked } from '../internal/params_utils.ts';
+import { comparePublicParamsPaths, Ordering } from '../internal/query/compare.ts';
+import { stringifyPublicParams } from '../internal/query/stringify_params.ts';
+import { DeepReadonly } from '../util/types.ts';
+import { assert, mapLazy, objectEquals } from '../util/util.ts';
 
-import { TestParams } from './fixture.js';
+import { TestParams } from './fixture.ts';
 
 // ================================================================
 // "Public" ParamsBuilder API / Documentation

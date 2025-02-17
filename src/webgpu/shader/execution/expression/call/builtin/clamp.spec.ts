@@ -13,13 +13,13 @@ Returns either min(max(e,low),high), or the median of the three values e, low, h
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
-import { d } from './clamp.cache.js';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.ts';
+import { d } from './clamp.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

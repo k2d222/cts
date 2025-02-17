@@ -1,4 +1,4 @@
-import { LogMessageWithStack } from './log_message.js';
+import { LogMessageWithStack } from './log_message.ts';
 
 // MAINTENANCE_TODO: Add warn expectations
 export type Expectation = 'pass' | 'skip' | 'fail';

@@ -1,13 +1,13 @@
-import { kValue } from '../../../../util/constants.js';
-import { abstractFloat } from '../../../../util/conversion.js';
-import { FP } from '../../../../util/floating_point.js';
+import { kValue } from '../../../../util/constants.ts';
+import { abstractFloat } from '../../../../util/conversion.ts';
+import { FP } from '../../../../util/floating_point.ts';
 import {
   isSubnormalNumberF64,
   limitedScalarF64Range,
   scalarF64Range,
-} from '../../../../util/math.js';
-import { reinterpretU64AsF64 } from '../../../../util/reinterpret.js';
-import { makeCaseCache } from '../case_cache.js';
+} from '../../../../util/math.ts';
+import { reinterpretU64AsF64 } from '../../../../util/reinterpret.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 export const d = makeCaseCache('unary/af_assignment', {
   abstract: () => {

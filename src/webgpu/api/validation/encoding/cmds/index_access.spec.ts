@@ -2,8 +2,8 @@ export const description = `
 Validation tests for indexed draws accessing the index buffer.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 class F extends ValidationTest {
   createIndexBuffer(indexData: Iterable<number>): GPUBuffer {

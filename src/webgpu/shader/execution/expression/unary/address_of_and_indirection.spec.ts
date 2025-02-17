@@ -2,16 +2,16 @@ export const description = `
 Execution Tests for unary address-of and indirection (dereference)
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../common/util/data_tables.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { ScalarKind, scalarType } from '../../../../util/conversion.js';
-import { sparseScalarF32Range } from '../../../../util/math.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../common/util/data_tables.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { ScalarKind, scalarType } from '../../../../util/conversion.ts';
+import { sparseScalarF32Range } from '../../../../util/math.ts';
 import {
   allButConstInputSource,
   basicExpressionWithPredeclarationBuilder,
   run,
-} from '../expression.js';
+} from '../expression.ts';
 
 export const g = makeTestGroup(GPUTest);
 

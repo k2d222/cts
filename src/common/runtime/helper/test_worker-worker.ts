@@ -1,9 +1,9 @@
-import { setBaseResourcePath } from '../../framework/resources.js';
-import { DefaultTestFileLoader } from '../../internal/file_loader.js';
-import { parseQuery } from '../../internal/query/parseQuery.js';
-import { assert } from '../../util/util.js';
+import { setBaseResourcePath } from '../../framework/resources.ts';
+import { DefaultTestFileLoader } from '../../internal/file_loader.ts';
+import { parseQuery } from '../../internal/query/parseQuery.ts';
+import { assert } from '../../util/util.ts';
 
-import { setupWorkerEnvironment, WorkerTestRunRequest } from './utils_worker.js';
+import { setupWorkerEnvironment, WorkerTestRunRequest } from './utils_worker.ts';
 
 // Should be WorkerGlobalScope, but importing lib "webworker" conflicts with lib "dom".
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */

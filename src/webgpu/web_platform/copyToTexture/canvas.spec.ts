@@ -2,17 +2,17 @@ export const description = `
 copyToTexture with HTMLCanvasElement and OffscreenCanvas sources.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { skipTestCase } from '../../../common/util/util.js';
-import { kCanvasAlphaModes } from '../../capability_info.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { skipTestCase } from '../../../common/util/util.ts';
+import { kCanvasAlphaModes } from '../../capability_info.ts';
 import {
   kTextureFormatInfo,
   kValidTextureFormatsForCopyE2T,
   RegularTextureFormat,
-} from '../../format_info.js';
-import { TextureUploadingUtils } from '../../util/copy_to_texture.js';
-import { CanvasType, kAllCanvasTypes, createCanvas } from '../../util/create_elements.js';
-import { TexelCompareOptions } from '../../util/texture/texture_ok.js';
+} from '../../format_info.ts';
+import { TextureUploadingUtils } from '../../util/copy_to_texture.ts';
+import { CanvasType, kAllCanvasTypes, createCanvas } from '../../util/create_elements.ts';
+import { TexelCompareOptions } from '../../util/texture/texture_ok.ts';
 
 class F extends TextureUploadingUtils {
   init2DCanvasContentWithColorSpace({

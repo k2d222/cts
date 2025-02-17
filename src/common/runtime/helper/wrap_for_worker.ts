@@ -1,12 +1,12 @@
-import { Fixture } from '../../framework/fixture.js';
-import { LogMessageWithStack } from '../../internal/logging/log_message.js';
-import { comparePaths, comparePublicParamsPaths, Ordering } from '../../internal/query/compare.js';
-import { parseQuery } from '../../internal/query/parseQuery.js';
-import { TestQuerySingleCase } from '../../internal/query/query.js';
-import { TestGroup } from '../../internal/test_group.js';
-import { assert } from '../../util/util.js';
+import { Fixture } from '../../framework/fixture.ts';
+import { LogMessageWithStack } from '../../internal/logging/log_message.ts';
+import { comparePaths, comparePublicParamsPaths, Ordering } from '../../internal/query/compare.ts';
+import { parseQuery } from '../../internal/query/parseQuery.ts';
+import { TestQuerySingleCase } from '../../internal/query/query.ts';
+import { TestGroup } from '../../internal/test_group.ts';
+import { assert } from '../../util/util.ts';
 
-import { setupWorkerEnvironment, WorkerTestRunRequest } from './utils_worker.js';
+import { setupWorkerEnvironment, WorkerTestRunRequest } from './utils_worker.ts';
 
 /**
  * Sets up the currently running Web Worker to wrap the TestGroup object `g`.

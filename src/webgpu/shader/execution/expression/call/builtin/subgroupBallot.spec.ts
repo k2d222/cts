@@ -7,14 +7,14 @@ Note: There is no guaranteed mapping between subgroup_invocation_id and
 local_invocation_index. Tests should avoid assuming there is.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { iterRange, assert } from '../../../../../../common/util/util.js';
-import { kTextureFormatInfo } from '../../../../../format_info.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { align } from '../../../../../util/math.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { iterRange, assert } from '../../../../../../common/util/util.ts';
+import { kTextureFormatInfo } from '../../../../../format_info.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { align } from '../../../../../util/math.ts';
 
-import { SubgroupTest, kFramebufferSizes, getUintsPerFramebuffer } from './subgroup_util.js';
+import { SubgroupTest, kFramebufferSizes, getUintsPerFramebuffer } from './subgroup_util.ts';
 
 export const g = makeTestGroup(SubgroupTest);
 

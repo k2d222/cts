@@ -1,15 +1,15 @@
 // Implements the wpt-embedded test runner (see also: wpt/cts.https.html).
 
-import { globalTestConfig } from '../framework/test_config.js';
-import { DefaultTestFileLoader } from '../internal/file_loader.js';
-import { prettyPrintLog } from '../internal/logging/log_message.js';
-import { Logger } from '../internal/logging/logger.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
-import { parseExpectationsForTestQuery, relativeQueryString } from '../internal/query/query.js';
-import { assert } from '../util/util.js';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { DefaultTestFileLoader } from '../internal/file_loader.ts';
+import { prettyPrintLog } from '../internal/logging/log_message.ts';
+import { Logger } from '../internal/logging/logger.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
+import { parseExpectationsForTestQuery, relativeQueryString } from '../internal/query/query.ts';
+import { assert } from '../util/util.ts';
 
-import { optionEnabled, optionWorkerMode } from './helper/options.js';
-import { TestDedicatedWorker, TestServiceWorker, TestSharedWorker } from './helper/test_worker.js';
+import { optionEnabled, optionWorkerMode } from './helper/options.ts';
+import { TestDedicatedWorker, TestServiceWorker, TestSharedWorker } from './helper/test_worker.ts';
 
 // testharness.js API (https://web-platform-tests.org/writing-tests/testharness-api.html)
 declare interface WptTestObject {

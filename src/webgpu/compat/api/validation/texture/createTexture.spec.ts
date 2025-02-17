@@ -3,15 +3,15 @@ Tests that you can not use bgra8unorm-srgb in compat mode.
 Tests that textureBindingViewDimension must compatible with texture dimension
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { kTextureDimensions, kTextureViewDimensions } from '../../../../capability_info.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { kTextureDimensions, kTextureViewDimensions } from '../../../../capability_info.ts';
 import {
   kColorTextureFormats,
   kCompatModeUnsupportedStorageTextureFormats,
   kTextureFormatInfo,
-} from '../../../../format_info.js';
-import { getTextureDimensionFromView } from '../../../../util/texture/base.js';
-import { CompatibilityTest } from '../../../compatibility_test.js';
+} from '../../../../format_info.ts';
+import { getTextureDimensionFromView } from '../../../../util/texture/base.ts';
+import { CompatibilityTest } from '../../../compatibility_test.ts';
 
 export const g = makeTestGroup(CompatibilityTest);
 

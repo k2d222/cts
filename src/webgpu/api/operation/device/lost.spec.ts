@@ -2,15 +2,15 @@ export const description = `
 Tests for GPUDevice.lost.
 `;
 
-import { Fixture } from '../../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { attemptGarbageCollection } from '../../../../common/util/collect_garbage.js';
-import { getGPU } from '../../../../common/util/navigator_gpu.js';
+import { Fixture } from '../../../../common/framework/fixture.ts';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { attemptGarbageCollection } from '../../../../common/util/collect_garbage.ts';
+import { getGPU } from '../../../../common/util/navigator_gpu.ts';
 import {
   assert,
   assertNotSettledWithinTime,
   raceWithRejectOnTimeout,
-} from '../../../../common/util/util.js';
+} from '../../../../common/util/util.ts';
 
 class DeviceLostTests extends Fixture {
   // Default timeout for waiting for device lost is 2 seconds.

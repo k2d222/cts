@@ -2,10 +2,10 @@ export const description = `
 Test for "parseImports" utility.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { parseImports } from '../common/util/parse_imports.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { parseImports } from '../common/util/parse_imports.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 class F extends UnitTest {
   test(content: string, expect: string[]): void {
@@ -30,20 +30,20 @@ g.test('empty').fn(t => {
 });
 
 g.test('simple').fn(t => {
-  t.test(`import 'x/y/z.js';`, ['a/b/x/y/z.js']);
-  t.test(`import * as blah from 'x/y/z.js';`, ['a/b/x/y/z.js']);
-  t.test(`import { blah } from 'x/y/z.js';`, ['a/b/x/y/z.js']);
+  t.test(`import 'x/y/z.js';`, ['a/b/x/y/z.ts']);
+  t.test(`import * as blah from 'x/y/z.ts';`, ['a/b/x/y/z.ts']);
+  t.test(`import { blah } from 'x/y/z.ts';`, ['a/b/x/y/z.ts']);
 });
 
 g.test('multiple').fn(t => {
   t.test(
     `
 blah blah blah
-import 'x/y/z.js';
+import 'x/y/z.ts';
 more blah
-import * as blah from 'm/n/o.js';
+import * as blah from 'm/n/o.ts';
 extra blah
-import { blah } from '../h.js';
+import { blah } from '../h.ts';
 ending with blah
 `,
     ['a/b/x/y/z.js', 'a/b/m/n/o.js', 'a/h.js']
@@ -54,26 +54,26 @@ g.test('multiline').fn(t => {
   t.test(
     `import {
   blah
-} from 'x/y/z.js';`,
+} from 'x/y/z.ts';`,
     ['a/b/x/y/z.js']
   );
   t.test(
     `import {
   blahA,
   blahB,
-} from 'x/y/z.js';`,
+} from 'x/y/z.ts';`,
     ['a/b/x/y/z.js']
   );
 });
 
 g.test('file_characters').fn(t => {
-  t.test(`import '01234_56789.js';`, ['a/b/01234_56789.js']);
+  t.test(`import '01234_56789.js';`, ['a/b/01234_56789.ts']);
 });
 
 g.test('relative_paths').fn(t => {
-  t.test(`import '../x.js';`, ['a/x.js']);
-  t.test(`import '../x/y.js';`, ['a/x/y.js']);
-  t.test(`import '../../x.js';`, ['x.js']);
-  t.test(`import '../../../x.js';`, ['../x.js']);
-  t.test(`import '../../../../x.js';`, ['../../x.js']);
+  t.test(`import '../x.js';`, ['a/x.ts']);
+  t.test(`import '../x/y.js';`, ['a/x/y.ts']);
+  t.test(`import '../../x.js';`, ['x.ts']);
+  t.test(`import '../../../x.js';`, ['../x.ts']);
+  t.test(`import '../../../../x.js';`, ['../../x.ts']);
 });

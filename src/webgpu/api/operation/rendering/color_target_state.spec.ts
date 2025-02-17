@@ -7,18 +7,18 @@ TODO:
 - ?
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert, TypedArrayBufferView, unreachable } from '../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert, TypedArrayBufferView, unreachable } from '../../../../common/util/util.ts';
 import {
   IsDualSourceBlendingFactor,
   kBlendFactors,
   kBlendOperations,
-} from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
-import { kRegularTextureFormats, kTextureFormatInfo } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { clamp } from '../../../util/math.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+} from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
+import { kRegularTextureFormats, kTextureFormatInfo } from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { clamp } from '../../../util/math.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
 
 class BlendingTest extends GPUTest {
   createRenderPipelineForTest(colorTargetState: GPUColorTargetState): GPURenderPipeline {

@@ -4,10 +4,10 @@ import {
   SizedTextureFormat,
   kTextureFormatInfo,
   isCompressedTextureFormat,
-} from '../../../format_info.js';
-import { align } from '../../../util/math.js';
-import { ImageCopyType } from '../../../util/texture/layout.js';
-import { ValidationTest } from '../validation_test.js';
+} from '../../../format_info.ts';
+import { align } from '../../../util/math.ts';
+import { ImageCopyType } from '../../../util/texture/layout.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export class ImageCopyTest extends ValidationTest {
   testRun(

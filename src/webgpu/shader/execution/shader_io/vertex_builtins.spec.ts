@@ -3,8 +3,8 @@ export const description = `Test vertex shader builtin variables
 * test builtin(clip_distances)
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
 
 class VertexBuiltinTest extends TextureTestMixin(GPUTest) {}
 

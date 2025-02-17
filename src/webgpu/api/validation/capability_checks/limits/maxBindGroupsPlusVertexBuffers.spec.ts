@@ -3,7 +3,7 @@ import {
   kMaximumLimitBaseParams,
   makeLimitTestGroup,
   LimitsRequest,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kVertexBufferBindGroupPreferences = ['vertexBuffers', 'bindGroups'] as const;
 type VertexBufferBindGroupPreference = (typeof kVertexBufferBindGroupPreferences)[number];

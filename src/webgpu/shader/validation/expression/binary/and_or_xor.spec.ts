@@ -2,8 +2,8 @@ export const description = `
 Validation tests for logical and bitwise and/or/xor expressions.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables.ts';
 import {
   concreteTypeOf,
   isAbstractType,
@@ -12,10 +12,10 @@ import {
   kAllScalarsAndVectors,
   scalarTypeOf,
   Type,
-} from '../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../shader_validation_test.js';
+} from '../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../shader_validation_test.ts';
 
-import { resultType } from './result_type.js';
+import { resultType } from './result_type.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

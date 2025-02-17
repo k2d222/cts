@@ -7,9 +7,9 @@ Note: There is no guaranteed mapping between subgroup_invocation_id and
 local_invocation_index. Tests should avoid assuming there is.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
-import { iterRange } from '../../../../../../common/util/util.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
+import { iterRange } from '../../../../../../common/util/util.ts';
 import {
   kConcreteNumericScalarsAndVectors,
   Type,
@@ -19,8 +19,8 @@ import {
   kFloat32Format,
   kFloat16Format,
   scalarTypeOf,
-} from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
+} from '../../../../../util/conversion.ts';
+import { FP } from '../../../../../util/floating_point.ts';
 
 import {
   kDataSentinel,
@@ -34,7 +34,7 @@ import {
   runFragmentTest,
   getUintsPerFramebuffer,
   kFramebufferSizes,
-} from './subgroup_util.js';
+} from './subgroup_util.ts';
 
 export const g = makeTestGroup(SubgroupTest);
 

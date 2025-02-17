@@ -9,11 +9,11 @@ import {
   makeTableRenameAndFilter,
   numericKeysOf,
   valueof,
-} from '../common/util/data_tables.js';
-import { assertTypeTrue, TypeEqual } from '../common/util/types.js';
-import { unreachable } from '../common/util/util.js';
+} from '../common/util/data_tables.ts';
+import { assertTypeTrue, TypeEqual } from '../common/util/types.ts';
+import { unreachable } from '../common/util/util.ts';
 
-import { GPUConst, kMaxUnsignedLongValue, kMaxUnsignedLongLongValue } from './constants.js';
+import { GPUConst, kMaxUnsignedLongValue, kMaxUnsignedLongLongValue } from './constants.ts';
 
 // Base device limits can be found in constants.ts.
 

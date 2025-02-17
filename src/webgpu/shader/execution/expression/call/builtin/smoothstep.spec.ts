@@ -13,14 +13,14 @@ If low >= high:
 * It is a pipeline-creation error if low and high are override-expressions.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { ScalarValue, Type, Value } from '../../../../../util/conversion.js';
-import { Case } from '../../case.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { ScalarValue, Type, Value } from '../../../../../util/conversion.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './smoothstep.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
+import { d } from './smoothstep.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

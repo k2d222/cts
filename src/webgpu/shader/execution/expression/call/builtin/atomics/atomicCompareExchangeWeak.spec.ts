@@ -13,10 +13,10 @@ That is, the second component of the result vector may be false even if the firs
 component of the result vector equals cmp.
 `;
 
-import { makeTestGroup } from '../../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../../../common/util/util.js';
-import { GPUTest } from '../../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../../common/util/data_tables.ts';
+import { assert } from '../../../../../../../common/util/util.ts';
+import { GPUTest } from '../../../../../../gpu_test.ts';
 
 import {
   dispatchSizes,
@@ -24,7 +24,7 @@ import {
   typedArrayCtor,
   kMapId,
   onlyWorkgroupSizes,
-} from './harness.js';
+} from './harness.ts';
 
 export const g = makeTestGroup(GPUTest);
 

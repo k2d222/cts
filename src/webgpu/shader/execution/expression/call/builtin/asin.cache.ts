@@ -1,6 +1,6 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { linearRange } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point.ts';
+import { linearRange } from '../../../../../util/math.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // Cases: [f32|f16|abstract]_[non_]const
 const cases = (['f32', 'f16', 'abstract'] as const)

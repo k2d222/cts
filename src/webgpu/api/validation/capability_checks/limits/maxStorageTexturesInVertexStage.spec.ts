@@ -4,7 +4,7 @@ import {
   kReorderOrderKeys,
   ReorderOrder,
   assert,
-} from '../../../../../common/util/util.js';
+} from '../../../../../common/util/util.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -15,7 +15,7 @@ import {
   LimitsRequest,
   getStageVisibilityForBinidngCombination,
   testMaxStorageXXXInYYYStageDeviceCreationWithDependentLimit,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const limit = 'maxStorageTexturesInVertexStage';
 

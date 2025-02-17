@@ -1,12 +1,12 @@
-import { GPUConst } from '../../../../constants.js';
-import { isPowerOfTwo } from '../../../../util/math.js';
+import { GPUConst } from '../../../../constants.ts';
+import { isPowerOfTwo } from '../../../../util/math.ts';
 
 import {
   kMinimumLimitBaseParams,
   makeLimitTestGroup,
   MinimumLimitValueTest,
   MinimumTestValue,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 function getDeviceLimitToRequest(
   limitValueTest: MinimumLimitValueTest,

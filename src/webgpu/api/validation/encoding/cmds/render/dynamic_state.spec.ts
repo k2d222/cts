@@ -22,10 +22,10 @@ TODO: ensure existing tests cover these notes. Note many of these may be operati
 >     - used with a simple pipeline that {does, doesn't} use it
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { MaxLimitsTestMixin } from '../../../../../gpu_test.js';
-import { nextAfterF32 } from '../../../../../util/math.js';
-import { ValidationTest } from '../../../validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { MaxLimitsTestMixin } from '../../../../../gpu_test.ts';
+import { nextAfterF32 } from '../../../../../util/math.ts';
+import { ValidationTest } from '../../../validation_test.ts';
 
 interface ViewportCall {
   x: number;

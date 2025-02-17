@@ -4,7 +4,7 @@ import {
   AddressSpaceInfo,
   kAccessModeInfo,
   kAddressSpaceInfo,
-} from '../../types.js';
+} from '../../types.ts';
 
 /** An enumerator of shader stages */
 export type ShaderStage = 'vertex' | 'fragment' | 'compute';

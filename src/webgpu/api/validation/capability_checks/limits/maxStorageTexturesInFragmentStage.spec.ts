@@ -4,8 +4,8 @@ import {
   kReorderOrderKeys,
   ReorderOrder,
   assert,
-} from '../../../../../common/util/util.js';
-import { kStorageTextureAccessValues } from '../../../../capability_info.js';
+} from '../../../../../common/util/util.ts';
+import { kStorageTextureAccessValues } from '../../../../capability_info.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -16,7 +16,7 @@ import {
   LimitsRequest,
   getStageVisibilityForBinidngCombination,
   testMaxStorageXXXInYYYStageDeviceCreationWithDependentLimit,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const limit = 'maxStorageTexturesInFragmentStage';
 

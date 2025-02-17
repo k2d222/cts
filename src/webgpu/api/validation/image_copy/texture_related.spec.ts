@@ -1,26 +1,26 @@
 export const description = `Texture related validation tests for B2T copy and T2B copy and writeTexture.`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kTextureDimensions, kTextureUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert } from '../../../../common/util/util.ts';
+import { kTextureDimensions, kTextureUsages } from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
 import {
   kColorTextureFormats,
   kSizedTextureFormats,
   kTextureFormatInfo,
   textureDimensionAndFormatCompatible,
-} from '../../../format_info.js';
-import { kResourceStates } from '../../../gpu_test.js';
-import { align } from '../../../util/math.js';
-import { virtualMipSize } from '../../../util/texture/base.js';
-import { kImageCopyTypes } from '../../../util/texture/layout.js';
+} from '../../../format_info.ts';
+import { kResourceStates } from '../../../gpu_test.ts';
+import { align } from '../../../util/math.ts';
+import { virtualMipSize } from '../../../util/texture/base.ts';
+import { kImageCopyTypes } from '../../../util/texture/layout.ts';
 
 import {
   ImageCopyTest,
   texelBlockAlignmentTestExpanderForValueToCoordinate,
   formatCopyableWithMethod,
   getACopyableAspectWithMethod,
-} from './image_copy.js';
+} from './image_copy.ts';
 
 export const g = makeTestGroup(ImageCopyTest);
 

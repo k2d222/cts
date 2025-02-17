@@ -6,36 +6,36 @@ import {
   UnexpectedPassError,
   SubcaseBatchStateFromFixture,
   FixtureClass,
-} from '../framework/fixture.js';
+} from '../framework/fixture.ts';
 import {
   CaseParamsBuilder,
   builderIterateCasesWithSubcases,
   kUnitCaseParamsBuilder,
   ParamsBuilderBase,
   SubcaseParamsBuilder,
-} from '../framework/params_builder.js';
-import { globalTestConfig } from '../framework/test_config.js';
-import { Expectation } from '../internal/logging/result.js';
-import { TestCaseRecorder } from '../internal/logging/test_case_recorder.js';
-import { extractPublicParams, Merged, mergeParams } from '../internal/params_utils.js';
-import { compareQueries, Ordering } from '../internal/query/compare.js';
+} from '../framework/params_builder.ts';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { Expectation } from '../internal/logging/result.ts';
+import { TestCaseRecorder } from '../internal/logging/test_case_recorder.ts';
+import { extractPublicParams, Merged, mergeParams } from '../internal/params_utils.ts';
+import { compareQueries, Ordering } from '../internal/query/compare.ts';
 import {
   TestQueryMultiFile,
   TestQueryMultiTest,
   TestQuerySingleCase,
   TestQueryWithExpectation,
-} from '../internal/query/query.js';
-import { kPathSeparator } from '../internal/query/separators.js';
+} from '../internal/query/query.ts';
+import { kPathSeparator } from '../internal/query/separators.ts';
 import {
   stringifyPublicParams,
   stringifyPublicParamsUniquely,
-} from '../internal/query/stringify_params.js';
-import { validQueryPart } from '../internal/query/validQueryPart.js';
-import { attemptGarbageCollection } from '../util/collect_garbage.js';
-import { DeepReadonly } from '../util/types.js';
-import { assert, unreachable } from '../util/util.js';
+} from '../internal/query/stringify_params.ts';
+import { validQueryPart } from '../internal/query/validQueryPart.ts';
+import { attemptGarbageCollection } from '../util/collect_garbage.ts';
+import { DeepReadonly } from '../util/types.ts';
+import { assert, unreachable } from '../util/util.ts';
 
-import { logToWebSocket } from './websocket_logger.js';
+import { logToWebSocket } from './websocket_logger.ts';
 
 export type RunFn = (
   rec: TestCaseRecorder,

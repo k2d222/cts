@@ -2,12 +2,12 @@ export const description = `
 Test for texture_ok utils.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { typedArrayFromParam, typedArrayParam } from '../common/util/util.js';
-import { TexelView } from '../webgpu/util/texture/texel_view.js';
-import { findFailedPixels } from '../webgpu/util/texture/texture_ok.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { typedArrayFromParam, typedArrayParam } from '../common/util/util.ts';
+import { TexelView } from '../webgpu/util/texture/texel_view.ts';
+import { findFailedPixels } from '../webgpu/util/texture/texture_ok.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 class F extends UnitTest {
   test(act: string, exp: string): void {

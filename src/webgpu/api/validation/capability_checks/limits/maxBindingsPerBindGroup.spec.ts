@@ -2,7 +2,7 @@ import {
   kCreatePipelineTypes,
   kMaximumLimitBaseParams,
   makeLimitTestGroup,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const limit = 'maxBindingsPerBindGroup';
 export const { g, description } = makeLimitTestGroup(limit);

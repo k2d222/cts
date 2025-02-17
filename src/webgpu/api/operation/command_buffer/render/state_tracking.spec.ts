@@ -5,9 +5,9 @@ Equivalent tests for setBindGroup and setPipeline are in programmable/state_trac
 Equivalent tests for viewport/scissor/blend/reference are in render/dynamic_state.spec.ts
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest, TextureTestMixin } from '../../../../gpu_test.js';
-import { TexelView } from '../../../../util/texture/texel_view.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest, TextureTestMixin } from '../../../../gpu_test.ts';
+import { TexelView } from '../../../../util/texture/texel_view.ts';
 
 class VertexAndIndexStateTrackingTest extends TextureTestMixin(GPUTest) {
   GetRenderPipelineForTest(arrayStride: number): GPURenderPipeline {

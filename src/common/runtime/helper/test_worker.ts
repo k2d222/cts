@@ -1,12 +1,12 @@
-import { LogMessageWithStack } from '../../internal/logging/log_message.js';
-import { TransferredTestCaseResult, LiveTestCaseResult } from '../../internal/logging/result.js';
-import { TestCaseRecorder } from '../../internal/logging/test_case_recorder.js';
-import { TestQueryWithExpectation } from '../../internal/query/query.js';
-import { timeout } from '../../util/timeout.js';
-import { assert } from '../../util/util.js';
+import { LogMessageWithStack } from '../../internal/logging/log_message.ts';
+import { TransferredTestCaseResult, LiveTestCaseResult } from '../../internal/logging/result.ts';
+import { TestCaseRecorder } from '../../internal/logging/test_case_recorder.ts';
+import { TestQueryWithExpectation } from '../../internal/query/query.ts';
+import { timeout } from '../../util/timeout.ts';
+import { assert } from '../../util/util.ts';
 
-import { CTSOptions, WorkerMode, kDefaultCTSOptions } from './options.js';
-import { WorkerTestRunRequest } from './utils_worker.js';
+import { CTSOptions, WorkerMode, kDefaultCTSOptions } from './options.ts';
+import { WorkerTestRunRequest } from './utils_worker.ts';
 
 /** Query all currently-registered service workers, and unregister them. */
 function unregisterAllServiceWorkers() {

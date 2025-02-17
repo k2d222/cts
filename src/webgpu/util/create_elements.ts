@@ -1,5 +1,5 @@
-import { Fixture } from '../../common/framework/fixture.js';
-import { unreachable } from '../../common/util/util.js';
+import { Fixture } from '../../common/framework/fixture.ts';
+import { unreachable } from '../../common/util/util.ts';
 
 // TESTING_TODO: This should expand to more canvas types (which will enhance a bunch of tests):
 // - canvas element not in dom

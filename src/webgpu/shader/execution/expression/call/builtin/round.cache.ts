@@ -1,5 +1,5 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // See https://github.com/gpuweb/cts/issues/2766 for details
 const kIssue2766Value = {

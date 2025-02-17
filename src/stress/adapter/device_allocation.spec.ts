@@ -2,13 +2,13 @@ export const description = `
 Stress tests for GPUAdapter.requestDevice.
 `;
 
-import { Fixture } from '../../common/framework/fixture.js';
-import { makeTestGroup } from '../../common/framework/test_group.js';
-import { attemptGarbageCollection } from '../../common/util/collect_garbage.js';
-import { keysOf } from '../../common/util/data_tables.js';
-import { getGPU } from '../../common/util/navigator_gpu.js';
-import { assert, iterRange } from '../../common/util/util.js';
-import { getDefaultLimitsForAdapter } from '../../webgpu/capability_info.js';
+import { Fixture } from '../../common/framework/fixture.ts';
+import { makeTestGroup } from '../../common/framework/test_group.ts';
+import { attemptGarbageCollection } from '../../common/util/collect_garbage.ts';
+import { keysOf } from '../../common/util/data_tables.ts';
+import { getGPU } from '../../common/util/navigator_gpu.ts';
+import { assert, iterRange } from '../../common/util/util.ts';
+import { getDefaultLimitsForAdapter } from '../../webgpu/capability_info.ts';
 
 export const g = makeTestGroup(Fixture);
 

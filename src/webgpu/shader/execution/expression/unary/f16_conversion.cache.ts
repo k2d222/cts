@@ -1,7 +1,7 @@
-import { abstractInt, bool, f16, i32, u32 } from '../../../../util/conversion.js';
-import { FP, FPInterval } from '../../../../util/floating_point.js';
-import { fullI32Range, fullI64Range, fullU32Range } from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+import { abstractInt, bool, f16, i32, u32 } from '../../../../util/conversion.ts';
+import { FP, FPInterval } from '../../../../util/floating_point.ts';
+import { fullI32Range, fullI64Range, fullU32Range } from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 const f16FiniteRangeInterval = new FPInterval(
   'f16',

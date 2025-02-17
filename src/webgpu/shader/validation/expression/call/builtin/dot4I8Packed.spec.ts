@@ -1,8 +1,8 @@
 export const description = `Validate dot4I8Packed`;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
 const kFeature = 'packed_4x8_integer_dot_product';
 const kFn = 'dot4I8Packed';

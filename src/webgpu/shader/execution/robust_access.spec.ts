@@ -5,12 +5,12 @@ Tests to check datatype clamping in shaders is correctly implemented for all ind
 TODO: add tests to check that textureLoad operations stay in-bounds.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { assert } from '../../../common/util/util.js';
-import { Float16Array } from '../../../external/petamoriken/float16/float16.js';
-import { GPUTest } from '../../gpu_test.js';
-import { align } from '../../util/math.js';
-import { generateTypes, supportedScalarTypes, supportsAtomics } from '../types.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { assert } from '../../../common/util/util.ts';
+import { Float16Array } from '../../../external/petamoriken/float16/float16.ts';
+import { GPUTest } from '../../gpu_test.ts';
+import { align } from '../../util/math.ts';
+import { generateTypes, supportedScalarTypes, supportsAtomics } from '../types.ts';
 
 export const g = makeTestGroup(GPUTest);
 

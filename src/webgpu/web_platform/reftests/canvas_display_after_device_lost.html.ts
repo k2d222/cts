@@ -1,6 +1,6 @@
-import { timeout } from '../../../common/util/timeout.js';
-import { assert } from '../../../common/util/util.js';
-import { takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait.js';
+import { timeout } from '../../../common/util/timeout.ts';
+import { assert } from '../../../common/util/util.ts';
+import { takeScreenshotDelayed } from '../../../common/util/wpt_reftest_wait.ts';
 
 void (async () => {
   assert(

@@ -2,12 +2,12 @@ export const description = `
 Validation tests for setIndexBuffer on render pass and render bundle.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUConst } from '../../../../../constants.js';
-import { kResourceStates } from '../../../../../gpu_test.js';
-import { ValidationTest } from '../../../validation_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUConst } from '../../../../../constants.ts';
+import { kResourceStates } from '../../../../../gpu_test.ts';
+import { ValidationTest } from '../../../validation_test.ts';
 
-import { kRenderEncodeTypeParams, buildBufferOffsetAndSizeOOBTestParams } from './render.js';
+import { kRenderEncodeTypeParams, buildBufferOffsetAndSizeOOBTestParams } from './render.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

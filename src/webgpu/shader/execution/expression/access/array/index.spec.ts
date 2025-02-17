@@ -2,8 +2,8 @@ export const description = `
 Execution Tests for array indexing expressions
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
 import {
   False,
   True,
@@ -12,10 +12,10 @@ import {
   array,
   f32,
   scalarTypeOf,
-} from '../../../../../util/conversion.js';
-import { align } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, basicExpressionBuilder, run } from '../../expression.js';
+} from '../../../../../util/conversion.ts';
+import { align } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, basicExpressionBuilder, run } from '../../expression.ts';
 
 export const g = makeTestGroup(GPUTest);
 

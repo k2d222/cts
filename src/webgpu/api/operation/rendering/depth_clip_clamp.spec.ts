@@ -3,15 +3,15 @@ Tests for depth clipping, depth clamping (at various points in the pipeline), an
 depth ranges as well.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert } from '../../../../common/util/util.ts';
+import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info.ts';
+import { AllFeaturesMaxLimitsGPUTest } from '../../../gpu_test.ts';
 import {
   checkElementsBetween,
   checkElementsPassPredicate,
   CheckElementsSupplementalTableRows,
-} from '../../../util/check_contents.js';
+} from '../../../util/check_contents.ts';
 
 export const g = makeTestGroup(AllFeaturesMaxLimitsGPUTest);
 

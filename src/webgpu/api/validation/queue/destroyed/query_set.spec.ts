@@ -2,8 +2,8 @@ export const description = `
 Tests using a destroyed query set on a queue.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

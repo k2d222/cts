@@ -16,9 +16,9 @@ Returns the result_struct for the given type.
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
 import {
   abstractFloatShaderBuilder,
   allInputSources,
@@ -26,9 +26,9 @@ import {
   onlyConstInputSource,
   run,
   ShaderBuilder,
-} from '../../expression.js';
+} from '../../expression.ts';
 
-import { d } from './modf.cache.js';
+import { d } from './modf.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -2,12 +2,12 @@ export const description = `
 Tests for GPUCanvasContext.getCurrentTexture.
 `;
 
-import { SkipTestCase } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { timeout } from '../../../common/util/timeout.js';
-import { assert, unreachable } from '../../../common/util/util.js';
-import { GPUTest } from '../../gpu_test.js';
-import { kAllCanvasTypes, createCanvas, CanvasType } from '../../util/create_elements.js';
+import { SkipTestCase } from '../../../common/framework/fixture.ts';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { timeout } from '../../../common/util/timeout.ts';
+import { assert, unreachable } from '../../../common/util/util.ts';
+import { GPUTest } from '../../gpu_test.ts';
+import { kAllCanvasTypes, createCanvas, CanvasType } from '../../util/create_elements.ts';
 
 const kFormat = 'bgra8unorm';
 

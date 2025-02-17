@@ -4,20 +4,20 @@ import * as fs from 'fs';
 import * as http from 'http';
 import { AddressInfo } from 'net';
 
-import { dataCache } from '../framework/data_cache.js';
-import { getResourcePath, setBaseResourcePath } from '../framework/resources.js';
-import { globalTestConfig } from '../framework/test_config.js';
-import { DefaultTestFileLoader } from '../internal/file_loader.js';
-import { prettyPrintLog } from '../internal/logging/log_message.js';
-import { Logger } from '../internal/logging/logger.js';
-import { LiveTestCaseResult, Status } from '../internal/logging/result.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
-import { TestQueryWithExpectation } from '../internal/query/query.js';
-import { TestTreeLeaf } from '../internal/tree.js';
-import { Colors } from '../util/colors.js';
-import { setDefaultRequestAdapterOptions, setGPUProvider } from '../util/navigator_gpu.js';
+import { dataCache } from '../framework/data_cache.ts';
+import { getResourcePath, setBaseResourcePath } from '../framework/resources.ts';
+import { globalTestConfig } from '../framework/test_config.ts';
+import { DefaultTestFileLoader } from '../internal/file_loader.ts';
+import { prettyPrintLog } from '../internal/logging/log_message.ts';
+import { Logger } from '../internal/logging/logger.ts';
+import { LiveTestCaseResult, Status } from '../internal/logging/result.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
+import { TestQueryWithExpectation } from '../internal/query/query.ts';
+import { TestTreeLeaf } from '../internal/tree.ts';
+import { Colors } from '../util/colors.ts';
+import { setDefaultRequestAdapterOptions, setGPUProvider } from '../util/navigator_gpu.ts';
 
-import sys from './helper/sys.js';
+import sys from './helper/sys.ts';
 
 function usage(rc: number): never {
   console.log(`Usage:

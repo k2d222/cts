@@ -10,12 +10,12 @@ Component-wise when T is a vector.
 Also known as "clz" in some languages.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type, u32Bits, u32, i32Bits, i32 } from '../../../../../util/conversion.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type, u32Bits, u32, i32Bits, i32 } from '../../../../../util/conversion.ts';
+import { allInputSources, Config, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

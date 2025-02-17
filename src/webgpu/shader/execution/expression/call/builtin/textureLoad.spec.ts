@@ -17,7 +17,7 @@ If an out of bounds access occurs, the built-in function returns one of:
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
 import {
   isCompressedFloatTextureFormat,
   isDepthTextureFormat,
@@ -27,10 +27,10 @@ import {
   kAllTextureFormats,
   kTextureFormatInfo,
   textureDimensionAndFormatCompatible,
-} from '../../../../../format_info.js';
-import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../../gpu_test.js';
-import { maxMipLevelCount, virtualMipSize } from '../../../../../util/texture/base.js';
-import { TexelFormats } from '../../../../types.js';
+} from '../../../../../format_info.ts';
+import { AllFeaturesMaxLimitsGPUTest, GPUTest } from '../../../../../gpu_test.ts';
+import { maxMipLevelCount, virtualMipSize } from '../../../../../util/texture/base.ts';
+import { TexelFormats } from '../../../../types.ts';
 
 import {
   TextureCall,
@@ -51,7 +51,7 @@ import {
   createVideoFrameWithRandomDataAndGetTexels,
   ShortShaderStage,
   isFillable,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export function normalizedCoordToTexelLoadTestCoord<T extends Dimensionality>(
   descriptor: GPUTextureDescriptor,

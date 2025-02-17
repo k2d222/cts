@@ -5,9 +5,9 @@ Samples a depth texture and compares the sampled depth values against a referenc
 - TODO: test un-encodable formats.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { kCompareFunctions } from '../../../../../capability_info.js';
-import { isDepthTextureFormat, kDepthStencilFormats } from '../../../../../format_info.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { kCompareFunctions } from '../../../../../capability_info.ts';
+import { isDepthTextureFormat, kDepthStencilFormats } from '../../../../../format_info.ts';
 
 import {
   checkCallResults,
@@ -25,7 +25,7 @@ import {
   vec2,
   vec3,
   WGSLTextureSampleTest,
-} from './texture_utils.js';
+} from './texture_utils.ts';
 
 export const g = makeTestGroup(WGSLTextureSampleTest);
 

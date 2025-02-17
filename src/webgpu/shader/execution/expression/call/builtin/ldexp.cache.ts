@@ -1,10 +1,10 @@
-import { assert } from '../../../../../../common/util/util.js';
-import { anyOf } from '../../../../../util/compare.js';
-import { abstractInt, i32 } from '../../../../../util/conversion.js';
-import { FP } from '../../../../../util/floating_point.js';
-import { biasedRange, quantizeToI32, sparseI32Range } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { assert } from '../../../../../../common/util/util.ts';
+import { anyOf } from '../../../../../util/compare.ts';
+import { abstractInt, i32 } from '../../../../../util/conversion.ts';
+import { FP } from '../../../../../util/floating_point.ts';
+import { biasedRange, quantizeToI32, sparseI32Range } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // ldexpInterval's return interval doesn't cover the flush-to-zero cases when e2 + bias <= 0, thus
 // special examination is required.

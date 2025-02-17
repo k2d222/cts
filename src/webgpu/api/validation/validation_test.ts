@@ -3,8 +3,8 @@ import {
   BindableResource,
   kMaxQueryCount,
   ShaderStageKey,
-} from '../../capability_info.js';
-import { GPUTest, ResourceState } from '../../gpu_test.js';
+} from '../../capability_info.ts';
+import { GPUTest, ResourceState } from '../../gpu_test.ts';
 
 /**
  * Base fixture for WebGPU validation tests.

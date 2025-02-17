@@ -2,9 +2,9 @@ export const description = `
 Basic command buffer compute tests.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { checkElementsEqualGenerated } from '../../../util/check_contents.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../gpu_test.ts';
+import { checkElementsEqualGenerated } from '../../../util/check_contents.ts';
 
 export const g = makeTestGroup(GPUTest);
 

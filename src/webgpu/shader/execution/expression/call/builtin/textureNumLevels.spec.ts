@@ -4,11 +4,11 @@ Execution tests for the 'textureNumLevels' builtin function
 Returns the number of mip levels of a texture.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { getTextureDimensionFromView } from '../../../../../util/texture/base.js';
-import { kShaderStages } from '../../../../validation/decl/util.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { getTextureDimensionFromView } from '../../../../../util/texture/base.ts';
+import { kShaderStages } from '../../../../validation/decl/util.ts';
 
-import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils.js';
+import { kSampleTypeInfo, WGSLTextureQueryTest } from './texture_utils.ts';
 
 function getLevelSettingsAndExpected(viewType: 'full' | 'partial', mipLevelCount: number) {
   return viewType === 'partial'

@@ -5,12 +5,12 @@ Examples of writing CTS tests with various features.
 Start here when looking for examples of basic framework usage.
 `;
 
-import { getResourcePath } from '../common/framework/resources.js';
-import { globalTestConfig } from '../common/framework/test_config.js';
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { getDefaultRequestAdapterOptions } from '../common/util/navigator_gpu.js';
+import { getResourcePath } from '../common/framework/resources.ts';
+import { globalTestConfig } from '../common/framework/test_config.ts';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { getDefaultRequestAdapterOptions } from '../common/util/navigator_gpu.ts';
 
-import { GPUTest } from './gpu_test.js';
+import { GPUTest } from './gpu_test.ts';
 
 export const g = makeTestGroup(GPUTest);
 

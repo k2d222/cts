@@ -4,15 +4,15 @@ Executes a control barrier synchronization function that affects memory and atom
 
 // NOTE: The control barrier executed by this builtin is tested in the memory_model tests.
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../../../common/util/data_tables.ts';
 import {
   TypedArrayBufferView,
   TypedArrayBufferViewConstructor,
   iterRange,
-} from '../../../../../../common/util/util.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { checkElementsEqualGenerated } from '../../../../../util/check_contents.js';
+} from '../../../../../../common/util/util.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { checkElementsEqualGenerated } from '../../../../../util/check_contents.ts';
 
 export const g = makeTestGroup(GPUTest);
 

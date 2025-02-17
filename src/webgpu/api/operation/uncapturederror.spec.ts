@@ -2,9 +2,9 @@ export const description = `
 Tests for GPUDevice.onuncapturederror.
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { kGeneratableErrorScopeFilters } from '../../capability_info.js';
-import { ErrorTest } from '../../error_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { kGeneratableErrorScopeFilters } from '../../capability_info.ts';
+import { ErrorTest } from '../../error_test.ts';
 
 export const g = makeTestGroup(ErrorTest);
 

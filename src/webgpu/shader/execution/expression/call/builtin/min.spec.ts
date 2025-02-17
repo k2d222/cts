@@ -15,15 +15,15 @@ If both operands are NaNs, a NaN is returned.
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type, i32, u32, abstractInt } from '../../../../../util/conversion.js';
-import { minBigInt } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type, i32, u32, abstractInt } from '../../../../../util/conversion.ts';
+import { minBigInt } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.js';
-import { d } from './min.cache.js';
+import { abstractFloatBuiltin, abstractIntBuiltin, builtin } from './builtin.ts';
+import { d } from './min.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

@@ -5,12 +5,12 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { loadMetadataForSuite } from '../framework/metadata.js';
-import { SpecFile } from '../internal/file_loader.js';
-import { TestQueryMultiCase, TestQueryMultiFile } from '../internal/query/query.js';
-import { validQueryPart } from '../internal/query/validQueryPart.js';
-import { TestSuiteListingEntry, TestSuiteListing } from '../internal/test_suite_listing.js';
-import { assert, unreachable } from '../util/util.js';
+import { loadMetadataForSuite } from '../framework/metadata.ts';
+import { SpecFile } from '../internal/file_loader.ts';
+import { TestQueryMultiCase, TestQueryMultiFile } from '../internal/query/query.ts';
+import { validQueryPart } from '../internal/query/validQueryPart.ts';
+import { TestSuiteListingEntry, TestSuiteListing } from '../internal/test_suite_listing.ts';
+import { assert, unreachable } from '../util/util.ts';
 
 const specFileSuffix = __filename.endsWith('.ts') ? '.spec.ts' : '.spec.js';
 

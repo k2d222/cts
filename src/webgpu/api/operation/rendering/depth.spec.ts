@@ -2,11 +2,11 @@ export const description = `
 Test related to depth buffer, depth op, compare func, etc.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { TypedArrayBufferView } from '../../../../common/util/util.js';
-import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info.js';
-import { GPUTest, TextureTestMixin } from '../../../gpu_test.js';
-import { TexelView } from '../../../util/texture/texel_view.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { TypedArrayBufferView } from '../../../../common/util/util.ts';
+import { kDepthStencilFormats, kTextureFormatInfo } from '../../../format_info.ts';
+import { GPUTest, TextureTestMixin } from '../../../gpu_test.ts';
+import { TexelView } from '../../../util/texture/texel_view.ts';
 
 const backgroundColor = [0x00, 0x00, 0x00, 0xff];
 const triangleColor = [0xff, 0xff, 0xff, 0xff];

@@ -1,5 +1,5 @@
-import { anyOf } from '../../../../util/compare.js';
-import { ScalarValue, bool, f16, f32, i32, u32 } from '../../../../util/conversion.js';
+import { anyOf } from '../../../../util/compare.ts';
+import { ScalarValue, bool, f16, f32, i32, u32 } from '../../../../util/conversion.ts';
 import {
   fullI32Range,
   fullU32Range,
@@ -7,8 +7,8 @@ import {
   isSubnormalNumberF32,
   scalarF16Range,
   scalarF32Range,
-} from '../../../../util/math.js';
-import { makeCaseCache } from '../case_cache.js';
+} from '../../../../util/math.ts';
+import { makeCaseCache } from '../case_cache.ts';
 
 export const d = makeCaseCache('unary/bool_conversion', {
   bool: () => {

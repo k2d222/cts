@@ -1,5 +1,5 @@
-import { GPUConst } from '../../../../constants.js';
-import { OperationContext } from '../operation_context_helper.js';
+import { GPUConst } from '../../../../constants.ts';
+import { OperationContext } from '../operation_context_helper.ts';
 
 export const kAllWriteOps = [
   'write-texture',

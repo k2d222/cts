@@ -1,17 +1,17 @@
-import { getGPU } from '../../../../../common/util/navigator_gpu.js';
+import { getGPU } from '../../../../../common/util/navigator_gpu.ts';
 import {
   range,
   reorder,
   ReorderOrder,
   kReorderOrderKeys,
   assert,
-} from '../../../../../common/util/util.js';
+} from '../../../../../common/util/util.ts';
 import {
   kShaderStageCombinationsWithStage,
   kStorageTextureAccessValues,
   storageTextureBindingTypeInfo,
-} from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
+} from '../../../../capability_info.ts';
+import { GPUConst } from '../../../../constants.ts';
 
 import {
   kMaximumLimitBaseParams,
@@ -25,7 +25,7 @@ import {
   getStageVisibilityForBinidngCombination,
   MaximumLimitValueTest,
   addMaximumLimitUpToDependentLimit,
-} from './limit_utils.js';
+} from './limit_utils.ts';
 
 const kExtraLimits: LimitsRequest = {
   maxBindingsPerBindGroup: 'adapterLimit',

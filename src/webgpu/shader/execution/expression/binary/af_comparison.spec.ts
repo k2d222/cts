@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the abstract-float comparison operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { Type } from '../../../../util/conversion.ts';
+import { allInputSources, run } from '../expression.ts';
 
-import { d } from './af_comparison.cache.js';
-import { binary } from './binary.js';
+import { d } from './af_comparison.cache.ts';
+import { binary } from './binary.ts';
 
 export const g = makeTestGroup(GPUTest);
 

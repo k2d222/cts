@@ -1,16 +1,16 @@
 import { promises as fs } from 'fs';
 import * as path from 'path';
 
-import { DefaultTestFileLoader } from '../internal/file_loader.js';
-import { compareQueries, Ordering } from '../internal/query/compare.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
+import { DefaultTestFileLoader } from '../internal/file_loader.ts';
+import { compareQueries, Ordering } from '../internal/query/compare.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
 import {
   TestQuery,
   TestQueryMultiCase,
   TestQueryMultiFile,
   TestQueryMultiTest,
-} from '../internal/query/query.js';
-import { assert } from '../util/util.js';
+} from '../internal/query/query.ts';
+import { assert } from '../util/util.ts';
 
 const kMaxQueryLength = 184;
 

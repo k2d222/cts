@@ -2,10 +2,10 @@ export const description = `
 Destroying a texture more than once is allowed.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kTextureAspects } from '../../../capability_info.js';
-import { kTextureFormatInfo } from '../../../format_info.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kTextureAspects } from '../../../capability_info.ts';
+import { kTextureFormatInfo } from '../../../format_info.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

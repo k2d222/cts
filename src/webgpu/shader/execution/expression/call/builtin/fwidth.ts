@@ -1,11 +1,11 @@
-import { assert } from '../../../../../../common/util/util.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { anyOf } from '../../../../../util/compare.js';
-import { Type, Value } from '../../../../../util/conversion.js';
-import { FPInterval } from '../../../../../util/floating_point.js';
-import { align } from '../../../../../util/math.js';
-import { Case } from '../../case.js';
-import { toComparator } from '../../expectation.js';
+import { assert } from '../../../../../../common/util/util.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { anyOf } from '../../../../../util/compare.ts';
+import { Type, Value } from '../../../../../util/conversion.ts';
+import { FPInterval } from '../../../../../util/floating_point.ts';
+import { align } from '../../../../../util/math.ts';
+import { Case } from '../../case.ts';
+import { toComparator } from '../../expectation.ts';
 
 /**
  * Run a test for a fwidth builtin function.

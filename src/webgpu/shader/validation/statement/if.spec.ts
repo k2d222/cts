@@ -1,10 +1,10 @@
 export const description = `Validation tests for 'if' statements'`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { keysOf } from '../../../../common/util/data_tables.js';
-import { ShaderValidationTest } from '../shader_validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { keysOf } from '../../../../common/util/data_tables.ts';
+import { ShaderValidationTest } from '../shader_validation_test.ts';
 
-import { kTestTypes } from './test_types.js';
+import { kTestTypes } from './test_types.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

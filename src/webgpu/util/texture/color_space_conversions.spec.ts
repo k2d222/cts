@@ -1,13 +1,13 @@
 export const description = 'Color space conversion helpers';
 
-import { Fixture } from '../../../common/framework/fixture.js';
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { ErrorWithExtra } from '../../../common/util/util.js';
-import { makeInPlaceColorConversion } from '../color_space_conversion.js';
-import { clamp } from '../math.js';
+import { Fixture } from '../../../common/framework/fixture.ts';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { ErrorWithExtra } from '../../../common/util/util.ts';
+import { makeInPlaceColorConversion } from '../color_space_conversion.ts';
+import { clamp } from '../math.ts';
 
-import { TexelView } from './texel_view.js';
-import { findFailedPixels } from './texture_ok.js';
+import { TexelView } from './texel_view.ts';
+import { findFailedPixels } from './texture_ok.ts';
 
 const kTestColors = [
   [0xff, 0, 0],

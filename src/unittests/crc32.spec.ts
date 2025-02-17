@@ -2,10 +2,10 @@ export const description = `
 Test for crc32 utility functions.
 `;
 
-import { makeTestGroup } from '../common/framework/test_group.js';
-import { crc32, toHexString } from '../common/util/crc32.js';
+import { makeTestGroup } from '../common/framework/test_group.ts';
+import { crc32, toHexString } from '../common/util/crc32.ts';
 
-import { UnitTest } from './unit_test.js';
+import { UnitTest } from './unit_test.ts';
 
 class F extends UnitTest {
   test(content: string, expect: string): void {

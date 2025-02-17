@@ -2,9 +2,9 @@ export const description = `
 Tests for capabilities added by float32-filterable flag.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kTextureSampleTypes } from '../../../capability_info.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kTextureSampleTypes } from '../../../capability_info.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

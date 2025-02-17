@@ -2,11 +2,11 @@ import * as fs from 'fs';
 import * as process from 'process';
 import * as readline from 'readline';
 
-import { TestMetadataListing } from '../framework/metadata.js';
-import { parseQuery } from '../internal/query/parseQuery.js';
-import { TestQueryMultiCase, TestQuerySingleCase } from '../internal/query/query.js';
-import { CaseTimingLogLine } from '../internal/test_group.js';
-import { assert } from '../util/util.js';
+import { TestMetadataListing } from '../framework/metadata.ts';
+import { parseQuery } from '../internal/query/parseQuery.ts';
+import { TestQueryMultiCase, TestQuerySingleCase } from '../internal/query/query.ts';
+import { CaseTimingLogLine } from '../internal/test_group.ts';
+import { assert } from '../util/util.ts';
 
 // For information on listing_meta.json file maintenance, please read
 // tools/merge_listing_times first.

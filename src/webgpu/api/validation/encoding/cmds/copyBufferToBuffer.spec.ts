@@ -23,11 +23,11 @@ Test Plan:
 * Source buffer and destination buffer are the same buffer
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { kBufferUsages } from '../../../../capability_info.js';
-import { kResourceStates } from '../../../../gpu_test.js';
-import { kMaxSafeMultipleOf8 } from '../../../../util/math.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { kBufferUsages } from '../../../../capability_info.ts';
+import { kResourceStates } from '../../../../gpu_test.ts';
+import { kMaxSafeMultipleOf8 } from '../../../../util/math.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
 class F extends ValidationTest {
   TestCopyBufferToBuffer(options: {

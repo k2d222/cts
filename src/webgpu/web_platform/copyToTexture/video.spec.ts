@@ -7,8 +7,8 @@ copyToTexture with HTMLVideoElement and VideoFrame.
   TODO: Test video in BT.2020 color space
 `;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { GPUTest, TextureTestMixin } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { GPUTest, TextureTestMixin } from '../../gpu_test.ts';
 import {
   startPlayingAndWaitForVideo,
   getVideoElement,
@@ -18,7 +18,7 @@ import {
   kVideoNames,
   kVideoInfo,
   kVideoExpectedColors,
-} from '../../web_platform/util.js';
+} from '../../web_platform/util.ts';
 
 const kFormat = 'rgba8unorm';
 

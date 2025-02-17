@@ -1,13 +1,13 @@
-import { ROArrayArray } from '../../../../common/util/types.js';
-import { Comparator, compare } from '../../../util/compare.js';
+import { ROArrayArray } from '../../../../common/util/types.ts';
+import { Comparator, compare } from '../../../util/compare.ts';
 import {
   ArrayValue,
   MatrixValue,
   Value,
   VectorValue,
   isScalarValue,
-} from '../../../util/conversion.js';
-import { FPInterval } from '../../../util/floating_point.js';
+} from '../../../util/conversion.ts';
+import { FPInterval } from '../../../util/floating_point.ts';
 
 export type Expectation =
   | Value

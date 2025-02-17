@@ -14,13 +14,13 @@ Same as mix(e1,e2,T2(e3)).
 
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { Type } from '../../../../../util/conversion.js';
-import { allInputSources, onlyConstInputSource, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { Type } from '../../../../../util/conversion.ts';
+import { allInputSources, onlyConstInputSource, run } from '../../expression.ts';
 
-import { abstractFloatBuiltin, builtin } from './builtin.js';
-import { d } from './mix.cache.js';
+import { abstractFloatBuiltin, builtin } from './builtin.ts';
+import { d } from './mix.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

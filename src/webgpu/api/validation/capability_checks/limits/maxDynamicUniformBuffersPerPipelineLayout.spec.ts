@@ -1,7 +1,7 @@
-import { range } from '../../../../../common/util/util.js';
-import { GPUConst } from '../../../../constants.js';
+import { range } from '../../../../../common/util/util.ts';
+import { GPUConst } from '../../../../constants.ts';
 
-import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.js';
+import { kMaximumLimitBaseParams, makeLimitTestGroup } from './limit_utils.ts';
 
 const limit = 'maxDynamicUniformBuffersPerPipelineLayout';
 export const { g, description } = makeLimitTestGroup(limit);

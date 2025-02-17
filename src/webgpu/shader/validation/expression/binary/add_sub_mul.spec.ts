@@ -2,10 +2,10 @@ export const description = `
 Validation tests for add/sub/mul expressions.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables.js';
-import { assert } from '../../../../../common/util/util.js';
-import { kBit } from '../../../../util/constants.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../common/util/data_tables.ts';
+import { assert } from '../../../../../common/util/util.ts';
+import { kBit } from '../../../../util/constants.ts';
 import {
   concreteTypeOf,
   isAbstractType,
@@ -17,16 +17,16 @@ import {
   Type,
   Value,
   VectorType,
-} from '../../../../util/conversion.js';
-import { nextAfterF16, nextAfterF32 } from '../../../../util/math.js';
-import { reinterpretU16AsF16, reinterpretU32AsF32 } from '../../../../util/reinterpret.js';
-import { ShaderValidationTest } from '../../shader_validation_test.js';
+} from '../../../../util/conversion.ts';
+import { nextAfterF16, nextAfterF32 } from '../../../../util/math.ts';
+import { reinterpretU16AsF16, reinterpretU32AsF32 } from '../../../../util/reinterpret.ts';
+import { ShaderValidationTest } from '../../shader_validation_test.ts';
 import {
   kConstantAndOverrideStages,
   validateConstOrOverrideBinaryOpEval,
-} from '../call/builtin/const_override_validation.js';
+} from '../call/builtin/const_override_validation.ts';
 
-import { resultType } from './result_type.js';
+import { resultType } from './result_type.ts';
 
 export const g = makeTestGroup(ShaderValidationTest);
 

@@ -1,8 +1,8 @@
 export const description = `Test that variables in the shader are zero initialized`;
 
-import { makeTestGroup } from '../../../common/framework/test_group.js';
-import { iterRange, unreachable } from '../../../common/util/util.js';
-import { GPUTest } from '../../gpu_test.js';
+import { makeTestGroup } from '../../../common/framework/test_group.ts';
+import { iterRange, unreachable } from '../../../common/util/util.ts';
+import { GPUTest } from '../../gpu_test.ts';
 import {
   ScalarType,
   kVectorContainerTypes,
@@ -11,7 +11,7 @@ import {
   kMatrixContainerTypeInfo,
   supportedScalarTypes,
   supportsAtomics,
-} from '../types.js';
+} from '../types.ts';
 
 type ShaderTypeInfo =
   | { type: 'container'; containerType: 'array'; elementType: ShaderTypeInfo; length: number }

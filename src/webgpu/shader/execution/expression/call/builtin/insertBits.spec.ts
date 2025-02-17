@@ -16,12 +16,12 @@ Other bits of the result are copied from e.
 Component-wise when T is a vector.
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { i32Bits, Type, u32, u32Bits, vec2, vec3, vec4 } from '../../../../../util/conversion.js';
-import { allInputSources, Config, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { i32Bits, Type, u32, u32Bits, vec2, vec3, vec4 } from '../../../../../util/conversion.ts';
+import { allInputSources, Config, run } from '../../expression.ts';
 
-import { builtin } from './builtin.js';
+import { builtin } from './builtin.ts';
 
 export const g = makeTestGroup(GPUTest);
 

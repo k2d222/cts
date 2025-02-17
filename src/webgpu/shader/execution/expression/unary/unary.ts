@@ -3,7 +3,7 @@ import {
   abstractIntShaderBuilder,
   basicExpressionBuilder,
   ShaderBuilder,
-} from '../expression.js';
+} from '../expression.ts';
 
 /* @returns a ShaderBuilder that evaluates a prefix unary operation */
 export function unary(op: string): ShaderBuilder {

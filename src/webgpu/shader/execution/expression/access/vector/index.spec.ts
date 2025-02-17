@@ -2,11 +2,11 @@ export const description = `
 Execution Tests for vector indexing expressions
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../../gpu_test.js';
-import { ScalarValue, Type, VectorValue, f32 } from '../../../../../util/conversion.js';
-import { Case } from '../../case.js';
-import { allInputSources, basicExpressionBuilder, run } from '../../expression.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../../gpu_test.ts';
+import { ScalarValue, Type, VectorValue, f32 } from '../../../../../util/conversion.ts';
+import { Case } from '../../case.ts';
+import { allInputSources, basicExpressionBuilder, run } from '../../expression.ts';
 
 export const g = makeTestGroup(GPUTest);
 

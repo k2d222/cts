@@ -2,10 +2,10 @@ export const description = `
 Validation tests for GPUBuffer.destroy.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { kBufferUsages } from '../../../capability_info.js';
-import { GPUConst } from '../../../constants.js';
-import { ValidationTest } from '../validation_test.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { kBufferUsages } from '../../../capability_info.ts';
+import { GPUConst } from '../../../constants.ts';
+import { ValidationTest } from '../validation_test.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

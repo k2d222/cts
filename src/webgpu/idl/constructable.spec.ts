@@ -2,8 +2,8 @@ export const description = `
 Test that constructable WebGPU objects are actually constructable.
 `;
 
-import { makeTestGroup } from './../../common/framework/test_group.js';
-import { IDLTest } from './idl_test.js';
+import { makeTestGroup } from './../../common/framework/test_group.ts';
+import { IDLTest } from './idl_test.ts';
 
 export const g = makeTestGroup(IDLTest);
 

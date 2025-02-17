@@ -2,13 +2,13 @@ export const description = `
 Execution Tests for the f32 comparison operations
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../../gpu_test.js';
-import { Type } from '../../../../util/conversion.js';
-import { allInputSources, run } from '../expression.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../../gpu_test.ts';
+import { Type } from '../../../../util/conversion.ts';
+import { allInputSources, run } from '../expression.ts';
 
-import { binary } from './binary.js';
-import { d } from './f32_comparison.cache.js';
+import { binary } from './binary.ts';
+import { d } from './f32_comparison.cache.ts';
 
 export const g = makeTestGroup(GPUTest);
 

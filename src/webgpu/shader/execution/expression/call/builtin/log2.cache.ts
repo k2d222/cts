@@ -1,6 +1,6 @@
-import { FP } from '../../../../../util/floating_point.js';
-import { biasedRange, linearRange } from '../../../../../util/math.js';
-import { makeCaseCache } from '../../case_cache.js';
+import { FP } from '../../../../../util/floating_point.ts';
+import { biasedRange, linearRange } from '../../../../../util/math.ts';
+import { makeCaseCache } from '../../case_cache.ts';
 
 // log2's accuracy is defined in three regions { [0, 0.5), [0.5, 2.0], (2.0, +∞] }
 // Cases: [f32|f16|abstract]_[non_]const

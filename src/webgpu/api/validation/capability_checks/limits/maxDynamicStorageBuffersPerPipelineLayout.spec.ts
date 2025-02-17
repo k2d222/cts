@@ -1,8 +1,8 @@
-import { assert, range } from '../../../../../common/util/util.js';
-import { kShaderStageCombinationsWithStage } from '../../../../capability_info.js';
-import { GPUConst } from '../../../../constants.js';
+import { assert, range } from '../../../../../common/util/util.ts';
+import { kShaderStageCombinationsWithStage } from '../../../../capability_info.ts';
+import { GPUConst } from '../../../../constants.ts';
 
-import { kMaximumLimitBaseParams, LimitsRequest, makeLimitTestGroup } from './limit_utils.js';
+import { kMaximumLimitBaseParams, LimitsRequest, makeLimitTestGroup } from './limit_utils.ts';
 
 const kExtraLimits: LimitsRequest = {
   maxBindingsPerBindGroup: 'adapterLimit',

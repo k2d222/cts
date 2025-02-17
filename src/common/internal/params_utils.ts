@@ -1,9 +1,9 @@
-import { TestParams } from '../framework/fixture.js';
-import { ResolveType, UnionToIntersection } from '../util/types.js';
-import { assert } from '../util/util.js';
+import { TestParams } from '../framework/fixture.ts';
+import { ResolveType, UnionToIntersection } from '../util/types.ts';
+import { assert } from '../util/util.ts';
 
-import { comparePublicParamsPaths, Ordering } from './query/compare.js';
-import { kWildcard, kParamSeparator, kParamKVSeparator } from './query/separators.js';
+import { comparePublicParamsPaths, Ordering } from './query/compare.ts';
+import { kWildcard, kParamSeparator, kParamKVSeparator } from './query/separators.ts';
 
 export type JSONWithUndefined =
   | undefined

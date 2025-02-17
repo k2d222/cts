@@ -2,11 +2,11 @@ export const description = `
 Validation for encoding queries.
 `;
 
-import { makeTestGroup } from '../../../../../common/framework/test_group.js';
-import { kQueryTypes } from '../../../../capability_info.js';
-import { ValidationTest } from '../../validation_test.js';
+import { makeTestGroup } from '../../../../../common/framework/test_group.ts';
+import { kQueryTypes } from '../../../../capability_info.ts';
+import { ValidationTest } from '../../validation_test.ts';
 
-import { createQuerySetWithType } from './common.js';
+import { createQuerySetWithType } from './common.ts';
 
 export const g = makeTestGroup(ValidationTest);
 

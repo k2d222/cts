@@ -1,9 +1,9 @@
 export const description = `Unit tests for check_contents`;
 
-import { Fixture } from '../common/framework/fixture.js';
-import { makeTestGroup } from '../common/internal/test_group.js';
-import { ErrorWithExtra } from '../common/util/util.js';
-import { checkElementsEqual } from '../webgpu/util/check_contents.js';
+import { Fixture } from '../common/framework/fixture.ts';
+import { makeTestGroup } from '../common/internal/test_group.ts';
+import { ErrorWithExtra } from '../common/util/util.ts';
+import { checkElementsEqual } from '../webgpu/util/check_contents.ts';
 
 class F extends Fixture {
   test(substr: undefined | string, result: undefined | ErrorWithExtra) {

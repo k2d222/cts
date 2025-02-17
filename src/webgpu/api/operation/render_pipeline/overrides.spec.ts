@@ -2,9 +2,9 @@ export const description = `
 Testing render pipeline using overridable constants in vertex stage and fragment stage.
 `;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { GPUTest } from '../../../gpu_test.js';
-import { PerTexelComponent } from '../../../util/texture/texel_data.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { GPUTest } from '../../../gpu_test.ts';
+import { PerTexelComponent } from '../../../util/texture/texel_data.ts';
 
 class F extends GPUTest {
   async ExpectShaderOutputWithConstants(

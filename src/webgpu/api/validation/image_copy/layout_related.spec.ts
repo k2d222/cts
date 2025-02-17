@@ -2,28 +2,28 @@ export const description = `Validation tests for the linear data layout of linea
 
 TODO check if the tests need to be updated to support aspects of depth-stencil textures`;
 
-import { makeTestGroup } from '../../../../common/framework/test_group.js';
-import { assert } from '../../../../common/util/util.js';
-import { kTextureDimensions } from '../../../capability_info.js';
+import { makeTestGroup } from '../../../../common/framework/test_group.ts';
+import { assert } from '../../../../common/util/util.ts';
+import { kTextureDimensions } from '../../../capability_info.ts';
 import {
   kTextureFormatInfo,
   kSizedTextureFormats,
   textureDimensionAndFormatCompatible,
-} from '../../../format_info.js';
-import { align } from '../../../util/math.js';
+} from '../../../format_info.ts';
+import { align } from '../../../util/math.ts';
 import {
   bytesInACompleteRow,
   dataBytesForCopyOrOverestimate,
   dataBytesForCopyOrFail,
   kImageCopyTypes,
-} from '../../../util/texture/layout.js';
+} from '../../../util/texture/layout.ts';
 
 import {
   ImageCopyTest,
   texelBlockAlignmentTestExpanderForOffset,
   texelBlockAlignmentTestExpanderForRowsPerImage,
   formatCopyableWithMethod,
-} from './image_copy.js';
+} from './image_copy.ts';
 
 export const g = makeTestGroup(ImageCopyTest);
 

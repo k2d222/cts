@@ -14,8 +14,8 @@ Validation tests for the ${builtin}() builtin.
 * test textureSampleGrad doesn't work with texture types it's not supposed to
 `;
 
-import { makeTestGroup } from '../../../../../../common/framework/test_group.js';
-import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.js';
+import { makeTestGroup } from '../../../../../../common/framework/test_group.ts';
+import { keysOf, objectsToRecord } from '../../../../../../common/util/data_tables.ts';
 import {
   Type,
   kAllScalarsAndVectors,
@@ -23,10 +23,10 @@ import {
   ScalarType,
   VectorType,
   isUnsignedType,
-} from '../../../../../util/conversion.js';
-import { ShaderValidationTest } from '../../../shader_validation_test.js';
+} from '../../../../../util/conversion.ts';
+import { ShaderValidationTest } from '../../../shader_validation_test.ts';
 
-import { kTestTextureTypes } from './shader_builtin_utils.js';
+import { kTestTextureTypes } from './shader_builtin_utils.ts';
 
 // Note: ddX and ddy parameter types match coords so we'll use coordsArgType for ddX and ddY.
 type TextureSampleGradArguments = {
