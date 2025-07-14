@@ -3,7 +3,7 @@
 
 function node() {
   /* eslint-disable-next-line n/no-restricted-require */
-  const { readFile, existsSync } = require('fs');
+  const { readFile, existsSync } = require('fs/promises');
 
   return {
     type: 'node',

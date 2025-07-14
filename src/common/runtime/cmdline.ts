@@ -44,7 +44,7 @@ if (!sys.existsSync('src/common/runtime/cmdline.ts')) {
   console.log('Must be run from repository root');
   usage(1);
 }
-setBaseResourcePath('out-node/resources');
+setBaseResourcePath('out/resources');
 
 // The interface that exposes creation of the GPU, and optional interface to code coverage.
 interface GPUProviderModule {
@@ -149,18 +149,7 @@ Did you remember to build with code coverage instrumentation enabled?`
 
 dataCache.setStore({
   load: (path: string) => {
-    return new Promise<Uint8Array>((resolve, reject) => {
-      sys.readFile(
-        getResourcePath(`cache/${path}`),
-        (err: { message: string }, data: Uint8Array) => {
-          if (err !== null) {
-            reject(err.message);
-          } else {
-            resolve(data);
-          }
-        }
-      );
-    });
+    return sys.readFile(getResourcePath(`cache/${path}`))
   },
 });
 
