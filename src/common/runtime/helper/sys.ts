@@ -12,6 +12,7 @@ function node() {
     args: process.argv.slice(2),
     cwd: () => process.cwd(),
     exit: (code?: number | undefined) => process.exit(code),
+    import: async (id: string) => require(id),
   };
 }
 
@@ -45,9 +46,10 @@ function deno() {
     args: Deno.args,
     cwd: Deno.cwd,
     exit: Deno.exit,
+    import: (id: string) => import(id),
   };
 }
 
-const sys = typeof globalThis.process !== 'undefined' ? node() : deno();
+const sys = globalThis.Deno ? deno() : node();
 
 export default sys;
